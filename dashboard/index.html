@@ -7,21 +7,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0a0e14;
-    --surface: #111620;
-    --surface2: #161d2a;
-    --border: #1e2a3a;
-    --accent: #00c9a7;
+    --bg: #0f1829;
+    --surface: #162035;
+    --surface2: #1c2a42;
+    --border: #2a3d5c;
+    --accent: #4d9fff;
     --accent3: #ff6b6b;
-    --accent4: #f7c948;
-    --text: #e8edf5;
-    --text-muted: #6b7a94;
-    --text-dim: #3a4560;
-    --heme: #a78bfa;
-    --solid: #38bdf8;
+    --accent4: #ffd166;
+    --text: #f0f4ff;
+    --text-muted: #8ea8cc;
+    --text-dim: #3d5478;
+    --heme: #c084fc;
+    --solid: #60d4f7;
     --fda: #4ade80;
     --phase2: #fb923c;
-    --phase3: #00c9a7;
+    --phase3: #4d9fff;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -38,8 +38,8 @@
     position: fixed;
     inset: 0;
     background-image:
-      linear-gradient(rgba(0,201,167,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,201,167,0.03) 1px, transparent 1px);
+      linear-gradient(rgba(77,159,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(77,159,255,0.04) 1px, transparent 1px);
     background-size: 40px 40px;
     pointer-events: none;
     z-index: 0;
@@ -86,7 +86,7 @@
     white-space: nowrap;
   }
   .read-all-btn:hover { border-color: var(--accent); color: var(--accent); }
-  .read-all-btn.active { background: rgba(0,201,167,0.1); border-color: var(--accent); color: var(--accent); }
+  .read-all-btn.active { background: rgba(77,159,255,0.12); border-color: var(--accent); color: var(--accent); }
 
   main { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
 
@@ -141,7 +141,7 @@
     white-space: nowrap;
   }
   .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
-  .filter-btn.active { background: rgba(0,201,167,0.1); border-color: var(--accent); color: var(--accent); }
+  .filter-btn.active { background: rgba(77,159,255,0.12); border-color: var(--accent); color: var(--accent); }
 
   .sort-select {
     background: var(--surface);
@@ -176,7 +176,7 @@
   .disease-tab .count { background: var(--border); color: var(--text-dim); font-size: 9px; padding: 1px 5px; border-radius: 8px; }
   .disease-tab:hover { border-color: var(--text-muted); color: var(--text); }
   .disease-tab.active { border-color: var(--accent); color: var(--accent); }
-  .disease-tab.active .count { background: rgba(0,201,167,0.15); color: var(--accent); }
+  .disease-tab.active .count { background: rgba(77,159,255,0.15); color: var(--accent); }
 
   .result-count { font-size: 10px; color: var(--text-muted); margin-bottom: 14px; }
   .result-count span { color: var(--accent); }
@@ -210,7 +210,7 @@
   .badge-heme   { background: rgba(167,139,250,0.12); color: var(--heme);     border: 1px solid rgba(167,139,250,0.2); }
   .badge-solid  { background: rgba(56,189,248,0.12);  color: var(--solid);    border: 1px solid rgba(56,189,248,0.2); }
   .badge-fda    { background: rgba(74,222,128,0.12);  color: var(--fda);      border: 1px solid rgba(74,222,128,0.2); }
-  .badge-phase3 { background: rgba(0,201,167,0.12);   color: var(--phase3);   border: 1px solid rgba(0,201,167,0.2); }
+  .badge-phase3 { background: rgba(77,159,255,0.12);   color: var(--phase3);   border: 1px solid rgba(77,159,255,0.2); }
   .badge-phase2 { background: rgba(251,146,60,0.12);  color: var(--phase2);   border: 1px solid rgba(251,146,60,0.2); }
   .badge-review { background: rgba(107,122,148,0.1);  color: var(--text-muted); border: 1px solid rgba(107,122,148,0.15); }
 
@@ -305,7 +305,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
-    background: #0d1520;
+    background: #111e33;
     border: 1px solid var(--border);
     border-radius: 14px;
     box-shadow: 0 8px 40px rgba(0,0,0,.7);
