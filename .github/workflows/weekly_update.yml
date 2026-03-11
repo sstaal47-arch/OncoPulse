@@ -2,25 +2,23 @@ name: OncoPulse Weekly Literature Update
 
 on:
   schedule:
-    # Every Monday at 06:00 UTC (before your day starts)
-    - cron: "0 6 * * 1"
+    - cron: "0 6 * * 1"   # Every Monday at 6:00 AM UTC
   workflow_dispatch:
-    # Allow manual trigger from GitHub Actions UI
     inputs:
       days:
         description: "Days to look back"
         required: false
         default: "7"
       max_articles:
-        description: "Max articles to summarize"
+        description: "Max articles"
         required: false
-        default: "60"
+        default: "100"
 
 jobs:
   update-literature:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # needed to commit data.json back to repo
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -37,38 +35,30 @@ jobs:
 
       - name: Run OncoPulse pipeline
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          PUBMED_API_KEY:    ${{ secrets.PUBMED_API_KEY }}
-          OUTPUT_DIR:        ./dashboard
-          CACHE_DIR:         ./pipeline/.cache
-          LOOKBACK_DAYS:     ${{ github.event.inputs.days || '7' }}
-          MAX_ARTICLES:      ${{ github.event.inputs.max_articles || '60' }}
+          PUBMED_API_KEY: ${{ secrets.PUBMED_API_KEY }}
+          OUTPUT_DIR:     ./dashboard
+          CACHE_DIR:      ./pipeline/.cache
+          LOOKBACK_DAYS:  ${{ github.event.inputs.days || '7' }}
+          MAX_ARTICLES:   ${{ github.event.inputs.max_articles || '100' }}
         run: |
           python pipeline/fetch_and_summarize.py \
             --days ${{ github.event.inputs.days || 7 }} \
-            --max-articles ${{ github.event.inputs.max_articles || 60 }}
+            --max-articles ${{ github.event.inputs.max_articles || 100 }}
 
-      - name: Check if data.json was updated
-        id: check_changes
-        run: |
-          git diff --quiet dashboard/data.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
-
-      - name: Commit and push updated data
-        if: steps.check_changes.outputs.changed == 'true'
+      - name: Commit and push
         run: |
           git config user.name  "OncoPulse Bot"
           git config user.email "oncopulse-bot@users.noreply.github.com"
           git add dashboard/data.json pipeline/.cache/
-          git commit -m "chore: weekly literature update $(date +'%Y-%m-%d')"
+          git diff --staged --quiet || git commit -m "chore: weekly update $(date +'%Y-%m-%d')"
           git push
 
       - name: Summary
         run: |
-          echo "## OncoPulse Update Complete" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## OncoPulse Update" >> $GITHUB_STEP_SUMMARY
           if [ -f dashboard/data.json ]; then
             TOTAL=$(python3 -c "import json; d=json.load(open('dashboard/data.json')); print(d['stats']['total'])")
             WEEK=$(python3 -c "import json; d=json.load(open('dashboard/data.json')); print(d['week_label'])")
             echo "- **Week:** $WEEK" >> $GITHUB_STEP_SUMMARY
-            echo "- **Articles processed:** $TOTAL" >> $GITHUB_STEP_SUMMARY
+            echo "- **Articles:** $TOTAL" >> $GITHUB_STEP_SUMMARY
           fi
