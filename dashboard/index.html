@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OncoPulse — Weekly Literature Review</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e14;
+    --surface: #111620;
+    --surface2: #161d2a;
+    --border: #1e2a3a;
+    --accent: #00c9a7;
+    --accent3: #ff6b6b;
+    --accent4: #f7c948;
+    --text: #e8edf5;
+    --text-muted: #6b7a94;
+    --text-dim: #3a4560;
+    --heme: #a78bfa;
+    --solid: #38bdf8;
+    --fda: #4ade80;
+    --phase2: #fb923c;
+    --phase3: #00c9a7;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,201,167,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,201,167,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10,14,20,0.92);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  .logo { display: flex; align-items: baseline; gap: 10px; }
+  .logo-mark { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 22px; color: var(--accent); letter-spacing: -0.5px; }
+  .logo-sub { font-size: 11px; color: var(--text-muted); letter-spacing: 0.1em; text-transform: uppercase; }
+
+  .header-meta { display: flex; align-items: center; gap: 24px; }
+  .week-badge { font-size: 11px; color: var(--text-muted); letter-spacing: 0.08em; }
+  .week-badge span { color: var(--accent); }
+
+  .live-dot { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--fda); letter-spacing: 0.06em; }
+  .live-dot::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--fda); animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.8); } }
+
+  main { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 40px 32px; }
+
+  /* Loading state */
+  .loading-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    gap: 16px;
+  }
+  .loading-spinner {
+    width: 40px; height: 40px;
+    border: 2px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading-text { font-size: 12px; color: var(--text-muted); letter-spacing: 0.08em; }
+
+  /* Error state */
+  .error-box {
+    background: rgba(255,107,107,0.08);
+    border: 1px solid rgba(255,107,107,0.2);
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+    margin: 40px 0;
+  }
+  .error-box h3 { color: var(--accent3); font-family: 'Syne', sans-serif; margin-bottom: 8px; }
+  .error-box p { font-size: 12px; color: var(--text-muted); line-height: 1.6; }
+  .error-box code { color: var(--accent); font-size: 11px; }
+
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .stat-cell { background: var(--surface); padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; transition: background 0.2s; cursor: pointer; }
+  .stat-cell:hover, .stat-cell.active { background: var(--surface2); }
+  .stat-value { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 28px; line-height: 1; }
+  .stat-label { font-size: 10px; color: var(--text-muted); letter-spacing: 0.1em; text-transform: uppercase; }
+
+  .controls { display: flex; gap: 12px; margin-bottom: 28px; flex-wrap: wrap; align-items: center; }
+  .search-box { flex: 1; min-width: 280px; position: relative; }
+  .search-box input { width: 100%; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 16px 10px 40px; color: var(--text); font-family: 'DM Mono', monospace; font-size: 13px; outline: none; transition: border-color 0.2s; }
+  .search-box input:focus { border-color: var(--accent); }
+  .search-box input::placeholder { color: var(--text-dim); }
+  .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--text-dim); font-size: 14px; }
+
+  .filter-group { display: flex; gap: 6px; flex-wrap: wrap; }
+  .filter-btn { padding: 8px 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--text-muted); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.06em; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+  .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .filter-btn.active { background: rgba(0,201,167,0.1); border-color: var(--accent); color: var(--accent); }
+
+  .sort-select { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; color: var(--text-muted); font-family: 'DM Mono', monospace; font-size: 11px; outline: none; cursor: pointer; }
+
+  .disease-tabs { display: flex; gap: 4px; margin-bottom: 24px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
+  .disease-tabs::-webkit-scrollbar { display: none; }
+  .disease-tab { padding: 7px 16px; border-radius: 20px; border: 1px solid var(--border); background: transparent; color: var(--text-muted); font-family: 'DM Mono', monospace; font-size: 11px; cursor: pointer; white-space: nowrap; transition: all 0.15s; display: flex; align-items: center; gap: 6px; }
+  .disease-tab .count { background: var(--border); color: var(--text-muted); font-size: 9px; padding: 1px 5px; border-radius: 10px; }
+  .disease-tab:hover { border-color: var(--text-muted); color: var(--text); }
+  .disease-tab.active { border-color: currentColor; color: var(--accent); }
+  .disease-tab.active .count { background: rgba(0,201,167,0.15); color: var(--accent); }
+
+  .result-count { font-size: 11px; color: var(--text-muted); margin-bottom: 16px; letter-spacing: 0.04em; }
+  .result-count span { color: var(--accent); }
+
+  .article-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 16px; }
+
+  .article-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; cursor: pointer; transition: all 0.2s; position: relative; overflow: hidden; animation: fadeInUp 0.4s ease both; }
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  .article-card:hover { border-color: rgba(0,201,167,0.3); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.4); }
+  .article-card:hover .card-title { color: #fff; }
+
+  .card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+  .badge-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge { font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; font-weight: 500; }
+  .badge-heme { background: rgba(167,139,250,0.12); color: var(--heme); border: 1px solid rgba(167,139,250,0.2); }
+  .badge-solid { background: rgba(56,189,248,0.12); color: var(--solid); border: 1px solid rgba(56,189,248,0.2); }
+  .badge-fda { background: rgba(74,222,128,0.12); color: var(--fda); border: 1px solid rgba(74,222,128,0.2); }
+  .badge-phase3 { background: rgba(0,201,167,0.12); color: var(--phase3); border: 1px solid rgba(0,201,167,0.2); }
+  .badge-phase2 { background: rgba(251,146,60,0.12); color: var(--phase2); border: 1px solid rgba(251,146,60,0.2); }
+  .badge-review { background: rgba(107,122,148,0.12); color: var(--text-muted); border: 1px solid rgba(107,122,148,0.2); }
+
+  .card-date { font-size: 10px; color: var(--text-dim); white-space: nowrap; margin-top: 2px; }
+  .card-title { font-family: 'Instrument Serif', serif; font-size: 16px; line-height: 1.45; color: var(--text); margin-bottom: 10px; transition: color 0.2s; }
+  .card-journal { font-size: 10px; color: var(--text-muted); letter-spacing: 0.06em; margin-bottom: 14px; text-transform: uppercase; }
+
+  .abstract-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+  .abstract-cell { background: var(--surface2); border-radius: 6px; padding: 10px 12px; }
+  .abstract-cell.full-width { grid-column: 1 / -1; }
+  .cell-label { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 5px; }
+  .cell-content { font-size: 12px; line-height: 1.5; color: var(--text-muted); }
+
+  .takeaway { background: rgba(0,201,167,0.06); border: 1px solid rgba(0,201,167,0.15); border-radius: 8px; padding: 12px 14px; margin-bottom: 14px; }
+  .takeaway-label { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+  .takeaway-text { font-size: 12px; line-height: 1.55; color: rgba(232,237,245,0.85); }
+
+  .card-footer { display: flex; align-items: center; justify-content: space-between; }
+  .impact-row { display: flex; align-items: center; gap: 8px; }
+  .impact-label { font-size: 9px; color: var(--text-dim); letter-spacing: 0.08em; text-transform: uppercase; }
+  .impact-dots { display: flex; gap: 3px; }
+  .impact-dot { width: 8px; height: 8px; border-radius: 2px; background: var(--border); }
+  .impact-dot.filled { background: var(--accent4); }
+  .card-link { font-size: 10px; color: var(--text-dim); letter-spacing: 0.06em; text-decoration: none; transition: color 0.2s; }
+  .card-link:hover { color: var(--accent); }
+
+  .empty-state { grid-column: 1 / -1; text-align: center; padding: 80px 20px; color: var(--text-dim); }
+  .empty-state .icon { font-size: 40px; margin-bottom: 16px; }
+  .empty-state p { font-size: 13px; }
+
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+  /* ── TTS speak button on each card ── */
+  .speak-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text-dim);
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+    z-index: 2;
+    flex-shrink: 0;
+  }
+  .speak-btn:hover { border-color: var(--accent); color: var(--accent); background: rgba(0,201,167,0.08); }
+  .speak-btn.speaking { border-color: var(--accent); color: var(--accent); background: rgba(0,201,167,0.12); animation: speakPulse 1.2s ease-in-out infinite; }
+  @keyframes speakPulse { 0%,100% { box-shadow: 0 0 0 0 rgba(0,201,167,0.4); } 50% { box-shadow: 0 0 0 5px rgba(0,201,167,0); } }
+
+  /* ── Floating TTS player bar ── */
+  #ttsBar {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background: #0d1520;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 8px 48px rgba(0,0,0,0.7), 0 0 0 1px rgba(0,201,167,0.08);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 520px;
+    max-width: 90vw;
+    transition: bottom 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  #ttsBar.visible { bottom: 28px; }
+
+  .tts-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .tts-now-label {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .tts-title {
+    font-family: 'Instrument Serif', serif;
+    font-size: 13px;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .tts-progress-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 2px;
+  }
+  .tts-progress-track {
+    flex: 1;
+    height: 3px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .tts-progress-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+    width: 0%;
+    transition: width 0.3s linear;
+  }
+  .tts-count {
+    font-size: 10px;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+
+  .tts-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .tts-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+  }
+  .tts-btn:hover { background: var(--surface2); color: var(--text); border-color: var(--text-muted); }
+  .tts-btn.primary {
+    width: 36px;
+    height: 36px;
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #000;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  .tts-btn.primary:hover { background: #00e0bb; }
+
+  .tts-speed {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 5px 8px;
+    color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 0.04em;
+  }
+
+  .tts-close {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    color: var(--text-dim);
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.15s;
+    flex-shrink: 0;
+  }
+  .tts-close:hover { color: var(--accent3); }
+
+  /* read-all button in header */
+  .read-all-btn {
+    padding: 7px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .read-all-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .read-all-btn.active { background: rgba(0,201,167,0.1); border-color: var(--accent); color: var(--accent); }
+
+  /* highlight card being read */
+  .article-card.tts-active {
+    border-color: rgba(0,201,167,0.4);
+    box-shadow: 0 0 0 1px rgba(0,201,167,0.2), 0 8px 32px rgba(0,0,0,0.4);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <span class="logo-mark">OncoPulse</span>
+    <span class="logo-sub">Weekly Literature Review</span>
+  </div>
+  <div class="header-meta">
+    <span class="week-badge">Week of <span id="weekLabel">loading…</span></span>
+    <button class="read-all-btn" id="readAllBtn" onclick="toggleReadAll()" title="Read all visible articles aloud">▶ Read All</button>
+    <span class="live-dot" id="updateBadge">UPDATED</span>
+  </div>
+</header>
+
+<main id="mainContent">
+  <div class="loading-overlay">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Loading literature data…</div>
+  </div>
+</main>
+
+<!-- Floating TTS Player Bar -->
+<div id="ttsBar">
+  <div class="tts-info">
+    <div class="tts-now-label">▶ Now Reading</div>
+    <div class="tts-title" id="ttsTitle">—</div>
+    <div class="tts-progress-row">
+      <div class="tts-progress-track"><div class="tts-progress-fill" id="ttsProgressFill"></div></div>
+      <span class="tts-count" id="ttsCount"></span>
+    </div>
+  </div>
+  <div class="tts-controls">
+    <button class="tts-btn" onclick="ttsPrev()" title="Previous article">⏮</button>
+    <button class="tts-btn primary" id="ttsPlayPauseBtn" onclick="ttsTogglePause()" title="Pause / Resume">⏸</button>
+    <button class="tts-btn" onclick="ttsNext()" title="Next article">⏭</button>
+    <select class="tts-speed" id="ttsSpeedSelect" onchange="ttsSetSpeed(this.value)" title="Playback speed">
+      <option value="0.8">0.8×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.2">1.2×</option>
+      <option value="1.5">1.5×</option>
+      <option value="1.8">1.8×</option>
+    </select>
+  </div>
+  <button class="tts-close" onclick="ttsStop()" title="Stop">✕</button>
+</div>
+
+<script>
+let ARTICLES = [];
+let currentTypeFilter = 'all';
+let currentDiseaseFilter = 'all';
+
+// ─── TTS State ─────────────────────────────────────────────────────────────
+const tts = {
+  queue: [],          // array of article objects to read
+  idx: 0,             // current position in queue
+  utterance: null,    // current SpeechSynthesisUtterance
+  paused: false,
+  rate: 1.0,
+  singleId: null,     // if reading a single card (not queue)
+};
+
+function articleToSpeech(a) {
+  const typeLabel = a.type === 'fda' ? 'FDA Approval' : a.type === 'phase3' ? 'Phase 3 trial' : a.type === 'phase2' ? 'Phase 2 trial' : 'Review';
+  return [
+    `${a.title}.`,
+    `Published in ${a.journal}. ${typeLabel}.`,
+    `Study design: ${a.design || ''}`,
+    `Endpoints: ${a.endpoints || ''}`,
+    `Results: ${a.results || ''}`,
+    `Clinical takeaway: ${a.takeaway || ''}`,
+  ].join(' ');
+}
+
+function ttsSpeak(text, onEnd) {
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.rate = tts.rate;
+  u.pitch = 1;
+  u.lang = 'en-US';
+  u.onend = onEnd || null;
+  u.onerror = (e) => { if (e.error !== 'interrupted') onEnd?.(); };
+  tts.utterance = u;
+  tts.paused = false;
+  document.getElementById('ttsPlayPauseBtn').textContent = '⏸';
+  window.speechSynthesis.speak(u);
+}
+
+// ── Single card speak ──────────────────────────────────────────────────────
+function speakCard(articleId, btn) {
+  const a = ARTICLES.find(x => x.id === articleId);
+  if (!a) return;
+
+  // If this card is already speaking, toggle pause
+  if (tts.singleId === articleId && window.speechSynthesis.speaking) {
+    ttsTogglePause();
+    return;
+  }
+
+  ttsStop(true); // stop quietly
+  tts.singleId = articleId;
+  tts.queue = [];
+
+  // highlight card
+  document.querySelectorAll('.article-card').forEach(c => c.classList.remove('tts-active'));
+  btn.closest('.article-card').classList.add('tts-active');
+  btn.classList.add('speaking');
+  btn.textContent = '⏸';
+
+  showTtsBar(a, 1, 1);
+
+  ttsSpeak(articleToSpeech(a), () => {
+    btn.classList.remove('speaking');
+    btn.textContent = '🔊';
+    btn.closest('.article-card').classList.remove('tts-active');
+    hideTtsBar();
+    tts.singleId = null;
+  });
+}
+
+// ── Read All (queue mode) ──────────────────────────────────────────────────
+function toggleReadAll() {
+  if (window.speechSynthesis.speaking || tts.queue.length > 0) {
+    ttsStop();
+    return;
+  }
+
+  // Build queue from currently visible cards
+  const grid = document.getElementById('articleGrid');
+  if (!grid) return;
+  const cardEls = grid.querySelectorAll('.article-card[data-id]');
+  if (!cardEls.length) return;
+
+  tts.queue = Array.from(cardEls).map(el => ARTICLES.find(a => a.id === el.dataset.id)).filter(Boolean);
+  tts.idx = 0;
+  tts.singleId = null;
+
+  document.getElementById('readAllBtn').classList.add('active');
+  document.getElementById('readAllBtn').textContent = '■ Stop';
+
+  playQueueItem(0);
+}
+
+function playQueueItem(idx) {
+  if (idx >= tts.queue.length) { ttsStop(); return; }
+  tts.idx = idx;
+  const a = tts.queue[idx];
+
+  // Highlight active card
+  document.querySelectorAll('.article-card').forEach(c => c.classList.remove('tts-active'));
+  const activeCard = document.querySelector(`.article-card[data-id="${a.id}"]`);
+  if (activeCard) {
+    activeCard.classList.add('tts-active');
+    activeCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    const btn = activeCard.querySelector('.speak-btn');
+    if (btn) { btn.classList.add('speaking'); btn.textContent = '⏸'; }
+  }
+
+  showTtsBar(a, idx + 1, tts.queue.length);
+
+  ttsSpeak(articleToSpeech(a), () => {
+    // un-highlight
+    if (activeCard) {
+      activeCard.classList.remove('tts-active');
+      const btn = activeCard.querySelector('.speak-btn');
+      if (btn) { btn.classList.remove('speaking'); btn.textContent = '🔊'; }
+    }
+    playQueueItem(idx + 1);
+  });
+}
+
+function ttsNext() {
+  if (tts.queue.length) {
+    const activeCard = document.querySelector(`.article-card[data-id="${tts.queue[tts.idx]?.id}"]`);
+    if (activeCard) {
+      activeCard.classList.remove('tts-active');
+      const btn = activeCard.querySelector('.speak-btn');
+      if (btn) { btn.classList.remove('speaking'); btn.textContent = '🔊'; }
+    }
+    playQueueItem(tts.idx + 1);
+  }
+}
+
+function ttsPrev() {
+  if (tts.queue.length) {
+    const activeCard = document.querySelector(`.article-card[data-id="${tts.queue[tts.idx]?.id}"]`);
+    if (activeCard) {
+      activeCard.classList.remove('tts-active');
+      const btn = activeCard.querySelector('.speak-btn');
+      if (btn) { btn.classList.remove('speaking'); btn.textContent = '🔊'; }
+    }
+    playQueueItem(Math.max(0, tts.idx - 1));
+  }
+}
+
+function ttsTogglePause() {
+  const btn = document.getElementById('ttsPlayPauseBtn');
+  if (tts.paused) {
+    window.speechSynthesis.resume();
+    tts.paused = false;
+    btn.textContent = '⏸';
+  } else {
+    window.speechSynthesis.pause();
+    tts.paused = true;
+    btn.textContent = '▶';
+  }
+}
+
+function ttsSetSpeed(val) {
+  tts.rate = parseFloat(val);
+  // restart current utterance at new speed if speaking
+  if (window.speechSynthesis.speaking && tts.utterance) {
+    // Re-speak from start of current item (browser limitation — no mid-utterance rate change)
+    if (tts.queue.length) playQueueItem(tts.idx);
+  }
+}
+
+function ttsStop(quiet = false) {
+  window.speechSynthesis.cancel();
+  tts.queue = [];
+  tts.singleId = null;
+  tts.paused = false;
+  document.querySelectorAll('.article-card').forEach(c => {
+    c.classList.remove('tts-active');
+    const btn = c.querySelector('.speak-btn');
+    if (btn) { btn.classList.remove('speaking'); btn.textContent = '🔊'; }
+  });
+  document.getElementById('readAllBtn').classList.remove('active');
+  document.getElementById('readAllBtn').textContent = '▶ Read All';
+  if (!quiet) hideTtsBar();
+}
+
+// ── TTS Bar helpers ────────────────────────────────────────────────────────
+function showTtsBar(article, current, total) {
+  document.getElementById('ttsTitle').textContent = article.title;
+  document.getElementById('ttsCount').textContent = total > 1 ? `${current} / ${total}` : '';
+  const pct = total > 1 ? Math.round(((current - 1) / total) * 100) : 0;
+  document.getElementById('ttsProgressFill').style.width = pct + '%';
+  document.getElementById('ttsBar').classList.add('visible');
+  document.getElementById('ttsPlayPauseBtn').textContent = '⏸';
+}
+
+function hideTtsBar() {
+  document.getElementById('ttsBar').classList.remove('visible');
+}
+
+// keep progress fill updating as queue advances
+function updateProgress() {
+  if (tts.queue.length > 1) {
+    const pct = Math.round((tts.idx / tts.queue.length) * 100);
+    document.getElementById('ttsProgressFill').style.width = pct + '%';
+    document.getElementById('ttsCount').textContent = `${tts.idx + 1} / ${tts.queue.length}`;
+  }
+}
+
+// ─── Load data.json ────────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const r = await fetch('data.json');
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const data = await r.json();
+    return data;
+  } catch (e) {
+    throw new Error(`Could not load data.json: ${e.message}`);
+  }
+}
+
+// ─── Build disease tabs dynamically ───────────────────────────────────────
+function buildDiseaseTabs(articles) {
+  const counts = {};
+  for (const a of articles) {
+    counts[a.disease] = (counts[a.disease] || 0) + 1;
+  }
+
+  const DISEASE_LABELS = {
+    lymphoma: 'Lymphoma', leukemia: 'Leukemia', myeloma: 'Myeloma',
+    lung: 'Lung', breast: 'Breast', gi: 'GI', gu: 'GU', cns: 'CNS',
+    gynecologic: 'Gynecologic', skin: 'Skin/Melanoma',
+    head_neck: 'Head & Neck', sarcoma: 'Sarcoma', other: 'Other'
+  };
+
+  const tabsEl = document.getElementById('diseaseTabs');
+  tabsEl.innerHTML = `
+    <button class="disease-tab active" onclick="setDiseaseFilter('all', this)">
+      All Areas <span class="count">${articles.length}</span>
+    </button>
+  `;
+
+  for (const [disease, label] of Object.entries(DISEASE_LABELS)) {
+    if (!counts[disease]) continue;
+    const btn = document.createElement('button');
+    btn.className = 'disease-tab';
+    btn.innerHTML = `${label} <span class="count">${counts[disease]}</span>`;
+    btn.onclick = function() { setDiseaseFilter(disease, this); };
+    tabsEl.appendChild(btn);
+  }
+}
+
+// ─── Build stats bar ───────────────────────────────────────────────────────
+function buildStats(stats) {
+  document.getElementById('statsBar').innerHTML = `
+    <div class="stat-cell" onclick="filterByType('all')">
+      <div class="stat-value" style="color:var(--text)">${stats.total}</div>
+      <div class="stat-label">Total Articles</div>
+    </div>
+    <div class="stat-cell" onclick="filterByType('phase3')">
+      <div class="stat-value" style="color:var(--phase3)">${stats.phase3}</div>
+      <div class="stat-label">Phase 3 Trials</div>
+    </div>
+    <div class="stat-cell" onclick="filterByType('phase2')">
+      <div class="stat-value" style="color:var(--phase2)">${stats.phase2}</div>
+      <div class="stat-label">Phase 2 Trials</div>
+    </div>
+    <div class="stat-cell" onclick="filterByType('fda')">
+      <div class="stat-value" style="color:var(--fda)">${stats.fda}</div>
+      <div class="stat-label">FDA Actions</div>
+    </div>
+    <div class="stat-cell" onclick="filterByType('review')">
+      <div class="stat-value" style="color:var(--text-muted)">${stats.review}</div>
+      <div class="stat-label">Reviews / Meta</div>
+    </div>
+  `;
+}
+
+// ─── Render full layout ────────────────────────────────────────────────────
+function renderLayout(data) {
+  document.getElementById('weekLabel').textContent = data.week_label;
+
+  const updatedAt = new Date(data.generated_at);
+  document.getElementById('updateBadge').title = `Updated ${updatedAt.toLocaleString()}`;
+
+  document.getElementById('mainContent').innerHTML = `
+    <div class="stats-bar" id="statsBar"></div>
+    <div class="controls">
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input type="text" id="searchInput" placeholder="Search titles, drugs, biomarkers…" oninput="applyFilters()">
+      </div>
+      <div class="filter-group" id="typeFilters">
+        <button class="filter-btn active" onclick="setTypeFilter('all', this)">All Types</button>
+        <button class="filter-btn" onclick="setTypeFilter('fda', this)">FDA</button>
+        <button class="filter-btn" onclick="setTypeFilter('phase3', this)">Phase 3</button>
+        <button class="filter-btn" onclick="setTypeFilter('phase2', this)">Phase 2</button>
+        <button class="filter-btn" onclick="setTypeFilter('review', this)">Review</button>
+      </div>
+      <select class="sort-select" onchange="applyFilters()" id="sortSelect">
+        <option value="impact">Sort: Impact</option>
+        <option value="date">Sort: Newest</option>
+        <option value="title">Sort: A–Z</option>
+      </select>
+    </div>
+    <div class="disease-tabs" id="diseaseTabs"></div>
+    <div class="result-count"><span id="countNum">0</span> articles shown</div>
+    <div class="article-grid" id="articleGrid"></div>
+  `;
+
+  buildStats(data.stats);
+  buildDiseaseTabs(data.articles);
+  applyFilters();
+}
+
+// ─── Filter/sort ───────────────────────────────────────────────────────────
+function setTypeFilter(type, btn) {
+  currentTypeFilter = type;
+  document.querySelectorAll('#typeFilters .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function filterByType(type) {
+  currentTypeFilter = type;
+  document.querySelectorAll('#typeFilters .filter-btn').forEach(b => {
+    const label = b.textContent.toLowerCase();
+    b.classList.toggle('active',
+      type === 'all' ? label.includes('all') :
+      label.includes(type)
+    );
+  });
+  applyFilters();
+}
+
+function setDiseaseFilter(disease, btn) {
+  currentDiseaseFilter = disease;
+  document.querySelectorAll('.disease-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function applyFilters() {
+  const query = (document.getElementById('searchInput')?.value || '').toLowerCase();
+  const sort = document.getElementById('sortSelect')?.value || 'impact';
+
+  let filtered = ARTICLES.filter(a => {
+    const matchType    = currentTypeFilter === 'all' || a.type === currentTypeFilter;
+    const matchDisease = currentDiseaseFilter === 'all' || a.disease === currentDiseaseFilter;
+    const matchSearch  = !query ||
+      a.title.toLowerCase().includes(query) ||
+      (a.results || '').toLowerCase().includes(query) ||
+      (a.takeaway || '').toLowerCase().includes(query) ||
+      (a.design || '').toLowerCase().includes(query) ||
+      (a.journal || '').toLowerCase().includes(query);
+    return matchType && matchDisease && matchSearch;
+  });
+
+  if (sort === 'impact') filtered.sort((a, b) => (b.impact||0) - (a.impact||0));
+  else if (sort === 'date') filtered.sort((a, b) => (b.pub_date||'').localeCompare(a.pub_date||''));
+  else if (sort === 'title') filtered.sort((a, b) => (a.title||'').localeCompare(b.title||''));
+
+  renderArticles(filtered);
+  document.getElementById('countNum').textContent = filtered.length;
+}
+
+function renderArticles(articles) {
+  const grid = document.getElementById('articleGrid');
+  if (!grid) return;
+
+  if (articles.length === 0) {
+    grid.innerHTML = `<div class="empty-state"><div class="icon">◎</div><p>No articles match your current filters.</p></div>`;
+    return;
+  }
+
+  grid.innerHTML = articles.map((a, i) => {
+    const catBadge = a.category === 'heme'
+      ? `<span class="badge badge-heme">Hematology</span>`
+      : `<span class="badge badge-solid">Solid Tumor</span>`;
+
+    const typeBadge =
+      a.type === 'fda'    ? `<span class="badge badge-fda">FDA Approval</span>` :
+      a.type === 'phase3' ? `<span class="badge badge-phase3">Phase 3</span>` :
+      a.type === 'phase2' ? `<span class="badge badge-phase2">Phase 2</span>` :
+                            `<span class="badge badge-review">Review</span>`;
+
+    const impactDots = Array.from({length: 5}, (_, idx) =>
+      `<div class="impact-dot ${idx < (a.impact||0) ? 'filled' : ''}"></div>`
+    ).join('');
+
+    const borderColor = a.category === 'heme' ? 'var(--heme)' : 'var(--solid)';
+    const articleLink = a.source === 'fda' || a.source === 'rss'
+      ? a.link
+      : `https://pubmed.ncbi.nlm.nih.gov/${a.pmid}`;
+
+    return `
+    <div class="article-card" data-id="${a.id}" style="animation-delay:${i * 0.04}s">
+      <div style="position:absolute;left:0;top:0;bottom:0;width:3px;background:${borderColor};border-radius:3px 0 0 3px;opacity:0.6;"></div>
+      <button class="speak-btn" onclick="speakCard('${a.id}', this)" title="Read aloud">🔊</button>
+      <div class="card-header">
+        <div class="badge-row">${catBadge}${typeBadge}</div>
+        <span class="card-date">${a.pub_date || ''}</span>
+      </div>
+      <div class="card-title">${a.title}</div>
+      <div class="card-journal">${a.journal || ''}</div>
+      <div class="abstract-grid">
+        <div class="abstract-cell">
+          <div class="cell-label">Study Design</div>
+          <div class="cell-content">${a.design || '—'}</div>
+        </div>
+        <div class="abstract-cell">
+          <div class="cell-label">Endpoints</div>
+          <div class="cell-content">${a.endpoints || '—'}</div>
+        </div>
+        <div class="abstract-cell full-width">
+          <div class="cell-label">Key Results</div>
+          <div class="cell-content">${a.results || '—'}</div>
+        </div>
+      </div>
+      <div class="takeaway">
+        <div class="takeaway-label">⬡ Clinical Takeaway</div>
+        <div class="takeaway-text">${a.takeaway || '—'}</div>
+      </div>
+      <div class="card-footer">
+        <div class="impact-row">
+          <span class="impact-label">Impact</span>
+          <div class="impact-dots">${impactDots}</div>
+        </div>
+        <a class="card-link" href="${articleLink}" target="_blank" rel="noopener">View source →</a>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── Boot ──────────────────────────────────────────────────────────────────
+(async () => {
+  try {
+    const data = await loadData();
+    ARTICLES = data.articles || [];
+    renderLayout(data);
+  } catch (e) {
+    document.getElementById('mainContent').innerHTML = `
+      <div class="error-box">
+        <h3>Could not load data</h3>
+        <p>Make sure <code>data.json</code> exists in the same directory as this HTML file.<br>
+        Run the pipeline first: <code>python pipeline/fetch_and_summarize.py</code><br><br>
+        Error: ${e.message}</p>
+      </div>`;
+  }
+})();
+</script>
+</body>
+</html>
