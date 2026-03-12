@@ -12,11 +12,16 @@ on:
       max_articles:
         description: "Max articles"
         required: false
-        default: "100"
+        default: "300"
+      skip_altmetric:
+        description: "Skip Altmetric scoring (faster)"
+        required: false
+        default: "false"
 
 jobs:
   update-literature:
     runs-on: ubuntu-latest
+    timeout-minutes: 90      # Altmetric calls ~1 req/sec for 300 articles ≈ 5 min
     permissions:
       contents: write
 
@@ -39,11 +44,16 @@ jobs:
           OUTPUT_DIR:     ./dashboard
           CACHE_DIR:      ./pipeline/.cache
           LOOKBACK_DAYS:  ${{ github.event.inputs.days || '7' }}
-          MAX_ARTICLES:   ${{ github.event.inputs.max_articles || '100' }}
+          MAX_ARTICLES:   ${{ github.event.inputs.max_articles || '300' }}
         run: |
+          SKIP_ALT=""
+          if [ "${{ github.event.inputs.skip_altmetric }}" = "true" ]; then
+            SKIP_ALT="--skip-altmetric"
+          fi
           python pipeline/fetch_and_summarize.py \
             --days ${{ github.event.inputs.days || 7 }} \
-            --max-articles ${{ github.event.inputs.max_articles || 100 }}
+            --max-articles ${{ github.event.inputs.max_articles || 300 }} \
+            $SKIP_ALT
 
       - name: Commit and push
         run: |
@@ -57,8 +67,16 @@ jobs:
         run: |
           echo "## OncoPulse Update" >> $GITHUB_STEP_SUMMARY
           if [ -f dashboard/data.json ]; then
-            TOTAL=$(python3 -c "import json; d=json.load(open('dashboard/data.json')); print(d['stats']['total'])")
-            WEEK=$(python3 -c "import json; d=json.load(open('dashboard/data.json')); print(d['week_label'])")
-            echo "- **Week:** $WEEK" >> $GITHUB_STEP_SUMMARY
-            echo "- **Articles:** $TOTAL" >> $GITHUB_STEP_SUMMARY
+            python3 - << 'EOF'
+import json, os
+d = json.load(open('dashboard/data.json'))
+s = d['stats']
+with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+    f.write(f"- **Week:** {d['week_label']}\n")
+    f.write(f"- **Articles:** {s['total']}\n")
+    f.write(f"- **With Altmetric score:** {s.get('with_altmetric', 'N/A')}\n")
+    f.write(f"- **Top Altmetric score:** {s.get('top_altmetric', 'N/A')}\n")
+    f.write(f"- **FDA:** {s['fda']} | **Phase 3:** {s['phase3']} | **Phase 2:** {s['phase2']}\n")
+EOF
           fi
+

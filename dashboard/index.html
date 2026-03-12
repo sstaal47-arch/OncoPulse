@@ -200,7 +200,7 @@
   .card-top {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
+    gap: 10px;
     margin-bottom: 10px;
   }
 
@@ -486,7 +486,139 @@
   }
   .unsave-btn:hover { color: var(--accent3); }
 
-  /* ── Delete ── */
+  /* ── Settings ── */
+  .settings-btn {
+    padding: 6px 12px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .settings-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .settings-btn.active { background: rgba(77,159,255,0.1); border-color: var(--accent); color: var(--accent); }
+
+  #settingsPanel {
+    display: none;
+    margin-bottom: 28px;
+    background: var(--surface);
+    border: 1px solid rgba(77,159,255,0.25);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  #settingsPanel.visible { display: block; }
+
+  .settings-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(77,159,255,0.04);
+  }
+  .settings-panel-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .settings-panel-subtitle { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+
+  .settings-body { padding: 20px; display: flex; flex-direction: column; gap: 24px; }
+
+  .settings-section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .settings-chip-group { display: flex; flex-wrap: wrap; gap: 6px; }
+
+  .settings-chip {
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .settings-chip:hover { border-color: var(--accent); color: var(--accent); }
+  .settings-chip.selected { background: rgba(77,159,255,0.12); border-color: var(--accent); color: var(--accent); }
+  .settings-chip.selected.heme-chip { background: rgba(192,132,252,0.12); border-color: var(--heme); color: var(--heme); }
+  .settings-chip.selected.solid-chip { background: rgba(96,212,247,0.12); border-color: var(--solid); color: var(--solid); }
+  .settings-chip.selected.general-chip { background: rgba(74,222,128,0.12); border-color: var(--fda); color: var(--fda); }
+
+  .settings-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+
+  .settings-number {
+    width: 80px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    padding: 7px 10px;
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .settings-number:focus { border-color: var(--accent); }
+
+  .settings-label { font-size: 11px; color: var(--text-muted); }
+
+  .settings-save-btn {
+    padding: 8px 20px;
+    border-radius: 7px;
+    border: 1px solid var(--accent);
+    background: rgba(77,159,255,0.12);
+    color: var(--accent);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-weight: 600;
+  }
+  .settings-save-btn:hover { background: rgba(77,159,255,0.22); }
+
+  .settings-reset-btn {
+    padding: 8px 16px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-dim);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .settings-reset-btn:hover { color: var(--accent3); border-color: var(--accent3); }
+
+  .settings-active-banner {
+    display: none;
+    background: rgba(77,159,255,0.07);
+    border: 1px solid rgba(77,159,255,0.2);
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 10px;
+    color: var(--accent);
+    margin-bottom: 16px;
+    align-items: center;
+    gap: 8px;
+  }
+  .settings-active-banner.visible { display: flex; }
   .del-btn {
     width: 26px;
     height: 26px;
@@ -535,6 +667,36 @@
     display: none;
   }
   .deleted-count-badge.visible { display: inline-block; }
+
+  /* ── Rank & Altmetric ── */
+  .rank-badge {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--text-dim);
+    min-width: 28px;
+    text-align: right;
+    flex-shrink: 0;
+    padding-top: 2px;
+  }
+  .rank-badge.top { color: var(--accent4); }
+
+  .altmetric-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 9px;
+    padding: 2px 7px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .altmetric-pill:hover { border-color: var(--accent4); color: var(--accent4); }
+  .altmetric-pill.high { border-color: rgba(255,209,102,0.4); color: var(--accent4); background: rgba(255,209,102,0.06); }
+  .altmetric-pill.very-high { border-color: var(--accent4); color: var(--accent4); background: rgba(255,209,102,0.12); font-weight: 700; }
 
   /* Deleted panel */
   #deletedPanel {
@@ -619,6 +781,7 @@
     <button class="deleted-tab-btn" id="deletedTabBtn" onclick="toggleDeletedPanel()">
       🗑 Deleted <span class="deleted-count-badge" id="deletedCountBadge">0</span>
     </button>
+    <button class="settings-btn" id="settingsBtn" onclick="toggleSettingsPanel()">⚙ Settings</button>
     <button class="read-all-btn" id="readAllBtn" onclick="toggleReadAll()">▶ Read All</button>
     <span class="live-dot" id="updateBadge">UPDATED</span>
   </div>
@@ -1132,8 +1295,10 @@ function renderLayout(data) {
   document.getElementById('updateBadge').title = `Updated ${new Date(data.generated_at).toLocaleString()}`;
   document.getElementById('mainContent').innerHTML = `
     <div class="stats-bar" id="statsBar"></div>
+    <div id="settingsPanel"></div>
     <div id="savedPanel"></div>
     <div id="deletedPanel"></div>
+    <div class="settings-active-banner" id="settingsBanner"></div>
     <div class="controls">
       <div class="search-box">
         <span class="search-icon">⌕</span>
@@ -1147,7 +1312,9 @@ function renderLayout(data) {
         <button class="filter-btn" onclick="setTypeFilter('review',this)">Review</button>
       </div>
       <select class="sort-select" id="sortSelect" onchange="applyFilters()">
+        <option value="importance">⬆ Importance</option>
         <option value="date">Newest</option>
+        <option value="altmetric">Altmetric</option>
         <option value="title">A–Z</option>
       </select>
     </div>
@@ -1184,19 +1351,27 @@ function setDiseaseFilter(d, btn) {
 }
 
 function applyFilters() {
+  const s = loadSettings();
   const q = (document.getElementById('searchInput')?.value||'').toLowerCase();
   const sort = document.getElementById('sortSelect')?.value||'date';
   let filtered = ARTICLES.filter(a => {
     const mt = currentTypeFilter==='all' || a.type===currentTypeFilter;
     const md = currentDiseaseFilter==='all' || a.disease===currentDiseaseFilter;
     const ms = !q || a.title.toLowerCase().includes(q) || (a.abstract||'').toLowerCase().includes(q) || (a.journal||'').toLowerCase().includes(q);
-    return mt && md && ms;
+    const sd = s.diseases.includes(a.disease);
+    const sj = s.journals.length === 0 || s.journals.includes(a.journal);
+    return mt && md && ms && sd && sj;
   });
-  if (sort==='date') filtered.sort((a,b)=>(b.pub_date||'').localeCompare(a.pub_date||''));
+  if (sort==='importance') filtered.sort((a,b)=>(b.importance_score||0)-(a.importance_score||0));
+  else if (sort==='altmetric') filtered.sort((a,b)=>(b.altmetric_score||0)-(a.altmetric_score||0));
+  else if (sort==='date') filtered.sort((a,b)=>(b.pub_date||'').localeCompare(a.pub_date||''));
   else filtered.sort((a,b)=>(a.title||'').localeCompare(b.title||''));
+  filtered = filtered.slice(0, s.maxDisplay);
   renderArticles(filtered);
   document.getElementById('countNum').textContent = filtered.length;
   updateSavedBadge();
+  updateDeletedBadge();
+  updateSettingsBanner();
 }
 
 function toggleAbstract(btn, uid) {
@@ -1237,16 +1412,32 @@ function renderArticles(articles) {
       ? `<a class="card-link pubmed" href="${a.pubmed_link}" target="_blank" rel="noopener">PubMed</a>`
       : '';
 
+    const rankNum = a.rank || (i + 1);
+    const isTop = rankNum <= 10;
+    const rankHtml = `<div class="rank-badge ${isTop ? 'top' : ''}">#${rankNum}</div>`;
+
+    const altScore = a.altmetric_score || 0;
+    const altClass = altScore >= 100 ? 'very-high' : altScore >= 20 ? 'high' : '';
+    let altHtml = '';
+    if (altScore > 0) {
+      if (a.altmetric_url) {
+        altHtml = '<a class="altmetric-pill ' + altClass + '" href="' + a.altmetric_url + '" target="_blank" rel="noopener"><span>\u24B6</span> ' + Math.round(altScore) + '</a>';
+      } else {
+        altHtml = '<span class="altmetric-pill ' + altClass + '"><span>\u24B6</span> ' + Math.round(altScore) + '</span>';
+      }
+    }
+
     return `
     <div class="article-card" data-uid="${a.uid}" style="animation-delay:${i*0.03}s;border-left:3px solid ${borderColor}">
       <div class="card-top">
+        ${rankHtml}
         <div class="badge-col">${catBadge}${typeBadge}</div>
         <div class="card-main">
           <div class="card-meta">${a.journal || ''}${a.pub_date ? ' · '+a.pub_date : ''}</div>
           <div class="card-title">${a.title}</div>
           ${abstractHtml}
           <div class="card-links">
-            ${sourceLink}${pubmedLink}
+            ${sourceLink}${pubmedLink}${altHtml}
             <button class="fav-btn${isFav(a.uid) ? ' saved' : ''}" data-uid="${a.uid}" onclick="toggleFav('${a.uid}',this)" title="${isFav(a.uid) ? 'Remove from favorites' : 'Save to favorites'}">${isFav(a.uid) ? '★' : '☆'}</button>
             <button class="del-btn" onclick="deleteArticle('${a.uid}')" title="Delete article">🗑</button>
             <button class="speak-btn" onclick="speakCard('${a.uid}',this)" title="Read aloud">🔊</button>
@@ -1255,6 +1446,501 @@ function renderArticles(articles) {
       </div>
     </div>`;
   }).join('');
+}
+
+// ─── Settings ─────────────────────────────────────────────────────────────────
+const SETTINGS_KEY = 'oncopulse_settings';
+let showingSettings = false;
+
+// ── NCCN Full Taxonomy ────────────────────────────────────────────────────────
+const NCCN_TAXONOMY = [
+  { section: 'Hematologic Malignancies', category: 'heme', children: [
+    { id: 'b_cell_lymphomas', label: 'B-Cell Lymphomas', children: [
+      { id: 'dlbcl',               label: 'DLBCL' },
+      { id: 'follicular_lymphoma',  label: 'Follicular Lymphoma' },
+      { id: 'mantle_cell',          label: 'Mantle Cell Lymphoma' },
+      { id: 'marginal_zone',        label: 'Marginal Zone Lymphoma' },
+      { id: 'burkitt',              label: 'Burkitt Lymphoma' },
+      { id: 'primary_mediastinal',  label: 'Primary Mediastinal LBCL' },
+      { id: 'transformed_fl',       label: 'Transformed FL / Richter' },
+      { id: 'waldenstrom',          label: "Waldenström's / LPL" },
+    ]},
+    { id: 't_cell_lymphomas', label: 'T-Cell Lymphomas', children: [
+      { id: 'ptcl',  label: 'PTCL / AITL / ALCL' },
+      { id: 'ctcl',  label: 'CTCL / Mycosis Fungoides / Sézary' },
+    ]},
+    { id: 'hodgkin',  label: 'Hodgkin Lymphoma' },
+    { id: 'cll',      label: 'CLL / SLL' },
+    { id: 'acute_leukemias', label: 'Acute Leukemias', children: [
+      { id: 'aml',  label: 'AML' },
+      { id: 'all',  label: 'ALL' },
+      { id: 'apl',  label: 'APL' },
+    ]},
+    { id: 'chronic_leukemias', label: 'Chronic / Other Leukemias', children: [
+      { id: 'cml',   label: 'CML' },
+      { id: 'cmml',  label: 'CMML' },
+      { id: 'hcl',   label: 'Hairy Cell Leukemia' },
+    ]},
+    { id: 'mds',      label: 'MDS' },
+    { id: 'mpn',      label: 'MPN (PV / ET / MF)' },
+    { id: 'mds_mpn',  label: 'MDS/MPN Overlap' },
+    { id: 'plasma_cell', label: 'Plasma Cell Disorders', children: [
+      { id: 'multiple_myeloma',    label: 'Multiple Myeloma' },
+      { id: 'smoldering_myeloma',  label: 'Smoldering Myeloma' },
+      { id: 'amyloidosis',         label: 'AL Amyloidosis' },
+      { id: 'mgus',                label: 'MGUS' },
+    ]},
+    { id: 'mastocytosis',  label: 'Mastocytosis' },
+  ]},
+  { section: 'CNS Tumors', category: 'solid', children: [
+    { id: 'glioblastoma',    label: 'Glioblastoma (GBM)' },
+    { id: 'glioma',          label: 'Glioma (IDH-mutant / Low-grade)' },
+    { id: 'brain_mets',      label: 'Brain Metastases' },
+    { id: 'cns_lymphoma',    label: 'Primary CNS Lymphoma' },
+    { id: 'meningioma',      label: 'Meningioma' },
+    { id: 'medulloblastoma', label: 'Medulloblastoma' },
+  ]},
+  { section: 'Breast Cancer', category: 'solid', children: [
+    { id: 'breast_her2',    label: 'HER2-Positive' },
+    { id: 'breast_tnbc',    label: 'Triple-Negative (TNBC)' },
+    { id: 'breast_hr',      label: 'HR-Positive / HER2-Negative' },
+    { id: 'breast_general', label: 'Breast (General / Early Stage)' },
+  ]},
+  { section: 'GI Tumors', category: 'solid', children: [
+    { id: 'colorectal',    label: 'Colorectal Cancer' },
+    { id: 'gastric',       label: 'Gastric / GEJ Cancer' },
+    { id: 'esophageal',    label: 'Esophageal Cancer' },
+    { id: 'pancreatic',    label: 'Pancreatic Cancer' },
+    { id: 'hcc',           label: 'Hepatocellular Carcinoma' },
+    { id: 'biliary',       label: 'Biliary Tract / Cholangiocarcinoma' },
+    { id: 'appendix',      label: 'Appendiceal Cancer' },
+    { id: 'anal',          label: 'Anal Cancer' },
+    { id: 'neuroendocrine',label: 'Neuroendocrine Tumors' },
+  ]},
+  { section: 'GU Tumors', category: 'solid', children: [
+    { id: 'prostate',    label: 'Prostate Cancer' },
+    { id: 'rcc',         label: 'Renal Cell Carcinoma' },
+    { id: 'bladder',     label: 'Bladder / Urothelial Cancer' },
+    { id: 'testicular',  label: 'Testicular Cancer' },
+    { id: 'penile',      label: 'Penile Cancer' },
+    { id: 'adrenal',     label: 'Adrenal / Pheochromocytoma' },
+  ]},
+  { section: 'Gynecologic Cancers', category: 'solid', children: [
+    { id: 'ovarian',        label: 'Ovarian / Fallopian / Peritoneal' },
+    { id: 'endometrial',    label: 'Endometrial / Uterine Cancer' },
+    { id: 'cervical',       label: 'Cervical Cancer' },
+    { id: 'uterine_sarcoma',label: 'Uterine Sarcoma' },
+    { id: 'vulvar',         label: 'Vulvar Cancer' },
+    { id: 'gestational',    label: 'Gestational Trophoblastic' },
+  ]},
+  { section: 'Thoracic Cancers', category: 'solid', children: [
+    { id: 'nsclc',        label: 'NSCLC' },
+    { id: 'sclc',         label: 'SCLC' },
+    { id: 'mesothelioma', label: 'Mesothelioma' },
+    { id: 'thymoma',      label: 'Thymoma / Thymic Carcinoma' },
+  ]},
+  { section: 'Head & Neck Cancers', category: 'solid', children: [
+    { id: 'hnscc',          label: 'HNSCC (Oral / Oropharyngeal / Laryngeal)' },
+    { id: 'nasopharyngeal', label: 'Nasopharyngeal Carcinoma' },
+    { id: 'salivary',       label: 'Salivary Gland Cancer' },
+    { id: 'thyroid',        label: 'Thyroid Cancer' },
+  ]},
+  { section: 'Skin Cancers', category: 'solid', children: [
+    { id: 'melanoma',  label: 'Melanoma' },
+    { id: 'cscc',      label: 'Cutaneous SCC' },
+    { id: 'merkel',    label: 'Merkel Cell Carcinoma' },
+    { id: 'bcc',       label: 'Basal Cell Carcinoma' },
+  ]},
+  { section: 'Bone & Soft Tissue Sarcomas', category: 'solid', children: [
+    { id: 'osteosarcoma',     label: 'Osteosarcoma' },
+    { id: 'ewing',            label: 'Ewing Sarcoma' },
+    { id: 'gist',             label: 'GIST' },
+    { id: 'rhabdomyosarcoma', label: 'Rhabdomyosarcoma' },
+    { id: 'leiomyosarcoma',   label: 'Leiomyosarcoma' },
+    { id: 'liposarcoma',      label: 'Liposarcoma' },
+    { id: 'sarcoma_general',  label: 'Sarcoma (Other / UPS)' },
+  ]},
+  { section: 'Eye Tumors', category: 'solid', children: [
+    { id: 'uveal_melanoma',  label: 'Uveal Melanoma' },
+    { id: 'retinoblastoma',  label: 'Retinoblastoma' },
+  ]},
+  { section: 'Other', category: 'solid', children: [
+    { id: 'cup',   label: 'Cancer of Unknown Primary' },
+    { id: 'other', label: 'Other / Unclassified' },
+  ]},
+];
+
+// Broad groupings (12 parent categories)
+const BROAD_GROUPS = [
+  { id: 'lymphoma',   label: 'Lymphoma',    cls: 'heme-chip',
+    ids: ['dlbcl','follicular_lymphoma','mantle_cell','marginal_zone','burkitt',
+          'primary_mediastinal','transformed_fl','waldenstrom','ptcl','ctcl','hodgkin','b_cell_lymphomas','t_cell_lymphomas'] },
+  { id: 'leukemia',   label: 'Leukemia',    cls: 'heme-chip',
+    ids: ['cll','aml','all','apl','cml','cmml','hcl','mds','mpn','mds_mpn','acute_leukemias','chronic_leukemias'] },
+  { id: 'myeloma',    label: 'Myeloma / Plasma Cell', cls: 'heme-chip',
+    ids: ['multiple_myeloma','smoldering_myeloma','amyloidosis','mgus','mastocytosis','plasma_cell'] },
+  { id: 'lung',       label: 'Lung',        cls: 'solid-chip', ids: ['nsclc','sclc','mesothelioma','thymoma'] },
+  { id: 'breast',     label: 'Breast',      cls: 'solid-chip', ids: ['breast_her2','breast_tnbc','breast_hr','breast_general'] },
+  { id: 'gi',         label: 'GI',          cls: 'solid-chip', ids: ['colorectal','gastric','esophageal','pancreatic','hcc','biliary','appendix','anal','neuroendocrine'] },
+  { id: 'gu',         label: 'GU',          cls: 'solid-chip', ids: ['prostate','rcc','bladder','testicular','penile','adrenal'] },
+  { id: 'cns',        label: 'CNS',         cls: 'solid-chip', ids: ['glioblastoma','glioma','brain_mets','cns_lymphoma','meningioma','medulloblastoma'] },
+  { id: 'gynecologic',label: 'Gynecologic', cls: 'solid-chip', ids: ['ovarian','endometrial','cervical','uterine_sarcoma','vulvar','gestational'] },
+  { id: 'skin',       label: 'Skin',        cls: 'solid-chip', ids: ['melanoma','cscc','merkel','bcc','uveal_melanoma'] },
+  { id: 'head_neck',  label: 'Head & Neck', cls: 'solid-chip', ids: ['hnscc','nasopharyngeal','salivary','thyroid'] },
+  { id: 'sarcoma',    label: 'Sarcoma',     cls: 'solid-chip', ids: ['osteosarcoma','ewing','gist','rhabdomyosarcoma','leiomyosarcoma','liposarcoma','sarcoma_general'] },
+  { id: 'other',      label: 'Other',       cls: '', ids: ['cup','other','retinoblastoma'] },
+];
+
+// Get all leaf disease IDs from taxonomy
+function getAllLeafIds() {
+  const ids = [];
+  function walk(nodes) {
+    for (const n of nodes) {
+      if (n.children) walk(n.children);
+      else ids.push(n.id);
+    }
+  }
+  NCCN_TAXONOMY.forEach(s => walk(s.children));
+  return ids;
+}
+const ALL_LEAF_IDS = getAllLeafIds();
+
+const ALL_JOURNALS = {
+  general: [
+    { id: 'NEJM',          label: 'NEJM' },
+    { id: 'Lancet',        label: 'Lancet' },
+    { id: 'JAMA',          label: 'JAMA' },
+    { id: 'BMJ',           label: 'BMJ' },
+    { id: 'NEJM Evidence', label: 'NEJM Evidence' },
+  ],
+  specialist: [
+    { id: 'Lancet Oncol',    label: 'Lancet Oncol' },
+    { id: 'JCO',             label: 'JCO' },
+    { id: 'Blood',           label: 'Blood' },
+    { id: 'Cancer Cell',     label: 'Cancer Cell' },
+    { id: 'Nature Cancer',   label: 'Nature Cancer' },
+    { id: 'JAMA Oncol',      label: 'JAMA Oncol' },
+    { id: 'Ann Oncol',       label: 'Ann Oncol' },
+    { id: 'Cancer Discov',   label: 'Cancer Discov' },
+    { id: 'Clin Cancer Res', label: 'Clin Cancer Res' },
+    { id: 'J Hematol Oncol', label: 'J Hematol Oncol' },
+    { id: 'Leukemia',        label: 'Leukemia' },
+    { id: 'BJH',             label: 'BJH' },
+    { id: 'Eur J Cancer',    label: 'Eur J Cancer' },
+    { id: 'Blood Cancer J',  label: 'Blood Cancer J' },
+  ],
+};
+const ALL_JOURNAL_IDS = [...ALL_JOURNALS.general, ...ALL_JOURNALS.specialist].map(j => j.id);
+
+const DEFAULT_SETTINGS = {
+  granularity: 'broad',   // 'broad' | 'mid' | 'full'
+  diseases: ALL_LEAF_IDS,
+  journals: ALL_JOURNAL_IDS,
+  maxDisplay: 150,
+};
+
+function loadSettings() {
+  try {
+    const s = JSON.parse(localStorage.getItem(SETTINGS_KEY) || 'null');
+    if (!s) return { ...DEFAULT_SETTINGS, diseases: [...ALL_LEAF_IDS], journals: [...ALL_JOURNAL_IDS] };
+    return {
+      granularity: s.granularity || 'broad',
+      diseases:    s.diseases    || [...ALL_LEAF_IDS],
+      journals:    s.journals    || [...ALL_JOURNAL_IDS],
+      maxDisplay:  s.maxDisplay  || 150,
+    };
+  } catch { return { ...DEFAULT_SETTINGS, diseases: [...ALL_LEAF_IDS], journals: [...ALL_JOURNAL_IDS] }; }
+}
+
+function saveSettings(s) { localStorage.setItem(SETTINGS_KEY, JSON.stringify(s)); }
+
+function isCustomSettings(s) {
+  return s.diseases.length !== ALL_LEAF_IDS.length ||
+         s.journals.length !== ALL_JOURNAL_IDS.length ||
+         s.maxDisplay !== 150;
+}
+
+function toggleSettingsPanel() {
+  showingSettings = !showingSettings;
+  document.getElementById('settingsBtn').classList.toggle('active', showingSettings);
+  const panel = document.getElementById('settingsPanel');
+  if (!panel) return;
+  if (showingSettings) {
+    panel.classList.add('visible');
+    renderSettingsPanel();
+    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else {
+    panel.classList.remove('visible');
+  }
+}
+
+function renderSettingsPanel() {
+  const panel = document.getElementById('settingsPanel');
+  if (!panel) return;
+  const s = loadSettings();
+
+  // Granularity buttons
+  const granularityBtns = ['broad','mid','full'].map(g => {
+    const labels = { broad: 'Broad (12 groups)', mid: 'Mid-level (NCCN sections)', full: 'Full NCCN (~60 entities)' };
+    return `<button class="settings-chip ${s.granularity === g ? 'selected' : ''}"
+      onclick="setGranularity('${g}')" style="padding:6px 14px">${labels[g]}</button>`;
+  }).join('');
+
+  // Disease section
+  let diseaseHtml = '';
+  if (s.granularity === 'broad') {
+    diseaseHtml = renderBroadDiseaseChips(s);
+  } else if (s.granularity === 'mid') {
+    diseaseHtml = renderMidDiseaseChips(s);
+  } else {
+    diseaseHtml = renderFullDiseaseChips(s);
+  }
+
+  // Journal chips
+  const generalChips = ALL_JOURNALS.general.map(j =>
+    `<button class="settings-chip general-chip ${s.journals.includes(j.id) ? 'selected' : ''}"
+      data-jid="${j.id}" onclick="toggleJournalChip(this,'${j.id}')">${j.label}</button>`
+  ).join('');
+  const specialistChips = ALL_JOURNALS.specialist.map(j =>
+    `<button class="settings-chip ${s.journals.includes(j.id) ? 'selected' : ''}"
+      data-jid="${j.id}" onclick="toggleJournalChip(this,'${j.id}')">${j.label}</button>`
+  ).join('');
+
+  panel.innerHTML = `
+    <div class="settings-panel-header">
+      <div>
+        <div class="settings-panel-title">⚙ Personal Settings</div>
+        <div class="settings-panel-subtitle">Saved to your browser — persists across sessions on this device</div>
+      </div>
+    </div>
+    <div class="settings-body">
+      <div>
+        <div class="settings-section-title">🔍 Disease Granularity</div>
+        <div class="settings-chip-group">${granularityBtns}</div>
+      </div>
+      <div id="diseaseSection">
+        <div class="settings-section-title">🔬 Disease Areas</div>
+        <div style="display:flex;gap:6px;margin-bottom:10px;">
+          <button class="settings-chip selected" onclick="selectAllDiseases()" style="font-size:9px">Select All</button>
+          <button class="settings-chip" onclick="clearAllDiseases()" style="font-size:9px">Clear All</button>
+        </div>
+        ${diseaseHtml}
+      </div>
+      <div>
+        <div class="settings-section-title">📰 General Medical Journals</div>
+        <div style="display:flex;gap:6px;margin-bottom:8px;">
+          <button class="settings-chip selected" onclick="selectAllJournals('general')" style="font-size:9px">All</button>
+          <button class="settings-chip" onclick="clearAllJournals('general')" style="font-size:9px">Clear</button>
+        </div>
+        <div class="settings-chip-group" id="generalJournalGroup">${generalChips}</div>
+      </div>
+      <div>
+        <div class="settings-section-title">🩺 Oncology Specialist Journals</div>
+        <div style="display:flex;gap:6px;margin-bottom:8px;">
+          <button class="settings-chip selected" onclick="selectAllJournals('specialist')" style="font-size:9px">All</button>
+          <button class="settings-chip" onclick="clearAllJournals('specialist')" style="font-size:9px">Clear</button>
+        </div>
+        <div class="settings-chip-group" id="specialistJournalGroup">${specialistChips}</div>
+      </div>
+      <div>
+        <div class="settings-section-title">📊 Article Display Limit</div>
+        <div class="settings-row">
+          <input type="number" class="settings-number" id="maxDisplayInput"
+            value="${s.maxDisplay}" min="10" max="500" step="10">
+          <span class="settings-label">max articles shown per week</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <button class="settings-save-btn" onclick="applyAndSaveSettings()">✓ Save & Apply</button>
+        <button class="settings-reset-btn" onclick="resetSettings()">Reset to defaults</button>
+      </div>
+    </div>
+  `;
+}
+
+function renderBroadDiseaseChips(s) {
+  return `<div class="settings-chip-group" id="diseaseChipGroup">${
+    BROAD_GROUPS.map(g => {
+      const allSelected = g.ids.every(id => s.diseases.includes(id));
+      return `<button class="settings-chip ${g.cls} ${allSelected ? 'selected' : ''}"
+        data-broad="${g.id}" data-ids="${g.ids.join(',')}"
+        onclick="toggleBroadGroup(this)">${g.label}</button>`;
+    }).join('')
+  }</div>`;
+}
+
+function renderMidDiseaseChips(s) {
+  return NCCN_TAXONOMY.map(sec => {
+    const chips = sec.children.map(node => {
+      if (node.children) {
+        // Parent group
+        const childIds = node.children.map(c => c.id);
+        const allSel = childIds.every(id => s.diseases.includes(id));
+        return `<div style="margin-bottom:8px;">
+          <div style="font-size:9px;color:var(--text-muted);margin-bottom:4px;letter-spacing:0.06em">${node.label}</div>
+          <div style="display:flex;flex-wrap:wrap;gap:5px;">
+            ${node.children.map(c =>
+              `<button class="settings-chip ${sec.category==='heme'?'heme-chip':''} ${s.diseases.includes(c.id)?'selected':''}"
+                data-did="${c.id}" onclick="toggleDiseaseChip(this,'${c.id}')">${c.label}</button>`
+            ).join('')}
+          </div>
+        </div>`;
+      } else {
+        return `<button class="settings-chip ${sec.category==='heme'?'heme-chip':''} ${s.diseases.includes(node.id)?'selected':''}"
+          data-did="${node.id}" onclick="toggleDiseaseChip(this,'${node.id}')">${node.label}</button>`;
+      }
+    }).join('');
+    return `<div style="margin-bottom:16px;">
+      <div style="font-size:10px;font-weight:700;color:${sec.category==='heme'?'var(--heme)':'var(--solid)'};
+        margin-bottom:8px;text-transform:uppercase;letter-spacing:0.08em">${sec.section}</div>
+      <div class="settings-chip-group">${chips}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderFullDiseaseChips(s) {
+  return NCCN_TAXONOMY.map(sec => {
+    const chips = sec.children.map(node => {
+      if (node.children) {
+        const subchips = node.children.map(c =>
+          `<button class="settings-chip ${sec.category==='heme'?'heme-chip':''} ${s.diseases.includes(c.id)?'selected':''}"
+            data-did="${c.id}" onclick="toggleDiseaseChip(this,'${c.id}')">${c.label}</button>`
+        ).join('');
+        const childIds = node.children.map(c => c.id);
+        const allSel = childIds.every(id => s.diseases.includes(id));
+        return `<div style="margin-bottom:10px;padding:8px;background:var(--surface2);border-radius:8px;border:1px solid var(--border);">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <button class="settings-chip ${sec.category==='heme'?'heme-chip':''} ${allSel?'selected':''}"
+              data-group-ids="${childIds.join(',')}" onclick="toggleParentGroup(this)"
+              style="font-size:9px;font-weight:700">▶ ${node.label}</button>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:5px;padding-left:8px;">${subchips}</div>
+        </div>`;
+      } else {
+        return `<button class="settings-chip ${sec.category==='heme'?'heme-chip':''} ${s.diseases.includes(node.id)?'selected':''}"
+          data-did="${node.id}" onclick="toggleDiseaseChip(this,'${node.id}')">${node.label}</button>`;
+      }
+    }).join('');
+    return `<div style="margin-bottom:20px;">
+      <div style="font-size:10px;font-weight:700;color:${sec.category==='heme'?'var(--heme)':'var(--solid)'};
+        margin-bottom:8px;text-transform:uppercase;letter-spacing:0.08em">${sec.section}</div>
+      <div class="settings-chip-group" style="flex-direction:column;align-items:flex-start;">${chips}</div>
+    </div>`;
+  }).join('');
+}
+
+function setGranularity(g) {
+  const s = loadSettings();
+  s.granularity = g;
+  saveSettings(s);
+  renderSettingsPanel();
+}
+
+function toggleBroadGroup(btn) {
+  const ids = btn.dataset.ids.split(',');
+  const nowSelected = btn.classList.toggle('selected');
+  // Also update underlying leaf selections
+  const s = loadSettings();
+  if (nowSelected) {
+    ids.forEach(id => { if (!s.diseases.includes(id)) s.diseases.push(id); });
+  } else {
+    s.diseases = s.diseases.filter(id => !ids.includes(id));
+  }
+  saveSettings(s);
+}
+
+function toggleDiseaseChip(btn, id) {
+  btn.classList.toggle('selected');
+  // Update parent group button if in full mode
+  const parentBtn = btn.closest('[data-group-ids]');
+  if (parentBtn) {
+    const groupIds = parentBtn.dataset.groupIds.split(',');
+    const allSelected = groupIds.every(gid => {
+      const b = document.querySelector(`[data-did="${gid}"]`);
+      return b && b.classList.contains('selected');
+    });
+    parentBtn.classList.toggle('selected', allSelected);
+  }
+}
+
+function toggleParentGroup(btn) {
+  const ids = btn.dataset.groupIds.split(',');
+  const nowSelected = btn.classList.toggle('selected');
+  ids.forEach(id => {
+    const child = document.querySelector(`[data-did="${id}"]`);
+    if (child) child.classList.toggle('selected', nowSelected);
+  });
+}
+
+function toggleJournalChip(btn, id) { btn.classList.toggle('selected'); }
+
+function selectAllDiseases() {
+  document.querySelectorAll('[data-did],[data-broad],[data-group-ids]').forEach(b => b.classList.add('selected'));
+}
+function clearAllDiseases() {
+  document.querySelectorAll('[data-did],[data-broad],[data-group-ids]').forEach(b => b.classList.remove('selected'));
+}
+function selectAllJournals(type) {
+  const grp = type === 'general' ? 'generalJournalGroup' : 'specialistJournalGroup';
+  document.querySelectorAll(`#${grp} .settings-chip`).forEach(b => b.classList.add('selected'));
+}
+function clearAllJournals(type) {
+  const grp = type === 'general' ? 'generalJournalGroup' : 'specialistJournalGroup';
+  document.querySelectorAll(`#${grp} .settings-chip`).forEach(b => b.classList.remove('selected'));
+}
+
+function applyAndSaveSettings() {
+  const s = loadSettings();
+
+  // Collect selected diseases
+  let diseases = [];
+  if (s.granularity === 'broad') {
+    document.querySelectorAll('[data-broad].selected').forEach(btn => {
+      btn.dataset.ids.split(',').forEach(id => { if (!diseases.includes(id)) diseases.push(id); });
+    });
+  } else {
+    document.querySelectorAll('[data-did].selected').forEach(btn => {
+      diseases.push(btn.dataset.did);
+    });
+  }
+  if (!diseases.length) diseases = [...ALL_LEAF_IDS];
+
+  // Collect journals
+  const journals = [];
+  document.querySelectorAll('[data-jid].selected').forEach(btn => journals.push(btn.dataset.jid));
+
+  const maxDisplay = parseInt(document.getElementById('maxDisplayInput')?.value || '150', 10);
+
+  const newS = { granularity: s.granularity, diseases, journals, maxDisplay };
+  saveSettings(newS);
+  applyFilters();
+  updateSettingsBanner();
+
+  const btn = document.querySelector('.settings-save-btn');
+  if (btn) { btn.textContent = '✓ Saved!'; setTimeout(() => { btn.textContent = '✓ Save & Apply'; }, 1500); }
+}
+
+function resetSettings() {
+  saveSettings({ granularity: 'broad', diseases: [...ALL_LEAF_IDS], journals: [...ALL_JOURNAL_IDS], maxDisplay: 150 });
+  renderSettingsPanel();
+  applyFilters();
+  updateSettingsBanner();
+}
+
+function updateSettingsBanner() {
+  const banner = document.getElementById('settingsBanner');
+  if (!banner) return;
+  const s = loadSettings();
+  if (isCustomSettings(s)) {
+    const parts = [];
+    if (s.diseases.length < ALL_LEAF_IDS.length) parts.push(`${s.diseases.length} diseases`);
+    if (s.journals.length < ALL_JOURNAL_IDS.length) parts.push(`${s.journals.length} journals`);
+    if (s.maxDisplay !== 150) parts.push(`max ${s.maxDisplay}`);
+    banner.textContent = `⚙ Custom filter active: ${parts.join(' · ')} — click Settings to change`;
+    banner.classList.add('visible');
+  } else {
+    banner.classList.remove('visible');
+  }
 }
 
 // ─── Boot ─────────────────────────────────────────────────────────────────────
