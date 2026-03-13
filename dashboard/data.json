@@ -1,42 +1,13 @@
 {
-  "generated_at": "2026-03-13T14:12:26.906437Z",
+  "generated_at": "2026-03-13T14:17:44.744166Z",
   "week_label": "Mar 6–Mar 13, 2026",
   "lookback_days": 7,
   "stats": {
-    "total": 2,
-    "phase3": 2,
+    "total": 0,
+    "phase3": 0,
     "phase2": 0,
     "fda": 0,
     "review": 0
   },
-  "articles": [
-    {
-      "uid": "rss_36cbe7df4b",
-      "pmid": "",
-      "title": "A functional map of m<sup>6</sup>A sites in cancer",
-      "abstract": "<p>Nature Cancer, Published online: 13 March 2026; <a href=\"https://www.nature.com/articles/s43018-026-01137-y\">doi:10.1038/s43018-026-01137-y</a></p>RNA N6-methyladenosine (m6A) is the most abundant internal RNA modification, yet its functional landscape in cancer remains poorly defined. A study now introduces a METTL3-based RNA base-editing screen that maps functional m6A sites and reveals m6A-dependent translational activation of the tumor suppressor CHD9 in prostate cancer and beyond.",
-      "journal": "Nature Cancer",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "gu",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://www.nature.com/articles/s43018-026-01137-y",
-      "pubmed_link": ""
-    },
-    {
-      "uid": "rss_b99d0e78f6",
-      "pmid": "",
-      "title": "The genomic model P-CARE enables precision prostate cancer screening in a national healthcare system",
-      "abstract": "<p>Nature Cancer, Published online: 13 March 2026; <a href=\"https://www.nature.com/articles/s43018-025-01111-0\">doi:10.1038/s43018-025-01111-0</a></p>We developed and clinically implemented the genomic prostate cancer risk prediction model P-CARE that identifies men at a high or low risk of prostate cancer. P-CARE enabled the design and initiation of a precision screening trial across the national healthcare system in which it was developed.",
-      "journal": "Nature Cancer",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "leukemia",
-      "category": "heme",
-      "source": "rss",
-      "source_link": "https://www.nature.com/articles/s43018-025-01111-0",
-      "pubmed_link": ""
-    }
-  ]
+  "articles": []
 }
