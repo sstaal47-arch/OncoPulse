@@ -2,7 +2,7 @@ name: OncoPulse Weekly Literature Update
 
 on:
   schedule:
-    - cron: "0 6 * * 1"   # Every Monday at 6:00 AM UTC
+    - cron: "0 6 * * 1"
   workflow_dispatch:
     inputs:
       days:
@@ -13,10 +13,15 @@ on:
         description: "Max articles"
         required: false
         default: "300"
+      skip_altmetric:
+        description: "Skip Altmetric scoring (faster)"
+        required: false
+        default: "false"
 
 jobs:
   update-literature:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     permissions:
       contents: write
 
@@ -41,9 +46,14 @@ jobs:
           LOOKBACK_DAYS:  ${{ github.event.inputs.days || '7' }}
           MAX_ARTICLES:   ${{ github.event.inputs.max_articles || '300' }}
         run: |
+          SKIP_ALT=""
+          if [ "${{ github.event.inputs.skip_altmetric }}" = "true" ]; then
+            SKIP_ALT="--skip-altmetric"
+          fi
           python pipeline/fetch_and_summarize.py \
             --days ${{ github.event.inputs.days || 7 }} \
-            --max-articles ${{ github.event.inputs.max_articles || 300 }}
+            --max-articles ${{ github.event.inputs.max_articles || 300 }} \
+            $SKIP_ALT
 
       - name: Commit and push
         run: |
@@ -56,9 +66,16 @@ jobs:
       - name: Summary
         run: |
           echo "## OncoPulse Update" >> $GITHUB_STEP_SUMMARY
-          if [ -f dashboard/data.json ]; then
-            TOTAL=$(python3 -c "import json; d=json.load(open('dashboard/data.json')); print(d['stats']['total'])")
-            WEEK=$(python3 -c "import json; d=json.load(open('dashboard/data.json')); print(d['week_label'])")
-            echo "- **Week:** $WEEK" >> $GITHUB_STEP_SUMMARY
-            echo "- **Articles:** $TOTAL" >> $GITHUB_STEP_SUMMARY
-          fi
+          python3 -c "
+import json, os
+d = json.load(open('dashboard/data.json'))
+s = d['stats']
+lines = [
+  f'- **Week:** {d[\"week_label\"]}',
+  f'- **Articles:** {s[\"total\"]}',
+  f'- **With Altmetric score:** {s.get(\"with_altmetric\", \"N/A\")}',
+  f'- **Top Altmetric score:** {s.get(\"top_altmetric\", \"N/A\")}',
+  f'- **FDA:** {s[\"fda\"]} | **Phase 3:** {s[\"phase3\"]} | **Phase 2:** {s[\"phase2\"]}',
+]
+open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('\n'.join(lines) + '\n')
+" 2>/dev/null || echo "Summary skipped"
