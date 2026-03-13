@@ -1390,6 +1390,14 @@ function applyFilters() {
   filtered = filtered.slice(0, s.maxDisplay);
   renderArticles(filtered);
   document.getElementById('countNum').textContent = filtered.length;
+  // Update stats bar to reflect filtered counts
+  buildStats({
+    total:  filtered.length,
+    phase3: filtered.filter(a=>a.type==='phase3').length,
+    phase2: filtered.filter(a=>a.type==='phase2').length,
+    fda:    filtered.filter(a=>a.type==='fda').length,
+    review: filtered.filter(a=>a.type==='review').length,
+  });
   updateSavedBadge();
   updateDeletedBadge();
   updateSettingsBanner();
@@ -1743,8 +1751,8 @@ function renderSettingsPanel() {
       <div id="diseaseSection">
         <div class="settings-section-title">🔬 Disease Areas</div>
         <div style="display:flex;gap:6px;margin-bottom:10px;">
-          <button class="settings-chip selected" onclick="selectAllDiseases()" style="font-size:9px">Select All</button>
-          <button class="settings-chip" onclick="clearAllDiseases()" style="font-size:9px">Clear All</button>
+          <button onclick="selectAllDiseases()" style="font-size:11px;padding:5px 12px;border-radius:7px;border:1px solid var(--accent);background:rgba(77,159,255,0.12);color:var(--accent);font-family:'Syne',sans-serif;font-weight:700;cursor:pointer;">✓ Select All Categories</button>
+          <button onclick="clearAllDiseases()" style="font-size:11px;padding:5px 12px;border-radius:7px;border:1px solid var(--accent3);background:rgba(255,107,107,0.08);color:var(--accent3);font-family:'Syne',sans-serif;font-weight:700;cursor:pointer;">✕ Clear All Categories</button>
         </div>
         ${diseaseHtml}
       </div>
