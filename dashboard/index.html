@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>OncoPulse — Weekly Literature Review</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -1259,7 +1262,7 @@ function hideTtsBar() { document.getElementById('ttsBar').classList.remove('visi
 
 // ─── Data loading ─────────────────────────────────────────────────────────────
 async function loadData() {
-  const r = await fetch('data.json');
+  const r = await fetch('data.json?v=' + Date.now());
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   return r.json();
 }
