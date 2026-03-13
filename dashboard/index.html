@@ -265,31 +265,33 @@
   }
 
   .card-link {
-    font-size: 10px;
-    color: var(--text-dim);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
     text-decoration: none;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
     display: flex;
     align-items: center;
     gap: 4px;
-    transition: color 0.15s;
-    border: 1px solid var(--border);
-    border-radius: 5px;
-    padding: 4px 10px;
+    transition: all 0.15s;
+    border: 1px solid rgba(77,159,255,0.4);
+    border-radius: 6px;
+    padding: 5px 12px;
+    background: rgba(77,159,255,0.07);
   }
-  .card-link:hover { color: var(--accent); border-color: var(--accent); }
-  .card-link.pubmed { color: var(--text-muted); }
-  .card-link.pubmed:hover { color: var(--accent4); border-color: var(--accent4); }
+  .card-link:hover { background: rgba(77,159,255,0.18); border-color: var(--accent); }
+  .card-link.pubmed { color: var(--accent4); border-color: rgba(255,209,102,0.4); background: rgba(255,209,102,0.06); }
+  .card-link.pubmed:hover { background: rgba(255,209,102,0.15); border-color: var(--accent4); }
 
   .speak-btn {
     margin-left: auto;
-    width: 26px;
-    height: 26px;
-    border-radius: 5px;
-    border: 1px solid var(--border);
-    background: var(--surface2);
-    color: var(--text-dim);
-    font-size: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 7px;
+    border: 1px solid rgba(0,201,167,0.35);
+    background: rgba(0,201,167,0.06);
+    color: var(--accent2);
+    font-size: 14px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -297,7 +299,7 @@
     transition: all 0.15s;
     flex-shrink: 0;
   }
-  .speak-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .speak-btn:hover { border-color: var(--accent2); background: rgba(0,201,167,0.15); }
   .speak-btn.speaking { border-color: var(--accent); color: var(--accent); animation: speakPulse 1.2s ease-in-out infinite; }
   @keyframes speakPulse { 0%,100%{box-shadow:0 0 0 0 rgba(0,201,167,.4)} 50%{box-shadow:0 0 0 4px rgba(0,201,167,0)} }
 
@@ -360,13 +362,13 @@
 
   /* ── Favorites ── */
   .fav-btn {
-    width: 26px;
-    height: 26px;
-    border-radius: 5px;
-    border: 1px solid var(--border);
-    background: var(--surface2);
-    color: var(--text-dim);
-    font-size: 13px;
+    width: 32px;
+    height: 32px;
+    border-radius: 7px;
+    border: 1px solid rgba(255,209,102,0.35);
+    background: rgba(255,209,102,0.06);
+    color: var(--accent4);
+    font-size: 15px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -374,11 +376,11 @@
     transition: all 0.15s;
     flex-shrink: 0;
   }
-  .fav-btn:hover { border-color: var(--accent4); color: var(--accent4); }
+  .fav-btn:hover { border-color: var(--accent4); background: rgba(255,209,102,0.15); }
   .fav-btn.saved {
     border-color: var(--accent4);
     color: var(--accent4);
-    background: rgba(255,209,102,0.1);
+    background: rgba(255,209,102,0.18);
   }
 
   .saved-tab-btn {
@@ -644,13 +646,13 @@
   }
   .settings-active-banner.visible { display: flex; }
   .del-btn {
-    width: 26px;
-    height: 26px;
-    border-radius: 5px;
-    border: 1px solid var(--border);
-    background: var(--surface2);
-    color: var(--text-dim);
-    font-size: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 7px;
+    border: 1px solid rgba(255,107,107,0.35);
+    background: rgba(255,107,107,0.06);
+    color: var(--accent3);
+    font-size: 14px;
     cursor: pointer;
     display: flex;
     align-items: center;
