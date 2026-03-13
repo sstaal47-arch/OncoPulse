@@ -12,7 +12,7 @@ on:
       max_articles:
         description: "Max articles"
         required: false
-        default: "100"
+        default: "300"
 
 jobs:
   update-literature:
@@ -39,11 +39,11 @@ jobs:
           OUTPUT_DIR:     ./dashboard
           CACHE_DIR:      ./pipeline/.cache
           LOOKBACK_DAYS:  ${{ github.event.inputs.days || '7' }}
-          MAX_ARTICLES:   ${{ github.event.inputs.max_articles || '100' }}
+          MAX_ARTICLES:   ${{ github.event.inputs.max_articles || '300' }}
         run: |
           python pipeline/fetch_and_summarize.py \
             --days ${{ github.event.inputs.days || 7 }} \
-            --max-articles ${{ github.event.inputs.max_articles || 100 }}
+            --max-articles ${{ github.event.inputs.max_articles || 300 }}
 
       - name: Commit and push
         run: |
