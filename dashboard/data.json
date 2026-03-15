@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-15T15:36:17.421901Z",
+  "generated_at": "2026-03-15T16:23:35.813957Z",
   "week_label": "Mar 8–Mar 15, 2026",
   "lookback_days": 7,
   "stats": {
-    "total": 265,
-    "phase3": 221,
-    "phase2": 24,
+    "total": 243,
+    "phase3": 200,
+    "phase2": 23,
     "fda": 0,
     "review": 20,
     "with_altmetric": 0,
@@ -70,25 +70,6 @@
       "rank": 3
     },
     {
-      "uid": "rss_314e1c4e6f",
-      "pmid": "",
-      "title": "[Correspondence] National lung cancer screening programme in Brazil: an urgent need",
-      "abstract": "Lung cancer is a major public health problem in Brazil; estimates from GLOBOCAN, produced by the International Agency for Research on Cancer, showed 44 213 new cases and 38 292 deaths in the country from lung cancer in 2022.1 The disease is associated with high morbidity, mortality, reduced quality of life, loss of productivity, and a considerably low survival rate.1 Lung cancer also imposes high costs on the Brazilian public health system (Sistema Único de Saúde [SUS]).2",
-      "journal": "Lancet",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "other",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00054-1/fulltext?rss=yes",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 4
-    },
-    {
       "uid": "rss_e570178050",
       "pmid": "",
       "title": "[Articles] Pimicotinib versus placebo for tenosynovial giant cell tumour (MANEUVER): an international, randomised, placebo-controlled, phase 3 trial",
@@ -105,45 +86,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 5
-    },
-    {
-      "uid": "rss_5416dcb55a",
-      "pmid": "",
-      "title": "Individualized Perioperative Blood Pressure Management in Major Abdominal Surgery—Reply",
-      "abstract": "In Reply Dr Miyazaki’s Letter to the Editor on the IMPROVE-multi trial—which reported that individualized perioperative blood pressure management based on preoperative mean nighttime MAP did not improve outcomes compared with maintaining MAP at 65 mm Hg or greater—correctly notes that maintaining intraoperative blood pressure using vasopressors (which themselves may be associated with acute kidney injury) does not necessarily ensure adequate end-organ perfusion. In our trial, interventions to maintain blood pressure targets were left to the discretion of treating anesthesiologists skilled in identifying underlying causes of hypotension and intervening appropriately. Intraoperative hypotension can be caused by vasodilation, hypovolemia, bradycardia, and myocardial depression. From a pathophysiologic perspective, hypotension should thus be specifically treated with vasopressors, fluids, chronotropic agents, or inotropes to directly address the underlying cause(s)—and not always with vasopressors. However, it still needs to be investigated in clinical trials whether blood pressure management based on distinct hypotension endotypes helps avoid organ injury. The IMPROVE-multi trial focused on blood pressure (which must be monitored in every patient during surgery) and did not include systematic monitoring of blood flow variables such as stroke volume and cardiac output.",
-      "journal": "JAMA",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "neuroendocrine",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://jamanetwork.com/journals/jama/fullarticle/2845043",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 6
-    },
-    {
-      "uid": "rss_56d1148a77",
-      "pmid": "",
-      "title": "Novel Airflow System for Use in Critical Avalanche Burial",
-      "abstract": "To the Editor We read with great interest the recent randomized clinical trial that described the potential benefit of an airflow system allowing avalanche-buried individuals to survive longer by maintaining better oxygenation without an increase in end-tidal carbon dioxide. The authors deserve recognition for successfully conducting such a challenging study in high-altitude and winter conditions.",
-      "journal": "JAMA",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "other",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://jamanetwork.com/journals/jama/fullarticle/2844759",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 7
+      "rank": 4
     },
     {
       "uid": "rss_eb4edc62d3",
@@ -162,7 +105,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 8
+      "rank": 5
     },
     {
       "uid": "rss_aeed08973c",
@@ -181,7 +124,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 9
+      "rank": 6
     },
     {
       "uid": "rss_29d8fb8829",
@@ -200,7 +143,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 10
+      "rank": 7
     },
     {
       "uid": "rss_8db7847b77",
@@ -219,7 +162,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 11
+      "rank": 8
     },
     {
       "uid": "rss_ff41ff62eb",
@@ -238,7 +181,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 12
+      "rank": 9
     },
     {
       "uid": "rss_3efddc8454",
@@ -257,7 +200,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 13
+      "rank": 10
     },
     {
       "uid": "rss_dcee61469a",
@@ -276,7 +219,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 14
+      "rank": 11
     },
     {
       "uid": "rss_df9f4436e0",
@@ -295,7 +238,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 15
+      "rank": 12
     },
     {
       "uid": "rss_6e496e91be",
@@ -314,7 +257,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 16
+      "rank": 13
     },
     {
       "uid": "rss_dee418e02b",
@@ -333,83 +276,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 17
-    },
-    {
-      "uid": "rss_dc7862a447",
-      "pmid": "",
-      "title": "[Correspondence] AI-assisted screening for pancreatic cancer",
-      "abstract": "I appreciate the excellent work by Natólia Alves and colleagues,1 comparing artificial intelligence (AI) and radiologists in pancreatic cancer detection using standard of care CT scans (PANORAMA study). The paper is a milestone in evaluating the real-world diagnostic performance of an AI system for the detection of pancreatic ductal adenocarcinoma (PDAC) on contrast-enhanced CT. This important advance will facilitate PDAC surveillance of individuals who are at high risk.2 However, PANORAMA study's AI system1 is not suitable for PDAC screening of people who are at average risk of PDAC and are asymptomatic.",
-      "journal": "Lancet Oncol",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "pancreatic",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(25)00719-3/fulltext?rss=yes",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 18
-    },
-    {
-      "uid": "rss_cce237aa06",
-      "pmid": "",
-      "title": "[Correspondence] AI-assisted screening for pancreatic cancer – Authors' reply",
-      "abstract": "We thank Hans Scherübl and Misha D P Luyer1 for their insightful comments on the PANORAMA study,2 regarding the challenges and opportunities of artificial intelligence (AI)-assisted detection of pancreatic ductal adenocarcinoma (PDAC), particularly in early-stage disease.",
-      "journal": "Lancet Oncol",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "pancreatic",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(26)00054-9/fulltext?rss=yes",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 19
-    },
-    {
-      "uid": "rss_32bfd9ca06",
-      "pmid": "",
-      "title": "[Correspondence] Fuzuloparib plus apatinib in BRCA-mutated breast cancer: balancing efficacy and accessibility in regional China",
-      "abstract": "We congratulate Huiping Li and colleagues on the FABULOUS trial,1 which establishes fuzuloparib, with or without apatinib, as a viable option for HER2-negative metastatic breast cancer with germline BRCA1/2 mutations. As clinicians practising in a prefecture-level hospital in the Hunan province, we consider these findings from the perspective of accessibility and real-world applicability in resource-constrained settings.",
-      "journal": "Lancet Oncol",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "breast_general",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(25)00752-1/fulltext?rss=yes",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 20
-    },
-    {
-      "uid": "rss_840aa88ac1",
-      "pmid": "",
-      "title": "[Correspondence] Standardising MET amplification testing: limitations of the GCN ≥6 criterion",
-      "abstract": "We read with great interest the phase 2 KUNPENG trial by Yi-Long Wu and colleagues.1 The reported objective response rate of 48·8% with vebreltinib in MET amplification-driven non-small-cell lung cancer is promising. However, the use of a gene copy number (GCN) of six or higher as the sole enrolment criterion obscures crucial biological heterogeneity within this population. This methodological choice fundamentally limits the interpretability of the efficacy signal and poses a considerable risk for the design of the planned phase 3 trial.",
-      "journal": "Lancet Oncol",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "other",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(25)00758-2/fulltext?rss=yes",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 21
+      "rank": 14
     },
     {
       "uid": "rss_41adec5803",
@@ -428,7 +295,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 22
+      "rank": 15
     },
     {
       "uid": "rss_015164efc5",
@@ -447,7 +314,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 23
+      "rank": 16
     },
     {
       "uid": "rss_357ff971f5",
@@ -466,7 +333,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 24
+      "rank": 17
     },
     {
       "uid": "rss_dc450b0afe",
@@ -485,7 +352,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 25
+      "rank": 18
     },
     {
       "uid": "rss_e4c35069cc",
@@ -504,7 +371,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 26
+      "rank": 19
     },
     {
       "uid": "rss_80606ec691",
@@ -523,7 +390,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 27
+      "rank": 20
     },
     {
       "uid": "rss_cdb00a6341",
@@ -542,7 +409,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 28
+      "rank": 21
     },
     {
       "uid": "rss_fdf01632bd",
@@ -561,7 +428,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 29
+      "rank": 22
     },
     {
       "uid": "rss_6669c9c943",
@@ -580,7 +447,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 30
+      "rank": 23
     },
     {
       "uid": "rss_9181e16c41",
@@ -599,7 +466,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 31
+      "rank": 24
     },
     {
       "uid": "rss_680bac8e94",
@@ -618,7 +485,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 32
+      "rank": 25
     },
     {
       "uid": "rss_672bcc854e",
@@ -637,7 +504,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 33
+      "rank": 26
     },
     {
       "uid": "rss_46e5f40e8c",
@@ -656,7 +523,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 34
+      "rank": 27
     },
     {
       "uid": "rss_6075cbe8f5",
@@ -675,7 +542,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 35
+      "rank": 28
     },
     {
       "uid": "rss_043df04bb3",
@@ -694,7 +561,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 36
+      "rank": 29
     },
     {
       "uid": "rss_6bee1820b3",
@@ -713,7 +580,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 37
+      "rank": 30
     },
     {
       "uid": "rss_737d1e4a78",
@@ -732,7 +599,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 38
+      "rank": 31
     },
     {
       "uid": "rss_2752cb4e49",
@@ -751,7 +618,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 39
+      "rank": 32
     },
     {
       "uid": "rss_59f91cc98e",
@@ -770,7 +637,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 40
+      "rank": 33
     },
     {
       "uid": "rss_d58f0352d0",
@@ -789,7 +656,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 41
+      "rank": 34
     },
     {
       "uid": "rss_4cbf3c4cec",
@@ -808,83 +675,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 42
-    },
-    {
-      "uid": "rss_fe22f30fc6",
-      "pmid": "",
-      "title": "Erratum: Rise and Fall of Neoadjuvant Carboplatin for Human Epidermal Growth Factor Receptor 2–Positive Breast Cancer",
-      "abstract": "Journal of Clinical Oncology, Volume 44, Issue 8, Page 723-723, March 2026. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "all",
-      "category": "heme",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-26-00219?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 43
-    },
-    {
-      "uid": "rss_1909100877",
-      "pmid": "",
-      "title": "Erratum: BR.31 Trial: Adjuvant Durvalumab as the Third Contender in Resected Non–Small Cell Lung Cancer",
-      "abstract": "Journal of Clinical Oncology, Volume 44, Issue 8, Page 723-723, March 2026. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "all",
-      "category": "heme",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-26-00221?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 44
-    },
-    {
-      "uid": "rss_b5d498b22e",
-      "pmid": "",
-      "title": "Erratum: Efficacy and Biomarker Study of Bevacizumab for Hearing Loss Resulting From Neurofibromatosis Type 2–Associated Vestibular Schwannomas",
-      "abstract": "Journal of Clinical Oncology, Volume 44, Issue 8, Page 723-723, March 2026. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "other",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-26-00231?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 45
-    },
-    {
-      "uid": "rss_ee74f2776c",
-      "pmid": "",
-      "title": "Reply to: Enhancing Representation and Reporting of Body Mass Index in Cancer Randomized Clinical Trials",
-      "abstract": "Journal of Clinical Oncology, Volume 44, Issue 8, Page 721-722, March 2026. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "other",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-25-02689?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 46
+      "rank": 35
     },
     {
       "uid": "rss_5ec34785ec",
@@ -903,7 +694,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 47
+      "rank": 36
     },
     {
       "uid": "rss_8096e1a0ac",
@@ -922,7 +713,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 48
+      "rank": 37
     },
     {
       "uid": "rss_468989f87e",
@@ -941,7 +732,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 49
+      "rank": 38
     },
     {
       "uid": "rss_31af278bef",
@@ -960,7 +751,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 50
+      "rank": 39
     },
     {
       "uid": "rss_2d7bdf4b67",
@@ -979,7 +770,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 51
+      "rank": 40
     },
     {
       "uid": "rss_8c1767d263",
@@ -998,7 +789,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 52
+      "rank": 41
     },
     {
       "uid": "rss_9324c97d14",
@@ -1017,7 +808,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 53
+      "rank": 42
     },
     {
       "uid": "rss_7715bf0f49",
@@ -1036,7 +827,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 54
+      "rank": 43
     },
     {
       "uid": "rss_2b70e13b49",
@@ -1055,7 +846,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 55
+      "rank": 44
     },
     {
       "uid": "rss_5619be13ad",
@@ -1074,7 +865,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 56
+      "rank": 45
     },
     {
       "uid": "rss_be8c3567d7",
@@ -1093,7 +884,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 57
+      "rank": 46
     },
     {
       "uid": "rss_715f766975",
@@ -1112,7 +903,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 58
+      "rank": 47
     },
     {
       "uid": "rss_535a287a08",
@@ -1131,7 +922,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 59
+      "rank": 48
     },
     {
       "uid": "rss_31409daa64",
@@ -1150,7 +941,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 60
+      "rank": 49
     },
     {
       "uid": "rss_9e773bdb32",
@@ -1169,7 +960,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 61
+      "rank": 50
     },
     {
       "uid": "rss_06383f97fa",
@@ -1188,7 +979,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 62
+      "rank": 51
     },
     {
       "uid": "rss_c0dbe3df44",
@@ -1207,7 +998,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 63
+      "rank": 52
     },
     {
       "uid": "rss_d060193ab8",
@@ -1226,7 +1017,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 64
+      "rank": 53
     },
     {
       "uid": "rss_e8da590e71",
@@ -1245,7 +1036,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 65
+      "rank": 54
     },
     {
       "uid": "rss_4bbad54816",
@@ -1264,7 +1055,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 66
+      "rank": 55
     },
     {
       "uid": "rss_05c58b27a6",
@@ -1283,7 +1074,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 67
+      "rank": 56
     },
     {
       "uid": "rss_89ab2bbce8",
@@ -1302,7 +1093,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 68
+      "rank": 57
     },
     {
       "uid": "rss_54e93eef24",
@@ -1321,7 +1112,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 69
+      "rank": 58
     },
     {
       "uid": "rss_9014347a5f",
@@ -1340,7 +1131,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 70
+      "rank": 59
     },
     {
       "uid": "rss_ef063d6d52",
@@ -1359,7 +1150,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 71
+      "rank": 60
     },
     {
       "uid": "rss_f602f161f5",
@@ -1378,7 +1169,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 72
+      "rank": 61
     },
     {
       "uid": "rss_8e8cb41362",
@@ -1397,7 +1188,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 73
+      "rank": 62
     },
     {
       "uid": "rss_8269bcbae7",
@@ -1416,7 +1207,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 74
+      "rank": 63
     },
     {
       "uid": "rss_5c0df8a977",
@@ -1435,7 +1226,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 75
+      "rank": 64
     },
     {
       "uid": "rss_7c6363aa95",
@@ -1454,7 +1245,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 76
+      "rank": 65
     },
     {
       "uid": "rss_04d5fb8919",
@@ -1473,7 +1264,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 77
+      "rank": 66
     },
     {
       "uid": "rss_1874934c24",
@@ -1492,7 +1283,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 78
+      "rank": 67
     },
     {
       "uid": "rss_ab37b2b76e",
@@ -1511,7 +1302,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 79
+      "rank": 68
     },
     {
       "uid": "rss_0b835826a3",
@@ -1530,7 +1321,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 80
+      "rank": 69
     },
     {
       "uid": "rss_a192124b22",
@@ -1549,7 +1340,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 81
+      "rank": 70
     },
     {
       "uid": "rss_c84efc5603",
@@ -1568,7 +1359,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 82
+      "rank": 71
     },
     {
       "uid": "rss_7f096b184a",
@@ -1587,7 +1378,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 83
+      "rank": 72
     },
     {
       "uid": "rss_c69a537fb0",
@@ -1606,7 +1397,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 84
+      "rank": 73
     },
     {
       "uid": "rss_8762923f61",
@@ -1625,7 +1416,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 85
+      "rank": 74
     },
     {
       "uid": "rss_ac0b599b19",
@@ -1644,7 +1435,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 86
+      "rank": 75
     },
     {
       "uid": "rss_6bbc833324",
@@ -1663,7 +1454,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 87
+      "rank": 76
     },
     {
       "uid": "rss_eaf5c56d84",
@@ -1682,7 +1473,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 88
+      "rank": 77
     },
     {
       "uid": "rss_3bc187f2cb",
@@ -1701,7 +1492,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 89
+      "rank": 78
     },
     {
       "uid": "rss_3644be74bc",
@@ -1720,7 +1511,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 90
+      "rank": 79
     },
     {
       "uid": "rss_5c284a1a8c",
@@ -1739,7 +1530,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 91
+      "rank": 80
     },
     {
       "uid": "rss_f4dd52e64c",
@@ -1758,7 +1549,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 92
+      "rank": 81
     },
     {
       "uid": "rss_9ba3c77273",
@@ -1777,7 +1568,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 93
+      "rank": 82
     },
     {
       "uid": "rss_1306665460",
@@ -1796,7 +1587,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 94
+      "rank": 83
     },
     {
       "uid": "rss_07e0083cb1",
@@ -1815,7 +1606,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 95
+      "rank": 84
     },
     {
       "uid": "rss_d9f4269696",
@@ -1834,7 +1625,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 96
+      "rank": 85
     },
     {
       "uid": "rss_afcb93a8cd",
@@ -1853,7 +1644,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 97
+      "rank": 86
     },
     {
       "uid": "rss_5d0bc820a2",
@@ -1872,7 +1663,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 98
+      "rank": 87
     },
     {
       "uid": "rss_080f6e224e",
@@ -1891,7 +1682,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 99
+      "rank": 88
     },
     {
       "uid": "rss_db0d7de2f1",
@@ -1910,7 +1701,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 100
+      "rank": 89
     },
     {
       "uid": "rss_01af3f5903",
@@ -1929,7 +1720,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 101
+      "rank": 90
     },
     {
       "uid": "rss_40cf4c6b26",
@@ -1948,7 +1739,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 102
+      "rank": 91
     },
     {
       "uid": "rss_e2c239dcaf",
@@ -1967,7 +1758,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 103
+      "rank": 92
     },
     {
       "uid": "rss_7ac7eff0f3",
@@ -1986,7 +1777,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 104
+      "rank": 93
     },
     {
       "uid": "rss_e8ab72d32d",
@@ -2005,7 +1796,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 105
+      "rank": 94
     },
     {
       "uid": "rss_96f7f329c2",
@@ -2024,26 +1815,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 106
-    },
-    {
-      "uid": "rss_11358d6ec8",
-      "pmid": "",
-      "title": "Reply to: Mifamurtide in Nonmetastatic High-Grade Osteosarcoma",
-      "abstract": "Journal of Clinical Oncology, Ahead of Print. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "osteosarcoma",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-25-02624?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 107
+      "rank": 95
     },
     {
       "uid": "rss_e9bfa50386",
@@ -2062,7 +1834,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 108
+      "rank": 96
     },
     {
       "uid": "rss_fe34424bd3",
@@ -2081,7 +1853,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 109
+      "rank": 97
     },
     {
       "uid": "rss_319bc1e81c",
@@ -2100,7 +1872,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 110
+      "rank": 98
     },
     {
       "uid": "rss_d3d2b9b4ec",
@@ -2119,7 +1891,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 111
+      "rank": 99
     },
     {
       "uid": "rss_cdd8547242",
@@ -2138,7 +1910,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 112
+      "rank": 100
     },
     {
       "uid": "rss_647841409b",
@@ -2157,7 +1929,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 113
+      "rank": 101
     },
     {
       "uid": "rss_6a6d53688d",
@@ -2176,7 +1948,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 114
+      "rank": 102
     },
     {
       "uid": "rss_d38113356c",
@@ -2195,7 +1967,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 115
+      "rank": 103
     },
     {
       "uid": "rss_ed04e28f73",
@@ -2214,7 +1986,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 116
+      "rank": 104
     },
     {
       "uid": "rss_a2e00a9dfc",
@@ -2233,7 +2005,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 117
+      "rank": 105
     },
     {
       "uid": "rss_1199c09af9",
@@ -2252,178 +2024,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 118
-    },
-    {
-      "uid": "rss_ec9b3d669c",
-      "pmid": "",
-      "title": "Reply to: Focal Boosting in Localized Prostate Cancer in the Era of Systemic Therapy and Prostate-Specific Membrane Antigen Imaging",
-      "abstract": "Journal of Clinical Oncology, Ahead of Print. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "prostate",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-25-02744?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 119
-    },
-    {
-      "uid": "rss_65649d7d01",
-      "pmid": "",
-      "title": "Reply to: Can Pathologic Complete Response Serve as a Valid Surrogate End Point?",
-      "abstract": "Journal of Clinical Oncology, Ahead of Print. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "other",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-25-02767?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 120
-    },
-    {
-      "uid": "rss_c235c41db6",
-      "pmid": "",
-      "title": "Reply to: Blood-Brain Barrier Heterogeneity in NRG BN007: Implications for Immunotherapy Delivery",
-      "abstract": "Journal of Clinical Oncology, Ahead of Print. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "other",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-25-02821?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 121
-    },
-    {
-      "uid": "rss_8c4901b460",
-      "pmid": "",
-      "title": "Reply to: From Thresholds to Tumor Sidedness: Reframing Human Epidermal Growth Factor Receptor 2 in Colorectal Cancer",
-      "abstract": "Journal of Clinical Oncology, Ahead of Print. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "colorectal",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-25-02817?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 122
-    },
-    {
-      "uid": "rss_e2190b44e6",
-      "pmid": "",
-      "title": "Reply to: Delta-Like Ligand 3 Expression Across Lung Neuroendocrine Subtypes: Interpreting Response in Small Cell Lung Cancer and Beyond",
-      "abstract": "Journal of Clinical Oncology, Ahead of Print. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "all",
-      "category": "heme",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-25-02654?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 123
-    },
-    {
-      "uid": "rss_8a5d6fdfaf",
-      "pmid": "",
-      "title": "Reply to: Quality of Chemoradiotherapy in Esophageal Adenocarcinoma Matters",
-      "abstract": "Journal of Clinical Oncology, Ahead of Print. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "esophageal",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-25-03030?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 124
-    },
-    {
-      "uid": "rss_e96926bae2",
-      "pmid": "",
-      "title": "Reply to: Immune Checkpoint Blockade in Deficient Mismatch Repair/Microsatellite Instability-High Gastric Cancer: Solid Evidence or Premature Extrapolation?",
-      "abstract": "Journal of Clinical Oncology, Ahead of Print. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "colorectal",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-25-03022?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 125
-    },
-    {
-      "uid": "rss_9f052d52f2",
-      "pmid": "",
-      "title": "Reply to: Beyond Parametric Assumptions: Unsupervised Methods Enhance DNA Repair Gene Discovery in SMARCAL1 Identification",
-      "abstract": "Journal of Clinical Oncology, Ahead of Print. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "other",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-26-00249?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 126
-    },
-    {
-      "uid": "rss_d5ce8c842d",
-      "pmid": "",
-      "title": "Reply to: Methodologic Considerations for Subsequent Colorectal Cancer in Survivors of Childhood Cancer",
-      "abstract": "Journal of Clinical Oncology, Ahead of Print. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "colorectal",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-26-00051?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 127
+      "rank": 106
     },
     {
       "uid": "rss_df92637cd0",
@@ -2442,7 +2043,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 128
+      "rank": 107
     },
     {
       "uid": "rss_8280fd7080",
@@ -2461,7 +2062,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 129
+      "rank": 108
     },
     {
       "uid": "rss_259bf94c7c",
@@ -2480,7 +2081,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 130
+      "rank": 109
     },
     {
       "uid": "rss_39a8d240e4",
@@ -2499,7 +2100,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 131
+      "rank": 110
     },
     {
       "uid": "rss_a033dddece",
@@ -2518,7 +2119,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 132
+      "rank": 111
     },
     {
       "uid": "rss_7263226323",
@@ -2537,7 +2138,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 133
+      "rank": 112
     },
     {
       "uid": "rss_8aca83b6f8",
@@ -2556,7 +2157,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 134
+      "rank": 113
     },
     {
       "uid": "rss_78d1667a6c",
@@ -2575,7 +2176,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 135
+      "rank": 114
     },
     {
       "uid": "rss_f57c0c71ba",
@@ -2594,7 +2195,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 136
+      "rank": 115
     },
     {
       "uid": "rss_f1d67da765",
@@ -2613,7 +2214,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 137
+      "rank": 116
     },
     {
       "uid": "rss_3ea39ce68c",
@@ -2632,7 +2233,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 138
+      "rank": 117
     },
     {
       "uid": "rss_1071500570",
@@ -2651,7 +2252,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 139
+      "rank": 118
     },
     {
       "uid": "rss_b8044dd3b1",
@@ -2670,7 +2271,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 140
+      "rank": 119
     },
     {
       "uid": "rss_14ee8524fc",
@@ -2689,7 +2290,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 141
+      "rank": 120
     },
     {
       "uid": "rss_6348f47b1c",
@@ -2708,7 +2309,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 142
+      "rank": 121
     },
     {
       "uid": "rss_9a2af21c2b",
@@ -2727,7 +2328,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 143
+      "rank": 122
     },
     {
       "uid": "rss_2fba2c02b5",
@@ -2746,7 +2347,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 144
+      "rank": 123
     },
     {
       "uid": "rss_57e54bb1dd",
@@ -2765,7 +2366,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 145
+      "rank": 124
     },
     {
       "uid": "rss_586b7fbe8e",
@@ -2784,7 +2385,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 146
+      "rank": 125
     },
     {
       "uid": "rss_61a8e85a28",
@@ -2803,7 +2404,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 147
+      "rank": 126
     },
     {
       "uid": "rss_9ffadaacb7",
@@ -2822,7 +2423,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 148
+      "rank": 127
     },
     {
       "uid": "rss_cdccab4056",
@@ -2841,7 +2442,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 149
+      "rank": 128
     },
     {
       "uid": "rss_496e9324c5",
@@ -2860,7 +2461,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 150
+      "rank": 129
     },
     {
       "uid": "rss_efe5d14e58",
@@ -2879,7 +2480,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 151
+      "rank": 130
     },
     {
       "uid": "rss_36cbe7df4b",
@@ -2898,7 +2499,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 152
+      "rank": 131
     },
     {
       "uid": "rss_b99d0e78f6",
@@ -2917,7 +2518,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 153
+      "rank": 132
     },
     {
       "uid": "rss_67e52779c4",
@@ -2936,7 +2537,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 154
+      "rank": 133
     },
     {
       "uid": "rss_0a9b749e61",
@@ -2955,7 +2556,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 155
+      "rank": 134
     },
     {
       "uid": "rss_fd0811fc9b",
@@ -2974,7 +2575,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 156
+      "rank": 135
     },
     {
       "uid": "rss_061781d6a1",
@@ -2993,7 +2594,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 157
+      "rank": 136
     },
     {
       "uid": "rss_a8a00ca29b",
@@ -3012,7 +2613,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 158
+      "rank": 137
     },
     {
       "uid": "rss_d6721970e2",
@@ -3031,7 +2632,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 159
+      "rank": 138
     },
     {
       "uid": "rss_c85e4edbeb",
@@ -3050,7 +2651,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 160
+      "rank": 139
     },
     {
       "uid": "rss_2896d09838",
@@ -3069,7 +2670,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 161
+      "rank": 140
     },
     {
       "uid": "rss_9c741a382d",
@@ -3088,7 +2689,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 162
+      "rank": 141
     },
     {
       "uid": "rss_2a930d160f",
@@ -3107,7 +2708,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 163
+      "rank": 142
     },
     {
       "uid": "rss_dbfb761e39",
@@ -3126,7 +2727,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 164
+      "rank": 143
     },
     {
       "uid": "rss_322fe19967",
@@ -3145,7 +2746,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 165
+      "rank": 144
     },
     {
       "uid": "rss_63d0cfeb16",
@@ -3164,7 +2765,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 166
+      "rank": 145
     },
     {
       "uid": "rss_6ad9a7a632",
@@ -3183,7 +2784,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 167
+      "rank": 146
     },
     {
       "uid": "rss_ce3ab20cb7",
@@ -3202,7 +2803,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 168
+      "rank": 147
     },
     {
       "uid": "rss_05da3d5355",
@@ -3221,7 +2822,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 169
+      "rank": 148
     },
     {
       "uid": "rss_49a076d9a1",
@@ -3240,26 +2841,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 170
-    },
-    {
-      "uid": "rss_4cda1e5e67",
-      "pmid": "",
-      "title": "Reply to: “Limitations in Study Design and Stratification in Phase II Stereotactic Radiosurgery Trial for Small Cell Lung Cancer Brain Metastases,” “Radiosurgery for Small Cell Lung Cancer Brain Metastases: Comparing the JLGK0901 and BWH/DFCI Trials,” and “Expanding Indications for Stereotactic Radiosurgery in Small Cell Lung Cancer With Brain Metastases”",
-      "abstract": "Journal of Clinical Oncology, Ahead of Print. <br />",
-      "journal": "JCO",
-      "pub_date": "2026 Mar",
-      "type": "phase2",
-      "disease": "all",
-      "category": "heme",
-      "source": "rss",
-      "source_link": "https://ascopubs.org/doi/abs/10.1200/JCO-25-02528?af=R",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 171
+      "rank": 149
     },
     {
       "uid": "rss_e00317c4e6",
@@ -3278,7 +2860,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 172
+      "rank": 150
     },
     {
       "uid": "rss_9044d78b5a",
@@ -3297,7 +2879,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 173
+      "rank": 151
     },
     {
       "uid": "rss_4495c1302a",
@@ -3316,7 +2898,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 174
+      "rank": 152
     },
     {
       "uid": "rss_2a779ec918",
@@ -3335,7 +2917,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 175
+      "rank": 153
     },
     {
       "uid": "rss_8fad9fd04a",
@@ -3354,7 +2936,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 176
+      "rank": 154
     },
     {
       "uid": "rss_abe09b2409",
@@ -3373,7 +2955,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 177
+      "rank": 155
     },
     {
       "uid": "rss_f626965d7b",
@@ -3392,7 +2974,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 178
+      "rank": 156
     },
     {
       "uid": "rss_f9d48f33f7",
@@ -3411,7 +2993,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 179
+      "rank": 157
     },
     {
       "uid": "rss_c45d68a4ab",
@@ -3430,7 +3012,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 180
+      "rank": 158
     },
     {
       "uid": "rss_ea57666855",
@@ -3449,7 +3031,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 181
+      "rank": 159
     },
     {
       "uid": "rss_92a659f7a6",
@@ -3468,7 +3050,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 182
+      "rank": 160
     },
     {
       "uid": "rss_7e5e5ff3f5",
@@ -3487,7 +3069,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 183
+      "rank": 161
     },
     {
       "uid": "rss_d6fac0f627",
@@ -3506,7 +3088,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 184
+      "rank": 162
     },
     {
       "uid": "rss_e679b5155d",
@@ -3525,7 +3107,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 185
+      "rank": 163
     },
     {
       "uid": "rss_d49e04d195",
@@ -3544,7 +3126,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 186
+      "rank": 164
     },
     {
       "uid": "rss_07d6932126",
@@ -3563,7 +3145,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 187
+      "rank": 165
     },
     {
       "uid": "rss_0ee7d6816a",
@@ -3582,7 +3164,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 188
+      "rank": 166
     },
     {
       "uid": "rss_79290d6b22",
@@ -3601,7 +3183,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 189
+      "rank": 167
     },
     {
       "uid": "rss_ba8662b55b",
@@ -3620,7 +3202,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 190
+      "rank": 168
     },
     {
       "uid": "rss_345a429e62",
@@ -3639,7 +3221,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 191
+      "rank": 169
     },
     {
       "uid": "rss_113eb4a4ad",
@@ -3658,7 +3240,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 192
+      "rank": 170
     },
     {
       "uid": "rss_e6fe56b6de",
@@ -3677,7 +3259,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 193
+      "rank": 171
     },
     {
       "uid": "rss_286df252ab",
@@ -3696,7 +3278,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 194
+      "rank": 172
     },
     {
       "uid": "rss_33d4e25693",
@@ -3715,7 +3297,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 195
+      "rank": 173
     },
     {
       "uid": "rss_839eda4c80",
@@ -3734,7 +3316,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 196
+      "rank": 174
     },
     {
       "uid": "rss_dc76bd3101",
@@ -3753,7 +3335,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 197
+      "rank": 175
     },
     {
       "uid": "rss_7be25bf33b",
@@ -3772,7 +3354,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 198
+      "rank": 176
     },
     {
       "uid": "rss_8f8bb7e526",
@@ -3791,7 +3373,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 199
+      "rank": 177
     },
     {
       "uid": "pmid_41358601",
@@ -3810,7 +3392,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 200
+      "rank": 178
     },
     {
       "uid": "pmid_41765025",
@@ -3829,7 +3411,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 201
+      "rank": 179
     },
     {
       "uid": "pmid_41115797",
@@ -3848,7 +3430,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 202
+      "rank": 180
     },
     {
       "uid": "pmid_41826558",
@@ -3867,7 +3449,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 203
+      "rank": 181
     },
     {
       "uid": "pmid_41812193",
@@ -3886,7 +3468,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 204
+      "rank": 182
     },
     {
       "uid": "pmid_41402979",
@@ -3905,7 +3487,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 205
+      "rank": 183
     },
     {
       "uid": "pmid_41348911",
@@ -3924,26 +3506,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 206
-    },
-    {
-      "uid": "pmid_41693026",
-      "pmid": "41693026",
-      "title": "A prospective external validation of the GRade, Age, Nodes and Tumor score in the ECOG-ACRIN EA8143 PROSPER trial.",
-      "abstract": "BACKGROUND: The GRade, Age, Nodes and Tumor (GRANT) score is one of the prognostic models recommended by international guidelines to refine recurrence risk stratification in patients with surgically treated renal cell carcinoma (RCC) and integrates age, tumor size, grade, and nodal status. In this study, we aimed to validate the GRANT score within the ECOG-ACRIN EA8143 PROSPER prospective trial. METHODS: We conducted a validation analysis of the GRANT score within the phase III randomized EA8143 PROSPER study of perioperative nivolumab in surgically treated RCC. Patients were classified into 2 risk groups, favorable (0-1 risk factors) versus unfavorable (2-4 risk factors). Relapse-free survival (RFS) and overall survival (OS) were estimated using the Kaplan-Meier method. Model discrimination were evaluated using Harrell's C-index. RESULTS: Among 714 patients included, 58.3% were favorable and 41.7% unfavorable based on the GRANT score. Patients in the favorable group had a significantly longer median RFS (61.1 vs. 36.9 months; hazard ratio [HR]: 0.36, 95% confidence interval [CI]: 0.27-0.48, P < .001) and OS (median not reached, HR: 0.25, 95% CI: 0.15-0.42, P < .001) compared to patients in the unfavorable group. The c-index was 0.63 and 0.66 for RFS and OS, respectively. A better prognostic performance was observed among nonclear cell RCC for both RFS (HR: 0.13, 95% CI: 0.05-0.33, P < .001; c-index: 0.74) and OS (HR: 0.14, 95% CI: 0.04-0.50, P < .001; c-index 0.74). CONCLUSIONS: The GRANT score was prospectively validated in the PROSPER study, demonstrating prognostic value for both RFS and OS, especially in nonclear RCC, further supporting its use in clinical practice. Clinical trial registration number: ClinicalTrials.gov, NCT03055013.",
-      "journal": "The oncologist",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41693026/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 207
+      "rank": 184
     },
     {
       "uid": "pmid_41706725",
@@ -3962,26 +3525,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 208
-    },
-    {
-      "uid": "pmid_41824082",
-      "pmid": "41824082",
-      "title": "Unplanned hospital presentations in oncology patients receiving chemotherapy: a secondary analysis of a randomized controlled trial to explore opportunities for improving supportive care.",
-      "abstract": "PURPOSE: This study aimed to report the incidence, common reasons, and associated risk factors for unplanned hospital presentations during chemotherapy treatment. METHODS: A secondary analysis using data from a randomized controlled trial containing hospital data for the first three cycles of chemotherapy of adult oncology patients in two tertiary hospitals in Australia. Descriptive statistics were used to report hospital utilization patterns. Poisson regression explored risk factors for unplanned presentations. RESULTS: Analyses included data from 346 patients; 115 patients (33%) made one/or more presentations during the first three cycles of chemotherapy. Of 144 unplanned presentations, 74 (51%) were made during cycle 1. Predominant reasons were fever with/without neutropenia (n = 50, 35%) and nausea/vomiting (n = 30, 21%). Fifty-two percent (n = 75) of unplanned presentations did not result in hospital admission. Of 346 patients, 70 (20%) had hospital admissions with a median length of stay of 3 days (IQR 2-7). Multivariable analysis identified the following as predictors for unplanned presentations: cancer stage (stage 1 vs stage 4: IRR 2.50, 95% CI, 1.28-4.89; P = 0.01) and cancer type (lung cancer vs breast cancer: IRR 2.25, CI, 1.26-4.01; P = 0.01). CONCLUSION: Nausea/vomiting management support may be one area warranting improvement, a frequent reason for unplanned presentations that are potentially preventable. Such support will be most beneficial during the first treatment cycle, when most unplanned presentations occurred. A high proportion of unplanned presentations did not result in hospital admission, indicating an opportunity to manage some of the side effects within primary care or outpatient settings, rather than utilizing emergency department services.",
-      "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "breast_general",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41824082/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 209
+      "rank": 185
     },
     {
       "uid": "pmid_41324490",
@@ -4000,7 +3544,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 210
+      "rank": 186
+    },
+    {
+      "uid": "pmid_41824082",
+      "pmid": "41824082",
+      "title": "Unplanned hospital presentations in oncology patients receiving chemotherapy: a secondary analysis of a randomized controlled trial to explore opportunities for improving supportive care.",
+      "abstract": "PURPOSE: This study aimed to report the incidence, common reasons, and associated risk factors for unplanned hospital presentations during chemotherapy treatment. METHODS: A secondary analysis using data from a randomized controlled trial containing hospital data for the first three cycles of chemotherapy of adult oncology patients in two tertiary hospitals in Australia. Descriptive statistics were used to report hospital utilization patterns. Poisson regression explored risk factors for unplanned presentations. RESULTS: Analyses included data from 346 patients; 115 patients (33%) made one/or more presentations during the first three cycles of chemotherapy. Of 144 unplanned presentations, 74 (51%) were made during cycle 1. Predominant reasons were fever with/without neutropenia (n = 50, 35%) and nausea/vomiting (n = 30, 21%). Fifty-two percent (n = 75) of unplanned presentations did not result in hospital admission. Of 346 patients, 70 (20%) had hospital admissions with a median length of stay of 3 days (IQR 2-7). Multivariable analysis identified the following as predictors for unplanned presentations: cancer stage (stage 1 vs stage 4: IRR 2.50, 95% CI, 1.28-4.89; P = 0.01) and cancer type (lung cancer vs breast cancer: IRR 2.25, CI, 1.26-4.01; P = 0.01). CONCLUSION: Nausea/vomiting management support may be one area warranting improvement, a frequent reason for unplanned presentations that are potentially preventable. Such support will be most beneficial during the first treatment cycle, when most unplanned presentations occurred. A high proportion of unplanned presentations did not result in hospital admission, indicating an opportunity to manage some of the side effects within primary care or outpatient settings, rather than utilizing emergency department services.",
+      "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "breast_general",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41824082/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 187
     },
     {
       "uid": "pmid_41819560",
@@ -4019,7 +3582,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 211
+      "rank": 188
+    },
+    {
+      "uid": "pmid_41693026",
+      "pmid": "41693026",
+      "title": "A prospective external validation of the GRade, Age, Nodes and Tumor score in the ECOG-ACRIN EA8143 PROSPER trial.",
+      "abstract": "BACKGROUND: The GRade, Age, Nodes and Tumor (GRANT) score is one of the prognostic models recommended by international guidelines to refine recurrence risk stratification in patients with surgically treated renal cell carcinoma (RCC) and integrates age, tumor size, grade, and nodal status. In this study, we aimed to validate the GRANT score within the ECOG-ACRIN EA8143 PROSPER prospective trial. METHODS: We conducted a validation analysis of the GRANT score within the phase III randomized EA8143 PROSPER study of perioperative nivolumab in surgically treated RCC. Patients were classified into 2 risk groups, favorable (0-1 risk factors) versus unfavorable (2-4 risk factors). Relapse-free survival (RFS) and overall survival (OS) were estimated using the Kaplan-Meier method. Model discrimination were evaluated using Harrell's C-index. RESULTS: Among 714 patients included, 58.3% were favorable and 41.7% unfavorable based on the GRANT score. Patients in the favorable group had a significantly longer median RFS (61.1 vs. 36.9 months; hazard ratio [HR]: 0.36, 95% confidence interval [CI]: 0.27-0.48, P < .001) and OS (median not reached, HR: 0.25, 95% CI: 0.15-0.42, P < .001) compared to patients in the unfavorable group. The c-index was 0.63 and 0.66 for RFS and OS, respectively. A better prognostic performance was observed among nonclear cell RCC for both RFS (HR: 0.13, 95% CI: 0.05-0.33, P < .001; c-index: 0.74) and OS (HR: 0.14, 95% CI: 0.04-0.50, P < .001; c-index 0.74). CONCLUSIONS: The GRANT score was prospectively validated in the PROSPER study, demonstrating prognostic value for both RFS and OS, especially in nonclear RCC, further supporting its use in clinical practice. Clinical trial registration number: ClinicalTrials.gov, NCT03055013.",
+      "journal": "The oncologist",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41693026/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 189
     },
     {
       "uid": "pmid_41821581",
@@ -4038,64 +3620,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 212
-    },
-    {
-      "uid": "pmid_41201381",
-      "pmid": "41201381",
-      "title": "Clinical trial success rate in lymphoma: fate of trials and agents from 2000 to 2019.",
-      "abstract": "Although previous studies have examined the drug development and clinical trial success rates in oncology, a comprehensive analysis of development success rate in lymphoma has not been performed. Therefore, we analyzed lymphoma trials initiated between 1 January 2000 and 31 December 2019, using the Trialtrove database and ClinicalTrials.gov. We identified phase 1, 2, and 3 trials that included patients with lymphoma and analyzed the transition rate of investigational agents across phases and their US Food and Drug Administration (FDA) approval rates to assess the efficiency and success of the clinical development process. A total of 1032 phase 1 trials and 510 phase 1/2 trials were conducted, with a total of 651 distinct agents being evaluated during the study period. There were 1027 phase 2, 20 phase 2/3, and 140 phase 3 trials conducted for lymphoma, with 200 agents proceeding from phase 1 to 2 and 46 agents proceeding from phase 2 to 3. The success rates of agents proceeding from phase 1 to 2 and phase 2 to 3 were 30.7% and 23.0%, respectively. A total of 40 agents reached FDA approval, with an overall approval rate of 6.1%. The average time from initiation of the first phase 1 trial to approval for lymphoma treatment was 7.9 years. Our study characterizes the clinical development landscape and timeline of novel therapies for lymphoma. Low approval rate from phase 1 trials in lymphoma suggests the need for improvement in trial design and in prediction of clinical response through preclinical studies to improve the likelihood of success.",
-      "journal": "Blood advances",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41201381/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 213
-    },
-    {
-      "uid": "pmid_41802810",
-      "pmid": "41802810",
-      "title": "First-in-human phase 1 study of RO7119929, an oral TLR7 agonist prodrug, in patients with advanced primary or metastatic liver cancers.",
-      "abstract": "BACKGROUND: The orally available toll-like receptor 7 (TLR7) agonist prodrug RO7119929 is converted to active drug predominantly in the liver, where it is hypothesized to reprogram the local immune microenvironment. We aimed to explore the safety, pharmacokinetics (PK), and preliminary antitumor activity and obtain the proof-of-mechanism for RO7119929 in patients with liver cancer. METHODS: RO7119929 was investigated in mouse tumors and liver tissue from cynomolgus monkeys. In the first-in-human, open-label, dose-escalation and expansion study, patients with histologically confirmed advanced or metastatic primary liver cancers or solid tumors with predominant liver involvement received RO7119929 weekly in 3-week cycles either on a flat-dose (FD) or step-up dose (SUD) schedule. RESULTS: Preclinical results demonstrated antitumor activity and the proinflammatory proof-of-mechanism in mouse liver tumors and cynomolgus monkey liver tissue. The subsequent first-in-human study enrolled 27 patients in five FD dose-escalation cohorts, 18 patients in a FD dose-expansion cohort, and 9 patients in two SUD dose-escalation cohorts. The most common primary tumor type at study entry was hepatocellular carcinoma (HCC) (31%). PK data showed fast conversion of RO7119929 to the active TLR7 agonist. Treatment-related adverse events (TRAEs) were observed in 50 (91%) patients across all treated patients; the most commonly reported TRAE was cytokine release syndrome (CRS) in 48 (81%) patients. CRS was also identified as a dose-limiting safety risk and had a dose-dependent incidence and severity. Grade 3 CRS occurred in six (13%) patients receiving FD RO7119929, while no grade 3 CRS was reported in SUD patients at comparable target dose levels. TLR7-related transient, dose-dependent gene expression and cytokine induction was observed both with FD and SUD treatment and corresponded with treatment-induced local inflammation of the tumor microenvironment induced by reprogramming of the myeloid cells. Among 17 patients with HCC, one durable complete response was observed, and 10 (59%) patients had stable disease. CONCLUSIONS: SUD appears to reduce the risk of CRS while maintaining mode-of-action-relevant pharmacodynamic effects. The clinical activity of RO7119929 as a single agent was limited, suggesting that combination therapy with a checkpoint inhibitor may be needed to leverage the proinflammatory potential of RO7119929 and further increase antitumor activity. TRIAL REGISTRATION NUMBER: NCT04338685.",
-      "journal": "Journal for immunotherapy of cancer",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41802810/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 214
-    },
-    {
-      "uid": "pmid_41811469",
-      "pmid": "41811469",
-      "title": "A single-arm phase Ib study of personalized peptide-pulsed dendritic cell-based multiple target cytotoxic T lymphocyte immunotherapy in combination with toripalimab as second-line therapy in advanced non-small-cell lung cancer.",
-      "abstract": "BACKGROUND: Anti-programmed cell death 1 (PD-1)/programmed death-ligand 1 (PD-L1) monoclonal antibody therapy has been approved as second-line treatment for advanced non-small-cell lung cancer (NSCLC). Unfortunately, the objective response rate (ORR) is not satisfied. T lymphocytes obtained by co-culture with personalized tumor-specific antigenic peptide-pulsed dendritic cells (DC), also known as multiple target cytotoxic T lymphocytes (MCTL) can restore the antitumor immunity and potentially improve clinical outcomes. We conducted a clinical study evaluating MCTL immunotherapy combined with toripalimab in patients with advanced NSCLC. METHODS: This single-center, open-label, phase Ib trial (NCT04193098) evaluated the combination of MCTL and toripalimab as second-line therapy in 21 patients with advanced NSCLC. Peripheral blood samples were collected for antigenic peptide analysis, and patient immune status was assessed. The primary and secondary endpoints were to evaluate safety and clinical outcomes, respectively. RESULTS: Among the 21 patients, the ORR and disease control rate (DCR) were 33.3 and 76.2%, respectively. Median overall survival (mOS) was 24.1 months, and median progression-free survival (mPFS) was 8.6 months. Most patients demonstrated improved immune status post-treatment compared to baseline. Patients exhibiting pronounced immune enhancement following MCTL/toripalimab therapy tended to have better clinical outcomes. No significant adverse events (AEs) were observed during combination therapy. CONCLUSION: In this cohort of patients with advanced NSCLC, MCTL/toripalimab therapy demonstrated manageable safety and promising antitumor efficacy as a second-line treatment. Further studies are warranted to confirm these results.",
-      "journal": "Cancer immunology, immunotherapy : CII",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41811469/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 215
+      "rank": 190
     },
     {
       "uid": "pmid_41825935",
@@ -4114,7 +3639,64 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 216
+      "rank": 191
+    },
+    {
+      "uid": "pmid_41201381",
+      "pmid": "41201381",
+      "title": "Clinical trial success rate in lymphoma: fate of trials and agents from 2000 to 2019.",
+      "abstract": "Although previous studies have examined the drug development and clinical trial success rates in oncology, a comprehensive analysis of development success rate in lymphoma has not been performed. Therefore, we analyzed lymphoma trials initiated between 1 January 2000 and 31 December 2019, using the Trialtrove database and ClinicalTrials.gov. We identified phase 1, 2, and 3 trials that included patients with lymphoma and analyzed the transition rate of investigational agents across phases and their US Food and Drug Administration (FDA) approval rates to assess the efficiency and success of the clinical development process. A total of 1032 phase 1 trials and 510 phase 1/2 trials were conducted, with a total of 651 distinct agents being evaluated during the study period. There were 1027 phase 2, 20 phase 2/3, and 140 phase 3 trials conducted for lymphoma, with 200 agents proceeding from phase 1 to 2 and 46 agents proceeding from phase 2 to 3. The success rates of agents proceeding from phase 1 to 2 and phase 2 to 3 were 30.7% and 23.0%, respectively. A total of 40 agents reached FDA approval, with an overall approval rate of 6.1%. The average time from initiation of the first phase 1 trial to approval for lymphoma treatment was 7.9 years. Our study characterizes the clinical development landscape and timeline of novel therapies for lymphoma. Low approval rate from phase 1 trials in lymphoma suggests the need for improvement in trial design and in prediction of clinical response through preclinical studies to improve the likelihood of success.",
+      "journal": "Blood advances",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41201381/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 192
+    },
+    {
+      "uid": "pmid_41802810",
+      "pmid": "41802810",
+      "title": "First-in-human phase 1 study of RO7119929, an oral TLR7 agonist prodrug, in patients with advanced primary or metastatic liver cancers.",
+      "abstract": "BACKGROUND: The orally available toll-like receptor 7 (TLR7) agonist prodrug RO7119929 is converted to active drug predominantly in the liver, where it is hypothesized to reprogram the local immune microenvironment. We aimed to explore the safety, pharmacokinetics (PK), and preliminary antitumor activity and obtain the proof-of-mechanism for RO7119929 in patients with liver cancer. METHODS: RO7119929 was investigated in mouse tumors and liver tissue from cynomolgus monkeys. In the first-in-human, open-label, dose-escalation and expansion study, patients with histologically confirmed advanced or metastatic primary liver cancers or solid tumors with predominant liver involvement received RO7119929 weekly in 3-week cycles either on a flat-dose (FD) or step-up dose (SUD) schedule. RESULTS: Preclinical results demonstrated antitumor activity and the proinflammatory proof-of-mechanism in mouse liver tumors and cynomolgus monkey liver tissue. The subsequent first-in-human study enrolled 27 patients in five FD dose-escalation cohorts, 18 patients in a FD dose-expansion cohort, and 9 patients in two SUD dose-escalation cohorts. The most common primary tumor type at study entry was hepatocellular carcinoma (HCC) (31%). PK data showed fast conversion of RO7119929 to the active TLR7 agonist. Treatment-related adverse events (TRAEs) were observed in 50 (91%) patients across all treated patients; the most commonly reported TRAE was cytokine release syndrome (CRS) in 48 (81%) patients. CRS was also identified as a dose-limiting safety risk and had a dose-dependent incidence and severity. Grade 3 CRS occurred in six (13%) patients receiving FD RO7119929, while no grade 3 CRS was reported in SUD patients at comparable target dose levels. TLR7-related transient, dose-dependent gene expression and cytokine induction was observed both with FD and SUD treatment and corresponded with treatment-induced local inflammation of the tumor microenvironment induced by reprogramming of the myeloid cells. Among 17 patients with HCC, one durable complete response was observed, and 10 (59%) patients had stable disease. CONCLUSIONS: SUD appears to reduce the risk of CRS while maintaining mode-of-action-relevant pharmacodynamic effects. The clinical activity of RO7119929 as a single agent was limited, suggesting that combination therapy with a checkpoint inhibitor may be needed to leverage the proinflammatory potential of RO7119929 and further increase antitumor activity. TRIAL REGISTRATION NUMBER: NCT04338685.",
+      "journal": "Journal for immunotherapy of cancer",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41802810/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 193
+    },
+    {
+      "uid": "pmid_41811469",
+      "pmid": "41811469",
+      "title": "A single-arm phase Ib study of personalized peptide-pulsed dendritic cell-based multiple target cytotoxic T lymphocyte immunotherapy in combination with toripalimab as second-line therapy in advanced non-small-cell lung cancer.",
+      "abstract": "BACKGROUND: Anti-programmed cell death 1 (PD-1)/programmed death-ligand 1 (PD-L1) monoclonal antibody therapy has been approved as second-line treatment for advanced non-small-cell lung cancer (NSCLC). Unfortunately, the objective response rate (ORR) is not satisfied. T lymphocytes obtained by co-culture with personalized tumor-specific antigenic peptide-pulsed dendritic cells (DC), also known as multiple target cytotoxic T lymphocytes (MCTL) can restore the antitumor immunity and potentially improve clinical outcomes. We conducted a clinical study evaluating MCTL immunotherapy combined with toripalimab in patients with advanced NSCLC. METHODS: This single-center, open-label, phase Ib trial (NCT04193098) evaluated the combination of MCTL and toripalimab as second-line therapy in 21 patients with advanced NSCLC. Peripheral blood samples were collected for antigenic peptide analysis, and patient immune status was assessed. The primary and secondary endpoints were to evaluate safety and clinical outcomes, respectively. RESULTS: Among the 21 patients, the ORR and disease control rate (DCR) were 33.3 and 76.2%, respectively. Median overall survival (mOS) was 24.1 months, and median progression-free survival (mPFS) was 8.6 months. Most patients demonstrated improved immune status post-treatment compared to baseline. Patients exhibiting pronounced immune enhancement following MCTL/toripalimab therapy tended to have better clinical outcomes. No significant adverse events (AEs) were observed during combination therapy. CONCLUSION: In this cohort of patients with advanced NSCLC, MCTL/toripalimab therapy demonstrated manageable safety and promising antitumor efficacy as a second-line treatment. Further studies are warranted to confirm these results.",
+      "journal": "Cancer immunology, immunotherapy : CII",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41811469/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 194
     },
     {
       "uid": "pmid_41828892",
@@ -4133,26 +3715,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 217
-    },
-    {
-      "uid": "pmid_38788778",
-      "pmid": "38788778",
-      "title": "Cost-effectiveness analysis of a cardio-oncology rehabilitation framework compared to an exercise intervention for cancer survivors with high cardiovascular risk.",
-      "abstract": "AIMS: A cardio-oncology rehabilitation model among cancer survivors showed superior results compared with those of a community-based exercise intervention. However, questions remain about its cost-effectiveness. This study aims to assess the cost-effectiveness of a centre-based cardiac rehabilitation (CBCR) programme when compared to usual care encompassing a community-based exercise training (CBET), among cancer survivors with high cardiovascular risk. METHODS AND RESULTS: The CORE study was a single-centre, prospective, randomized controlled trial; 80 adult cancer survivors with previous exposure to cardiotoxic cancer treatment and/or with previous cardiovascular disease were assigned (1:1 ratio) to an 8-week CBCR or CBET, twice/week. Cost-effectiveness was a pre-specified secondary endpoint. Outcomes included healthcare resource use and costs, quality-adjusted life-years (QALYs), and cost-effectiveness; the incremental cost-effectiveness ratio (ICER) was computed from a societal perspective. A total of 75 patients completed the study (CBCR n = 38; CBET n = 37). The CBCR group had a significantly higher cost per patient (477.76 ± 39.08€) compared to the CBET group (339.32 ± 53.88€), with a significant between-group difference of 138.44€ [95% confidence interval (CI), 116.82-160.05€, P < 0.01]. A between-group difference of 0.100 points in QALYs was observed, favouring CBCR (95% CI, -0.163 to -0.037, P = 0.002). When CBCR was compared with CBET, the ICER was €1383.24 per QALY gained; at a willingness-to-pay threshold of €5000 per QALY, the probability of CBCR being cost-effective was 99.9% (95% CI, 99.4-100.0). CONCLUSION: The CORE trial shows that CBCR is a cost-effective intervention in the management of cancer survivors with high cardiovascular risk, reinforcing the potential benefits of this multidisciplinary approach in supportive care of this specific subset of cancer patients. REGISTRATION: ClinicalTrials.gov: NCT05132998. The CORE study was a randomized clinical trial including 80 cancer survivors with high cardiovascular risk; an 8-week cardio-oncology rehabilitation framework promoted superior results on cardiorespiratory fitness (peak oxygen consumption) and quality of life, but questions remained about the cost-effectiveness of this option. The findings of this study suggest the following:A centre-based cardiac rehabilitation proved to be cost-effective when compared with usual care encompassing community-based exercise training.The value-added of a comprehensive approach delivered in an oncological setting reinforces the potential benefits of including this intervention in the supportive care of a specific subset of cancer patients, within existing contemporary cardiac rehabilitation resources and infrastructures.",
-      "journal": "European journal of preventive cardiology",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "gist",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/38788778/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 218
+      "rank": 195
     },
     {
       "uid": "pmid_41161645",
@@ -4171,7 +3734,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 219
+      "rank": 196
     },
     {
       "uid": "pmid_41741368",
@@ -4190,7 +3753,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 220
+      "rank": 197
+    },
+    {
+      "uid": "pmid_38788778",
+      "pmid": "38788778",
+      "title": "Cost-effectiveness analysis of a cardio-oncology rehabilitation framework compared to an exercise intervention for cancer survivors with high cardiovascular risk.",
+      "abstract": "AIMS: A cardio-oncology rehabilitation model among cancer survivors showed superior results compared with those of a community-based exercise intervention. However, questions remain about its cost-effectiveness. This study aims to assess the cost-effectiveness of a centre-based cardiac rehabilitation (CBCR) programme when compared to usual care encompassing a community-based exercise training (CBET), among cancer survivors with high cardiovascular risk. METHODS AND RESULTS: The CORE study was a single-centre, prospective, randomized controlled trial; 80 adult cancer survivors with previous exposure to cardiotoxic cancer treatment and/or with previous cardiovascular disease were assigned (1:1 ratio) to an 8-week CBCR or CBET, twice/week. Cost-effectiveness was a pre-specified secondary endpoint. Outcomes included healthcare resource use and costs, quality-adjusted life-years (QALYs), and cost-effectiveness; the incremental cost-effectiveness ratio (ICER) was computed from a societal perspective. A total of 75 patients completed the study (CBCR n = 38; CBET n = 37). The CBCR group had a significantly higher cost per patient (477.76 ± 39.08€) compared to the CBET group (339.32 ± 53.88€), with a significant between-group difference of 138.44€ [95% confidence interval (CI), 116.82-160.05€, P < 0.01]. A between-group difference of 0.100 points in QALYs was observed, favouring CBCR (95% CI, -0.163 to -0.037, P = 0.002). When CBCR was compared with CBET, the ICER was €1383.24 per QALY gained; at a willingness-to-pay threshold of €5000 per QALY, the probability of CBCR being cost-effective was 99.9% (95% CI, 99.4-100.0). CONCLUSION: The CORE trial shows that CBCR is a cost-effective intervention in the management of cancer survivors with high cardiovascular risk, reinforcing the potential benefits of this multidisciplinary approach in supportive care of this specific subset of cancer patients. REGISTRATION: ClinicalTrials.gov: NCT05132998. The CORE study was a randomized clinical trial including 80 cancer survivors with high cardiovascular risk; an 8-week cardio-oncology rehabilitation framework promoted superior results on cardiorespiratory fitness (peak oxygen consumption) and quality of life, but questions remained about the cost-effectiveness of this option. The findings of this study suggest the following:A centre-based cardiac rehabilitation proved to be cost-effective when compared with usual care encompassing community-based exercise training.The value-added of a comprehensive approach delivered in an oncological setting reinforces the potential benefits of including this intervention in the supportive care of a specific subset of cancer patients, within existing contemporary cardiac rehabilitation resources and infrastructures.",
+      "journal": "European journal of preventive cardiology",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "gist",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/38788778/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 198
     },
     {
       "uid": "pmid_41808570",
@@ -4209,7 +3791,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 221
+      "rank": 199
     },
     {
       "uid": "pmid_41824083",
@@ -4228,102 +3810,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 222
-    },
-    {
-      "uid": "pmid_41702246",
-      "pmid": "41702246",
-      "title": "Ten-year overall survival in resectable stage-III NSCLC - Results of the randomized ESPATUE trial - Long-term survival and competing risk analysis.",
-      "abstract": "INTRODUCTION: More stage III non-small-cell lung cancer patients experience long-term survival (OS). ESPATUE-trial looked at surgery versus boost-radiochemotherapy following induction chemotherapy, consisting of three cycles of cisplatin 50 mg/m METHODS: Complete trial design has been published. We updated OS for patients still alive at 2/2022. Patients were followed up on a yearly basis and showed up to get follow-up imaging and reevaluation. RESULTS: From 1/2004 until 1/2013 246 patients medically and functionally operable were enrolled. Following induction 161 considered resectable were randomized to radiochemotherapy-boost(arm 1/A;n = 80) or definitive surgery(arm 2/B;n = 81).The median time from randomization to last evaluation was 145.1 months(interquartile range 121.5-197.8). Patients in the arm that included surgery(B) had a 10-year overall survival rate of 29.9 %(20.2-40.3) and those with radiochemotherapy(A) a rate of 28.3 %(18.8-38.5; p = 0.70 log rank). Rates of progression-free survival, death from second priomary lung cancer, death from first lung cancer, treatment related death, death from second cancer without lung cancer were comparable in both study arms CONCLUSIONS: Long-term survival serves as baseline information for ongoing immunotherapy-based stage III protocols. No significant differences between local modalities radiochemotherapy and surgery were observed. A competing-risk-of-deaths-analysis showed no relevant preference for one arm. Death from comorbidities and death from second lung cancer remain relevant long-term-risks.",
-      "journal": "European journal of cancer (Oxford, England : 1990)",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41702246/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 223
-    },
-    {
-      "uid": "pmid_41655462",
-      "pmid": "41655462",
-      "title": "Use of concomitant G-CSF in maintaining efficacious dose and safe delivery of docetaxel in combination with darolutamide in ARASENS: A phase III study.",
-      "abstract": "BACKGROUND: We assessed the impact of granulocyte colony-stimulating factor (G-CSF) use and docetaxel relative dose intensity (RDI) on the safety profile of the ARASENS (NCT02799602) triplet regimen with darolutamide in patients with metastatic hormone-sensitive prostate cancer. METHODS: Patients were randomized to darolutamide 600 mg orally twice daily or placebo, with androgen deprivation therapy (ADT) and docetaxel. Baseline characteristics, G-CSF use, and safety were analyzed according to docetaxel RDI (≤85 % vs >85 %). RESULTS: Of 1273 patients with docetaxel RDI data (darolutamide n = 637; placebo n = 636), > 97 % received an efficacious dose of docetaxel (RDI >80 %). Patient demographics and baseline disease characteristics were generally similar between RDI subgroups; > 60 % of patients with RDI ≤ 85 % were from the Asia-Pacific region. Concomitant G-CSF, with/without docetaxel dose modification, was used in 42.4 % (darolutamide) and 44.6 % (placebo) of patients, mainly as secondary prophylaxis; 61.3 % (darolutamide) and 64.4 % (placebo) received both docetaxel dose modifications and G-CSF. Grade ≥ 3 treatment-emergent adverse events (TEAEs), grade ≥ 3 neutropenia, and grade ≥ 3 febrile neutropenia were higher with docetaxel RDI ≤ 85 %, but docetaxel discontinuation rates were similar between subgroups (RDI ≤85 %: darolutamide 7.2 %, placebo 10.8 %; RDI >85 %: darolutamide 8.1 %, placebo 10.5 %). TEAEs leading to docetaxel dose modification were more frequent with docetaxel RDI ≤ 85 % (darolutamide 92.8 %; placebo 97.3 %) versus RDI > 85 % (darolutamide 26.0 %; placebo 25.3 %). CONCLUSION: Appropriate docetaxel dose modifications and early G-CSF use allowed almost all patients to receive an efficacious dose of docetaxel in combination with darolutamide and ADT and may prevent neutropenic complications in patients receiving docetaxel. PRIOR PRESENTATION: Previously presented at the 2025 American Society of Clinical Oncology Genitourinary Cancers Symposium, San Francisco, CA.",
-      "journal": "European journal of cancer (Oxford, England : 1990)",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41655462/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 224
-    },
-    {
-      "uid": "pmid_41813939",
-      "pmid": "41813939",
-      "title": "The effect of hand massage on pain, comfort, and sleep quality in palliative care oncology patients.",
-      "abstract": "OBJECTIVE: Oncology patients often experience pain, sleep problems, and discomfort during palliative care. Hand massage is a nonpharmacological method that can relax the patient and help alleviate these problems. This study aimed to examine the effect of hand massage on pain, comfort, and sleep quality in palliative oncology patients. MATERIALS AND METHODS: A randomized, controlled experimental study was conducted with a sample of 76 oncology patients treated in the palliative care clinic of a public hospital. The patients were randomly allocated to the experimental and control groups. The experimental group (n = 38) received a total of 16 sessions of hand massage, performed twice a day, 2 days per week for 4 weeks. The control group (n = 38) received no intervention. The patients' pain, sleep quality, and comfort were assessed before and at 1, 2, and 4 weeks after the start of the intervention using the Visual Analog Scale for pain, the Pittsburg Sleep Quality Index, the General Comfort Questionnaire, and a smart wristband. RESULTS: Demographic characteristics and pre-intervention pain, sleep quality, and comfort scores showed no statistical differences between the groups (p > 0.05). The experimental group reported significantly lower pain intensity and greater comfort than the control group starting from week 2 (p < 0.05). In addition, subjective sleep quality assessed using the PSQI and objective sleep parameters (sleep duration and sleep score) measured by a smart wristband, including objective sleep duration and objective sleep score, were significantly better in the experimental group than in the control group from the first week (p < 0.05). CONCLUSION: Hand massage is an effective method for reducing pain and increasing sleep quality and comfort in palliative oncology patients. CLINICAL TRIAL REGISTRATION NO: NCT06360614.",
-      "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "gist",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41813939/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 225
-    },
-    {
-      "uid": "pmid_41805548",
-      "pmid": "41805548",
-      "title": "A Telemedicine App for Nonrigid Facial Rehabilitation Training Enhanced by Efficient Fully Convolutional Neural Network With Residual Network (EffiFCNN-ResNet) to Improve Accessibility for Patients With Nasopharyngeal Carcinoma Cancer: Randomized Controlled Trial.",
-      "abstract": "BACKGROUND: Resource limitations in public hospitals may hinder timely monitoring and management of rehabilitation in patients with nasopharyngeal carcinoma (NPC) after radiotherapy. OBJECTIVE: This study developed and evaluated the telemedicine app \"Open Care,\" which integrates the Efficient Fully Convolutional Neural Network with Residual Network (EffiFCNN-ResNet) model and computer vision to monitor facial training exercises and provide real-time feedback, aiming to improve outcomes in patients with restricted mouth opening. METHODS: Initially, the EffiFCNN-ResNet model underwent 5-fold cross-validation, expert validation, and robustness testing to assess its reliability and clinical applicability in complex real-world environments. Subsequently, to evaluate the telemedicine app, a parallel-group, 2-arm randomized controlled trial was conducted with 109 patients, who were randomly assigned to either the intervention group (n=55) or the control group (n=54). The intervention group performed mouth-opening exercises under the supervision and guidance of the telemedicine app, whereas the control group followed traditional video-based instructions. Primary outcome measures included maximum mouth opening, mouth-opening symmetry, exercise frequency, and rehabilitation-related health beliefs. Secondary outcomes included fatigue (Brief Fatigue Inventory), health-related quality of life (Assessment of Quality of Life-6 Dimensions), and system usability scores. Data were analyzed using 2-tailed (unpaired) independent-samples t tests and chi-square tests, and the Mann-Whitney U test was used to assess intra- and inter-group differences before and after the intervention. RESULTS: The \"Open Care\" system leverages a lightweight fully convolutional neural network (FCNN) depth model integrated with network communication to enable real-time capture, recognition, and correction of nonrigid facial training movements. It also provides visual feedback and supports automated rehabilitation assessment. The model demonstrated strong generalization ability (macro-averaged F1-score, mean 0.96, SD 0.01) and clinical-grade stability (performance degradation: mean 5.2%, SD 0.6%, under lighting disturbances and challenging pathological cases; n=160 video segments). Compared with the control group, the intervention group showed significant improvements in maximum mouth opening (P=.04), exercise frequency (P=.001), perceived severity (P=.007), perceived benefits (P=.04), perceived barriers (P=.001), self-efficacy (P=.04), cues to action (P=.001), health behavior (P=.03), and fatigue (P=.04). Participants also reported favorable training experiences, with a mean system usability score of 74.3 out of 100. CONCLUSIONS: This telemedicine approach was more effective than traditional methods, improving patient engagement and rehabilitation outcomes while providing a more objective and precise monitoring tool. Future apps may benefit patients with NPC and other head and neck cancers. TRIAL REGISTRATION: Chinese Clinical Trial Registry ChiCTR2400090305; https://www.chictr.org.cn/showprojEN.html?proj=235073.",
-      "journal": "JMIR mHealth and uHealth",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "neuroendocrine",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41805548/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 226
-    },
-    {
-      "uid": "pmid_41512176",
-      "pmid": "41512176",
-      "title": "Health-related quality of life after second-line axi-cel in transplant-ineligible patients with large B-cell lymphoma.",
-      "abstract": "The phase 2 ALYCANTE trial aimed to evaluate the investigator-assessed complete metabolic response at 3 months from the axicabtagene ciloleucel (axi-cel) infusion as a primary end point in patients with high-risk relapsed/refractory large B-cell lymphoma who are ineligible for autologous stem cell transplantation (ASCT). This study showed a significant improvement in complete metabolic response rate at 3 months based on historical controls. This study reports the health-related quality of life (HRQoL) results as a secondary end point. HRQoL was assessed using the European Organization for Research and Treatment of Cancer Quality of Life Questionnaire (EORTC QLQ-C30) cancer-specific questionnaire, the Quality of Life Questionnaire high-grade non-Hodgkin lymphoma 29 (QLQ-NHL-HG29) , and the EuroQol Quality of Life Scale-5 dimensions-5 levels of severity (EQ-5D-5L) generic questionnaire at baseline and 1, 3, 6, and 12 months after axi-cel infusion. Among the 62 patients included, 60 (97%) completed a baseline and at least 1 postbaseline HRQoL assessment. At 1 month infusion, adjusted mean change in HRQoL scores from baseline showed a clinically significant deterioration (greater than the clinical threshold) in physical, role, social functioning, and fatigue. However, all HRQoL dimensions recovered by 3 months after infusion and remained stable or continued to improve by 12 months. In an exploratory analysis, adjusted mean change in HRQoL score from baseline in ALYCANTE was similar to or better than in ASCT-eligible patients who received axi-cel in the phase 3 ZUMA-7 trial. Finally, the global health status and fatigue scores of the ALYCANTE population improved to levels comparable to the general French population of similar age by 3 months after infusion. These findings indicate that axi-cel improves HRQoL regardless of transplant eligibility, supporting its use across a broad patient population. This trial was registered at www.clinicaltrials.gov as #NCT04531046.",
-      "journal": "Blood advances",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "dlbcl",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41512176/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 227
+      "rank": 200
     },
     {
       "uid": "pmid_41808581",
@@ -4342,7 +3829,102 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 228
+      "rank": 201
+    },
+    {
+      "uid": "pmid_41702246",
+      "pmid": "41702246",
+      "title": "Ten-year overall survival in resectable stage-III NSCLC - Results of the randomized ESPATUE trial - Long-term survival and competing risk analysis.",
+      "abstract": "INTRODUCTION: More stage III non-small-cell lung cancer patients experience long-term survival (OS). ESPATUE-trial looked at surgery versus boost-radiochemotherapy following induction chemotherapy, consisting of three cycles of cisplatin 50 mg/m METHODS: Complete trial design has been published. We updated OS for patients still alive at 2/2022. Patients were followed up on a yearly basis and showed up to get follow-up imaging and reevaluation. RESULTS: From 1/2004 until 1/2013 246 patients medically and functionally operable were enrolled. Following induction 161 considered resectable were randomized to radiochemotherapy-boost(arm 1/A;n = 80) or definitive surgery(arm 2/B;n = 81).The median time from randomization to last evaluation was 145.1 months(interquartile range 121.5-197.8). Patients in the arm that included surgery(B) had a 10-year overall survival rate of 29.9 %(20.2-40.3) and those with radiochemotherapy(A) a rate of 28.3 %(18.8-38.5; p = 0.70 log rank). Rates of progression-free survival, death from second priomary lung cancer, death from first lung cancer, treatment related death, death from second cancer without lung cancer were comparable in both study arms CONCLUSIONS: Long-term survival serves as baseline information for ongoing immunotherapy-based stage III protocols. No significant differences between local modalities radiochemotherapy and surgery were observed. A competing-risk-of-deaths-analysis showed no relevant preference for one arm. Death from comorbidities and death from second lung cancer remain relevant long-term-risks.",
+      "journal": "European journal of cancer (Oxford, England : 1990)",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41702246/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 202
+    },
+    {
+      "uid": "pmid_41655462",
+      "pmid": "41655462",
+      "title": "Use of concomitant G-CSF in maintaining efficacious dose and safe delivery of docetaxel in combination with darolutamide in ARASENS: A phase III study.",
+      "abstract": "BACKGROUND: We assessed the impact of granulocyte colony-stimulating factor (G-CSF) use and docetaxel relative dose intensity (RDI) on the safety profile of the ARASENS (NCT02799602) triplet regimen with darolutamide in patients with metastatic hormone-sensitive prostate cancer. METHODS: Patients were randomized to darolutamide 600 mg orally twice daily or placebo, with androgen deprivation therapy (ADT) and docetaxel. Baseline characteristics, G-CSF use, and safety were analyzed according to docetaxel RDI (≤85 % vs >85 %). RESULTS: Of 1273 patients with docetaxel RDI data (darolutamide n = 637; placebo n = 636), > 97 % received an efficacious dose of docetaxel (RDI >80 %). Patient demographics and baseline disease characteristics were generally similar between RDI subgroups; > 60 % of patients with RDI ≤ 85 % were from the Asia-Pacific region. Concomitant G-CSF, with/without docetaxel dose modification, was used in 42.4 % (darolutamide) and 44.6 % (placebo) of patients, mainly as secondary prophylaxis; 61.3 % (darolutamide) and 64.4 % (placebo) received both docetaxel dose modifications and G-CSF. Grade ≥ 3 treatment-emergent adverse events (TEAEs), grade ≥ 3 neutropenia, and grade ≥ 3 febrile neutropenia were higher with docetaxel RDI ≤ 85 %, but docetaxel discontinuation rates were similar between subgroups (RDI ≤85 %: darolutamide 7.2 %, placebo 10.8 %; RDI >85 %: darolutamide 8.1 %, placebo 10.5 %). TEAEs leading to docetaxel dose modification were more frequent with docetaxel RDI ≤ 85 % (darolutamide 92.8 %; placebo 97.3 %) versus RDI > 85 % (darolutamide 26.0 %; placebo 25.3 %). CONCLUSION: Appropriate docetaxel dose modifications and early G-CSF use allowed almost all patients to receive an efficacious dose of docetaxel in combination with darolutamide and ADT and may prevent neutropenic complications in patients receiving docetaxel. PRIOR PRESENTATION: Previously presented at the 2025 American Society of Clinical Oncology Genitourinary Cancers Symposium, San Francisco, CA.",
+      "journal": "European journal of cancer (Oxford, England : 1990)",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41655462/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 203
+    },
+    {
+      "uid": "pmid_41813939",
+      "pmid": "41813939",
+      "title": "The effect of hand massage on pain, comfort, and sleep quality in palliative care oncology patients.",
+      "abstract": "OBJECTIVE: Oncology patients often experience pain, sleep problems, and discomfort during palliative care. Hand massage is a nonpharmacological method that can relax the patient and help alleviate these problems. This study aimed to examine the effect of hand massage on pain, comfort, and sleep quality in palliative oncology patients. MATERIALS AND METHODS: A randomized, controlled experimental study was conducted with a sample of 76 oncology patients treated in the palliative care clinic of a public hospital. The patients were randomly allocated to the experimental and control groups. The experimental group (n = 38) received a total of 16 sessions of hand massage, performed twice a day, 2 days per week for 4 weeks. The control group (n = 38) received no intervention. The patients' pain, sleep quality, and comfort were assessed before and at 1, 2, and 4 weeks after the start of the intervention using the Visual Analog Scale for pain, the Pittsburg Sleep Quality Index, the General Comfort Questionnaire, and a smart wristband. RESULTS: Demographic characteristics and pre-intervention pain, sleep quality, and comfort scores showed no statistical differences between the groups (p > 0.05). The experimental group reported significantly lower pain intensity and greater comfort than the control group starting from week 2 (p < 0.05). In addition, subjective sleep quality assessed using the PSQI and objective sleep parameters (sleep duration and sleep score) measured by a smart wristband, including objective sleep duration and objective sleep score, were significantly better in the experimental group than in the control group from the first week (p < 0.05). CONCLUSION: Hand massage is an effective method for reducing pain and increasing sleep quality and comfort in palliative oncology patients. CLINICAL TRIAL REGISTRATION NO: NCT06360614.",
+      "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "gist",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41813939/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 204
+    },
+    {
+      "uid": "pmid_41805548",
+      "pmid": "41805548",
+      "title": "A Telemedicine App for Nonrigid Facial Rehabilitation Training Enhanced by Efficient Fully Convolutional Neural Network With Residual Network (EffiFCNN-ResNet) to Improve Accessibility for Patients With Nasopharyngeal Carcinoma Cancer: Randomized Controlled Trial.",
+      "abstract": "BACKGROUND: Resource limitations in public hospitals may hinder timely monitoring and management of rehabilitation in patients with nasopharyngeal carcinoma (NPC) after radiotherapy. OBJECTIVE: This study developed and evaluated the telemedicine app \"Open Care,\" which integrates the Efficient Fully Convolutional Neural Network with Residual Network (EffiFCNN-ResNet) model and computer vision to monitor facial training exercises and provide real-time feedback, aiming to improve outcomes in patients with restricted mouth opening. METHODS: Initially, the EffiFCNN-ResNet model underwent 5-fold cross-validation, expert validation, and robustness testing to assess its reliability and clinical applicability in complex real-world environments. Subsequently, to evaluate the telemedicine app, a parallel-group, 2-arm randomized controlled trial was conducted with 109 patients, who were randomly assigned to either the intervention group (n=55) or the control group (n=54). The intervention group performed mouth-opening exercises under the supervision and guidance of the telemedicine app, whereas the control group followed traditional video-based instructions. Primary outcome measures included maximum mouth opening, mouth-opening symmetry, exercise frequency, and rehabilitation-related health beliefs. Secondary outcomes included fatigue (Brief Fatigue Inventory), health-related quality of life (Assessment of Quality of Life-6 Dimensions), and system usability scores. Data were analyzed using 2-tailed (unpaired) independent-samples t tests and chi-square tests, and the Mann-Whitney U test was used to assess intra- and inter-group differences before and after the intervention. RESULTS: The \"Open Care\" system leverages a lightweight fully convolutional neural network (FCNN) depth model integrated with network communication to enable real-time capture, recognition, and correction of nonrigid facial training movements. It also provides visual feedback and supports automated rehabilitation assessment. The model demonstrated strong generalization ability (macro-averaged F1-score, mean 0.96, SD 0.01) and clinical-grade stability (performance degradation: mean 5.2%, SD 0.6%, under lighting disturbances and challenging pathological cases; n=160 video segments). Compared with the control group, the intervention group showed significant improvements in maximum mouth opening (P=.04), exercise frequency (P=.001), perceived severity (P=.007), perceived benefits (P=.04), perceived barriers (P=.001), self-efficacy (P=.04), cues to action (P=.001), health behavior (P=.03), and fatigue (P=.04). Participants also reported favorable training experiences, with a mean system usability score of 74.3 out of 100. CONCLUSIONS: This telemedicine approach was more effective than traditional methods, improving patient engagement and rehabilitation outcomes while providing a more objective and precise monitoring tool. Future apps may benefit patients with NPC and other head and neck cancers. TRIAL REGISTRATION: Chinese Clinical Trial Registry ChiCTR2400090305; https://www.chictr.org.cn/showprojEN.html?proj=235073.",
+      "journal": "JMIR mHealth and uHealth",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "neuroendocrine",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41805548/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 205
+    },
+    {
+      "uid": "pmid_41512176",
+      "pmid": "41512176",
+      "title": "Health-related quality of life after second-line axi-cel in transplant-ineligible patients with large B-cell lymphoma.",
+      "abstract": "The phase 2 ALYCANTE trial aimed to evaluate the investigator-assessed complete metabolic response at 3 months from the axicabtagene ciloleucel (axi-cel) infusion as a primary end point in patients with high-risk relapsed/refractory large B-cell lymphoma who are ineligible for autologous stem cell transplantation (ASCT). This study showed a significant improvement in complete metabolic response rate at 3 months based on historical controls. This study reports the health-related quality of life (HRQoL) results as a secondary end point. HRQoL was assessed using the European Organization for Research and Treatment of Cancer Quality of Life Questionnaire (EORTC QLQ-C30) cancer-specific questionnaire, the Quality of Life Questionnaire high-grade non-Hodgkin lymphoma 29 (QLQ-NHL-HG29) , and the EuroQol Quality of Life Scale-5 dimensions-5 levels of severity (EQ-5D-5L) generic questionnaire at baseline and 1, 3, 6, and 12 months after axi-cel infusion. Among the 62 patients included, 60 (97%) completed a baseline and at least 1 postbaseline HRQoL assessment. At 1 month infusion, adjusted mean change in HRQoL scores from baseline showed a clinically significant deterioration (greater than the clinical threshold) in physical, role, social functioning, and fatigue. However, all HRQoL dimensions recovered by 3 months after infusion and remained stable or continued to improve by 12 months. In an exploratory analysis, adjusted mean change in HRQoL score from baseline in ALYCANTE was similar to or better than in ASCT-eligible patients who received axi-cel in the phase 3 ZUMA-7 trial. Finally, the global health status and fatigue scores of the ALYCANTE population improved to levels comparable to the general French population of similar age by 3 months after infusion. These findings indicate that axi-cel improves HRQoL regardless of transplant eligibility, supporting its use across a broad patient population. This trial was registered at www.clinicaltrials.gov as #NCT04531046.",
+      "journal": "Blood advances",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "dlbcl",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41512176/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 206
     },
     {
       "uid": "pmid_41654161",
@@ -4361,7 +3943,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 229
+      "rank": 207
     },
     {
       "uid": "pmid_41643515",
@@ -4380,7 +3962,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 230
+      "rank": 208
     },
     {
       "uid": "pmid_41643516",
@@ -4399,7 +3981,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 231
+      "rank": 209
     },
     {
       "uid": "pmid_41135711",
@@ -4418,7 +4000,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 232
+      "rank": 210
     },
     {
       "uid": "pmid_41831430",
@@ -4437,7 +4019,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 233
+      "rank": 211
     },
     {
       "uid": "rss_db67ec57e3",
@@ -4456,7 +4038,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 234
+      "rank": 212
     },
     {
       "uid": "rss_3e9a8fcc90",
@@ -4475,7 +4057,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 235
+      "rank": 213
     },
     {
       "uid": "rss_0e4b5cc7d7",
@@ -4494,7 +4076,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 236
+      "rank": 214
     },
     {
       "uid": "rss_18c3b979b8",
@@ -4513,7 +4095,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 237
+      "rank": 215
     },
     {
       "uid": "rss_535a1798ee",
@@ -4532,7 +4114,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 238
+      "rank": 216
     },
     {
       "uid": "rss_13e0750e30",
@@ -4551,7 +4133,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 239
+      "rank": 217
     },
     {
       "uid": "rss_8c38010daf",
@@ -4570,7 +4152,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 240
+      "rank": 218
     },
     {
       "uid": "rss_c40e1ea4f0",
@@ -4589,7 +4171,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 241
+      "rank": 219
     },
     {
       "uid": "pmid_41342548",
@@ -4608,26 +4190,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 242
-    },
-    {
-      "uid": "pmid_41359440",
-      "pmid": "41359440",
-      "title": "Phase II study of FOLFIRI with low-dose irinotecan plus ramucirumab as second-line treatment in Japanese patients with metastatic colorectal cancer (study rindo).",
-      "abstract": "OBJECTIVE: This multicenter, single-arm, Phase II study aimed to evaluate the efficacy and safety of fluorouracil, levofolinate, and irinotecan (150 mg/m2, standard dose in Japan) (FOLFIRI) plus ramucirumab (RAM) as second-line treatment for metastatic colorectal cancer (mCRC) in Japanese patients. METHODS: On Day 1 of each 2-week cycle, patients with unresectable mCRC who were refractory to oxaliplatin and fluoropyrimidine in combination with bevacizumab or anti-epidermal growth factor receptor antibodies as first-line treatment received 8 mg/kg RAM, followed by the FOLFIRI regimen with low-dose irinotecan (150 mg/m2). The primary endpoint was progression-free survival (PFS), and secondary endpoints were overall survival (OS), treatment compliance, and safety. RESULTS: A total of 62 patients were enrolled from 15 institutions between January 2018 and August 2021. The intent-to-treat and safety populations included 61 and 58 patients. Median PFS and OS were 5.9 months (95% CI, 4.8-6.9 months) and 17.0 months (95% CI, 12.0-21.0 months), respectively. The objective response rate and disease control rate were 8.2% and 74%, respectively. The median time to treatment failure was 4.8 months (95% CI, 3.2-5.9 months). The median relative dose intensities of irinotecan, 5-fluorouracil, and RAM were 73.8% (range, 40.3%-102.4%), 58.5% (range, 22.8%-102.4%), and 80.8% (range, 36.1%-102.4%), respectively. Frequencies of Grade ≥ 3 hematologic, non-hematologic, and RAM-associated adverse events were 43%, 24%, and 17%, respectively. The observed Grade ≥ 3 adverse events included neutropenia (40%), diarrhea (8.6%), decreased appetite (10%), hypertension (6.9%), and proteinuria (3.4%). CONCLUSION: FOLFIRI with low-dose irinotecan plus RAM is a feasible second-line treatment in Japanese patients with mCRC.",
-      "journal": "Japanese journal of clinical oncology",
-      "pub_date": "2026 Mar",
-      "type": "phase2",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41359440/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 60.0,
-      "rank": 243
+      "rank": 220
     },
     {
       "uid": "pmid_41817106",
@@ -4646,26 +4209,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 244
+      "rank": 221
     },
     {
-      "uid": "pmid_41823504",
-      "pmid": "41823504",
-      "title": "A phase 1 study of berzosertib (M6620, VX-970) in combination with cisplatin and radiation in patients with locally advanced head and neck squamous cell carcinoma (ETCTN 9950).",
-      "abstract": "BACKGROUND: Ataxia telangiectasia Rad3-related (ATR) protein kinase regulates DNA damage response and is essential for tumor cell survival. Preclinically, ATR inhibition can sensitize tumor cells to radiation and chemotherapy. The authors conducted a phase 1 trial of berzosertib, a selective ATR inhibitor, in combination with definitive radiation and cisplatin in locally advanced head and neck squamous cell cancers (LA-HNSCC). METHODS: LA-HNSCC patients received daily radiation (2 Gy per fraction to 70 Gy) and weekly intravenous (iv) cisplatin 40 mg/m RESULTS: Forty-one of 43 enrolled patients were evaluable for safety and preliminary efficacy assessments. Four patients experienced dose-limiting toxicities (DLTs) in dose-escalation: grade 4 thrombocytopenia (1), grade 4 respiratory failure (1), grade 3 renal injury and hypoxia (1), and inability to receive 90% of the planned radiation dose (1). DL3 was the recommended phase 2 dose, and 15 patients were enrolled at this DL as an expansion cohort. Objective response rates (ORR) in patient cohorts treated with any amount of berzosertib; treated with at least 50% of planned treatment; and in the expansion cohort were 78.8% (26 of 33), 78.8% (26 of 33), and 63.6% (7 of 11), respectively, after excluding eight inevaluable patients without post-treatment imaging assessment. CONCLUSIONS: Berzosertib (200 mg/m",
-      "journal": "Cancer",
+      "uid": "pmid_41359440",
+      "pmid": "41359440",
+      "title": "Phase II study of FOLFIRI with low-dose irinotecan plus ramucirumab as second-line treatment in Japanese patients with metastatic colorectal cancer (study rindo).",
+      "abstract": "OBJECTIVE: This multicenter, single-arm, Phase II study aimed to evaluate the efficacy and safety of fluorouracil, levofolinate, and irinotecan (150 mg/m2, standard dose in Japan) (FOLFIRI) plus ramucirumab (RAM) as second-line treatment for metastatic colorectal cancer (mCRC) in Japanese patients. METHODS: On Day 1 of each 2-week cycle, patients with unresectable mCRC who were refractory to oxaliplatin and fluoropyrimidine in combination with bevacizumab or anti-epidermal growth factor receptor antibodies as first-line treatment received 8 mg/kg RAM, followed by the FOLFIRI regimen with low-dose irinotecan (150 mg/m2). The primary endpoint was progression-free survival (PFS), and secondary endpoints were overall survival (OS), treatment compliance, and safety. RESULTS: A total of 62 patients were enrolled from 15 institutions between January 2018 and August 2021. The intent-to-treat and safety populations included 61 and 58 patients. Median PFS and OS were 5.9 months (95% CI, 4.8-6.9 months) and 17.0 months (95% CI, 12.0-21.0 months), respectively. The objective response rate and disease control rate were 8.2% and 74%, respectively. The median time to treatment failure was 4.8 months (95% CI, 3.2-5.9 months). The median relative dose intensities of irinotecan, 5-fluorouracil, and RAM were 73.8% (range, 40.3%-102.4%), 58.5% (range, 22.8%-102.4%), and 80.8% (range, 36.1%-102.4%), respectively. Frequencies of Grade ≥ 3 hematologic, non-hematologic, and RAM-associated adverse events were 43%, 24%, and 17%, respectively. The observed Grade ≥ 3 adverse events included neutropenia (40%), diarrhea (8.6%), decreased appetite (10%), hypertension (6.9%), and proteinuria (3.4%). CONCLUSION: FOLFIRI with low-dose irinotecan plus RAM is a feasible second-line treatment in Japanese patients with mCRC.",
+      "journal": "Japanese journal of clinical oncology",
       "pub_date": "2026 Mar",
       "type": "phase2",
-      "disease": "neuroendocrine",
-      "category": "solid",
+      "disease": "all",
+      "category": "heme",
       "source": "pubmed",
       "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41823504/",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41359440/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 245
+      "rank": 222
     },
     {
       "uid": "pmid_41832629",
@@ -4684,7 +4247,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 246
+      "rank": 223
+    },
+    {
+      "uid": "pmid_41823504",
+      "pmid": "41823504",
+      "title": "A phase 1 study of berzosertib (M6620, VX-970) in combination with cisplatin and radiation in patients with locally advanced head and neck squamous cell carcinoma (ETCTN 9950).",
+      "abstract": "BACKGROUND: Ataxia telangiectasia Rad3-related (ATR) protein kinase regulates DNA damage response and is essential for tumor cell survival. Preclinically, ATR inhibition can sensitize tumor cells to radiation and chemotherapy. The authors conducted a phase 1 trial of berzosertib, a selective ATR inhibitor, in combination with definitive radiation and cisplatin in locally advanced head and neck squamous cell cancers (LA-HNSCC). METHODS: LA-HNSCC patients received daily radiation (2 Gy per fraction to 70 Gy) and weekly intravenous (iv) cisplatin 40 mg/m RESULTS: Forty-one of 43 enrolled patients were evaluable for safety and preliminary efficacy assessments. Four patients experienced dose-limiting toxicities (DLTs) in dose-escalation: grade 4 thrombocytopenia (1), grade 4 respiratory failure (1), grade 3 renal injury and hypoxia (1), and inability to receive 90% of the planned radiation dose (1). DL3 was the recommended phase 2 dose, and 15 patients were enrolled at this DL as an expansion cohort. Objective response rates (ORR) in patient cohorts treated with any amount of berzosertib; treated with at least 50% of planned treatment; and in the expansion cohort were 78.8% (26 of 33), 78.8% (26 of 33), and 63.6% (7 of 11), respectively, after excluding eight inevaluable patients without post-treatment imaging assessment. CONCLUSIONS: Berzosertib (200 mg/m",
+      "journal": "Cancer",
+      "pub_date": "2026 Mar",
+      "type": "phase2",
+      "disease": "neuroendocrine",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41823504/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 60.0,
+      "rank": 224
     },
     {
       "uid": "pmid_41818249",
@@ -4703,7 +4285,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 247
+      "rank": 225
     },
     {
       "uid": "pmid_41380113",
@@ -4722,7 +4304,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 248
+      "rank": 226
     },
     {
       "uid": "pmid_41690301",
@@ -4741,7 +4323,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 249
+      "rank": 227
     },
     {
       "uid": "pmid_41633120",
@@ -4760,7 +4342,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 250
+      "rank": 228
     },
     {
       "uid": "pmid_41099583",
@@ -4779,7 +4361,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 251
+      "rank": 229
     },
     {
       "uid": "pmid_41653501",
@@ -4798,7 +4380,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 252
+      "rank": 230
     },
     {
       "uid": "pmid_41826541",
@@ -4817,7 +4399,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 253
+      "rank": 231
     },
     {
       "uid": "pmid_39365168",
@@ -4836,7 +4418,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 254
+      "rank": 232
     },
     {
       "uid": "pmid_41808362",
@@ -4855,7 +4437,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 255
+      "rank": 233
     },
     {
       "uid": "pmid_41820200",
@@ -4874,26 +4456,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 256
-    },
-    {
-      "uid": "pmid_41801573",
-      "pmid": "41801573",
-      "title": "Cardiotoxic Effects of Osimertinib Compared to Other EGFR Inhibitors: A Systematic Review and Meta-Analysis.",
-      "abstract": "Osimertinib, a third-generation epidermal growth factor receptor (EGFR) inhibitor, was developed to overcome resistance from EGFR-mutant non-small-cell lung cancer (NSCLC). While it offers significant therapeutic benefits, reports have linked Osimertinib to cardiotoxic effects. This study aims to clarify the direct cardiotoxicity of Osimertinib by reviewing clinical trials and cohort studies involving Osimertinib monotherapy compared to other EGFR inhibitors. A search was conducted in online databases. Measured outcomes included risk of heart failure (HF), myocardial infarction (MI), decline in left ventricular ejection fraction (LVEF), arrhythmias, and pericardial effusion. These outcomes were reported as risk ratio (RR) with a random effects model using 95% confidence intervals (CI). Five studies with 19,008 patients (age 68 ± 13, 65% female) were selected. Osimertinib therapy was associated with an increased risk of HF (RR = 1.45, 95% CI 1.19-1.76, p = 0.0002), decline in LVEF (RR = 3.10, 95% CI 1.72-5.59, p = 0.0002) and MI (RR = 1.40, 95% CI 1.09-1.79, p = 0.0078) compared to other EGFR inhibitors. There was no difference in the risk of arrhythmias and pericardial effusion. Osimertinib therapy is associated with an increased risk of HF and a decline in LVEF compared to other EGFR inhibitors, while associations with MI and arrhythmias were less consistent. Although these events are infrequent, their potential severity warrants proactive cardiac monitoring for patients receiving Osimertinib, particularly in patients with pre-existing risk factors.",
-      "journal": "Cardiovascular toxicology",
-      "pub_date": "2026 Mar",
-      "type": "review",
-      "disease": "nsclc",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41801573/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 257
+      "rank": 234
     },
     {
       "uid": "pmid_41653927",
@@ -4912,7 +4475,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 258
+      "rank": 235
+    },
+    {
+      "uid": "pmid_41801573",
+      "pmid": "41801573",
+      "title": "Cardiotoxic Effects of Osimertinib Compared to Other EGFR Inhibitors: A Systematic Review and Meta-Analysis.",
+      "abstract": "Osimertinib, a third-generation epidermal growth factor receptor (EGFR) inhibitor, was developed to overcome resistance from EGFR-mutant non-small-cell lung cancer (NSCLC). While it offers significant therapeutic benefits, reports have linked Osimertinib to cardiotoxic effects. This study aims to clarify the direct cardiotoxicity of Osimertinib by reviewing clinical trials and cohort studies involving Osimertinib monotherapy compared to other EGFR inhibitors. A search was conducted in online databases. Measured outcomes included risk of heart failure (HF), myocardial infarction (MI), decline in left ventricular ejection fraction (LVEF), arrhythmias, and pericardial effusion. These outcomes were reported as risk ratio (RR) with a random effects model using 95% confidence intervals (CI). Five studies with 19,008 patients (age 68 ± 13, 65% female) were selected. Osimertinib therapy was associated with an increased risk of HF (RR = 1.45, 95% CI 1.19-1.76, p = 0.0002), decline in LVEF (RR = 3.10, 95% CI 1.72-5.59, p = 0.0002) and MI (RR = 1.40, 95% CI 1.09-1.79, p = 0.0078) compared to other EGFR inhibitors. There was no difference in the risk of arrhythmias and pericardial effusion. Osimertinib therapy is associated with an increased risk of HF and a decline in LVEF compared to other EGFR inhibitors, while associations with MI and arrhythmias were less consistent. Although these events are infrequent, their potential severity warrants proactive cardiac monitoring for patients receiving Osimertinib, particularly in patients with pre-existing risk factors.",
+      "journal": "Cardiovascular toxicology",
+      "pub_date": "2026 Mar",
+      "type": "review",
+      "disease": "nsclc",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41801573/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 236
     },
     {
       "uid": "pmid_41360362",
@@ -4931,7 +4513,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 259
+      "rank": 237
     },
     {
       "uid": "pmid_41810601",
@@ -4950,7 +4532,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 260
+      "rank": 238
     },
     {
       "uid": "pmid_41805738",
@@ -4969,7 +4551,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 261
+      "rank": 239
     },
     {
       "uid": "pmid_41805927",
@@ -4988,7 +4570,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 262
+      "rank": 240
     },
     {
       "uid": "pmid_41108326",
@@ -5007,7 +4589,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 263
+      "rank": 241
     },
     {
       "uid": "pmid_41422795",
@@ -5026,7 +4608,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 264
+      "rank": 242
     },
     {
       "uid": "pmid_41819062",
@@ -5045,7 +4627,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 265
+      "rank": 243
     }
   ]
 }
