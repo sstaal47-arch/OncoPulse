@@ -1670,7 +1670,7 @@ const DEFAULT_SETTINGS = {
   granularity: 'broad',   // 'broad' | 'mid' | 'full'
   diseases: ALL_LEAF_IDS,
   journals: ALL_JOURNAL_IDS,
-  maxDisplay: 150,
+  maxDisplay: 300,
 };
 
 function loadSettings() {
@@ -1681,7 +1681,7 @@ function loadSettings() {
       granularity: s.granularity || 'broad',
       diseases:    s.diseases    || [...ALL_LEAF_IDS],
       journals:    s.journals    || [...ALL_JOURNAL_IDS],
-      maxDisplay:  s.maxDisplay  || 150,
+      maxDisplay:  s.maxDisplay  || 300,
     };
   } catch { return { ...DEFAULT_SETTINGS, diseases: [...ALL_LEAF_IDS], journals: [...ALL_JOURNAL_IDS] }; }
 }
@@ -1691,7 +1691,7 @@ function saveSettings(s) { localStorage.setItem(SETTINGS_KEY, JSON.stringify(s))
 function isCustomSettings(s) {
   return s.diseases.length !== ALL_LEAF_IDS.length ||
          s.journals.length !== ALL_JOURNAL_IDS.length ||
-         s.maxDisplay !== 150;
+         s.maxDisplay !== 300;
 }
 
 function toggleSettingsPanel() {
@@ -1947,7 +1947,7 @@ function applyAndSaveSettings() {
   const journals = [];
   document.querySelectorAll('[data-jid].selected').forEach(btn => journals.push(btn.dataset.jid));
 
-  const maxDisplay = parseInt(document.getElementById('maxDisplayInput')?.value || '150', 10);
+  const maxDisplay = parseInt(document.getElementById('maxDisplayInput')?.value || '300', 10);
 
   const newS = { granularity: s.granularity, diseases, journals, maxDisplay };
   saveSettings(newS);
@@ -1959,7 +1959,7 @@ function applyAndSaveSettings() {
 }
 
 function resetSettings() {
-  saveSettings({ granularity: 'broad', diseases: [...ALL_LEAF_IDS], journals: [...ALL_JOURNAL_IDS], maxDisplay: 150 });
+  saveSettings({ granularity: 'broad', diseases: [...ALL_LEAF_IDS], journals: [...ALL_JOURNAL_IDS], maxDisplay: 300 });
   renderSettingsPanel();
   applyFilters();
   updateSettingsBanner();
@@ -1973,7 +1973,7 @@ function updateSettingsBanner() {
     const parts = [];
     if (s.diseases.length < ALL_LEAF_IDS.length) parts.push(`${s.diseases.length} diseases`);
     if (s.journals.length < ALL_JOURNAL_IDS.length) parts.push(`${s.journals.length} journals`);
-    if (s.maxDisplay !== 150) parts.push(`max ${s.maxDisplay}`);
+    if (s.maxDisplay !== 300) parts.push(`max ${s.maxDisplay}`);
     banner.textContent = `⚙ Custom filter active: ${parts.join(' · ')} — click Settings to change`;
     banner.classList.add('visible');
   } else {
