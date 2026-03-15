@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-15T16:23:35.813957Z",
+  "generated_at": "2026-03-15T16:38:14.692738Z",
   "week_label": "Mar 8–Mar 15, 2026",
   "lookback_days": 7,
   "stats": {
-    "total": 243,
-    "phase3": 200,
+    "total": 250,
+    "phase3": 207,
     "phase2": 23,
     "fda": 0,
     "review": 20,
@@ -70,6 +70,25 @@
       "rank": 3
     },
     {
+      "uid": "rss_314e1c4e6f",
+      "pmid": "",
+      "title": "[Correspondence] National lung cancer screening programme in Brazil: an urgent need",
+      "abstract": "Lung cancer is a major public health problem in Brazil; estimates from GLOBOCAN, produced by the International Agency for Research on Cancer, showed 44 213 new cases and 38 292 deaths in the country from lung cancer in 2022.1 The disease is associated with high morbidity, mortality, reduced quality of life, loss of productivity, and a considerably low survival rate.1 Lung cancer also imposes high costs on the Brazilian public health system (Sistema Único de Saúde [SUS]).2",
+      "journal": "Lancet",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00054-1/fulltext?rss=yes",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 120.0,
+      "rank": 4
+    },
+    {
       "uid": "rss_e570178050",
       "pmid": "",
       "title": "[Articles] Pimicotinib versus placebo for tenosynovial giant cell tumour (MANEUVER): an international, randomised, placebo-controlled, phase 3 trial",
@@ -86,7 +105,45 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 4
+      "rank": 5
+    },
+    {
+      "uid": "rss_5416dcb55a",
+      "pmid": "",
+      "title": "Individualized Perioperative Blood Pressure Management in Major Abdominal Surgery—Reply",
+      "abstract": "In Reply Dr Miyazaki’s Letter to the Editor on the IMPROVE-multi trial—which reported that individualized perioperative blood pressure management based on preoperative mean nighttime MAP did not improve outcomes compared with maintaining MAP at 65 mm Hg or greater—correctly notes that maintaining intraoperative blood pressure using vasopressors (which themselves may be associated with acute kidney injury) does not necessarily ensure adequate end-organ perfusion. In our trial, interventions to maintain blood pressure targets were left to the discretion of treating anesthesiologists skilled in identifying underlying causes of hypotension and intervening appropriately. Intraoperative hypotension can be caused by vasodilation, hypovolemia, bradycardia, and myocardial depression. From a pathophysiologic perspective, hypotension should thus be specifically treated with vasopressors, fluids, chronotropic agents, or inotropes to directly address the underlying cause(s)—and not always with vasopressors. However, it still needs to be investigated in clinical trials whether blood pressure management based on distinct hypotension endotypes helps avoid organ injury. The IMPROVE-multi trial focused on blood pressure (which must be monitored in every patient during surgery) and did not include systematic monitoring of blood flow variables such as stroke volume and cardiac output.",
+      "journal": "JAMA",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "neuroendocrine",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://jamanetwork.com/journals/jama/fullarticle/2845043",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 120.0,
+      "rank": 6
+    },
+    {
+      "uid": "rss_56d1148a77",
+      "pmid": "",
+      "title": "Novel Airflow System for Use in Critical Avalanche Burial",
+      "abstract": "To the Editor We read with great interest the recent randomized clinical trial that described the potential benefit of an airflow system allowing avalanche-buried individuals to survive longer by maintaining better oxygenation without an increase in end-tidal carbon dioxide. The authors deserve recognition for successfully conducting such a challenging study in high-altitude and winter conditions.",
+      "journal": "JAMA",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://jamanetwork.com/journals/jama/fullarticle/2844759",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 120.0,
+      "rank": 7
     },
     {
       "uid": "rss_eb4edc62d3",
@@ -105,7 +162,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 5
+      "rank": 8
     },
     {
       "uid": "rss_aeed08973c",
@@ -124,7 +181,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 6
+      "rank": 9
     },
     {
       "uid": "rss_29d8fb8829",
@@ -143,7 +200,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 7
+      "rank": 10
     },
     {
       "uid": "rss_8db7847b77",
@@ -162,7 +219,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 8
+      "rank": 11
     },
     {
       "uid": "rss_ff41ff62eb",
@@ -181,7 +238,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 9
+      "rank": 12
     },
     {
       "uid": "rss_3efddc8454",
@@ -200,7 +257,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 10
+      "rank": 13
     },
     {
       "uid": "rss_dcee61469a",
@@ -219,7 +276,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 11
+      "rank": 14
     },
     {
       "uid": "rss_df9f4436e0",
@@ -238,7 +295,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 12
+      "rank": 15
     },
     {
       "uid": "rss_6e496e91be",
@@ -257,7 +314,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 13
+      "rank": 16
     },
     {
       "uid": "rss_dee418e02b",
@@ -276,7 +333,83 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 14
+      "rank": 17
+    },
+    {
+      "uid": "rss_dc7862a447",
+      "pmid": "",
+      "title": "[Correspondence] AI-assisted screening for pancreatic cancer",
+      "abstract": "I appreciate the excellent work by Natólia Alves and colleagues,1 comparing artificial intelligence (AI) and radiologists in pancreatic cancer detection using standard of care CT scans (PANORAMA study). The paper is a milestone in evaluating the real-world diagnostic performance of an AI system for the detection of pancreatic ductal adenocarcinoma (PDAC) on contrast-enhanced CT. This important advance will facilitate PDAC surveillance of individuals who are at high risk.2 However, PANORAMA study's AI system1 is not suitable for PDAC screening of people who are at average risk of PDAC and are asymptomatic.",
+      "journal": "Lancet Oncol",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "pancreatic",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(25)00719-3/fulltext?rss=yes",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 120.0,
+      "rank": 18
+    },
+    {
+      "uid": "rss_cce237aa06",
+      "pmid": "",
+      "title": "[Correspondence] AI-assisted screening for pancreatic cancer – Authors' reply",
+      "abstract": "We thank Hans Scherübl and Misha D P Luyer1 for their insightful comments on the PANORAMA study,2 regarding the challenges and opportunities of artificial intelligence (AI)-assisted detection of pancreatic ductal adenocarcinoma (PDAC), particularly in early-stage disease.",
+      "journal": "Lancet Oncol",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "pancreatic",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(26)00054-9/fulltext?rss=yes",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 120.0,
+      "rank": 19
+    },
+    {
+      "uid": "rss_32bfd9ca06",
+      "pmid": "",
+      "title": "[Correspondence] Fuzuloparib plus apatinib in BRCA-mutated breast cancer: balancing efficacy and accessibility in regional China",
+      "abstract": "We congratulate Huiping Li and colleagues on the FABULOUS trial,1 which establishes fuzuloparib, with or without apatinib, as a viable option for HER2-negative metastatic breast cancer with germline BRCA1/2 mutations. As clinicians practising in a prefecture-level hospital in the Hunan province, we consider these findings from the perspective of accessibility and real-world applicability in resource-constrained settings.",
+      "journal": "Lancet Oncol",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "breast_general",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(25)00752-1/fulltext?rss=yes",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 120.0,
+      "rank": 20
+    },
+    {
+      "uid": "rss_840aa88ac1",
+      "pmid": "",
+      "title": "[Correspondence] Standardising MET amplification testing: limitations of the GCN ≥6 criterion",
+      "abstract": "We read with great interest the phase 2 KUNPENG trial by Yi-Long Wu and colleagues.1 The reported objective response rate of 48·8% with vebreltinib in MET amplification-driven non-small-cell lung cancer is promising. However, the use of a gene copy number (GCN) of six or higher as the sole enrolment criterion obscures crucial biological heterogeneity within this population. This methodological choice fundamentally limits the interpretability of the efficacy signal and poses a considerable risk for the design of the planned phase 3 trial.",
+      "journal": "Lancet Oncol",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(25)00758-2/fulltext?rss=yes",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 120.0,
+      "rank": 21
     },
     {
       "uid": "rss_41adec5803",
@@ -295,7 +428,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 15
+      "rank": 22
     },
     {
       "uid": "rss_015164efc5",
@@ -314,7 +447,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 16
+      "rank": 23
     },
     {
       "uid": "rss_357ff971f5",
@@ -333,7 +466,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 17
+      "rank": 24
     },
     {
       "uid": "rss_dc450b0afe",
@@ -352,7 +485,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 18
+      "rank": 25
     },
     {
       "uid": "rss_e4c35069cc",
@@ -371,7 +504,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 19
+      "rank": 26
     },
     {
       "uid": "rss_80606ec691",
@@ -390,7 +523,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 20
+      "rank": 27
     },
     {
       "uid": "rss_cdb00a6341",
@@ -409,7 +542,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 21
+      "rank": 28
     },
     {
       "uid": "rss_fdf01632bd",
@@ -428,7 +561,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 22
+      "rank": 29
     },
     {
       "uid": "rss_6669c9c943",
@@ -447,7 +580,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 23
+      "rank": 30
     },
     {
       "uid": "rss_9181e16c41",
@@ -466,7 +599,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 24
+      "rank": 31
     },
     {
       "uid": "rss_680bac8e94",
@@ -485,7 +618,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 25
+      "rank": 32
     },
     {
       "uid": "rss_672bcc854e",
@@ -504,7 +637,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 26
+      "rank": 33
     },
     {
       "uid": "rss_46e5f40e8c",
@@ -523,7 +656,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 27
+      "rank": 34
     },
     {
       "uid": "rss_6075cbe8f5",
@@ -542,7 +675,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 28
+      "rank": 35
     },
     {
       "uid": "rss_043df04bb3",
@@ -561,7 +694,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 29
+      "rank": 36
     },
     {
       "uid": "rss_6bee1820b3",
@@ -580,7 +713,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 30
+      "rank": 37
     },
     {
       "uid": "rss_737d1e4a78",
@@ -599,7 +732,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 31
+      "rank": 38
     },
     {
       "uid": "rss_2752cb4e49",
@@ -618,7 +751,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 32
+      "rank": 39
     },
     {
       "uid": "rss_59f91cc98e",
@@ -637,7 +770,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 33
+      "rank": 40
     },
     {
       "uid": "rss_d58f0352d0",
@@ -656,7 +789,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 34
+      "rank": 41
     },
     {
       "uid": "rss_4cbf3c4cec",
@@ -675,7 +808,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 35
+      "rank": 42
     },
     {
       "uid": "rss_5ec34785ec",
@@ -694,7 +827,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 36
+      "rank": 43
     },
     {
       "uid": "rss_8096e1a0ac",
@@ -713,7 +846,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 37
+      "rank": 44
     },
     {
       "uid": "rss_468989f87e",
@@ -732,7 +865,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 38
+      "rank": 45
     },
     {
       "uid": "rss_31af278bef",
@@ -751,7 +884,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 39
+      "rank": 46
     },
     {
       "uid": "rss_2d7bdf4b67",
@@ -770,7 +903,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 40
+      "rank": 47
     },
     {
       "uid": "rss_8c1767d263",
@@ -789,7 +922,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 41
+      "rank": 48
     },
     {
       "uid": "rss_9324c97d14",
@@ -808,7 +941,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 42
+      "rank": 49
     },
     {
       "uid": "rss_7715bf0f49",
@@ -827,7 +960,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 43
+      "rank": 50
     },
     {
       "uid": "rss_2b70e13b49",
@@ -846,7 +979,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 44
+      "rank": 51
     },
     {
       "uid": "rss_5619be13ad",
@@ -865,7 +998,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 45
+      "rank": 52
     },
     {
       "uid": "rss_be8c3567d7",
@@ -884,7 +1017,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 46
+      "rank": 53
     },
     {
       "uid": "rss_715f766975",
@@ -903,7 +1036,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 47
+      "rank": 54
     },
     {
       "uid": "rss_535a287a08",
@@ -922,7 +1055,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 48
+      "rank": 55
     },
     {
       "uid": "rss_31409daa64",
@@ -941,7 +1074,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 49
+      "rank": 56
     },
     {
       "uid": "rss_9e773bdb32",
@@ -960,7 +1093,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 50
+      "rank": 57
     },
     {
       "uid": "rss_06383f97fa",
@@ -979,7 +1112,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 51
+      "rank": 58
     },
     {
       "uid": "rss_c0dbe3df44",
@@ -998,7 +1131,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 52
+      "rank": 59
     },
     {
       "uid": "rss_d060193ab8",
@@ -1017,7 +1150,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 53
+      "rank": 60
     },
     {
       "uid": "rss_e8da590e71",
@@ -1036,7 +1169,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 54
+      "rank": 61
     },
     {
       "uid": "rss_4bbad54816",
@@ -1055,7 +1188,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 55
+      "rank": 62
     },
     {
       "uid": "rss_05c58b27a6",
@@ -1074,7 +1207,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 56
+      "rank": 63
     },
     {
       "uid": "rss_89ab2bbce8",
@@ -1093,7 +1226,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 57
+      "rank": 64
     },
     {
       "uid": "rss_54e93eef24",
@@ -1112,7 +1245,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 58
+      "rank": 65
     },
     {
       "uid": "rss_9014347a5f",
@@ -1131,7 +1264,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 59
+      "rank": 66
     },
     {
       "uid": "rss_ef063d6d52",
@@ -1150,7 +1283,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 60
+      "rank": 67
     },
     {
       "uid": "rss_f602f161f5",
@@ -1169,7 +1302,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 61
+      "rank": 68
     },
     {
       "uid": "rss_8e8cb41362",
@@ -1188,7 +1321,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 62
+      "rank": 69
     },
     {
       "uid": "rss_8269bcbae7",
@@ -1207,7 +1340,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 63
+      "rank": 70
     },
     {
       "uid": "rss_5c0df8a977",
@@ -1226,7 +1359,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 64
+      "rank": 71
     },
     {
       "uid": "rss_7c6363aa95",
@@ -1245,7 +1378,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 65
+      "rank": 72
     },
     {
       "uid": "rss_04d5fb8919",
@@ -1264,7 +1397,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 66
+      "rank": 73
     },
     {
       "uid": "rss_1874934c24",
@@ -1283,7 +1416,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 67
+      "rank": 74
     },
     {
       "uid": "rss_ab37b2b76e",
@@ -1302,7 +1435,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 68
+      "rank": 75
     },
     {
       "uid": "rss_0b835826a3",
@@ -1321,7 +1454,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 69
+      "rank": 76
     },
     {
       "uid": "rss_a192124b22",
@@ -1340,7 +1473,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 70
+      "rank": 77
     },
     {
       "uid": "rss_c84efc5603",
@@ -1359,7 +1492,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 71
+      "rank": 78
     },
     {
       "uid": "rss_7f096b184a",
@@ -1378,7 +1511,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 72
+      "rank": 79
     },
     {
       "uid": "rss_c69a537fb0",
@@ -1397,7 +1530,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 73
+      "rank": 80
     },
     {
       "uid": "rss_8762923f61",
@@ -1416,7 +1549,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 74
+      "rank": 81
     },
     {
       "uid": "rss_ac0b599b19",
@@ -1435,7 +1568,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 75
+      "rank": 82
     },
     {
       "uid": "rss_6bbc833324",
@@ -1454,7 +1587,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 76
+      "rank": 83
     },
     {
       "uid": "rss_eaf5c56d84",
@@ -1473,7 +1606,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 77
+      "rank": 84
     },
     {
       "uid": "rss_3bc187f2cb",
@@ -1492,7 +1625,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 78
+      "rank": 85
     },
     {
       "uid": "rss_3644be74bc",
@@ -1511,7 +1644,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 79
+      "rank": 86
     },
     {
       "uid": "rss_5c284a1a8c",
@@ -1530,7 +1663,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 80
+      "rank": 87
     },
     {
       "uid": "rss_f4dd52e64c",
@@ -1549,7 +1682,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 81
+      "rank": 88
     },
     {
       "uid": "rss_9ba3c77273",
@@ -1568,7 +1701,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 82
+      "rank": 89
     },
     {
       "uid": "rss_1306665460",
@@ -1587,7 +1720,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 83
+      "rank": 90
     },
     {
       "uid": "rss_07e0083cb1",
@@ -1606,7 +1739,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 84
+      "rank": 91
     },
     {
       "uid": "rss_d9f4269696",
@@ -1625,7 +1758,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 85
+      "rank": 92
     },
     {
       "uid": "rss_afcb93a8cd",
@@ -1644,7 +1777,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 86
+      "rank": 93
     },
     {
       "uid": "rss_5d0bc820a2",
@@ -1663,7 +1796,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 87
+      "rank": 94
     },
     {
       "uid": "rss_080f6e224e",
@@ -1682,7 +1815,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 88
+      "rank": 95
     },
     {
       "uid": "rss_db0d7de2f1",
@@ -1701,7 +1834,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 89
+      "rank": 96
     },
     {
       "uid": "rss_01af3f5903",
@@ -1720,7 +1853,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 90
+      "rank": 97
     },
     {
       "uid": "rss_40cf4c6b26",
@@ -1739,7 +1872,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 91
+      "rank": 98
     },
     {
       "uid": "rss_e2c239dcaf",
@@ -1758,7 +1891,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 92
+      "rank": 99
     },
     {
       "uid": "rss_7ac7eff0f3",
@@ -1777,7 +1910,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 93
+      "rank": 100
     },
     {
       "uid": "rss_e8ab72d32d",
@@ -1796,7 +1929,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 94
+      "rank": 101
     },
     {
       "uid": "rss_96f7f329c2",
@@ -1815,7 +1948,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 95
+      "rank": 102
     },
     {
       "uid": "rss_e9bfa50386",
@@ -1834,7 +1967,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 96
+      "rank": 103
     },
     {
       "uid": "rss_fe34424bd3",
@@ -1853,7 +1986,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 97
+      "rank": 104
     },
     {
       "uid": "rss_319bc1e81c",
@@ -1872,7 +2005,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 98
+      "rank": 105
     },
     {
       "uid": "rss_d3d2b9b4ec",
@@ -1891,7 +2024,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 99
+      "rank": 106
     },
     {
       "uid": "rss_cdd8547242",
@@ -1910,7 +2043,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 100
+      "rank": 107
     },
     {
       "uid": "rss_647841409b",
@@ -1929,7 +2062,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 101
+      "rank": 108
     },
     {
       "uid": "rss_6a6d53688d",
@@ -1948,7 +2081,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 102
+      "rank": 109
     },
     {
       "uid": "rss_d38113356c",
@@ -1967,7 +2100,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 103
+      "rank": 110
     },
     {
       "uid": "rss_ed04e28f73",
@@ -1986,7 +2119,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 104
+      "rank": 111
     },
     {
       "uid": "rss_a2e00a9dfc",
@@ -2005,7 +2138,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 105
+      "rank": 112
     },
     {
       "uid": "rss_1199c09af9",
@@ -2024,7 +2157,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 106
+      "rank": 113
     },
     {
       "uid": "rss_df92637cd0",
@@ -2043,7 +2176,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 107
+      "rank": 114
     },
     {
       "uid": "rss_8280fd7080",
@@ -2062,7 +2195,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 108
+      "rank": 115
     },
     {
       "uid": "rss_259bf94c7c",
@@ -2081,7 +2214,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 109
+      "rank": 116
     },
     {
       "uid": "rss_39a8d240e4",
@@ -2100,7 +2233,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 110
+      "rank": 117
     },
     {
       "uid": "rss_a033dddece",
@@ -2119,7 +2252,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 111
+      "rank": 118
     },
     {
       "uid": "rss_7263226323",
@@ -2138,7 +2271,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 112
+      "rank": 119
     },
     {
       "uid": "rss_8aca83b6f8",
@@ -2157,7 +2290,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 113
+      "rank": 120
     },
     {
       "uid": "rss_78d1667a6c",
@@ -2176,7 +2309,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 114
+      "rank": 121
     },
     {
       "uid": "rss_f57c0c71ba",
@@ -2195,7 +2328,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 115
+      "rank": 122
     },
     {
       "uid": "rss_f1d67da765",
@@ -2214,7 +2347,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 116
+      "rank": 123
     },
     {
       "uid": "rss_3ea39ce68c",
@@ -2233,7 +2366,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 117
+      "rank": 124
     },
     {
       "uid": "rss_1071500570",
@@ -2252,7 +2385,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 118
+      "rank": 125
     },
     {
       "uid": "rss_b8044dd3b1",
@@ -2271,7 +2404,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 119
+      "rank": 126
     },
     {
       "uid": "rss_14ee8524fc",
@@ -2290,7 +2423,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 120
+      "rank": 127
     },
     {
       "uid": "rss_6348f47b1c",
@@ -2309,7 +2442,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 121
+      "rank": 128
     },
     {
       "uid": "rss_9a2af21c2b",
@@ -2328,7 +2461,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 122
+      "rank": 129
     },
     {
       "uid": "rss_2fba2c02b5",
@@ -2347,7 +2480,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 123
+      "rank": 130
     },
     {
       "uid": "rss_57e54bb1dd",
@@ -2366,7 +2499,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 124
+      "rank": 131
     },
     {
       "uid": "rss_586b7fbe8e",
@@ -2385,7 +2518,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 125
+      "rank": 132
     },
     {
       "uid": "rss_61a8e85a28",
@@ -2404,7 +2537,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 126
+      "rank": 133
     },
     {
       "uid": "rss_9ffadaacb7",
@@ -2423,7 +2556,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 127
+      "rank": 134
     },
     {
       "uid": "rss_cdccab4056",
@@ -2442,7 +2575,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 128
+      "rank": 135
     },
     {
       "uid": "rss_496e9324c5",
@@ -2461,7 +2594,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 129
+      "rank": 136
     },
     {
       "uid": "rss_efe5d14e58",
@@ -2480,7 +2613,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 130
+      "rank": 137
     },
     {
       "uid": "rss_36cbe7df4b",
@@ -2499,7 +2632,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 131
+      "rank": 138
     },
     {
       "uid": "rss_b99d0e78f6",
@@ -2518,7 +2651,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 132
+      "rank": 139
     },
     {
       "uid": "rss_67e52779c4",
@@ -2537,7 +2670,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 133
+      "rank": 140
     },
     {
       "uid": "rss_0a9b749e61",
@@ -2556,7 +2689,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 134
+      "rank": 141
     },
     {
       "uid": "rss_fd0811fc9b",
@@ -2575,7 +2708,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 135
+      "rank": 142
     },
     {
       "uid": "rss_061781d6a1",
@@ -2594,7 +2727,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 136
+      "rank": 143
     },
     {
       "uid": "rss_a8a00ca29b",
@@ -2613,7 +2746,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 137
+      "rank": 144
     },
     {
       "uid": "rss_d6721970e2",
@@ -2632,7 +2765,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 138
+      "rank": 145
     },
     {
       "uid": "rss_c85e4edbeb",
@@ -2651,7 +2784,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 139
+      "rank": 146
     },
     {
       "uid": "rss_2896d09838",
@@ -2670,7 +2803,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 140
+      "rank": 147
     },
     {
       "uid": "rss_9c741a382d",
@@ -2689,7 +2822,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 141
+      "rank": 148
     },
     {
       "uid": "rss_2a930d160f",
@@ -2708,7 +2841,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 142
+      "rank": 149
     },
     {
       "uid": "rss_dbfb761e39",
@@ -2727,7 +2860,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 143
+      "rank": 150
     },
     {
       "uid": "rss_322fe19967",
@@ -2746,7 +2879,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 144
+      "rank": 151
     },
     {
       "uid": "rss_63d0cfeb16",
@@ -2765,7 +2898,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 145
+      "rank": 152
     },
     {
       "uid": "rss_6ad9a7a632",
@@ -2784,7 +2917,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 146
+      "rank": 153
     },
     {
       "uid": "rss_ce3ab20cb7",
@@ -2803,7 +2936,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 147
+      "rank": 154
     },
     {
       "uid": "rss_05da3d5355",
@@ -2822,7 +2955,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 148
+      "rank": 155
     },
     {
       "uid": "rss_49a076d9a1",
@@ -2841,7 +2974,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 149
+      "rank": 156
     },
     {
       "uid": "rss_e00317c4e6",
@@ -2860,7 +2993,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 150
+      "rank": 157
     },
     {
       "uid": "rss_9044d78b5a",
@@ -2879,7 +3012,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 151
+      "rank": 158
     },
     {
       "uid": "rss_4495c1302a",
@@ -2898,7 +3031,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 152
+      "rank": 159
     },
     {
       "uid": "rss_2a779ec918",
@@ -2917,7 +3050,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 153
+      "rank": 160
     },
     {
       "uid": "rss_8fad9fd04a",
@@ -2936,7 +3069,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 154
+      "rank": 161
     },
     {
       "uid": "rss_abe09b2409",
@@ -2955,7 +3088,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 155
+      "rank": 162
     },
     {
       "uid": "rss_f626965d7b",
@@ -2974,7 +3107,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 156
+      "rank": 163
     },
     {
       "uid": "rss_f9d48f33f7",
@@ -2993,7 +3126,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 157
+      "rank": 164
     },
     {
       "uid": "rss_c45d68a4ab",
@@ -3012,7 +3145,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 158
+      "rank": 165
     },
     {
       "uid": "rss_ea57666855",
@@ -3031,7 +3164,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 159
+      "rank": 166
     },
     {
       "uid": "rss_92a659f7a6",
@@ -3050,7 +3183,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 160
+      "rank": 167
     },
     {
       "uid": "rss_7e5e5ff3f5",
@@ -3069,7 +3202,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 161
+      "rank": 168
     },
     {
       "uid": "rss_d6fac0f627",
@@ -3088,7 +3221,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 162
+      "rank": 169
     },
     {
       "uid": "rss_e679b5155d",
@@ -3107,7 +3240,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 163
+      "rank": 170
     },
     {
       "uid": "rss_d49e04d195",
@@ -3126,7 +3259,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 164
+      "rank": 171
     },
     {
       "uid": "rss_07d6932126",
@@ -3145,7 +3278,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 165
+      "rank": 172
     },
     {
       "uid": "rss_0ee7d6816a",
@@ -3164,7 +3297,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 166
+      "rank": 173
     },
     {
       "uid": "rss_79290d6b22",
@@ -3183,7 +3316,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 167
+      "rank": 174
     },
     {
       "uid": "rss_ba8662b55b",
@@ -3202,7 +3335,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 168
+      "rank": 175
     },
     {
       "uid": "rss_345a429e62",
@@ -3221,7 +3354,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 169
+      "rank": 176
     },
     {
       "uid": "rss_113eb4a4ad",
@@ -3240,7 +3373,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 170
+      "rank": 177
     },
     {
       "uid": "rss_e6fe56b6de",
@@ -3259,7 +3392,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 171
+      "rank": 178
     },
     {
       "uid": "rss_286df252ab",
@@ -3278,7 +3411,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 172
+      "rank": 179
     },
     {
       "uid": "rss_33d4e25693",
@@ -3297,7 +3430,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 173
+      "rank": 180
     },
     {
       "uid": "rss_839eda4c80",
@@ -3316,7 +3449,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 174
+      "rank": 181
     },
     {
       "uid": "rss_dc76bd3101",
@@ -3335,7 +3468,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 175
+      "rank": 182
     },
     {
       "uid": "rss_7be25bf33b",
@@ -3354,7 +3487,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 176
+      "rank": 183
     },
     {
       "uid": "rss_8f8bb7e526",
@@ -3373,7 +3506,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 177
+      "rank": 184
     },
     {
       "uid": "pmid_41358601",
@@ -3392,7 +3525,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 178
+      "rank": 185
     },
     {
       "uid": "pmid_41765025",
@@ -3411,7 +3544,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 179
+      "rank": 186
     },
     {
       "uid": "pmid_41115797",
@@ -3430,7 +3563,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 180
+      "rank": 187
     },
     {
       "uid": "pmid_41826558",
@@ -3449,7 +3582,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 181
+      "rank": 188
     },
     {
       "uid": "pmid_41812193",
@@ -3468,7 +3601,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 182
+      "rank": 189
     },
     {
       "uid": "pmid_41402979",
@@ -3487,7 +3620,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 183
+      "rank": 190
     },
     {
       "uid": "pmid_41348911",
@@ -3506,7 +3639,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 184
+      "rank": 191
     },
     {
       "uid": "pmid_41706725",
@@ -3525,7 +3658,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 185
+      "rank": 192
     },
     {
       "uid": "pmid_41324490",
@@ -3544,7 +3677,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 186
+      "rank": 193
     },
     {
       "uid": "pmid_41824082",
@@ -3563,7 +3696,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 187
+      "rank": 194
     },
     {
       "uid": "pmid_41819560",
@@ -3582,7 +3715,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 188
+      "rank": 195
     },
     {
       "uid": "pmid_41693026",
@@ -3601,26 +3734,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 189
-    },
-    {
-      "uid": "pmid_41821581",
-      "pmid": "41821581",
-      "title": "Vebreltinib for Previously Treated Astrocytoma,",
-      "abstract": "",
-      "journal": "Cancer communications (London, England)",
-      "pub_date": "2026",
-      "type": "phase3",
-      "disease": "glioma",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41821581/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 190
+      "rank": 196
     },
     {
       "uid": "pmid_41825935",
@@ -3639,7 +3753,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 191
+      "rank": 197
     },
     {
       "uid": "pmid_41201381",
@@ -3658,7 +3772,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 192
+      "rank": 198
     },
     {
       "uid": "pmid_41802810",
@@ -3677,7 +3791,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 193
+      "rank": 199
     },
     {
       "uid": "pmid_41811469",
@@ -3696,7 +3810,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 194
+      "rank": 200
     },
     {
       "uid": "pmid_41828892",
@@ -3715,7 +3829,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 195
+      "rank": 201
     },
     {
       "uid": "pmid_41161645",
@@ -3734,7 +3848,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 196
+      "rank": 202
+    },
+    {
+      "uid": "pmid_41821581",
+      "pmid": "41821581",
+      "title": "Vebreltinib for Previously Treated Astrocytoma,",
+      "abstract": "",
+      "journal": "Cancer communications (London, England)",
+      "pub_date": "2026",
+      "type": "phase3",
+      "disease": "glioma",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41821581/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 203
     },
     {
       "uid": "pmid_41741368",
@@ -3753,7 +3886,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 197
+      "rank": 204
     },
     {
       "uid": "pmid_38788778",
@@ -3772,7 +3905,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 198
+      "rank": 205
     },
     {
       "uid": "pmid_41808570",
@@ -3791,7 +3924,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 199
+      "rank": 206
     },
     {
       "uid": "pmid_41824083",
@@ -3810,26 +3943,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 200
-    },
-    {
-      "uid": "pmid_41808581",
-      "pmid": "41808581",
-      "title": "Patient-reported outcomes in NRG Oncology RTOG 1010: Phase 3 trial evaluating the addition of trastuzumab to trimodality treatment of HER2 overexpressing esophageal adenocarcinoma.",
-      "abstract": "BACKGROUND: NRG/RTOG 1010 evaluated trastuzumab added to trimodality therapy for HER2+ localized esophageal adenocarcinoma (EAC) management. Secondary PRO objectives assessed improvement in the FACT-Esophageal Cancer Subscale (ECS), version 4, with trastuzumab, and if improved ECS correlated with pathologic complete response (pCR). METHODS: Patients were randomized to weekly paclitaxel/carboplatin/radiation (chemoradiation, CRT) followed by surgery ± trastuzumab (CRT + Tras). Disease-free survival (DFS) was the primary end point. The projected PRO sample size of 158 patients, based on an 80% participation rate of the DFS primary endpoint sample size of 197 HER2+ patients, would provide ≥ 89% power to detect ≥25% increase in the proportion of CRT + Tras patients with ECS improvement from baseline to 6-8 weeks post-CRT; one-sided α = 0.05, using a χ RESULTS: From 2010 to 2015, 203 HER2+ patients were randomized and 194 were eligible. Of 171 PRO consenting patients, the ECS was completed by 162 (95%) at baseline, 108 (64%) 6-8 weeks, 82 (49%) 1 year, and 55 (33%) at 2 years. The proportion of patients with an improvement in 6-8 weeks ECS was higher on the CRT + Tras arm (46% vs. 38%), although not significantly different (p = .39). There was no correlation between pCR and ECS scores at 1 year, with 39% and 37% of pCR and non-pCR patients, respectively, having improved 1-year ECS scores. CONCLUSIONS: The addition of trastuzumab to CRT for localized HER2+ EAC did not improve PROs.",
-      "journal": "Cancer",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "breast_her2",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41808581/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 201
+      "rank": 207
     },
     {
       "uid": "pmid_41702246",
@@ -3848,7 +3962,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 202
+      "rank": 208
     },
     {
       "uid": "pmid_41655462",
@@ -3867,7 +3981,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 203
+      "rank": 209
     },
     {
       "uid": "pmid_41813939",
@@ -3886,7 +4000,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 204
+      "rank": 210
     },
     {
       "uid": "pmid_41805548",
@@ -3905,7 +4019,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 205
+      "rank": 211
     },
     {
       "uid": "pmid_41512176",
@@ -3924,7 +4038,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 206
+      "rank": 212
+    },
+    {
+      "uid": "pmid_41808581",
+      "pmid": "41808581",
+      "title": "Patient-reported outcomes in NRG Oncology RTOG 1010: Phase 3 trial evaluating the addition of trastuzumab to trimodality treatment of HER2 overexpressing esophageal adenocarcinoma.",
+      "abstract": "BACKGROUND: NRG/RTOG 1010 evaluated trastuzumab added to trimodality therapy for HER2+ localized esophageal adenocarcinoma (EAC) management. Secondary PRO objectives assessed improvement in the FACT-Esophageal Cancer Subscale (ECS), version 4, with trastuzumab, and if improved ECS correlated with pathologic complete response (pCR). METHODS: Patients were randomized to weekly paclitaxel/carboplatin/radiation (chemoradiation, CRT) followed by surgery ± trastuzumab (CRT + Tras). Disease-free survival (DFS) was the primary end point. The projected PRO sample size of 158 patients, based on an 80% participation rate of the DFS primary endpoint sample size of 197 HER2+ patients, would provide ≥ 89% power to detect ≥25% increase in the proportion of CRT + Tras patients with ECS improvement from baseline to 6-8 weeks post-CRT; one-sided α = 0.05, using a χ RESULTS: From 2010 to 2015, 203 HER2+ patients were randomized and 194 were eligible. Of 171 PRO consenting patients, the ECS was completed by 162 (95%) at baseline, 108 (64%) 6-8 weeks, 82 (49%) 1 year, and 55 (33%) at 2 years. The proportion of patients with an improvement in 6-8 weeks ECS was higher on the CRT + Tras arm (46% vs. 38%), although not significantly different (p = .39). There was no correlation between pCR and ECS scores at 1 year, with 39% and 37% of pCR and non-pCR patients, respectively, having improved 1-year ECS scores. CONCLUSIONS: The addition of trastuzumab to CRT for localized HER2+ EAC did not improve PROs.",
+      "journal": "Cancer",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "breast_her2",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41808581/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 213
     },
     {
       "uid": "pmid_41654161",
@@ -3943,7 +4076,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 207
+      "rank": 214
     },
     {
       "uid": "pmid_41643515",
@@ -3962,7 +4095,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 208
+      "rank": 215
     },
     {
       "uid": "pmid_41643516",
@@ -3981,7 +4114,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 209
+      "rank": 216
     },
     {
       "uid": "pmid_41135711",
@@ -4000,7 +4133,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 210
+      "rank": 217
     },
     {
       "uid": "pmid_41831430",
@@ -4019,7 +4152,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 211
+      "rank": 218
     },
     {
       "uid": "rss_db67ec57e3",
@@ -4038,7 +4171,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 212
+      "rank": 219
     },
     {
       "uid": "rss_3e9a8fcc90",
@@ -4057,7 +4190,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 213
+      "rank": 220
     },
     {
       "uid": "rss_0e4b5cc7d7",
@@ -4076,7 +4209,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 214
+      "rank": 221
     },
     {
       "uid": "rss_18c3b979b8",
@@ -4095,7 +4228,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 215
+      "rank": 222
     },
     {
       "uid": "rss_535a1798ee",
@@ -4114,7 +4247,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 216
+      "rank": 223
     },
     {
       "uid": "rss_13e0750e30",
@@ -4133,7 +4266,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 217
+      "rank": 224
     },
     {
       "uid": "rss_8c38010daf",
@@ -4152,7 +4285,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 218
+      "rank": 225
     },
     {
       "uid": "rss_c40e1ea4f0",
@@ -4171,7 +4304,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 219
+      "rank": 226
     },
     {
       "uid": "pmid_41342548",
@@ -4190,121 +4323,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 220
-    },
-    {
-      "uid": "pmid_41817106",
-      "pmid": "41817106",
-      "title": "A randomized phase II trial of gemcitabine, nab-paclitaxel, cisplatin with or without a medically supervised ketogenic diet for patients with metastatic pancreatic cancer.",
-      "abstract": "BACKGROUND: A randomized phase II screening trial of gemcitabine, nab-paclitaxel, and cisplatin with a medically supervised ketogenic diet (MSKD) versus usual diet (non-MSKD) was conducted in patients with treatment-naive metastatic pancreatic ductal adenocarcinoma (PDAC). METHODS: Patients with untreated metastatic PDAC were randomized 1:1 to MSKD or non-MSKD while receiving gemcitabine, nab-paclitaxel, and cisplatin on days 1 and 8 of a 21-day cycle. The MSKD was guided by a remote health care team and daily ketone (beta-hydroxybutyrate) levels, with goal beta-hydroxybutyrate of 0.5 to 3.0 mM. The primary endpoint was progression-free survival (PFS) using a one-sided alpha level of 0.20. Secondary endpoints included overall survival (OS), safety, and quality of life (QOL). Changes in microbiome were an exploratory endpoint. FINDINGS: Overall, there were 32 evaluable patients. In the MSKD arm, 15 of 16 patients achieved nutritional ketosis; the median proportion of days in ketosis was 39.4%. The median PFS was 8.5 months in MSKD patients and 6.2 months in non-MSKD patients: hazard ratio, 0.53 (95% CI, 0.21-1.37); one-sided p = .096. The median OS was 13.7 months with MSKD and 10.2 months in the non-MSKD arm: hazard ratio, 0.58 (95% CI, 0.25-1.37); one-sided p = .107). All MSKD-related adverse events were grade 1-2. There were no significant differences in grade ≥3 chemotherapy-related adverse events between the arms. MSKD patients had no decline in QOL and had significant enrichment of beneficial taxa in the microbiome (p < .05, log-fold change ≥2). CONCLUSIONS: The MSKD is feasible in patients with PDAC and, although not powered for definitive outcomes, shows trends in improved PFS and OS when combined with gemcitabine, nab-paclitaxel, and cisplatin, without added toxicity or detriment to QOL. Larger studies are required to confirm these findings and establish the value of the MSKD in pancreatic cancer treatment.",
-      "journal": "Cancer",
-      "pub_date": "2026 Mar",
-      "type": "phase2",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41817106/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 60.0,
-      "rank": 221
-    },
-    {
-      "uid": "pmid_41359440",
-      "pmid": "41359440",
-      "title": "Phase II study of FOLFIRI with low-dose irinotecan plus ramucirumab as second-line treatment in Japanese patients with metastatic colorectal cancer (study rindo).",
-      "abstract": "OBJECTIVE: This multicenter, single-arm, Phase II study aimed to evaluate the efficacy and safety of fluorouracil, levofolinate, and irinotecan (150 mg/m2, standard dose in Japan) (FOLFIRI) plus ramucirumab (RAM) as second-line treatment for metastatic colorectal cancer (mCRC) in Japanese patients. METHODS: On Day 1 of each 2-week cycle, patients with unresectable mCRC who were refractory to oxaliplatin and fluoropyrimidine in combination with bevacizumab or anti-epidermal growth factor receptor antibodies as first-line treatment received 8 mg/kg RAM, followed by the FOLFIRI regimen with low-dose irinotecan (150 mg/m2). The primary endpoint was progression-free survival (PFS), and secondary endpoints were overall survival (OS), treatment compliance, and safety. RESULTS: A total of 62 patients were enrolled from 15 institutions between January 2018 and August 2021. The intent-to-treat and safety populations included 61 and 58 patients. Median PFS and OS were 5.9 months (95% CI, 4.8-6.9 months) and 17.0 months (95% CI, 12.0-21.0 months), respectively. The objective response rate and disease control rate were 8.2% and 74%, respectively. The median time to treatment failure was 4.8 months (95% CI, 3.2-5.9 months). The median relative dose intensities of irinotecan, 5-fluorouracil, and RAM were 73.8% (range, 40.3%-102.4%), 58.5% (range, 22.8%-102.4%), and 80.8% (range, 36.1%-102.4%), respectively. Frequencies of Grade ≥ 3 hematologic, non-hematologic, and RAM-associated adverse events were 43%, 24%, and 17%, respectively. The observed Grade ≥ 3 adverse events included neutropenia (40%), diarrhea (8.6%), decreased appetite (10%), hypertension (6.9%), and proteinuria (3.4%). CONCLUSION: FOLFIRI with low-dose irinotecan plus RAM is a feasible second-line treatment in Japanese patients with mCRC.",
-      "journal": "Japanese journal of clinical oncology",
-      "pub_date": "2026 Mar",
-      "type": "phase2",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41359440/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 60.0,
-      "rank": 222
-    },
-    {
-      "uid": "pmid_41832629",
-      "pmid": "41832629",
-      "title": "Durvalumab combined with concurrent chemoradiotherapy in patients with limited-stage small cell lung cancer: A prospective, single-arm, phase 2 clinical trial.",
-      "abstract": "BACKGROUND: The current standard treatment for limited-stage small cell lung cancer (LS-SCLC) is concurrent chemoradiotherapy (cCRT) plus consolidation immunotherapy, with or without prophylactic cranial irradiation (PCI). However, it remains unknown whether administering immunotherapy concurrently with chemoradiotherapy confers additional benefit. This clinical trial is designed to investigate the efficacy and safety using durvalumab with chemoradiotherapy for LS-SCLC. METHODS: In this single-arm phase 2 study, patients with LS-SCLC received three (1-4) cycles of etoposide, cisplatin, or carboplatin, and durvalumab every 3 weeks, following by thoracic radiotherapy of 60.0 Gy to the gross tumor volume and 54.0 Gy to the planning target volume in 30 once-daily fractions and chemoimmunotherapy. After cCRT plus durvalumab, patients received durvalumab consolidation therapy every 3 weeks for a minimum of 1 year. PCI was recommended to patients with partial or complete response when chemoradiotherapy completed. Efficacy and adverse events were assessed. RESULTS: Overall, 51 patients were enrolled from March 1, 2021, to April 30, 2024, with a median follow-up of 32.0 months. The 1-, 2-, and 3-year progression-free survival (PFS) rates were 56.9%, 35.9%, and 28.2%, respectively, and the median PFS was 17.0 months. The 1-, 2-, and 3-year overall survival (OS) rates were 88.1%, 68.6%, and 49.6%, respectively, and the median OS was 32.0 months. There were 17 (33.4%) patients with grade 3 or 4 adverse events, 7 of which were immune‑related. CONCLUSIONS: These results suggest that the addition of durvalumab to chemoradiotherapy was well tolerated and showed encouraging efficacy, supporting further investigation in patients with LS-SCLC eligible for radical chemoradiotherapy.",
-      "journal": "Cancer",
-      "pub_date": "2026 Mar",
-      "type": "phase2",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41832629/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 60.0,
-      "rank": 223
-    },
-    {
-      "uid": "pmid_41823504",
-      "pmid": "41823504",
-      "title": "A phase 1 study of berzosertib (M6620, VX-970) in combination with cisplatin and radiation in patients with locally advanced head and neck squamous cell carcinoma (ETCTN 9950).",
-      "abstract": "BACKGROUND: Ataxia telangiectasia Rad3-related (ATR) protein kinase regulates DNA damage response and is essential for tumor cell survival. Preclinically, ATR inhibition can sensitize tumor cells to radiation and chemotherapy. The authors conducted a phase 1 trial of berzosertib, a selective ATR inhibitor, in combination with definitive radiation and cisplatin in locally advanced head and neck squamous cell cancers (LA-HNSCC). METHODS: LA-HNSCC patients received daily radiation (2 Gy per fraction to 70 Gy) and weekly intravenous (iv) cisplatin 40 mg/m RESULTS: Forty-one of 43 enrolled patients were evaluable for safety and preliminary efficacy assessments. Four patients experienced dose-limiting toxicities (DLTs) in dose-escalation: grade 4 thrombocytopenia (1), grade 4 respiratory failure (1), grade 3 renal injury and hypoxia (1), and inability to receive 90% of the planned radiation dose (1). DL3 was the recommended phase 2 dose, and 15 patients were enrolled at this DL as an expansion cohort. Objective response rates (ORR) in patient cohorts treated with any amount of berzosertib; treated with at least 50% of planned treatment; and in the expansion cohort were 78.8% (26 of 33), 78.8% (26 of 33), and 63.6% (7 of 11), respectively, after excluding eight inevaluable patients without post-treatment imaging assessment. CONCLUSIONS: Berzosertib (200 mg/m",
-      "journal": "Cancer",
-      "pub_date": "2026 Mar",
-      "type": "phase2",
-      "disease": "neuroendocrine",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41823504/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 60.0,
-      "rank": 224
-    },
-    {
-      "uid": "pmid_41818249",
-      "pmid": "41818249",
-      "title": "Preoperative expiratory muscle training for swallowing function in patients with esophageal cancer undergoing esophagectomy: A randomized controlled phase II trial protocol.",
-      "abstract": "Esophagectomy is a highly invasive and curative procedure for esophageal cancer. Although minimally invasive techniques reduce the incidence of pulmonary complications, postoperative dysphagia remains a common and clinically significant issue. Preoperative expiratory muscle training (EMT) may improve swallowing function by strengthening the relevant muscles; however, its effectiveness in patients with esophageal cancer has not been widely studied. This phase II randomized, controlled, double-blind trial has been designed to evaluate the effects of preoperative EMT on postoperative swallowing function in patients undergoing esophagectomy for thoracic esophageal squamous cell carcinoma. Forty patients will be randomly assigned (1:1) to either the EMT or sham-EMT group. EMT will be performed using the EX-1 Medic® device at 50-70% maximal expiratory pressure, whereas the control group will receive minimal resistance (10 cmH₂O). The primary outcome is the Penetration-Aspiration Scale score on the postoperative video-fluoroscopic swallowing study, targeted at postoperative days 10 (allowable window: postoperative days 6-14). The secondary outcomes will be assessed perioperatively (preoperative and/or postoperative, depending on the measure) and include tongue pressure, the Repetitive Saliva Swallowing Test, T he eating assessment test-10, respiratory muscle strength, appendicular skeletal muscle index, and exercise tolerance. This study has been registered at University Hospital Medical Information Network (UMINID:000057795). Recruitment began on June 10, 2025, is expected to continue until September 30, 2028. This trial will clarify whether preoperative EMT can improve swallowing function and reduce postoperative dysphagia in patients with esophageal cancer, potentially establishing a novel prehabilitation strategy in surgical care. Trial registration: UMIN Clinical Trials Registry (UMIN-CTR), UMIN000057795. Registered on May 8, 2025. https://center6.umin.ac.jp/cgi-open-bin/ctr/ctr_view.cgi?recptno=R000065994.",
-      "journal": "PloS one",
-      "pub_date": "2026",
-      "type": "phase2",
-      "disease": "esophageal",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41818249/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 60.0,
-      "rank": 225
-    },
-    {
-      "uid": "pmid_41380113",
-      "pmid": "41380113",
-      "title": "Venetoclax and ibrutinib induces durable clinical responses in marginal zone lymphoma.",
-      "abstract": "Oral ibrutinib and venetoclax (I+V) demonstrate activity as monotherapy in marginal zone lymphoma (MZL), with low complete response (CR) rates. I+V has shown good clinical activity with acceptable tolerability in other malignancies. We conducted a single-site, phase 2 trial of daily I+V in patients with MZL. Ibrutinib commenced at 560 mg daily; after 4 weeks, venetoclax commenced with weekly dose escalation to 400 mg daily. Combination therapy continued until disease progression or toxicity. The primary end point was week 16 CR. Minimal residual disease (MRD) was assessed by flow cytometry in bone marrow and peripheral blood. Patients achieving eradication of MRD could enter elective treatment interruption (ETI). Fifteen patients with MZL were treated; 14 are included in efficacy analysis, and 15 were evaluable for safety. Overall response was 79% (95% confidence interval [CI], 49-95) by F-fluorodeoxyglucose-positron-emission tomography (CR rate, 43%; 95% CI, 18-71). By computed tomography, 16-week CR rate was 29% (95% CI, 8-58). Best response within 56 weeks was 57% CR (95% CI, 37-80), which is higher than historic ibrutinib-monotherapy control (3% CR; P< .001). MRD clearance at week 56 was 40%. Six MRD-negative CR patients entered ETI, with 4 remaining disease-free at a median of 4 years. With a median follow-up of 5.5 years for the whole cohort, the 5-year progression-free survival estimate was 56% (95% CI, 27-78). I+V is safe and effective for MZL, with higher CR than with ibrutinib. Durable, ongoing CR was observed in MRD-negative patients. This trial was registered at www.clinicaltrials.gov as #NCT02471391.",
-      "journal": "Blood advances",
-      "pub_date": "2026 Mar",
-      "type": "phase2",
-      "disease": "marginal_zone",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41380113/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 60.0,
-      "rank": 226
+      "rank": 227
     },
     {
       "uid": "pmid_41690301",
@@ -4323,7 +4342,121 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 227
+      "rank": 228
+    },
+    {
+      "uid": "pmid_41817106",
+      "pmid": "41817106",
+      "title": "A randomized phase II trial of gemcitabine, nab-paclitaxel, cisplatin with or without a medically supervised ketogenic diet for patients with metastatic pancreatic cancer.",
+      "abstract": "BACKGROUND: A randomized phase II screening trial of gemcitabine, nab-paclitaxel, and cisplatin with a medically supervised ketogenic diet (MSKD) versus usual diet (non-MSKD) was conducted in patients with treatment-naive metastatic pancreatic ductal adenocarcinoma (PDAC). METHODS: Patients with untreated metastatic PDAC were randomized 1:1 to MSKD or non-MSKD while receiving gemcitabine, nab-paclitaxel, and cisplatin on days 1 and 8 of a 21-day cycle. The MSKD was guided by a remote health care team and daily ketone (beta-hydroxybutyrate) levels, with goal beta-hydroxybutyrate of 0.5 to 3.0 mM. The primary endpoint was progression-free survival (PFS) using a one-sided alpha level of 0.20. Secondary endpoints included overall survival (OS), safety, and quality of life (QOL). Changes in microbiome were an exploratory endpoint. FINDINGS: Overall, there were 32 evaluable patients. In the MSKD arm, 15 of 16 patients achieved nutritional ketosis; the median proportion of days in ketosis was 39.4%. The median PFS was 8.5 months in MSKD patients and 6.2 months in non-MSKD patients: hazard ratio, 0.53 (95% CI, 0.21-1.37); one-sided p = .096. The median OS was 13.7 months with MSKD and 10.2 months in the non-MSKD arm: hazard ratio, 0.58 (95% CI, 0.25-1.37); one-sided p = .107). All MSKD-related adverse events were grade 1-2. There were no significant differences in grade ≥3 chemotherapy-related adverse events between the arms. MSKD patients had no decline in QOL and had significant enrichment of beneficial taxa in the microbiome (p < .05, log-fold change ≥2). CONCLUSIONS: The MSKD is feasible in patients with PDAC and, although not powered for definitive outcomes, shows trends in improved PFS and OS when combined with gemcitabine, nab-paclitaxel, and cisplatin, without added toxicity or detriment to QOL. Larger studies are required to confirm these findings and establish the value of the MSKD in pancreatic cancer treatment.",
+      "journal": "Cancer",
+      "pub_date": "2026 Mar",
+      "type": "phase2",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41817106/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 60.0,
+      "rank": 229
+    },
+    {
+      "uid": "pmid_41832629",
+      "pmid": "41832629",
+      "title": "Durvalumab combined with concurrent chemoradiotherapy in patients with limited-stage small cell lung cancer: A prospective, single-arm, phase 2 clinical trial.",
+      "abstract": "BACKGROUND: The current standard treatment for limited-stage small cell lung cancer (LS-SCLC) is concurrent chemoradiotherapy (cCRT) plus consolidation immunotherapy, with or without prophylactic cranial irradiation (PCI). However, it remains unknown whether administering immunotherapy concurrently with chemoradiotherapy confers additional benefit. This clinical trial is designed to investigate the efficacy and safety using durvalumab with chemoradiotherapy for LS-SCLC. METHODS: In this single-arm phase 2 study, patients with LS-SCLC received three (1-4) cycles of etoposide, cisplatin, or carboplatin, and durvalumab every 3 weeks, following by thoracic radiotherapy of 60.0 Gy to the gross tumor volume and 54.0 Gy to the planning target volume in 30 once-daily fractions and chemoimmunotherapy. After cCRT plus durvalumab, patients received durvalumab consolidation therapy every 3 weeks for a minimum of 1 year. PCI was recommended to patients with partial or complete response when chemoradiotherapy completed. Efficacy and adverse events were assessed. RESULTS: Overall, 51 patients were enrolled from March 1, 2021, to April 30, 2024, with a median follow-up of 32.0 months. The 1-, 2-, and 3-year progression-free survival (PFS) rates were 56.9%, 35.9%, and 28.2%, respectively, and the median PFS was 17.0 months. The 1-, 2-, and 3-year overall survival (OS) rates were 88.1%, 68.6%, and 49.6%, respectively, and the median OS was 32.0 months. There were 17 (33.4%) patients with grade 3 or 4 adverse events, 7 of which were immune‑related. CONCLUSIONS: These results suggest that the addition of durvalumab to chemoradiotherapy was well tolerated and showed encouraging efficacy, supporting further investigation in patients with LS-SCLC eligible for radical chemoradiotherapy.",
+      "journal": "Cancer",
+      "pub_date": "2026 Mar",
+      "type": "phase2",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41832629/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 60.0,
+      "rank": 230
+    },
+    {
+      "uid": "pmid_41823504",
+      "pmid": "41823504",
+      "title": "A phase 1 study of berzosertib (M6620, VX-970) in combination with cisplatin and radiation in patients with locally advanced head and neck squamous cell carcinoma (ETCTN 9950).",
+      "abstract": "BACKGROUND: Ataxia telangiectasia Rad3-related (ATR) protein kinase regulates DNA damage response and is essential for tumor cell survival. Preclinically, ATR inhibition can sensitize tumor cells to radiation and chemotherapy. The authors conducted a phase 1 trial of berzosertib, a selective ATR inhibitor, in combination with definitive radiation and cisplatin in locally advanced head and neck squamous cell cancers (LA-HNSCC). METHODS: LA-HNSCC patients received daily radiation (2 Gy per fraction to 70 Gy) and weekly intravenous (iv) cisplatin 40 mg/m RESULTS: Forty-one of 43 enrolled patients were evaluable for safety and preliminary efficacy assessments. Four patients experienced dose-limiting toxicities (DLTs) in dose-escalation: grade 4 thrombocytopenia (1), grade 4 respiratory failure (1), grade 3 renal injury and hypoxia (1), and inability to receive 90% of the planned radiation dose (1). DL3 was the recommended phase 2 dose, and 15 patients were enrolled at this DL as an expansion cohort. Objective response rates (ORR) in patient cohorts treated with any amount of berzosertib; treated with at least 50% of planned treatment; and in the expansion cohort were 78.8% (26 of 33), 78.8% (26 of 33), and 63.6% (7 of 11), respectively, after excluding eight inevaluable patients without post-treatment imaging assessment. CONCLUSIONS: Berzosertib (200 mg/m",
+      "journal": "Cancer",
+      "pub_date": "2026 Mar",
+      "type": "phase2",
+      "disease": "neuroendocrine",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41823504/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 60.0,
+      "rank": 231
+    },
+    {
+      "uid": "pmid_41818249",
+      "pmid": "41818249",
+      "title": "Preoperative expiratory muscle training for swallowing function in patients with esophageal cancer undergoing esophagectomy: A randomized controlled phase II trial protocol.",
+      "abstract": "Esophagectomy is a highly invasive and curative procedure for esophageal cancer. Although minimally invasive techniques reduce the incidence of pulmonary complications, postoperative dysphagia remains a common and clinically significant issue. Preoperative expiratory muscle training (EMT) may improve swallowing function by strengthening the relevant muscles; however, its effectiveness in patients with esophageal cancer has not been widely studied. This phase II randomized, controlled, double-blind trial has been designed to evaluate the effects of preoperative EMT on postoperative swallowing function in patients undergoing esophagectomy for thoracic esophageal squamous cell carcinoma. Forty patients will be randomly assigned (1:1) to either the EMT or sham-EMT group. EMT will be performed using the EX-1 Medic® device at 50-70% maximal expiratory pressure, whereas the control group will receive minimal resistance (10 cmH₂O). The primary outcome is the Penetration-Aspiration Scale score on the postoperative video-fluoroscopic swallowing study, targeted at postoperative days 10 (allowable window: postoperative days 6-14). The secondary outcomes will be assessed perioperatively (preoperative and/or postoperative, depending on the measure) and include tongue pressure, the Repetitive Saliva Swallowing Test, T he eating assessment test-10, respiratory muscle strength, appendicular skeletal muscle index, and exercise tolerance. This study has been registered at University Hospital Medical Information Network (UMINID:000057795). Recruitment began on June 10, 2025, is expected to continue until September 30, 2028. This trial will clarify whether preoperative EMT can improve swallowing function and reduce postoperative dysphagia in patients with esophageal cancer, potentially establishing a novel prehabilitation strategy in surgical care. Trial registration: UMIN Clinical Trials Registry (UMIN-CTR), UMIN000057795. Registered on May 8, 2025. https://center6.umin.ac.jp/cgi-open-bin/ctr/ctr_view.cgi?recptno=R000065994.",
+      "journal": "PloS one",
+      "pub_date": "2026",
+      "type": "phase2",
+      "disease": "esophageal",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41818249/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 60.0,
+      "rank": 232
+    },
+    {
+      "uid": "pmid_41359440",
+      "pmid": "41359440",
+      "title": "Phase II study of FOLFIRI with low-dose irinotecan plus ramucirumab as second-line treatment in Japanese patients with metastatic colorectal cancer (study rindo).",
+      "abstract": "OBJECTIVE: This multicenter, single-arm, Phase II study aimed to evaluate the efficacy and safety of fluorouracil, levofolinate, and irinotecan (150 mg/m2, standard dose in Japan) (FOLFIRI) plus ramucirumab (RAM) as second-line treatment for metastatic colorectal cancer (mCRC) in Japanese patients. METHODS: On Day 1 of each 2-week cycle, patients with unresectable mCRC who were refractory to oxaliplatin and fluoropyrimidine in combination with bevacizumab or anti-epidermal growth factor receptor antibodies as first-line treatment received 8 mg/kg RAM, followed by the FOLFIRI regimen with low-dose irinotecan (150 mg/m2). The primary endpoint was progression-free survival (PFS), and secondary endpoints were overall survival (OS), treatment compliance, and safety. RESULTS: A total of 62 patients were enrolled from 15 institutions between January 2018 and August 2021. The intent-to-treat and safety populations included 61 and 58 patients. Median PFS and OS were 5.9 months (95% CI, 4.8-6.9 months) and 17.0 months (95% CI, 12.0-21.0 months), respectively. The objective response rate and disease control rate were 8.2% and 74%, respectively. The median time to treatment failure was 4.8 months (95% CI, 3.2-5.9 months). The median relative dose intensities of irinotecan, 5-fluorouracil, and RAM were 73.8% (range, 40.3%-102.4%), 58.5% (range, 22.8%-102.4%), and 80.8% (range, 36.1%-102.4%), respectively. Frequencies of Grade ≥ 3 hematologic, non-hematologic, and RAM-associated adverse events were 43%, 24%, and 17%, respectively. The observed Grade ≥ 3 adverse events included neutropenia (40%), diarrhea (8.6%), decreased appetite (10%), hypertension (6.9%), and proteinuria (3.4%). CONCLUSION: FOLFIRI with low-dose irinotecan plus RAM is a feasible second-line treatment in Japanese patients with mCRC.",
+      "journal": "Japanese journal of clinical oncology",
+      "pub_date": "2026 Mar",
+      "type": "phase2",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41359440/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 60.0,
+      "rank": 233
+    },
+    {
+      "uid": "pmid_41380113",
+      "pmid": "41380113",
+      "title": "Venetoclax and ibrutinib induces durable clinical responses in marginal zone lymphoma.",
+      "abstract": "Oral ibrutinib and venetoclax (I+V) demonstrate activity as monotherapy in marginal zone lymphoma (MZL), with low complete response (CR) rates. I+V has shown good clinical activity with acceptable tolerability in other malignancies. We conducted a single-site, phase 2 trial of daily I+V in patients with MZL. Ibrutinib commenced at 560 mg daily; after 4 weeks, venetoclax commenced with weekly dose escalation to 400 mg daily. Combination therapy continued until disease progression or toxicity. The primary end point was week 16 CR. Minimal residual disease (MRD) was assessed by flow cytometry in bone marrow and peripheral blood. Patients achieving eradication of MRD could enter elective treatment interruption (ETI). Fifteen patients with MZL were treated; 14 are included in efficacy analysis, and 15 were evaluable for safety. Overall response was 79% (95% confidence interval [CI], 49-95) by F-fluorodeoxyglucose-positron-emission tomography (CR rate, 43%; 95% CI, 18-71). By computed tomography, 16-week CR rate was 29% (95% CI, 8-58). Best response within 56 weeks was 57% CR (95% CI, 37-80), which is higher than historic ibrutinib-monotherapy control (3% CR; P< .001). MRD clearance at week 56 was 40%. Six MRD-negative CR patients entered ETI, with 4 remaining disease-free at a median of 4 years. With a median follow-up of 5.5 years for the whole cohort, the 5-year progression-free survival estimate was 56% (95% CI, 27-78). I+V is safe and effective for MZL, with higher CR than with ibrutinib. Durable, ongoing CR was observed in MRD-negative patients. This trial was registered at www.clinicaltrials.gov as #NCT02471391.",
+      "journal": "Blood advances",
+      "pub_date": "2026 Mar",
+      "type": "phase2",
+      "disease": "marginal_zone",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41380113/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 60.0,
+      "rank": 234
     },
     {
       "uid": "pmid_41633120",
@@ -4342,7 +4475,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 228
+      "rank": 235
     },
     {
       "uid": "pmid_41099583",
@@ -4361,7 +4494,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 229
+      "rank": 236
     },
     {
       "uid": "pmid_41653501",
@@ -4380,7 +4513,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 230
+      "rank": 237
     },
     {
       "uid": "pmid_41826541",
@@ -4399,7 +4532,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 231
+      "rank": 238
     },
     {
       "uid": "pmid_39365168",
@@ -4418,7 +4551,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 232
+      "rank": 239
     },
     {
       "uid": "pmid_41808362",
@@ -4437,26 +4570,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 233
-    },
-    {
-      "uid": "pmid_41820200",
-      "pmid": "41820200",
-      "title": "Risk of adverse events in elotuzumab-treated patients with multiple myeloma: a systematic review and meta-analysis.",
-      "abstract": "BACKGROUND: Elotuzumab, an anti-SLAMF7 monoclonal antibody for multiple myeloma (MM), lacks a comprehensive safety profile from meta-analysis. METHODS: We systematically searched PubMed, Web of Science, EMBASE and CENTRAL through February 13, 2025 for randomized controlled trials (RCTs) evaluating elotuzumab in MM. Pooled relative risks(RRs) of adverse events observed in elotuzumab-containing regimens versus control therapies. RESULTS: 6 RCTs (N=1,736) were included. Elotuzumabsignificantly reduced incidence of neutropenia (RR = 0.86, 95% CI: 0.76-0.98), but increased risks of cough (RR = 1.41, 95% CI: 0.96-2.09), pneumonia (RR = 1.30, 95% CI: 1.07-1.59), diarrhea (RR = 1.16, 95% CI: 1.05-1.30), pyrexia (RR = 1.47, 95% CI: 1.10-1.96) and infections (RR = 1.09, 95% CI: 1.03-1.15). No significant differences were observed for anemia, thrombocytopenia, respiratory infections, nausea, appetite loss, back pain, muscle spasms, peripheral edema, insomnia, rash, pruritus, fatigue, or hypokalemia. For grade 3-4 events, elotuzumab was associated with higher risks of lymphopenia (RR = 1.86, 95% CI: 1.31-2.64, CONCLUSION: Elotuzumab in MM appears safe but with a specific adverse events pattern : lower neutropenia, but higher respiratory, gastrointestinal, metabolic, and infectious events. Differences may be influenced by longer treatment and corticosteroid use; therefore, interpretation of outcomes such as hyperglycemia and cataracts requires particular caution.",
-      "journal": "Annals of medicine",
-      "pub_date": "2026 Dec",
-      "type": "review",
-      "disease": "multiple_myeloma",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41820200/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 234
+      "rank": 240
     },
     {
       "uid": "pmid_41653927",
@@ -4475,7 +4589,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 235
+      "rank": 241
+    },
+    {
+      "uid": "pmid_41820200",
+      "pmid": "41820200",
+      "title": "Risk of adverse events in elotuzumab-treated patients with multiple myeloma: a systematic review and meta-analysis.",
+      "abstract": "BACKGROUND: Elotuzumab, an anti-SLAMF7 monoclonal antibody for multiple myeloma (MM), lacks a comprehensive safety profile from meta-analysis. METHODS: We systematically searched PubMed, Web of Science, EMBASE and CENTRAL through February 13, 2025 for randomized controlled trials (RCTs) evaluating elotuzumab in MM. Pooled relative risks(RRs) of adverse events observed in elotuzumab-containing regimens versus control therapies. RESULTS: 6 RCTs (N=1,736) were included. Elotuzumabsignificantly reduced incidence of neutropenia (RR = 0.86, 95% CI: 0.76-0.98), but increased risks of cough (RR = 1.41, 95% CI: 0.96-2.09), pneumonia (RR = 1.30, 95% CI: 1.07-1.59), diarrhea (RR = 1.16, 95% CI: 1.05-1.30), pyrexia (RR = 1.47, 95% CI: 1.10-1.96) and infections (RR = 1.09, 95% CI: 1.03-1.15). No significant differences were observed for anemia, thrombocytopenia, respiratory infections, nausea, appetite loss, back pain, muscle spasms, peripheral edema, insomnia, rash, pruritus, fatigue, or hypokalemia. For grade 3-4 events, elotuzumab was associated with higher risks of lymphopenia (RR = 1.86, 95% CI: 1.31-2.64, CONCLUSION: Elotuzumab in MM appears safe but with a specific adverse events pattern : lower neutropenia, but higher respiratory, gastrointestinal, metabolic, and infectious events. Differences may be influenced by longer treatment and corticosteroid use; therefore, interpretation of outcomes such as hyperglycemia and cataracts requires particular caution.",
+      "journal": "Annals of medicine",
+      "pub_date": "2026 Dec",
+      "type": "review",
+      "disease": "multiple_myeloma",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41820200/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 242
     },
     {
       "uid": "pmid_41801573",
@@ -4494,7 +4627,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 236
+      "rank": 243
     },
     {
       "uid": "pmid_41360362",
@@ -4513,26 +4646,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 237
-    },
-    {
-      "uid": "pmid_41810601",
-      "pmid": "41810601",
-      "title": "Fibroblast-activation protein inhibitors based positron emission tomography (PET) for assessing lung disease: A systematic review with meta-analysis.",
-      "abstract": "BACKGROUND: The incidence of lung diseases has been increasing in recent years, especially lung cancer and interstitial lung disease. However, the diagnosis of lung diseases such as lung cancer and ILD still has some limitations. Therefore, finding an appropriate imaging agent and technique is of great clinical value for the diagnostic evaluation of lung diseases. METHOD: A thorough search of all relevant literature up to 20 June 2024 was undertaken. Studies evaluating lung lesions with FAPI PET were screened and patient diagnostic data were extracted. Risk of bias was checked by the QUADAS-2. Meta-analysis was performed in STATA17.0. Subgroups were analysed for the effectiveness of FAPI PET/CT in the diagnostic assessment of various lung diseases. RESULT: 19 studies were finally sieved. Meta-analysis showed that the sensitivity of FAPI PET/CT for the detection of lung tumours was 0.99 (95% CI: 0.90-1.00), with a specificity of 0.82 (95% CI: 0.72-0.89). The sensitivity of FAPI PET/CT for the assessment of non-neoplastic lesions was 0.93 (95% CI: 0.72-0.99) and the specificity was 0.96 (95% CI: 0.79-0.99). Subgroup analysis showed that FAPI PET/CT had a sensitivity of 0.93 (95% CI: 0.83-0.97) in lung tumour staging ( CONCLUSION: Our results show that FAPI PET/CT has an excellent diagnostic performance for lung tumours and non-tumour lesions.",
-      "journal": "Pulmonology",
-      "pub_date": "2026 Dec",
-      "type": "review",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41810601/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 238
+      "rank": 244
     },
     {
       "uid": "pmid_41805738",
@@ -4551,7 +4665,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 239
+      "rank": 245
     },
     {
       "uid": "pmid_41805927",
@@ -4570,7 +4684,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 240
+      "rank": 246
     },
     {
       "uid": "pmid_41108326",
@@ -4589,7 +4703,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 241
+      "rank": 247
     },
     {
       "uid": "pmid_41422795",
@@ -4608,7 +4722,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 242
+      "rank": 248
     },
     {
       "uid": "pmid_41819062",
@@ -4627,7 +4741,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 243
+      "rank": 249
+    },
+    {
+      "uid": "pmid_41810601",
+      "pmid": "41810601",
+      "title": "Fibroblast-activation protein inhibitors based positron emission tomography (PET) for assessing lung disease: A systematic review with meta-analysis.",
+      "abstract": "BACKGROUND: The incidence of lung diseases has been increasing in recent years, especially lung cancer and interstitial lung disease. However, the diagnosis of lung diseases such as lung cancer and ILD still has some limitations. Therefore, finding an appropriate imaging agent and technique is of great clinical value for the diagnostic evaluation of lung diseases. METHOD: A thorough search of all relevant literature up to 20 June 2024 was undertaken. Studies evaluating lung lesions with FAPI PET were screened and patient diagnostic data were extracted. Risk of bias was checked by the QUADAS-2. Meta-analysis was performed in STATA17.0. Subgroups were analysed for the effectiveness of FAPI PET/CT in the diagnostic assessment of various lung diseases. RESULT: 19 studies were finally sieved. Meta-analysis showed that the sensitivity of FAPI PET/CT for the detection of lung tumours was 0.99 (95% CI: 0.90-1.00), with a specificity of 0.82 (95% CI: 0.72-0.89). The sensitivity of FAPI PET/CT for the assessment of non-neoplastic lesions was 0.93 (95% CI: 0.72-0.99) and the specificity was 0.96 (95% CI: 0.79-0.99). Subgroup analysis showed that FAPI PET/CT had a sensitivity of 0.93 (95% CI: 0.83-0.97) in lung tumour staging ( CONCLUSION: Our results show that FAPI PET/CT has an excellent diagnostic performance for lung tumours and non-tumour lesions.",
+      "journal": "Pulmonology",
+      "pub_date": "2026 Dec",
+      "type": "review",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41810601/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 250
     }
   ]
 }
