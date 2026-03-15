@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T17:10:25.771296Z",
+  "generated_at": "2026-03-15T18:51:39.288938Z",
   "week_label": "Mar 8–Mar 15, 2026",
   "lookback_days": 7,
   "stats": {
@@ -3813,6 +3813,25 @@
       "rank": 200
     },
     {
+      "uid": "pmid_41324490",
+      "pmid": "41324490",
+      "title": "A randomized controlled phase III trial on continued or paused PD-1 pathway blockade for patients with advanced renal cell carcinoma (JCOG1905, STOP study): a study protocol.",
+      "abstract": "Immune checkpoint blockades (ICBs), particularly PD-1 pathway blockades, have significantly improved outcomes in advanced renal cell carcinoma (RCC). However, long-term ICB therapy imposes substantial financial and toxicity burdens. Retrospective data suggest that treatment responses plateau around 24 weeks, and some patients maintain disease control even after ICB pause. We initiated a multi-institutional, open-label, randomized controlled trial to confirm the non-inferiority of pausing PD-1 pathway blockade to its continuous administration in patients with advanced clear cell RCC without disease progression. The primary endpoint is overall survival and the secondary endpoint includes time to failure of strategy, progression-free survival, and adverse events. Conducted by the Urologic Oncology Study Group of the Japan Clinical Oncology Group (JCOG), this phase III trial was approved by Certified Review Board in February 2020, with patient enrollment beginning in July 2020. The trial is registered in the Japan Registry for Clinical Trials (JCOG1905; jRCT1031200071).",
+      "journal": "Japanese journal of clinical oncology",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41324490/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 201
+    },
+    {
       "uid": "pmid_41812193",
       "pmid": "41812193",
       "title": "Romiplostim versus Placebo for Chemotherapy-Induced Thrombocytopenia.",
@@ -3829,7 +3848,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 201
+      "rank": 202
     },
     {
       "uid": "pmid_41402979",
@@ -3848,7 +3867,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 202
+      "rank": 203
     },
     {
       "uid": "pmid_41348911",
@@ -3867,7 +3886,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 203
+      "rank": 204
     },
     {
       "uid": "pmid_41706725",
@@ -3886,45 +3905,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 204
-    },
-    {
-      "uid": "pmid_41324490",
-      "pmid": "41324490",
-      "title": "A randomized controlled phase III trial on continued or paused PD-1 pathway blockade for patients with advanced renal cell carcinoma (JCOG1905, STOP study): a study protocol.",
-      "abstract": "Immune checkpoint blockades (ICBs), particularly PD-1 pathway blockades, have significantly improved outcomes in advanced renal cell carcinoma (RCC). However, long-term ICB therapy imposes substantial financial and toxicity burdens. Retrospective data suggest that treatment responses plateau around 24 weeks, and some patients maintain disease control even after ICB pause. We initiated a multi-institutional, open-label, randomized controlled trial to confirm the non-inferiority of pausing PD-1 pathway blockade to its continuous administration in patients with advanced clear cell RCC without disease progression. The primary endpoint is overall survival and the secondary endpoint includes time to failure of strategy, progression-free survival, and adverse events. Conducted by the Urologic Oncology Study Group of the Japan Clinical Oncology Group (JCOG), this phase III trial was approved by Certified Review Board in February 2020, with patient enrollment beginning in July 2020. The trial is registered in the Japan Registry for Clinical Trials (JCOG1905; jRCT1031200071).",
-      "journal": "Japanese journal of clinical oncology",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41324490/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
       "rank": 205
-    },
-    {
-      "uid": "pmid_41824082",
-      "pmid": "41824082",
-      "title": "Unplanned hospital presentations in oncology patients receiving chemotherapy: a secondary analysis of a randomized controlled trial to explore opportunities for improving supportive care.",
-      "abstract": "PURPOSE: This study aimed to report the incidence, common reasons, and associated risk factors for unplanned hospital presentations during chemotherapy treatment. METHODS: A secondary analysis using data from a randomized controlled trial containing hospital data for the first three cycles of chemotherapy of adult oncology patients in two tertiary hospitals in Australia. Descriptive statistics were used to report hospital utilization patterns. Poisson regression explored risk factors for unplanned presentations. RESULTS: Analyses included data from 346 patients; 115 patients (33%) made one/or more presentations during the first three cycles of chemotherapy. Of 144 unplanned presentations, 74 (51%) were made during cycle 1. Predominant reasons were fever with/without neutropenia (n = 50, 35%) and nausea/vomiting (n = 30, 21%). Fifty-two percent (n = 75) of unplanned presentations did not result in hospital admission. Of 346 patients, 70 (20%) had hospital admissions with a median length of stay of 3 days (IQR 2-7). Multivariable analysis identified the following as predictors for unplanned presentations: cancer stage (stage 1 vs stage 4: IRR 2.50, 95% CI, 1.28-4.89; P = 0.01) and cancer type (lung cancer vs breast cancer: IRR 2.25, CI, 1.26-4.01; P = 0.01). CONCLUSION: Nausea/vomiting management support may be one area warranting improvement, a frequent reason for unplanned presentations that are potentially preventable. Such support will be most beneficial during the first treatment cycle, when most unplanned presentations occurred. A high proportion of unplanned presentations did not result in hospital admission, indicating an opportunity to manage some of the side effects within primary care or outpatient settings, rather than utilizing emergency department services.",
-      "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "breast_general",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41824082/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 206
     },
     {
       "uid": "pmid_41819560",
@@ -3943,7 +3924,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 207
+      "rank": 206
     },
     {
       "uid": "pmid_41693026",
@@ -3958,6 +3939,25 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41693026/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 207
+    },
+    {
+      "uid": "pmid_41821581",
+      "pmid": "41821581",
+      "title": "Vebreltinib for Previously Treated Astrocytoma,",
+      "abstract": "",
+      "journal": "Cancer communications (London, England)",
+      "pub_date": "2026",
+      "type": "phase3",
+      "disease": "glioma",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41821581/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -4003,25 +4003,6 @@
       "rank": 210
     },
     {
-      "uid": "pmid_41802810",
-      "pmid": "41802810",
-      "title": "First-in-human phase 1 study of RO7119929, an oral TLR7 agonist prodrug, in patients with advanced primary or metastatic liver cancers.",
-      "abstract": "BACKGROUND: The orally available toll-like receptor 7 (TLR7) agonist prodrug RO7119929 is converted to active drug predominantly in the liver, where it is hypothesized to reprogram the local immune microenvironment. We aimed to explore the safety, pharmacokinetics (PK), and preliminary antitumor activity and obtain the proof-of-mechanism for RO7119929 in patients with liver cancer. METHODS: RO7119929 was investigated in mouse tumors and liver tissue from cynomolgus monkeys. In the first-in-human, open-label, dose-escalation and expansion study, patients with histologically confirmed advanced or metastatic primary liver cancers or solid tumors with predominant liver involvement received RO7119929 weekly in 3-week cycles either on a flat-dose (FD) or step-up dose (SUD) schedule. RESULTS: Preclinical results demonstrated antitumor activity and the proinflammatory proof-of-mechanism in mouse liver tumors and cynomolgus monkey liver tissue. The subsequent first-in-human study enrolled 27 patients in five FD dose-escalation cohorts, 18 patients in a FD dose-expansion cohort, and 9 patients in two SUD dose-escalation cohorts. The most common primary tumor type at study entry was hepatocellular carcinoma (HCC) (31%). PK data showed fast conversion of RO7119929 to the active TLR7 agonist. Treatment-related adverse events (TRAEs) were observed in 50 (91%) patients across all treated patients; the most commonly reported TRAE was cytokine release syndrome (CRS) in 48 (81%) patients. CRS was also identified as a dose-limiting safety risk and had a dose-dependent incidence and severity. Grade 3 CRS occurred in six (13%) patients receiving FD RO7119929, while no grade 3 CRS was reported in SUD patients at comparable target dose levels. TLR7-related transient, dose-dependent gene expression and cytokine induction was observed both with FD and SUD treatment and corresponded with treatment-induced local inflammation of the tumor microenvironment induced by reprogramming of the myeloid cells. Among 17 patients with HCC, one durable complete response was observed, and 10 (59%) patients had stable disease. CONCLUSIONS: SUD appears to reduce the risk of CRS while maintaining mode-of-action-relevant pharmacodynamic effects. The clinical activity of RO7119929 as a single agent was limited, suggesting that combination therapy with a checkpoint inhibitor may be needed to leverage the proinflammatory potential of RO7119929 and further increase antitumor activity. TRIAL REGISTRATION NUMBER: NCT04338685.",
-      "journal": "Journal for immunotherapy of cancer",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41802810/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 211
-    },
-    {
       "uid": "pmid_41811469",
       "pmid": "41811469",
       "title": "A single-arm phase Ib study of personalized peptide-pulsed dendritic cell-based multiple target cytotoxic T lymphocyte immunotherapy in combination with toripalimab as second-line therapy in advanced non-small-cell lung cancer.",
@@ -4038,7 +4019,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 212
+      "rank": 211
     },
     {
       "uid": "pmid_41828892",
@@ -4057,7 +4038,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 213
+      "rank": 212
     },
     {
       "uid": "pmid_41161645",
@@ -4076,26 +4057,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 214
-    },
-    {
-      "uid": "pmid_41821581",
-      "pmid": "41821581",
-      "title": "Vebreltinib for Previously Treated Astrocytoma,",
-      "abstract": "",
-      "journal": "Cancer communications (London, England)",
-      "pub_date": "2026",
-      "type": "phase3",
-      "disease": "glioma",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41821581/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 90.0,
-      "rank": 215
+      "rank": 213
     },
     {
       "uid": "pmid_41741368",
@@ -4114,7 +4076,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 216
+      "rank": 214
     },
     {
       "uid": "pmid_38788778",
@@ -4133,7 +4095,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 217
+      "rank": 215
     },
     {
       "uid": "pmid_41808570",
@@ -4152,7 +4114,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 218
+      "rank": 216
+    },
+    {
+      "uid": "pmid_41824082",
+      "pmid": "41824082",
+      "title": "Unplanned hospital presentations in oncology patients receiving chemotherapy: a secondary analysis of a randomized controlled trial to explore opportunities for improving supportive care.",
+      "abstract": "PURPOSE: This study aimed to report the incidence, common reasons, and associated risk factors for unplanned hospital presentations during chemotherapy treatment. METHODS: A secondary analysis using data from a randomized controlled trial containing hospital data for the first three cycles of chemotherapy of adult oncology patients in two tertiary hospitals in Australia. Descriptive statistics were used to report hospital utilization patterns. Poisson regression explored risk factors for unplanned presentations. RESULTS: Analyses included data from 346 patients; 115 patients (33%) made one/or more presentations during the first three cycles of chemotherapy. Of 144 unplanned presentations, 74 (51%) were made during cycle 1. Predominant reasons were fever with/without neutropenia (n = 50, 35%) and nausea/vomiting (n = 30, 21%). Fifty-two percent (n = 75) of unplanned presentations did not result in hospital admission. Of 346 patients, 70 (20%) had hospital admissions with a median length of stay of 3 days (IQR 2-7). Multivariable analysis identified the following as predictors for unplanned presentations: cancer stage (stage 1 vs stage 4: IRR 2.50, 95% CI, 1.28-4.89; P = 0.01) and cancer type (lung cancer vs breast cancer: IRR 2.25, CI, 1.26-4.01; P = 0.01). CONCLUSION: Nausea/vomiting management support may be one area warranting improvement, a frequent reason for unplanned presentations that are potentially preventable. Such support will be most beneficial during the first treatment cycle, when most unplanned presentations occurred. A high proportion of unplanned presentations did not result in hospital admission, indicating an opportunity to manage some of the side effects within primary care or outpatient settings, rather than utilizing emergency department services.",
+      "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "breast_general",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41824082/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 217
     },
     {
       "uid": "pmid_41824083",
@@ -4171,7 +4152,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 219
+      "rank": 218
     },
     {
       "uid": "pmid_41702246",
@@ -4190,7 +4171,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 220
+      "rank": 219
     },
     {
       "uid": "pmid_41655462",
@@ -4209,26 +4190,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 221
+      "rank": 220
     },
     {
-      "uid": "pmid_41813939",
-      "pmid": "41813939",
-      "title": "The effect of hand massage on pain, comfort, and sleep quality in palliative care oncology patients.",
-      "abstract": "OBJECTIVE: Oncology patients often experience pain, sleep problems, and discomfort during palliative care. Hand massage is a nonpharmacological method that can relax the patient and help alleviate these problems. This study aimed to examine the effect of hand massage on pain, comfort, and sleep quality in palliative oncology patients. MATERIALS AND METHODS: A randomized, controlled experimental study was conducted with a sample of 76 oncology patients treated in the palliative care clinic of a public hospital. The patients were randomly allocated to the experimental and control groups. The experimental group (n = 38) received a total of 16 sessions of hand massage, performed twice a day, 2 days per week for 4 weeks. The control group (n = 38) received no intervention. The patients' pain, sleep quality, and comfort were assessed before and at 1, 2, and 4 weeks after the start of the intervention using the Visual Analog Scale for pain, the Pittsburg Sleep Quality Index, the General Comfort Questionnaire, and a smart wristband. RESULTS: Demographic characteristics and pre-intervention pain, sleep quality, and comfort scores showed no statistical differences between the groups (p > 0.05). The experimental group reported significantly lower pain intensity and greater comfort than the control group starting from week 2 (p < 0.05). In addition, subjective sleep quality assessed using the PSQI and objective sleep parameters (sleep duration and sleep score) measured by a smart wristband, including objective sleep duration and objective sleep score, were significantly better in the experimental group than in the control group from the first week (p < 0.05). CONCLUSION: Hand massage is an effective method for reducing pain and increasing sleep quality and comfort in palliative oncology patients. CLINICAL TRIAL REGISTRATION NO: NCT06360614.",
-      "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
+      "uid": "pmid_41802810",
+      "pmid": "41802810",
+      "title": "First-in-human phase 1 study of RO7119929, an oral TLR7 agonist prodrug, in patients with advanced primary or metastatic liver cancers.",
+      "abstract": "BACKGROUND: The orally available toll-like receptor 7 (TLR7) agonist prodrug RO7119929 is converted to active drug predominantly in the liver, where it is hypothesized to reprogram the local immune microenvironment. We aimed to explore the safety, pharmacokinetics (PK), and preliminary antitumor activity and obtain the proof-of-mechanism for RO7119929 in patients with liver cancer. METHODS: RO7119929 was investigated in mouse tumors and liver tissue from cynomolgus monkeys. In the first-in-human, open-label, dose-escalation and expansion study, patients with histologically confirmed advanced or metastatic primary liver cancers or solid tumors with predominant liver involvement received RO7119929 weekly in 3-week cycles either on a flat-dose (FD) or step-up dose (SUD) schedule. RESULTS: Preclinical results demonstrated antitumor activity and the proinflammatory proof-of-mechanism in mouse liver tumors and cynomolgus monkey liver tissue. The subsequent first-in-human study enrolled 27 patients in five FD dose-escalation cohorts, 18 patients in a FD dose-expansion cohort, and 9 patients in two SUD dose-escalation cohorts. The most common primary tumor type at study entry was hepatocellular carcinoma (HCC) (31%). PK data showed fast conversion of RO7119929 to the active TLR7 agonist. Treatment-related adverse events (TRAEs) were observed in 50 (91%) patients across all treated patients; the most commonly reported TRAE was cytokine release syndrome (CRS) in 48 (81%) patients. CRS was also identified as a dose-limiting safety risk and had a dose-dependent incidence and severity. Grade 3 CRS occurred in six (13%) patients receiving FD RO7119929, while no grade 3 CRS was reported in SUD patients at comparable target dose levels. TLR7-related transient, dose-dependent gene expression and cytokine induction was observed both with FD and SUD treatment and corresponded with treatment-induced local inflammation of the tumor microenvironment induced by reprogramming of the myeloid cells. Among 17 patients with HCC, one durable complete response was observed, and 10 (59%) patients had stable disease. CONCLUSIONS: SUD appears to reduce the risk of CRS while maintaining mode-of-action-relevant pharmacodynamic effects. The clinical activity of RO7119929 as a single agent was limited, suggesting that combination therapy with a checkpoint inhibitor may be needed to leverage the proinflammatory potential of RO7119929 and further increase antitumor activity. TRIAL REGISTRATION NUMBER: NCT04338685.",
+      "journal": "Journal for immunotherapy of cancer",
       "pub_date": "2026 Mar",
       "type": "phase3",
-      "disease": "gist",
-      "category": "solid",
+      "disease": "all",
+      "category": "heme",
       "source": "pubmed",
       "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41813939/",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41802810/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 222
+      "rank": 221
     },
     {
       "uid": "pmid_41805548",
@@ -4247,7 +4228,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 223
+      "rank": 222
     },
     {
       "uid": "pmid_41512176",
@@ -4266,7 +4247,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 224
+      "rank": 223
     },
     {
       "uid": "pmid_41808581",
@@ -4285,7 +4266,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 225
+      "rank": 224
     },
     {
       "uid": "pmid_41654161",
@@ -4300,6 +4281,25 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41654161/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 225
+    },
+    {
+      "uid": "pmid_41813939",
+      "pmid": "41813939",
+      "title": "The effect of hand massage on pain, comfort, and sleep quality in palliative care oncology patients.",
+      "abstract": "OBJECTIVE: Oncology patients often experience pain, sleep problems, and discomfort during palliative care. Hand massage is a nonpharmacological method that can relax the patient and help alleviate these problems. This study aimed to examine the effect of hand massage on pain, comfort, and sleep quality in palliative oncology patients. MATERIALS AND METHODS: A randomized, controlled experimental study was conducted with a sample of 76 oncology patients treated in the palliative care clinic of a public hospital. The patients were randomly allocated to the experimental and control groups. The experimental group (n = 38) received a total of 16 sessions of hand massage, performed twice a day, 2 days per week for 4 weeks. The control group (n = 38) received no intervention. The patients' pain, sleep quality, and comfort were assessed before and at 1, 2, and 4 weeks after the start of the intervention using the Visual Analog Scale for pain, the Pittsburg Sleep Quality Index, the General Comfort Questionnaire, and a smart wristband. RESULTS: Demographic characteristics and pre-intervention pain, sleep quality, and comfort scores showed no statistical differences between the groups (p > 0.05). The experimental group reported significantly lower pain intensity and greater comfort than the control group starting from week 2 (p < 0.05). In addition, subjective sleep quality assessed using the PSQI and objective sleep parameters (sleep duration and sleep score) measured by a smart wristband, including objective sleep duration and objective sleep score, were significantly better in the experimental group than in the control group from the first week (p < 0.05). CONCLUSION: Hand massage is an effective method for reducing pain and increasing sleep quality and comfort in palliative oncology patients. CLINICAL TRIAL REGISTRATION NO: NCT06360614.",
+      "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "gist",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41813939/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -4554,25 +4554,6 @@
       "rank": 239
     },
     {
-      "uid": "pmid_41690301",
-      "pmid": "41690301",
-      "title": "Patient-reported outcomes from a phase 2 PLATINUM trial of nivolumab combination therapy sparing concurrent cisplatin in nasopharyngeal carcinoma.",
-      "abstract": "BACKGROUND: In the PLATINUM (ClinicalTrials.gov: NCT03984357) trial, nivolumab plus chemoradiotherapy sparing concurrent cisplatin demonstrated efficacy and safety in nasopharyngeal carcinoma (NPC). Herein, patient-reported outcomes (PROs) on quality of life (QoL), tolerability, and social reintegration are reported. METHODS: Patients with T4N1M0/T1-4N2-3M0 NPC were assessed for general and head-and-neck-specific QoL (using the European Organization for Research and Treatment of Cancer and the Functional Assessment of Cancer Therapy) and tolerability (using the PRO-specific Common Terminology Criteria for Adverse Events). Analyses included change over time, effect of the treatment phase on QoL, time-to-event analysis, and a comparison of PROs and clinician-reported outcomes (CROs) in toxicity. FINDINGS: Among 152 patients, 44.1% achieved social reintegration, and 51.3% were satisfied with their current life. Radiotherapy dominated QoL deterioration rather than induction chemotherapy (pooled mean difference, -18.51; 95% confidence interval [CI], -29.50 to -7.52; p = 0.001), and its removal dominated QoL improvement rather than that of nivolumab (pooled mean difference, -7.62; 95% CI, -10.05 to -5.19; p < 0.001). Patients without social reintegration had greater deterioration in speech (hazard ratio [HR], 0.60; 95% CI, 0.38 to 0.94; p = 0.027) and swallowing functions (HR, 0.59; 95% CI, 0.39 to 0.89; p = 0.011). Under-reporting of decreased appetite severity by CROs vs. by PROs in all three treatment phases was associated with poorer social reintegration (p = 0.002) and reduced failure-free survival (3 years, 86.1% vs. 95.0%; p = 0.021). CONCLUSIONS: Social reintegration is a practical composite indicator of favorable PROs in NPC. Interventions targeting speech, swallowing, and decreased appetite might promote better recovery. FUNDING: This study was funded by the Academician Workstation of Jun Ma (YSGZZ2024001), the Specific Research Fund of the Innovation Platform for Academicians of Hainan Province (YSPTZX202501), the National Natural Science Foundation of China (82573549, 82172870), the Guangdong Special Support Program for Young Top Talents (TZ09B0046), and the Guangzhou Science and Technology Program (2023A04J1786).",
-      "journal": "Med (New York, N.Y.)",
-      "pub_date": "2026 Mar",
-      "type": "phase2",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41690301/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 60.0,
-      "rank": 240
-    },
-    {
       "uid": "pmid_41817106",
       "pmid": "41817106",
       "title": "A randomized phase II trial of gemcitabine, nab-paclitaxel, cisplatin with or without a medically supervised ketogenic diet for patients with metastatic pancreatic cancer.",
@@ -4589,26 +4570,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 241
-    },
-    {
-      "uid": "pmid_41359440",
-      "pmid": "41359440",
-      "title": "Phase II study of FOLFIRI with low-dose irinotecan plus ramucirumab as second-line treatment in Japanese patients with metastatic colorectal cancer (study rindo).",
-      "abstract": "OBJECTIVE: This multicenter, single-arm, Phase II study aimed to evaluate the efficacy and safety of fluorouracil, levofolinate, and irinotecan (150 mg/m2, standard dose in Japan) (FOLFIRI) plus ramucirumab (RAM) as second-line treatment for metastatic colorectal cancer (mCRC) in Japanese patients. METHODS: On Day 1 of each 2-week cycle, patients with unresectable mCRC who were refractory to oxaliplatin and fluoropyrimidine in combination with bevacizumab or anti-epidermal growth factor receptor antibodies as first-line treatment received 8 mg/kg RAM, followed by the FOLFIRI regimen with low-dose irinotecan (150 mg/m2). The primary endpoint was progression-free survival (PFS), and secondary endpoints were overall survival (OS), treatment compliance, and safety. RESULTS: A total of 62 patients were enrolled from 15 institutions between January 2018 and August 2021. The intent-to-treat and safety populations included 61 and 58 patients. Median PFS and OS were 5.9 months (95% CI, 4.8-6.9 months) and 17.0 months (95% CI, 12.0-21.0 months), respectively. The objective response rate and disease control rate were 8.2% and 74%, respectively. The median time to treatment failure was 4.8 months (95% CI, 3.2-5.9 months). The median relative dose intensities of irinotecan, 5-fluorouracil, and RAM were 73.8% (range, 40.3%-102.4%), 58.5% (range, 22.8%-102.4%), and 80.8% (range, 36.1%-102.4%), respectively. Frequencies of Grade ≥ 3 hematologic, non-hematologic, and RAM-associated adverse events were 43%, 24%, and 17%, respectively. The observed Grade ≥ 3 adverse events included neutropenia (40%), diarrhea (8.6%), decreased appetite (10%), hypertension (6.9%), and proteinuria (3.4%). CONCLUSION: FOLFIRI with low-dose irinotecan plus RAM is a feasible second-line treatment in Japanese patients with mCRC.",
-      "journal": "Japanese journal of clinical oncology",
-      "pub_date": "2026 Mar",
-      "type": "phase2",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41359440/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 60.0,
-      "rank": 242
+      "rank": 240
     },
     {
       "uid": "pmid_41832629",
@@ -4627,7 +4589,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 243
+      "rank": 241
     },
     {
       "uid": "pmid_41823504",
@@ -4646,7 +4608,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 244
+      "rank": 242
     },
     {
       "uid": "pmid_41818249",
@@ -4665,7 +4627,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 245
+      "rank": 243
+    },
+    {
+      "uid": "pmid_41359440",
+      "pmid": "41359440",
+      "title": "Phase II study of FOLFIRI with low-dose irinotecan plus ramucirumab as second-line treatment in Japanese patients with metastatic colorectal cancer (study rindo).",
+      "abstract": "OBJECTIVE: This multicenter, single-arm, Phase II study aimed to evaluate the efficacy and safety of fluorouracil, levofolinate, and irinotecan (150 mg/m2, standard dose in Japan) (FOLFIRI) plus ramucirumab (RAM) as second-line treatment for metastatic colorectal cancer (mCRC) in Japanese patients. METHODS: On Day 1 of each 2-week cycle, patients with unresectable mCRC who were refractory to oxaliplatin and fluoropyrimidine in combination with bevacizumab or anti-epidermal growth factor receptor antibodies as first-line treatment received 8 mg/kg RAM, followed by the FOLFIRI regimen with low-dose irinotecan (150 mg/m2). The primary endpoint was progression-free survival (PFS), and secondary endpoints were overall survival (OS), treatment compliance, and safety. RESULTS: A total of 62 patients were enrolled from 15 institutions between January 2018 and August 2021. The intent-to-treat and safety populations included 61 and 58 patients. Median PFS and OS were 5.9 months (95% CI, 4.8-6.9 months) and 17.0 months (95% CI, 12.0-21.0 months), respectively. The objective response rate and disease control rate were 8.2% and 74%, respectively. The median time to treatment failure was 4.8 months (95% CI, 3.2-5.9 months). The median relative dose intensities of irinotecan, 5-fluorouracil, and RAM were 73.8% (range, 40.3%-102.4%), 58.5% (range, 22.8%-102.4%), and 80.8% (range, 36.1%-102.4%), respectively. Frequencies of Grade ≥ 3 hematologic, non-hematologic, and RAM-associated adverse events were 43%, 24%, and 17%, respectively. The observed Grade ≥ 3 adverse events included neutropenia (40%), diarrhea (8.6%), decreased appetite (10%), hypertension (6.9%), and proteinuria (3.4%). CONCLUSION: FOLFIRI with low-dose irinotecan plus RAM is a feasible second-line treatment in Japanese patients with mCRC.",
+      "journal": "Japanese journal of clinical oncology",
+      "pub_date": "2026 Mar",
+      "type": "phase2",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41359440/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 60.0,
+      "rank": 244
     },
     {
       "uid": "pmid_41380113",
@@ -4680,6 +4661,25 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41380113/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 60.0,
+      "rank": 245
+    },
+    {
+      "uid": "pmid_41690301",
+      "pmid": "41690301",
+      "title": "Patient-reported outcomes from a phase 2 PLATINUM trial of nivolumab combination therapy sparing concurrent cisplatin in nasopharyngeal carcinoma.",
+      "abstract": "BACKGROUND: In the PLATINUM (ClinicalTrials.gov: NCT03984357) trial, nivolumab plus chemoradiotherapy sparing concurrent cisplatin demonstrated efficacy and safety in nasopharyngeal carcinoma (NPC). Herein, patient-reported outcomes (PROs) on quality of life (QoL), tolerability, and social reintegration are reported. METHODS: Patients with T4N1M0/T1-4N2-3M0 NPC were assessed for general and head-and-neck-specific QoL (using the European Organization for Research and Treatment of Cancer and the Functional Assessment of Cancer Therapy) and tolerability (using the PRO-specific Common Terminology Criteria for Adverse Events). Analyses included change over time, effect of the treatment phase on QoL, time-to-event analysis, and a comparison of PROs and clinician-reported outcomes (CROs) in toxicity. FINDINGS: Among 152 patients, 44.1% achieved social reintegration, and 51.3% were satisfied with their current life. Radiotherapy dominated QoL deterioration rather than induction chemotherapy (pooled mean difference, -18.51; 95% confidence interval [CI], -29.50 to -7.52; p = 0.001), and its removal dominated QoL improvement rather than that of nivolumab (pooled mean difference, -7.62; 95% CI, -10.05 to -5.19; p < 0.001). Patients without social reintegration had greater deterioration in speech (hazard ratio [HR], 0.60; 95% CI, 0.38 to 0.94; p = 0.027) and swallowing functions (HR, 0.59; 95% CI, 0.39 to 0.89; p = 0.011). Under-reporting of decreased appetite severity by CROs vs. by PROs in all three treatment phases was associated with poorer social reintegration (p = 0.002) and reduced failure-free survival (3 years, 86.1% vs. 95.0%; p = 0.021). CONCLUSIONS: Social reintegration is a practical composite indicator of favorable PROs in NPC. Interventions targeting speech, swallowing, and decreased appetite might promote better recovery. FUNDING: This study was funded by the Academician Workstation of Jun Ma (YSGZZ2024001), the Specific Research Fund of the Innovation Platform for Academicians of Hainan Province (YSPTZX202501), the National Natural Science Foundation of China (82573549, 82172870), the Guangdong Special Support Program for Young Top Talents (TZ09B0046), and the Guangzhou Science and Technology Program (2023A04J1786).",
+      "journal": "Med (New York, N.Y.)",
+      "pub_date": "2026 Mar",
+      "type": "phase2",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41690301/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -4801,25 +4801,6 @@
       "rank": 252
     },
     {
-      "uid": "pmid_41653927",
-      "pmid": "41653927",
-      "title": "Incidence and spectrum of immune-related adverse events in nasopharyngeal carcinoma patients treated with immune checkpoint inhibitors.",
-      "abstract": "BACKGROUND: Nasopharyngeal carcinoma (NPC), endemic to Southern China and Southeast Asia, presents significant clinical challenges. Immune checkpoint inhibitors (ICIs) have transformed NPC treatment but carry risks of immune-related adverse events (irAEs). Existing meta-analyses lack NPC-specific data, hindering targeted safety guidance. METHODS: This systematic review and meta-analysis, registered with PROSPERO (CRD420251003062), followed PRISMA guidelines. We searched PubMed, Embase, and Web of Science up to March 31, 2025, including all registered clinical trials of ICIs in NPC patients reporting irAEs. FINDINGS: A total of 27 clinical trials were included in the meta-analysis. The pooled incidence of all-grade irAEs in 2,296 patients was 69.1% (95% confidence interval [CI], 50.4%-80.7%), and that of grade 3 or higher irAE in 2,459 patients was 8.1% (95% CI, 6.1%-10.6%). Subgroup analyses revealed that there were no significant differences in the incidence of irAEs based on disease stages, lines of treatment, and combination treatment strategies. The main types of all-grade irAEs with an incidence rate greater than 1% are as follows: hypothyroidism (22.4%), rash (10.7%), pruritus (3.6%), increased aspartate aminotransferase (1.9%), increased alanine aminotransferase (1.8%), fatigue (1.6%), anemia (1.6%), pneumonia (1.5%), and hyperthyroidism (1.0%). A total of 17 patients died due to irAEs. Among these, sepsis was the most common cause of death, followed by pneumonitis. CONCLUSIONS: This meta-analysis provides a comprehensive overview of irAEs in NPC patients treated with ICIs. These NPC-specific data emphasize the importance of vigilant monitoring for endocrine, cutaneous, and severe pulmonary or infectious complications to balance the efficacy and safety of ICIs. FUNDING: Young Talent Program of Heyuan People's Hospital.",
-      "journal": "Med (New York, N.Y.)",
-      "pub_date": "2026 Mar",
-      "type": "review",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41653927/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 253
-    },
-    {
       "uid": "pmid_41820200",
       "pmid": "41820200",
       "title": "Risk of adverse events in elotuzumab-treated patients with multiple myeloma: a systematic review and meta-analysis.",
@@ -4836,7 +4817,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 254
+      "rank": 253
     },
     {
       "uid": "pmid_41801573",
@@ -4851,6 +4832,25 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41801573/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 254
+    },
+    {
+      "uid": "pmid_41653927",
+      "pmid": "41653927",
+      "title": "Incidence and spectrum of immune-related adverse events in nasopharyngeal carcinoma patients treated with immune checkpoint inhibitors.",
+      "abstract": "BACKGROUND: Nasopharyngeal carcinoma (NPC), endemic to Southern China and Southeast Asia, presents significant clinical challenges. Immune checkpoint inhibitors (ICIs) have transformed NPC treatment but carry risks of immune-related adverse events (irAEs). Existing meta-analyses lack NPC-specific data, hindering targeted safety guidance. METHODS: This systematic review and meta-analysis, registered with PROSPERO (CRD420251003062), followed PRISMA guidelines. We searched PubMed, Embase, and Web of Science up to March 31, 2025, including all registered clinical trials of ICIs in NPC patients reporting irAEs. FINDINGS: A total of 27 clinical trials were included in the meta-analysis. The pooled incidence of all-grade irAEs in 2,296 patients was 69.1% (95% confidence interval [CI], 50.4%-80.7%), and that of grade 3 or higher irAE in 2,459 patients was 8.1% (95% CI, 6.1%-10.6%). Subgroup analyses revealed that there were no significant differences in the incidence of irAEs based on disease stages, lines of treatment, and combination treatment strategies. The main types of all-grade irAEs with an incidence rate greater than 1% are as follows: hypothyroidism (22.4%), rash (10.7%), pruritus (3.6%), increased aspartate aminotransferase (1.9%), increased alanine aminotransferase (1.8%), fatigue (1.6%), anemia (1.6%), pneumonia (1.5%), and hyperthyroidism (1.0%). A total of 17 patients died due to irAEs. Among these, sepsis was the most common cause of death, followed by pneumonitis. CONCLUSIONS: This meta-analysis provides a comprehensive overview of irAEs in NPC patients treated with ICIs. These NPC-specific data emphasize the importance of vigilant monitoring for endocrine, cutaneous, and severe pulmonary or infectious complications to balance the efficacy and safety of ICIs. FUNDING: Young Talent Program of Heyuan People's Hospital.",
+      "journal": "Med (New York, N.Y.)",
+      "pub_date": "2026 Mar",
+      "type": "review",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41653927/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
