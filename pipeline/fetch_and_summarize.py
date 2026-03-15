@@ -617,15 +617,31 @@ def run_pipeline(args):
 
     # Remove already-seen articles
     # Filter out correspondence, letters, comments, editorials
-    EXCLUDE_KEYWORDS = [
-        "correspondence", "letter to the editor", "letter:", "in reply",
-        "reply to", "comment on", "commentary on", "author's reply",
-        "authors' reply", "to the editor", "erratum", "correction to",
-        "retraction", "expression of concern",
+    # Exclude correspondence and letters only — comments/editorials kept as they
+    # may be substantive in high-impact journals (e.g. Lancet, NEJM)
+    EXCLUDE_TITLE_EXACT = [
+        "correspondence", "letter to the editor", "letters to the editor",
+        "in reply", "reply to", "author's reply", "authors' reply",
+        "to the editor", "erratum", "correction to", "retraction notice",
+        "expression of concern",
+    ]
+    # These must appear in the title only (not abstract) to avoid false positives
+    EXCLUDE_TITLE_STARTS = [
+        "re: ", "reply: ", "letter: ",
     ]
     def is_excluded(a):
-        t = (a.get("title","") + " " + a.get("abstract","")).lower()
-        return any(kw in t for kw in EXCLUDE_KEYWORDS)
+        title = a.get("title", "").lower().strip()
+        # Exact title matches
+        if any(title == kw or title.startswith(kw + ":") for kw in EXCLUDE_TITLE_EXACT):
+            return True
+        # Title starts with correspondence markers
+        if any(title.startswith(kw) for kw in EXCLUDE_TITLE_STARTS):
+            return True
+        # Abstract explicitly flags as correspondence
+        abstract = a.get("abstract", "").lower()
+        if "this is a letter to the editor" in abstract:
+            return True
+        return False
 
     new_articles = [a for a in all_articles if not is_excluded(a)]
     excluded = len(all_articles) - len(new_articles)
