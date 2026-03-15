@@ -2,7 +2,7 @@ name: OncoPulse Weekly Literature Update
 
 on:
   schedule:
-    - cron: "0 6 * * 1"   # Every Monday at 6:00 AM UTC
+    - cron: "0 6 * * 1"
   workflow_dispatch:
     inputs:
       days:
@@ -21,7 +21,7 @@ on:
 jobs:
   update-literature:
     runs-on: ubuntu-latest
-    timeout-minutes: 90      # Altmetric calls ~1 req/sec for 300 articles ≈ 5 min
+    timeout-minutes: 90
     permissions:
       contents: write
 
@@ -65,18 +65,9 @@ jobs:
 
       - name: Summary
         run: |
-          echo "## OncoPulse Update" >> $GITHUB_STEP_SUMMARY
-          python3 -c "
-import json, os
-d = json.load(open('dashboard/data.json'))
-s = d['stats']
-lines = [
-  f\"- **Week:** {d['week_label']}\",
-  f\"- **Articles:** {s['total']}\",
-  f\"- **With Altmetric score:** {s.get('with_altmetric', 'N/A')}\",
-  f\"- **Top Altmetric score:** {s.get('top_altmetric', 'N/A')}\",
-  f\"- **FDA:** {s['fda']} | **Phase 3:** {s['phase3']} | **Phase 2:** {s['phase2']}\",
-]
-open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('\n'.join(lines) + '\n')
-" 2>/dev/null || echo "Summary generation skipped"
-
+          TOTAL=$(python3 -c "import json; d=json.load(open('dashboard/data.json')); print(d['stats']['total'])")
+          WEEK=$(python3 -c "import json; d=json.load(open('dashboard/data.json')); print(d['week_label'])")
+          ALT=$(python3 -c "import json; d=json.load(open('dashboard/data.json')); print(d['stats'].get('with_altmetric','N/A'))")
+          echo "- **Week:** $WEEK" >> $GITHUB_STEP_SUMMARY
+          echo "- **Articles:** $TOTAL" >> $GITHUB_STEP_SUMMARY
+          echo "- **With Altmetric score:** $ALT" >> $GITHUB_STEP_SUMMARY
