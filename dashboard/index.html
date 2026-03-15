@@ -1384,7 +1384,7 @@ function applyFilters() {
     const mt = currentTypeFilter==='all' || a.type===currentTypeFilter;
     const md = currentDiseaseFilter==='all' || a.disease===currentDiseaseFilter;
     const ms = !q || a.title.toLowerCase().includes(q) || (a.abstract||'').toLowerCase().includes(q) || (a.journal||'').toLowerCase().includes(q);
-    const sd = s.diseases.includes(a.disease);
+    const sd = s.diseases.includes(a.disease) || s.diseases.includes('other');
     const sj = s.journals.length === 0 || s.journals.includes(a.journal);
     return mt && md && ms && sd && sj;
   });
@@ -1622,7 +1622,7 @@ const BROAD_GROUPS = [
   { id: 'skin',       label: 'Skin',        cls: 'solid-chip', ids: ['melanoma','cscc','merkel','bcc','uveal_melanoma'] },
   { id: 'head_neck',  label: 'Head & Neck', cls: 'solid-chip', ids: ['hnscc','nasopharyngeal','salivary','thyroid'] },
   { id: 'sarcoma',    label: 'Sarcoma',     cls: 'solid-chip', ids: ['osteosarcoma','ewing','gist','rhabdomyosarcoma','leiomyosarcoma','liposarcoma','sarcoma_general'] },
-  { id: 'other',      label: 'Other',       cls: '', ids: ['cup','other','retinoblastoma'] },
+  { id: 'other',      label: 'General / Other', cls: '', ids: ['cup','other','retinoblastoma'] },
 ];
 
 // Get all leaf disease IDs from taxonomy
@@ -1973,7 +1973,7 @@ function updateSettingsBanner() {
     const parts = [];
     if (s.diseases.length < ALL_LEAF_IDS.length) parts.push(`${s.diseases.length} diseases`);
     if (s.journals.length < ALL_JOURNAL_IDS.length) parts.push(`${s.journals.length} journals`);
-    if (s.maxDisplay !== 300) parts.push(`max ${s.maxDisplay}`);
+    if (s.maxDisplay !== 300) parts.push(`max ${s.maxDisplay} articles`);
     banner.textContent = `⚙ Custom filter active: ${parts.join(' · ')} — click Settings to change`;
     banner.classList.add('visible');
   } else {
