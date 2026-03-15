@@ -71,3 +71,4 @@ jobs:
           echo "- **Week:** $WEEK" >> $GITHUB_STEP_SUMMARY
           echo "- **Articles:** $TOTAL" >> $GITHUB_STEP_SUMMARY
           echo "- **With Altmetric score:** $ALT" >> $GITHUB_STEP_SUMMARY
+
