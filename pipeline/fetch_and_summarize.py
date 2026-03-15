@@ -441,12 +441,21 @@ JOURNAL_FEEDS = {
     "Blood Cancer J": "https://www.nature.com/bcj.rss",
 }
 
-ONCOLOGY_TERMS = [
-    "cancer", "tumor", "carcinoma", "oncol", "lymphoma", "leukemia",
-    "myeloma", "melanoma", "sarcoma", "chemotherapy", "immunotherapy",
-    "checkpoint", "car-t", "bispecific", "antibody-drug", "clinical trial",
-    "phase", "survival", "randomized",
+# Core oncology terms required for general medical journals
+ONCOLOGY_TERMS_STRICT = [
+    "cancer", "tumor", "tumour", "carcinoma", "oncol", "lymphoma", "leukemia",
+    "leukaemia", "myeloma", "melanoma", "sarcoma", "chemotherapy", "immunotherapy",
+    "checkpoint inhibitor", "car-t", "car t-cell", "bispecific", "antibody-drug conjugate",
+    "adc", "targeted therapy", "antineoplastic", "neoplasm", "malignancy", "malignant",
+    "metastasis", "metastatic", "radiotherapy", "radiation therapy", "cytotoxic",
 ]
+
+# Oncology specialist journals — all articles pass without keyword check
+ONCOLOGY_SPECIALIST_JOURNALS = {
+    "Lancet Oncol", "JCO", "Blood", "Cancer Cell", "Nature Cancer",
+    "JAMA Oncol", "Ann Oncol", "Cancer Discov", "Clin Cancer Res",
+    "J Hematol Oncol", "Leukemia", "BJH", "Eur J Cancer", "Blood Cancer J",
+}
 
 def fetch_rss(days_back: int) -> list:
     cutoff = datetime.now() - timedelta(days=days_back)
@@ -466,8 +475,11 @@ def fetch_rss(days_back: int) -> list:
                 if not title:
                     continue
                 text = (title + " " + summary).lower()
-                if not any(t in text for t in ONCOLOGY_TERMS):
-                    continue
+                # Specialist oncology journals: pass all articles
+                # General medical journals: require a strict oncology term
+                if journal_name not in ONCOLOGY_SPECIALIST_JOURNALS:
+                    if not any(t in text for t in ONCOLOGY_TERMS_STRICT):
+                        continue
 
                 uid = f"rss_{hashlib.md5(link.encode()).hexdigest()[:10]}"
                 disease = classify_disease(title + " " + summary)
