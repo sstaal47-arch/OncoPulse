@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-15T16:38:14.692738Z",
+  "generated_at": "2026-03-15T17:10:25.771296Z",
   "week_label": "Mar 8–Mar 15, 2026",
   "lookback_days": 7,
   "stats": {
-    "total": 250,
-    "phase3": 207,
+    "total": 262,
+    "phase3": 219,
     "phase2": 23,
     "fda": 0,
     "review": 20,
@@ -32,17 +32,17 @@
       "rank": 1
     },
     {
-      "uid": "rss_c1283d9a7c",
+      "uid": "rss_47301e4b1a",
       "pmid": "",
-      "title": "[Comment] Considerations for improving non-inferiority trials",
-      "abstract": "Non-inferiority trials are a valuable type of clinical trial to evaluate new treatments that might have differing benefits. Such trials are increasingly used, but have methodological challenges in their design and analysis that should be considered to support the highest-quality research and publications.1,2 Here, we outline key points for consideration.",
+      "title": "[Comment] Pimicotinib: a new agent for an orphan disease",
+      "abstract": "Tenosynovial giant cell tumour (TGCT, formerly known as pigmented villonodular synovitis) is a rare, locally aggressive, connective tissue neoplasm affecting mostly young adults.1–4 This neoplasm is driven by the overexpression of colony-stimulating factor 1 (CSF-1), resulting from fusion genes or transcriptional deregulation, which recruit CSF-1 receptor (CSF-1R)-positive macrophages in the tumour.1 Symptoms include joint swelling, pain, functional impairment, and eventually joint destruction, with a major effect on the quality of life and work capacity of these patients.",
       "journal": "Lancet",
       "pub_date": "2026 Mar",
       "type": "phase3",
-      "disease": "other",
+      "disease": "neuroendocrine",
       "category": "solid",
       "source": "rss",
-      "source_link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00306-5/fulltext?rss=yes",
+      "source_link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00191-1/fulltext?rss=yes",
       "pubmed_link": "",
       "altmetric_score": 0,
       "altmetric_id": null,
@@ -108,44 +108,6 @@
       "rank": 5
     },
     {
-      "uid": "rss_5416dcb55a",
-      "pmid": "",
-      "title": "Individualized Perioperative Blood Pressure Management in Major Abdominal Surgery—Reply",
-      "abstract": "In Reply Dr Miyazaki’s Letter to the Editor on the IMPROVE-multi trial—which reported that individualized perioperative blood pressure management based on preoperative mean nighttime MAP did not improve outcomes compared with maintaining MAP at 65 mm Hg or greater—correctly notes that maintaining intraoperative blood pressure using vasopressors (which themselves may be associated with acute kidney injury) does not necessarily ensure adequate end-organ perfusion. In our trial, interventions to maintain blood pressure targets were left to the discretion of treating anesthesiologists skilled in identifying underlying causes of hypotension and intervening appropriately. Intraoperative hypotension can be caused by vasodilation, hypovolemia, bradycardia, and myocardial depression. From a pathophysiologic perspective, hypotension should thus be specifically treated with vasopressors, fluids, chronotropic agents, or inotropes to directly address the underlying cause(s)—and not always with vasopressors. However, it still needs to be investigated in clinical trials whether blood pressure management based on distinct hypotension endotypes helps avoid organ injury. The IMPROVE-multi trial focused on blood pressure (which must be monitored in every patient during surgery) and did not include systematic monitoring of blood flow variables such as stroke volume and cardiac output.",
-      "journal": "JAMA",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "neuroendocrine",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://jamanetwork.com/journals/jama/fullarticle/2845043",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 6
-    },
-    {
-      "uid": "rss_56d1148a77",
-      "pmid": "",
-      "title": "Novel Airflow System for Use in Critical Avalanche Burial",
-      "abstract": "To the Editor We read with great interest the recent randomized clinical trial that described the potential benefit of an airflow system allowing avalanche-buried individuals to survive longer by maintaining better oxygenation without an increase in end-tidal carbon dioxide. The authors deserve recognition for successfully conducting such a challenging study in high-altitude and winter conditions.",
-      "journal": "JAMA",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "other",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://jamanetwork.com/journals/jama/fullarticle/2844759",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 7
-    },
-    {
       "uid": "rss_eb4edc62d3",
       "pmid": "",
       "title": "ESGO Consensus Statements on Opportunistic Salpingectomy for Prevention of Tubo-Ovarian Carcinoma",
@@ -162,64 +124,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 8
-    },
-    {
-      "uid": "rss_aeed08973c",
-      "pmid": "",
-      "title": "Acetaminophen (Paracetamol) or Opioid Analgesia Added to Ibuprofen for Children’s Musculoskeletal Injury",
-      "abstract": "These randomized trials aim to determine whether treatment with an opioid (hydromorphone) plus ibuprofen or nonopioid (acetaminophen) plus ibuprofen decreased pain scores compared with ibuprofen alone among children aged 6 to 17 years presenting with a nonoperative acute limb injury.",
-      "journal": "JAMA",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "other",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://jamanetwork.com/journals/jama/fullarticle/2843665",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 9
-    },
-    {
-      "uid": "rss_29d8fb8829",
-      "pmid": "",
-      "title": "Automated Closed-Loop Ventilation and Ventilator-Free Days in Critically Ill Adults",
-      "abstract": "This randomized clinical trial assesses the effect of use of an automated closed-loop ventilation system on ventilator-free days at day 28 among critically ill patients undergoing invasive mechanical ventilation.",
-      "journal": "JAMA",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "other",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://jamanetwork.com/journals/jama/fullarticle/2842610",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 10
-    },
-    {
-      "uid": "rss_8db7847b77",
-      "pmid": "",
-      "title": "Effect of Automated Closed-Loop Ventilation vs Protocolized Conventional Ventilation on Ventilator-Free Days in Critically Ill Adults Research Summary",
-      "abstract": "This randomized clinical trial investigated whether early use of an automated closed-loop ventilation system increased ventilator-free days at day 28 compared with protocolized conventional ventilation in critically ill adults.",
-      "journal": "JAMA",
-      "pub_date": "2026 Mar",
-      "type": "phase3",
-      "disease": "other",
-      "category": "solid",
-      "source": "rss",
-      "source_link": "https://jamanetwork.com/journals/jama/fullarticle/2842609",
-      "pubmed_link": "",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 120.0,
-      "rank": 11
+      "rank": 6
     },
     {
       "uid": "rss_ff41ff62eb",
@@ -238,7 +143,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 12
+      "rank": 7
     },
     {
       "uid": "rss_3efddc8454",
@@ -257,7 +162,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 13
+      "rank": 8
     },
     {
       "uid": "rss_dcee61469a",
@@ -276,7 +181,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 14
+      "rank": 9
     },
     {
       "uid": "rss_df9f4436e0",
@@ -295,7 +200,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 15
+      "rank": 10
     },
     {
       "uid": "rss_6e496e91be",
@@ -314,7 +219,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 16
+      "rank": 11
     },
     {
       "uid": "rss_dee418e02b",
@@ -333,7 +238,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 17
+      "rank": 12
     },
     {
       "uid": "rss_dc7862a447",
@@ -352,7 +257,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 18
+      "rank": 13
     },
     {
       "uid": "rss_cce237aa06",
@@ -371,7 +276,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 19
+      "rank": 14
     },
     {
       "uid": "rss_32bfd9ca06",
@@ -390,7 +295,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 20
+      "rank": 15
     },
     {
       "uid": "rss_840aa88ac1",
@@ -409,7 +314,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 21
+      "rank": 16
+    },
+    {
+      "uid": "rss_af0aac14b7",
+      "pmid": "",
+      "title": "[Correspondence] Standardising MET amplification testing: limitations of the GCN ≥6 criterion – Authors' reply",
+      "abstract": "We thank Yuxin Liu and colleagues for their interest in the KUNPENG study and concur that a clinically meaningful MET amplification cutoff is crucial to trial design and interpretation.1 Indeed, our selection of a gene copy number (GCN) of six or higher assessed by fluorescence in-situ hybridisation (FISH) was grounded in a biological rationale and clinical precedent. Mechanistically, MET amplification promotes oncogenesis through GCN gain-induced MET protein phosphorylation, and a GCN of six or higher confers a potent oncogenic driver function independent of hepatocyte growth factor.",
+      "journal": "Lancet Oncol",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(26)00007-0/fulltext?rss=yes",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 120.0,
+      "rank": 17
     },
     {
       "uid": "rss_41adec5803",
@@ -428,7 +352,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 22
+      "rank": 18
+    },
+    {
+      "uid": "rss_79e56f2e35",
+      "pmid": "",
+      "title": "[News] Lithuania introduces taxes on sugar-sweetened beverages",
+      "abstract": "Lithuania has now joined a growing list of more than 100 countries worldwide that have introduced a tax on sugar-sweetened beverages (SSBs). The tax, introduced from Jan 1, 2026, means the Baltic nation is one of many countries using fiscal policies to help encourage healthier diets across its population. Lithuania will also be taxing artificially sweetened beverages.",
+      "journal": "Lancet Oncol",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(26)00048-3/fulltext?rss=yes",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 120.0,
+      "rank": 19
     },
     {
       "uid": "rss_015164efc5",
@@ -447,7 +390,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 23
+      "rank": 20
     },
     {
       "uid": "rss_357ff971f5",
@@ -466,7 +409,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 24
+      "rank": 21
     },
     {
       "uid": "rss_dc450b0afe",
@@ -485,7 +428,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 25
+      "rank": 22
     },
     {
       "uid": "rss_e4c35069cc",
@@ -504,7 +447,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 26
+      "rank": 23
     },
     {
       "uid": "rss_80606ec691",
@@ -523,7 +466,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 27
+      "rank": 24
     },
     {
       "uid": "rss_cdb00a6341",
@@ -542,7 +485,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 28
+      "rank": 25
     },
     {
       "uid": "rss_fdf01632bd",
@@ -561,7 +504,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 29
+      "rank": 26
+    },
+    {
+      "uid": "rss_a3974ee987",
+      "pmid": "",
+      "title": "[Perspectives] Seismic vulnerability of Türkiye's radiotherapy centres: a nationwide analysis",
+      "abstract": "Earthquakes constitute major natural hazards, with the potential to cause extensive damage to infrastructure, substantial loss of life, and economic consequences. Türkiye is situated at the intersection of the Arabian and Eurasian tectonic plates and is traversed by both the North Anatolian and East Anatolian fault lines, resulting in high seismic activity across the region. In the last century, the country has experienced 16 major earthquakes with magnitudes of Mw 7·0 or higher. Among these earthquakes were the two major seismic events of 2023 (Mw 7·7 and Mw 7·6), which profoundly impacted southeastern Türkiye and northern Syria, resulting in more than 50 000 deaths and widespread structural destruction, including critical damage to health care facilities.",
+      "journal": "Lancet Oncol",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(26)00079-3/fulltext?rss=yes",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 120.0,
+      "rank": 27
     },
     {
       "uid": "rss_6669c9c943",
@@ -580,7 +542,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 30
+      "rank": 28
     },
     {
       "uid": "rss_9181e16c41",
@@ -599,7 +561,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 31
+      "rank": 29
     },
     {
       "uid": "rss_680bac8e94",
@@ -618,7 +580,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 32
+      "rank": 30
+    },
+    {
+      "uid": "rss_0d0d9c554f",
+      "pmid": "",
+      "title": "[Articles] Assessing the global demand and supply of brachytherapy resources: a population-based observational study",
+      "abstract": "Global access to brachytherapy remains profoundly unequal, with adequate coverage largely limited to HICs. Resource gaps are greatest in lower-income settings, where patients also travel farthest. Investment in new centres is urgently needed to reduce geographical and economic barriers to access.",
+      "journal": "Lancet Oncol",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(25)00718-1/fulltext?rss=yes",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 120.0,
+      "rank": 31
     },
     {
       "uid": "rss_672bcc854e",
@@ -637,7 +618,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 33
+      "rank": 32
     },
     {
       "uid": "rss_46e5f40e8c",
@@ -656,7 +637,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 34
+      "rank": 33
     },
     {
       "uid": "rss_6075cbe8f5",
@@ -675,7 +656,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 35
+      "rank": 34
     },
     {
       "uid": "rss_043df04bb3",
@@ -694,7 +675,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 36
+      "rank": 35
     },
     {
       "uid": "rss_6bee1820b3",
@@ -713,7 +694,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 37
+      "rank": 36
     },
     {
       "uid": "rss_737d1e4a78",
@@ -732,7 +713,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 38
+      "rank": 37
     },
     {
       "uid": "rss_2752cb4e49",
@@ -751,7 +732,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 39
+      "rank": 38
     },
     {
       "uid": "rss_59f91cc98e",
@@ -770,7 +751,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 40
+      "rank": 39
     },
     {
       "uid": "rss_d58f0352d0",
@@ -789,7 +770,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 41
+      "rank": 40
     },
     {
       "uid": "rss_4cbf3c4cec",
@@ -808,7 +789,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 42
+      "rank": 41
     },
     {
       "uid": "rss_5ec34785ec",
@@ -827,7 +808,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 43
+      "rank": 42
     },
     {
       "uid": "rss_8096e1a0ac",
@@ -846,7 +827,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 44
+      "rank": 43
     },
     {
       "uid": "rss_468989f87e",
@@ -865,7 +846,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 45
+      "rank": 44
     },
     {
       "uid": "rss_31af278bef",
@@ -884,7 +865,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 46
+      "rank": 45
     },
     {
       "uid": "rss_2d7bdf4b67",
@@ -903,7 +884,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 47
+      "rank": 46
     },
     {
       "uid": "rss_8c1767d263",
@@ -922,7 +903,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 48
+      "rank": 47
     },
     {
       "uid": "rss_9324c97d14",
@@ -941,7 +922,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 49
+      "rank": 48
     },
     {
       "uid": "rss_7715bf0f49",
@@ -960,7 +941,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 50
+      "rank": 49
     },
     {
       "uid": "rss_2b70e13b49",
@@ -979,7 +960,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 51
+      "rank": 50
     },
     {
       "uid": "rss_5619be13ad",
@@ -998,7 +979,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 52
+      "rank": 51
     },
     {
       "uid": "rss_be8c3567d7",
@@ -1017,7 +998,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 53
+      "rank": 52
     },
     {
       "uid": "rss_715f766975",
@@ -1036,7 +1017,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 54
+      "rank": 53
     },
     {
       "uid": "rss_535a287a08",
@@ -1055,7 +1036,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 55
+      "rank": 54
     },
     {
       "uid": "rss_31409daa64",
@@ -1074,7 +1055,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 56
+      "rank": 55
     },
     {
       "uid": "rss_9e773bdb32",
@@ -1093,7 +1074,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 57
+      "rank": 56
     },
     {
       "uid": "rss_06383f97fa",
@@ -1112,7 +1093,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 58
+      "rank": 57
     },
     {
       "uid": "rss_c0dbe3df44",
@@ -1131,7 +1112,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 59
+      "rank": 58
     },
     {
       "uid": "rss_d060193ab8",
@@ -1150,7 +1131,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 60
+      "rank": 59
     },
     {
       "uid": "rss_e8da590e71",
@@ -1169,7 +1150,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 61
+      "rank": 60
     },
     {
       "uid": "rss_4bbad54816",
@@ -1188,7 +1169,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 62
+      "rank": 61
     },
     {
       "uid": "rss_05c58b27a6",
@@ -1207,7 +1188,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 63
+      "rank": 62
     },
     {
       "uid": "rss_89ab2bbce8",
@@ -1226,7 +1207,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 64
+      "rank": 63
     },
     {
       "uid": "rss_54e93eef24",
@@ -1245,7 +1226,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 65
+      "rank": 64
     },
     {
       "uid": "rss_9014347a5f",
@@ -1264,7 +1245,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 66
+      "rank": 65
     },
     {
       "uid": "rss_ef063d6d52",
@@ -1283,7 +1264,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 67
+      "rank": 66
     },
     {
       "uid": "rss_f602f161f5",
@@ -1302,7 +1283,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 68
+      "rank": 67
     },
     {
       "uid": "rss_8e8cb41362",
@@ -1321,7 +1302,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 69
+      "rank": 68
     },
     {
       "uid": "rss_8269bcbae7",
@@ -1340,7 +1321,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 70
+      "rank": 69
     },
     {
       "uid": "rss_5c0df8a977",
@@ -1359,7 +1340,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 71
+      "rank": 70
     },
     {
       "uid": "rss_7c6363aa95",
@@ -1378,7 +1359,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 72
+      "rank": 71
     },
     {
       "uid": "rss_04d5fb8919",
@@ -1397,7 +1378,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 73
+      "rank": 72
     },
     {
       "uid": "rss_1874934c24",
@@ -1416,7 +1397,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 74
+      "rank": 73
     },
     {
       "uid": "rss_ab37b2b76e",
@@ -1435,7 +1416,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 75
+      "rank": 74
     },
     {
       "uid": "rss_0b835826a3",
@@ -1454,7 +1435,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 76
+      "rank": 75
     },
     {
       "uid": "rss_a192124b22",
@@ -1473,7 +1454,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 77
+      "rank": 76
     },
     {
       "uid": "rss_c84efc5603",
@@ -1492,7 +1473,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 78
+      "rank": 77
     },
     {
       "uid": "rss_7f096b184a",
@@ -1511,7 +1492,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 79
+      "rank": 78
     },
     {
       "uid": "rss_c69a537fb0",
@@ -1530,7 +1511,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 80
+      "rank": 79
     },
     {
       "uid": "rss_8762923f61",
@@ -1549,7 +1530,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 81
+      "rank": 80
     },
     {
       "uid": "rss_ac0b599b19",
@@ -1568,7 +1549,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 82
+      "rank": 81
     },
     {
       "uid": "rss_6bbc833324",
@@ -1587,7 +1568,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 83
+      "rank": 82
     },
     {
       "uid": "rss_eaf5c56d84",
@@ -1606,7 +1587,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 84
+      "rank": 83
     },
     {
       "uid": "rss_3bc187f2cb",
@@ -1625,7 +1606,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 85
+      "rank": 84
     },
     {
       "uid": "rss_3644be74bc",
@@ -1644,7 +1625,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 86
+      "rank": 85
     },
     {
       "uid": "rss_5c284a1a8c",
@@ -1663,7 +1644,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 87
+      "rank": 86
     },
     {
       "uid": "rss_f4dd52e64c",
@@ -1682,7 +1663,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 88
+      "rank": 87
     },
     {
       "uid": "rss_9ba3c77273",
@@ -1701,7 +1682,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 89
+      "rank": 88
     },
     {
       "uid": "rss_1306665460",
@@ -1720,7 +1701,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 90
+      "rank": 89
     },
     {
       "uid": "rss_07e0083cb1",
@@ -1739,7 +1720,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 91
+      "rank": 90
     },
     {
       "uid": "rss_d9f4269696",
@@ -1758,7 +1739,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 92
+      "rank": 91
     },
     {
       "uid": "rss_afcb93a8cd",
@@ -1777,7 +1758,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 93
+      "rank": 92
     },
     {
       "uid": "rss_5d0bc820a2",
@@ -1796,7 +1777,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 94
+      "rank": 93
     },
     {
       "uid": "rss_080f6e224e",
@@ -1815,7 +1796,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 95
+      "rank": 94
     },
     {
       "uid": "rss_db0d7de2f1",
@@ -1834,7 +1815,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 96
+      "rank": 95
     },
     {
       "uid": "rss_01af3f5903",
@@ -1853,7 +1834,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 97
+      "rank": 96
     },
     {
       "uid": "rss_40cf4c6b26",
@@ -1872,7 +1853,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 98
+      "rank": 97
     },
     {
       "uid": "rss_e2c239dcaf",
@@ -1891,7 +1872,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 99
+      "rank": 98
     },
     {
       "uid": "rss_7ac7eff0f3",
@@ -1910,7 +1891,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 100
+      "rank": 99
     },
     {
       "uid": "rss_e8ab72d32d",
@@ -1929,7 +1910,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 101
+      "rank": 100
     },
     {
       "uid": "rss_96f7f329c2",
@@ -1948,7 +1929,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 102
+      "rank": 101
     },
     {
       "uid": "rss_e9bfa50386",
@@ -1967,7 +1948,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 103
+      "rank": 102
     },
     {
       "uid": "rss_fe34424bd3",
@@ -1986,7 +1967,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 104
+      "rank": 103
     },
     {
       "uid": "rss_319bc1e81c",
@@ -2005,7 +1986,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 105
+      "rank": 104
     },
     {
       "uid": "rss_d3d2b9b4ec",
@@ -2024,7 +2005,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 106
+      "rank": 105
     },
     {
       "uid": "rss_cdd8547242",
@@ -2043,7 +2024,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 107
+      "rank": 106
     },
     {
       "uid": "rss_647841409b",
@@ -2062,7 +2043,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 108
+      "rank": 107
     },
     {
       "uid": "rss_6a6d53688d",
@@ -2081,7 +2062,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 109
+      "rank": 108
     },
     {
       "uid": "rss_d38113356c",
@@ -2100,7 +2081,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 110
+      "rank": 109
     },
     {
       "uid": "rss_ed04e28f73",
@@ -2119,7 +2100,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 111
+      "rank": 110
     },
     {
       "uid": "rss_a2e00a9dfc",
@@ -2138,7 +2119,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 112
+      "rank": 111
     },
     {
       "uid": "rss_1199c09af9",
@@ -2157,7 +2138,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 113
+      "rank": 112
     },
     {
       "uid": "rss_df92637cd0",
@@ -2176,7 +2157,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 114
+      "rank": 113
     },
     {
       "uid": "rss_8280fd7080",
@@ -2195,7 +2176,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 115
+      "rank": 114
     },
     {
       "uid": "rss_259bf94c7c",
@@ -2214,7 +2195,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 116
+      "rank": 115
     },
     {
       "uid": "rss_39a8d240e4",
@@ -2233,7 +2214,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 117
+      "rank": 116
     },
     {
       "uid": "rss_a033dddece",
@@ -2252,7 +2233,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 118
+      "rank": 117
     },
     {
       "uid": "rss_7263226323",
@@ -2271,7 +2252,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 119
+      "rank": 118
     },
     {
       "uid": "rss_8aca83b6f8",
@@ -2290,7 +2271,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 120
+      "rank": 119
     },
     {
       "uid": "rss_78d1667a6c",
@@ -2309,7 +2290,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 121
+      "rank": 120
     },
     {
       "uid": "rss_f57c0c71ba",
@@ -2328,7 +2309,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 122
+      "rank": 121
     },
     {
       "uid": "rss_f1d67da765",
@@ -2347,7 +2328,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 123
+      "rank": 122
     },
     {
       "uid": "rss_3ea39ce68c",
@@ -2366,7 +2347,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 124
+      "rank": 123
     },
     {
       "uid": "rss_1071500570",
@@ -2385,7 +2366,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 125
+      "rank": 124
     },
     {
       "uid": "rss_b8044dd3b1",
@@ -2404,7 +2385,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 126
+      "rank": 125
     },
     {
       "uid": "rss_14ee8524fc",
@@ -2423,7 +2404,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 127
+      "rank": 126
     },
     {
       "uid": "rss_6348f47b1c",
@@ -2442,7 +2423,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 128
+      "rank": 127
     },
     {
       "uid": "rss_9a2af21c2b",
@@ -2461,7 +2442,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 129
+      "rank": 128
     },
     {
       "uid": "rss_2fba2c02b5",
@@ -2480,7 +2461,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 130
+      "rank": 129
     },
     {
       "uid": "rss_57e54bb1dd",
@@ -2499,7 +2480,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 131
+      "rank": 130
     },
     {
       "uid": "rss_586b7fbe8e",
@@ -2518,7 +2499,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 132
+      "rank": 131
     },
     {
       "uid": "rss_61a8e85a28",
@@ -2537,7 +2518,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 133
+      "rank": 132
     },
     {
       "uid": "rss_9ffadaacb7",
@@ -2556,7 +2537,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 134
+      "rank": 133
     },
     {
       "uid": "rss_cdccab4056",
@@ -2575,7 +2556,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 135
+      "rank": 134
     },
     {
       "uid": "rss_496e9324c5",
@@ -2594,7 +2575,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 136
+      "rank": 135
     },
     {
       "uid": "rss_efe5d14e58",
@@ -2613,7 +2594,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 137
+      "rank": 136
     },
     {
       "uid": "rss_36cbe7df4b",
@@ -2632,7 +2613,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 138
+      "rank": 137
     },
     {
       "uid": "rss_b99d0e78f6",
@@ -2651,7 +2632,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 139
+      "rank": 138
     },
     {
       "uid": "rss_67e52779c4",
@@ -2670,7 +2651,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 140
+      "rank": 139
     },
     {
       "uid": "rss_0a9b749e61",
@@ -2689,7 +2670,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 141
+      "rank": 140
     },
     {
       "uid": "rss_fd0811fc9b",
@@ -2708,7 +2689,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 142
+      "rank": 141
     },
     {
       "uid": "rss_061781d6a1",
@@ -2727,7 +2708,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 143
+      "rank": 142
     },
     {
       "uid": "rss_a8a00ca29b",
@@ -2746,7 +2727,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 144
+      "rank": 143
     },
     {
       "uid": "rss_d6721970e2",
@@ -2765,7 +2746,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 120.0,
-      "rank": 145
+      "rank": 144
     },
     {
       "uid": "rss_c85e4edbeb",
@@ -2784,7 +2765,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 146
+      "rank": 145
     },
     {
       "uid": "rss_2896d09838",
@@ -2803,7 +2784,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 147
+      "rank": 146
     },
     {
       "uid": "rss_9c741a382d",
@@ -2822,7 +2803,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 148
+      "rank": 147
     },
     {
       "uid": "rss_2a930d160f",
@@ -2841,7 +2822,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 149
+      "rank": 148
     },
     {
       "uid": "rss_dbfb761e39",
@@ -2860,7 +2841,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 150
+      "rank": 149
     },
     {
       "uid": "rss_322fe19967",
@@ -2879,7 +2860,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 151
+      "rank": 150
     },
     {
       "uid": "rss_63d0cfeb16",
@@ -2898,7 +2879,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 152
+      "rank": 151
     },
     {
       "uid": "rss_6ad9a7a632",
@@ -2917,7 +2898,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 153
+      "rank": 152
     },
     {
       "uid": "rss_ce3ab20cb7",
@@ -2936,7 +2917,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 154
+      "rank": 153
     },
     {
       "uid": "rss_05da3d5355",
@@ -2955,7 +2936,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 155
+      "rank": 154
     },
     {
       "uid": "rss_49a076d9a1",
@@ -2974,7 +2955,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 156
+      "rank": 155
     },
     {
       "uid": "rss_e00317c4e6",
@@ -2993,7 +2974,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 157
+      "rank": 156
     },
     {
       "uid": "rss_9044d78b5a",
@@ -3012,7 +2993,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 158
+      "rank": 157
     },
     {
       "uid": "rss_4495c1302a",
@@ -3031,7 +3012,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 159
+      "rank": 158
     },
     {
       "uid": "rss_2a779ec918",
@@ -3050,7 +3031,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 160
+      "rank": 159
     },
     {
       "uid": "rss_8fad9fd04a",
@@ -3069,7 +3050,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 161
+      "rank": 160
     },
     {
       "uid": "rss_abe09b2409",
@@ -3088,7 +3069,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 162
+      "rank": 161
     },
     {
       "uid": "rss_f626965d7b",
@@ -3107,7 +3088,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 163
+      "rank": 162
     },
     {
       "uid": "rss_f9d48f33f7",
@@ -3126,7 +3107,45 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
+      "rank": 163
+    },
+    {
+      "uid": "rss_72f7ae1620",
+      "pmid": "",
+      "title": "An oncogenic, truncated FGFR1 variant cooperates with SPFQ/NONO to regulate gene transcription in FGFR1‐driven leukaemia",
+      "abstract": "British Journal of Haematology, EarlyView.",
+      "journal": "BJH",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://onlinelibrary.wiley.com/doi/10.1111/bjh.70426?af=R",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
       "rank": 164
+    },
+    {
+      "uid": "rss_865899a3c8",
+      "pmid": "",
+      "title": "Use of platelets and the challenge of adherence to guidelines: Who, when and why?",
+      "abstract": "British Journal of Haematology, EarlyView.",
+      "journal": "BJH",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://onlinelibrary.wiley.com/doi/10.1111/bjh.70433?af=R",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 165
     },
     {
       "uid": "rss_c45d68a4ab",
@@ -3145,7 +3164,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 165
+      "rank": 166
     },
     {
       "uid": "rss_ea57666855",
@@ -3164,7 +3183,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 166
+      "rank": 167
     },
     {
       "uid": "rss_92a659f7a6",
@@ -3183,7 +3202,83 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 167
+      "rank": 168
+    },
+    {
+      "uid": "rss_64bdc8951a",
+      "pmid": "",
+      "title": "Sweet's syndrome in acute myeloid leukaemia",
+      "abstract": "British Journal of Haematology, EarlyView.",
+      "journal": "BJH",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://onlinelibrary.wiley.com/doi/10.1111/bjh.70389?af=R",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 169
+    },
+    {
+      "uid": "rss_d0b5160642",
+      "pmid": "",
+      "title": "Short‐ and long‐term outcome of neonates with thrombocytopenia from maternal immune thrombocytopenia",
+      "abstract": "British Journal of Haematology, EarlyView.",
+      "journal": "BJH",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://onlinelibrary.wiley.com/doi/10.1111/bjh.70403?af=R",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 170
+    },
+    {
+      "uid": "rss_b6a86d132b",
+      "pmid": "",
+      "title": "Short and complex—Telomeres and genomes in CLL",
+      "abstract": "British Journal of Haematology, EarlyView.",
+      "journal": "BJH",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "cll",
+      "category": "heme",
+      "source": "rss",
+      "source_link": "https://onlinelibrary.wiley.com/doi/10.1111/bjh.70430?af=R",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 171
+    },
+    {
+      "uid": "rss_24d12ee1c7",
+      "pmid": "",
+      "title": "Haematopoietic stem cell transplantation outcomes for teenage and young adult patients with acute leukaemia: A British Society of Blood and Marrow Transplantation and Cellular Therapy registry study",
+      "abstract": "British Journal of Haematology, EarlyView.",
+      "journal": "BJH",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "gist",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://onlinelibrary.wiley.com/doi/10.1111/bjh.70421?af=R",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 172
     },
     {
       "uid": "rss_7e5e5ff3f5",
@@ -3202,7 +3297,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 168
+      "rank": 173
     },
     {
       "uid": "rss_d6fac0f627",
@@ -3221,7 +3316,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 169
+      "rank": 174
     },
     {
       "uid": "rss_e679b5155d",
@@ -3240,7 +3335,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 170
+      "rank": 175
     },
     {
       "uid": "rss_d49e04d195",
@@ -3259,7 +3354,45 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 171
+      "rank": 176
+    },
+    {
+      "uid": "rss_898add8f89",
+      "pmid": "",
+      "title": "Selective DHCR7 inhibition versus AEBS modulation: Mechanistic implications for tamoxifen effects in AML",
+      "abstract": "British Journal of Haematology, EarlyView.",
+      "journal": "BJH",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "aml",
+      "category": "heme",
+      "source": "rss",
+      "source_link": "https://onlinelibrary.wiley.com/doi/10.1111/bjh.70420?af=R",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 177
+    },
+    {
+      "uid": "rss_25e3ae23b4",
+      "pmid": "",
+      "title": "Dapsone response in immune thrombocytopenic purpura is associated with dapsone dose and mediated through reduction in haemoglobin: A longitudinal data analysis of 58 adult and paediatric ITP patients demonstrates efficacy and safety",
+      "abstract": "British Journal of Haematology, EarlyView.",
+      "journal": "BJH",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://onlinelibrary.wiley.com/doi/10.1111/bjh.70414?af=R",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 178
     },
     {
       "uid": "rss_07d6932126",
@@ -3278,7 +3411,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 172
+      "rank": 179
+    },
+    {
+      "uid": "rss_5297696c84",
+      "pmid": "",
+      "title": "Lack of association between vaccine‐induced immune thrombocytopenia and thrombosis and HLA loci in a large cohort",
+      "abstract": "British Journal of Haematology, EarlyView.",
+      "journal": "BJH",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://onlinelibrary.wiley.com/doi/10.1111/bjh.70419?af=R",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 180
     },
     {
       "uid": "rss_0ee7d6816a",
@@ -3297,7 +3449,64 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 173
+      "rank": 181
+    },
+    {
+      "uid": "rss_74015d9eb7",
+      "pmid": "",
+      "title": "Multilineage haematopoiesis in the cerebrospinal fluid of an infant",
+      "abstract": "British Journal of Haematology, EarlyView.",
+      "journal": "BJH",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://onlinelibrary.wiley.com/doi/10.1111/bjh.70369?af=R",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 182
+    },
+    {
+      "uid": "rss_5855868ca9",
+      "pmid": "",
+      "title": "Detection of vascular amyloid deposits in a bone marrow aspirate",
+      "abstract": "British Journal of Haematology, EarlyView.",
+      "journal": "BJH",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://onlinelibrary.wiley.com/doi/10.1111/bjh.70413?af=R",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 183
+    },
+    {
+      "uid": "rss_75b7890889",
+      "pmid": "",
+      "title": "Introducing a prognostic score for successful treatment‐free remission in chronic myeloid leukaemia",
+      "abstract": "British Journal of Haematology, EarlyView.",
+      "journal": "BJH",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "other",
+      "category": "solid",
+      "source": "rss",
+      "source_link": "https://onlinelibrary.wiley.com/doi/10.1111/bjh.70409?af=R",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 184
     },
     {
       "uid": "rss_79290d6b22",
@@ -3316,7 +3525,26 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 174
+      "rank": 185
+    },
+    {
+      "uid": "rss_ac31706c8b",
+      "pmid": "",
+      "title": "Renal dysfunction in symptomatic Waldenström macroglobulinaemia: A nationwide Italian multicentre study",
+      "abstract": "British Journal of Haematology, EarlyView.",
+      "journal": "BJH",
+      "pub_date": "2026 Mar",
+      "type": "phase3",
+      "disease": "waldenstrom",
+      "category": "heme",
+      "source": "rss",
+      "source_link": "https://onlinelibrary.wiley.com/doi/10.1111/bjh.70424?af=R",
+      "pubmed_link": "",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 90.0,
+      "rank": 186
     },
     {
       "uid": "rss_ba8662b55b",
@@ -3335,7 +3563,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 175
+      "rank": 187
     },
     {
       "uid": "rss_345a429e62",
@@ -3354,7 +3582,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 176
+      "rank": 188
     },
     {
       "uid": "rss_113eb4a4ad",
@@ -3373,7 +3601,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 177
+      "rank": 189
     },
     {
       "uid": "rss_e6fe56b6de",
@@ -3392,7 +3620,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 178
+      "rank": 190
     },
     {
       "uid": "rss_286df252ab",
@@ -3411,7 +3639,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 179
+      "rank": 191
     },
     {
       "uid": "rss_33d4e25693",
@@ -3430,7 +3658,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 180
+      "rank": 192
     },
     {
       "uid": "rss_839eda4c80",
@@ -3449,7 +3677,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 181
+      "rank": 193
     },
     {
       "uid": "rss_dc76bd3101",
@@ -3468,7 +3696,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 182
+      "rank": 194
     },
     {
       "uid": "rss_7be25bf33b",
@@ -3487,7 +3715,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 183
+      "rank": 195
     },
     {
       "uid": "rss_8f8bb7e526",
@@ -3506,7 +3734,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 184
+      "rank": 196
     },
     {
       "uid": "pmid_41358601",
@@ -3525,7 +3753,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 185
+      "rank": 197
     },
     {
       "uid": "pmid_41765025",
@@ -3544,7 +3772,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 186
+      "rank": 198
     },
     {
       "uid": "pmid_41115797",
@@ -3563,7 +3791,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 187
+      "rank": 199
     },
     {
       "uid": "pmid_41826558",
@@ -3582,7 +3810,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 188
+      "rank": 200
     },
     {
       "uid": "pmid_41812193",
@@ -3601,7 +3829,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 189
+      "rank": 201
     },
     {
       "uid": "pmid_41402979",
@@ -3620,7 +3848,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 190
+      "rank": 202
     },
     {
       "uid": "pmid_41348911",
@@ -3639,7 +3867,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 191
+      "rank": 203
     },
     {
       "uid": "pmid_41706725",
@@ -3658,7 +3886,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 192
+      "rank": 204
     },
     {
       "uid": "pmid_41324490",
@@ -3677,7 +3905,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 193
+      "rank": 205
     },
     {
       "uid": "pmid_41824082",
@@ -3696,7 +3924,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 194
+      "rank": 206
     },
     {
       "uid": "pmid_41819560",
@@ -3715,7 +3943,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 195
+      "rank": 207
     },
     {
       "uid": "pmid_41693026",
@@ -3734,7 +3962,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 196
+      "rank": 208
     },
     {
       "uid": "pmid_41825935",
@@ -3753,7 +3981,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 197
+      "rank": 209
     },
     {
       "uid": "pmid_41201381",
@@ -3772,7 +4000,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 198
+      "rank": 210
     },
     {
       "uid": "pmid_41802810",
@@ -3791,7 +4019,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 199
+      "rank": 211
     },
     {
       "uid": "pmid_41811469",
@@ -3810,7 +4038,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 200
+      "rank": 212
     },
     {
       "uid": "pmid_41828892",
@@ -3829,7 +4057,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 201
+      "rank": 213
     },
     {
       "uid": "pmid_41161645",
@@ -3848,7 +4076,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 202
+      "rank": 214
     },
     {
       "uid": "pmid_41821581",
@@ -3867,7 +4095,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 203
+      "rank": 215
     },
     {
       "uid": "pmid_41741368",
@@ -3886,7 +4114,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 204
+      "rank": 216
     },
     {
       "uid": "pmid_38788778",
@@ -3905,7 +4133,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 205
+      "rank": 217
     },
     {
       "uid": "pmid_41808570",
@@ -3924,7 +4152,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 206
+      "rank": 218
     },
     {
       "uid": "pmid_41824083",
@@ -3943,7 +4171,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 207
+      "rank": 219
     },
     {
       "uid": "pmid_41702246",
@@ -3962,7 +4190,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 208
+      "rank": 220
     },
     {
       "uid": "pmid_41655462",
@@ -3981,7 +4209,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 209
+      "rank": 221
     },
     {
       "uid": "pmid_41813939",
@@ -4000,7 +4228,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 210
+      "rank": 222
     },
     {
       "uid": "pmid_41805548",
@@ -4019,7 +4247,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 211
+      "rank": 223
     },
     {
       "uid": "pmid_41512176",
@@ -4038,7 +4266,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 212
+      "rank": 224
     },
     {
       "uid": "pmid_41808581",
@@ -4057,7 +4285,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 213
+      "rank": 225
     },
     {
       "uid": "pmid_41654161",
@@ -4076,7 +4304,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 214
+      "rank": 226
     },
     {
       "uid": "pmid_41643515",
@@ -4095,7 +4323,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 215
+      "rank": 227
     },
     {
       "uid": "pmid_41643516",
@@ -4114,7 +4342,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 216
+      "rank": 228
     },
     {
       "uid": "pmid_41135711",
@@ -4133,7 +4361,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 217
+      "rank": 229
     },
     {
       "uid": "pmid_41831430",
@@ -4152,7 +4380,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 90.0,
-      "rank": 218
+      "rank": 230
     },
     {
       "uid": "rss_db67ec57e3",
@@ -4171,7 +4399,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 219
+      "rank": 231
     },
     {
       "uid": "rss_3e9a8fcc90",
@@ -4190,7 +4418,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 220
+      "rank": 232
     },
     {
       "uid": "rss_0e4b5cc7d7",
@@ -4209,7 +4437,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 221
+      "rank": 233
     },
     {
       "uid": "rss_18c3b979b8",
@@ -4228,7 +4456,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 222
+      "rank": 234
     },
     {
       "uid": "rss_535a1798ee",
@@ -4247,7 +4475,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 223
+      "rank": 235
     },
     {
       "uid": "rss_13e0750e30",
@@ -4266,7 +4494,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 224
+      "rank": 236
     },
     {
       "uid": "rss_8c38010daf",
@@ -4285,7 +4513,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 225
+      "rank": 237
     },
     {
       "uid": "rss_c40e1ea4f0",
@@ -4304,7 +4532,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 70.0,
-      "rank": 226
+      "rank": 238
     },
     {
       "uid": "pmid_41342548",
@@ -4323,7 +4551,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 227
+      "rank": 239
     },
     {
       "uid": "pmid_41690301",
@@ -4342,7 +4570,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 228
+      "rank": 240
     },
     {
       "uid": "pmid_41817106",
@@ -4361,64 +4589,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 229
-    },
-    {
-      "uid": "pmid_41832629",
-      "pmid": "41832629",
-      "title": "Durvalumab combined with concurrent chemoradiotherapy in patients with limited-stage small cell lung cancer: A prospective, single-arm, phase 2 clinical trial.",
-      "abstract": "BACKGROUND: The current standard treatment for limited-stage small cell lung cancer (LS-SCLC) is concurrent chemoradiotherapy (cCRT) plus consolidation immunotherapy, with or without prophylactic cranial irradiation (PCI). However, it remains unknown whether administering immunotherapy concurrently with chemoradiotherapy confers additional benefit. This clinical trial is designed to investigate the efficacy and safety using durvalumab with chemoradiotherapy for LS-SCLC. METHODS: In this single-arm phase 2 study, patients with LS-SCLC received three (1-4) cycles of etoposide, cisplatin, or carboplatin, and durvalumab every 3 weeks, following by thoracic radiotherapy of 60.0 Gy to the gross tumor volume and 54.0 Gy to the planning target volume in 30 once-daily fractions and chemoimmunotherapy. After cCRT plus durvalumab, patients received durvalumab consolidation therapy every 3 weeks for a minimum of 1 year. PCI was recommended to patients with partial or complete response when chemoradiotherapy completed. Efficacy and adverse events were assessed. RESULTS: Overall, 51 patients were enrolled from March 1, 2021, to April 30, 2024, with a median follow-up of 32.0 months. The 1-, 2-, and 3-year progression-free survival (PFS) rates were 56.9%, 35.9%, and 28.2%, respectively, and the median PFS was 17.0 months. The 1-, 2-, and 3-year overall survival (OS) rates were 88.1%, 68.6%, and 49.6%, respectively, and the median OS was 32.0 months. There were 17 (33.4%) patients with grade 3 or 4 adverse events, 7 of which were immune‑related. CONCLUSIONS: These results suggest that the addition of durvalumab to chemoradiotherapy was well tolerated and showed encouraging efficacy, supporting further investigation in patients with LS-SCLC eligible for radical chemoradiotherapy.",
-      "journal": "Cancer",
-      "pub_date": "2026 Mar",
-      "type": "phase2",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41832629/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 60.0,
-      "rank": 230
-    },
-    {
-      "uid": "pmid_41823504",
-      "pmid": "41823504",
-      "title": "A phase 1 study of berzosertib (M6620, VX-970) in combination with cisplatin and radiation in patients with locally advanced head and neck squamous cell carcinoma (ETCTN 9950).",
-      "abstract": "BACKGROUND: Ataxia telangiectasia Rad3-related (ATR) protein kinase regulates DNA damage response and is essential for tumor cell survival. Preclinically, ATR inhibition can sensitize tumor cells to radiation and chemotherapy. The authors conducted a phase 1 trial of berzosertib, a selective ATR inhibitor, in combination with definitive radiation and cisplatin in locally advanced head and neck squamous cell cancers (LA-HNSCC). METHODS: LA-HNSCC patients received daily radiation (2 Gy per fraction to 70 Gy) and weekly intravenous (iv) cisplatin 40 mg/m RESULTS: Forty-one of 43 enrolled patients were evaluable for safety and preliminary efficacy assessments. Four patients experienced dose-limiting toxicities (DLTs) in dose-escalation: grade 4 thrombocytopenia (1), grade 4 respiratory failure (1), grade 3 renal injury and hypoxia (1), and inability to receive 90% of the planned radiation dose (1). DL3 was the recommended phase 2 dose, and 15 patients were enrolled at this DL as an expansion cohort. Objective response rates (ORR) in patient cohorts treated with any amount of berzosertib; treated with at least 50% of planned treatment; and in the expansion cohort were 78.8% (26 of 33), 78.8% (26 of 33), and 63.6% (7 of 11), respectively, after excluding eight inevaluable patients without post-treatment imaging assessment. CONCLUSIONS: Berzosertib (200 mg/m",
-      "journal": "Cancer",
-      "pub_date": "2026 Mar",
-      "type": "phase2",
-      "disease": "neuroendocrine",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41823504/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 60.0,
-      "rank": 231
-    },
-    {
-      "uid": "pmid_41818249",
-      "pmid": "41818249",
-      "title": "Preoperative expiratory muscle training for swallowing function in patients with esophageal cancer undergoing esophagectomy: A randomized controlled phase II trial protocol.",
-      "abstract": "Esophagectomy is a highly invasive and curative procedure for esophageal cancer. Although minimally invasive techniques reduce the incidence of pulmonary complications, postoperative dysphagia remains a common and clinically significant issue. Preoperative expiratory muscle training (EMT) may improve swallowing function by strengthening the relevant muscles; however, its effectiveness in patients with esophageal cancer has not been widely studied. This phase II randomized, controlled, double-blind trial has been designed to evaluate the effects of preoperative EMT on postoperative swallowing function in patients undergoing esophagectomy for thoracic esophageal squamous cell carcinoma. Forty patients will be randomly assigned (1:1) to either the EMT or sham-EMT group. EMT will be performed using the EX-1 Medic® device at 50-70% maximal expiratory pressure, whereas the control group will receive minimal resistance (10 cmH₂O). The primary outcome is the Penetration-Aspiration Scale score on the postoperative video-fluoroscopic swallowing study, targeted at postoperative days 10 (allowable window: postoperative days 6-14). The secondary outcomes will be assessed perioperatively (preoperative and/or postoperative, depending on the measure) and include tongue pressure, the Repetitive Saliva Swallowing Test, T he eating assessment test-10, respiratory muscle strength, appendicular skeletal muscle index, and exercise tolerance. This study has been registered at University Hospital Medical Information Network (UMINID:000057795). Recruitment began on June 10, 2025, is expected to continue until September 30, 2028. This trial will clarify whether preoperative EMT can improve swallowing function and reduce postoperative dysphagia in patients with esophageal cancer, potentially establishing a novel prehabilitation strategy in surgical care. Trial registration: UMIN Clinical Trials Registry (UMIN-CTR), UMIN000057795. Registered on May 8, 2025. https://center6.umin.ac.jp/cgi-open-bin/ctr/ctr_view.cgi?recptno=R000065994.",
-      "journal": "PloS one",
-      "pub_date": "2026",
-      "type": "phase2",
-      "disease": "esophageal",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41818249/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 60.0,
-      "rank": 232
+      "rank": 241
     },
     {
       "uid": "pmid_41359440",
@@ -4437,7 +4608,64 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 233
+      "rank": 242
+    },
+    {
+      "uid": "pmid_41832629",
+      "pmid": "41832629",
+      "title": "Durvalumab combined with concurrent chemoradiotherapy in patients with limited-stage small cell lung cancer: A prospective, single-arm, phase 2 clinical trial.",
+      "abstract": "BACKGROUND: The current standard treatment for limited-stage small cell lung cancer (LS-SCLC) is concurrent chemoradiotherapy (cCRT) plus consolidation immunotherapy, with or without prophylactic cranial irradiation (PCI). However, it remains unknown whether administering immunotherapy concurrently with chemoradiotherapy confers additional benefit. This clinical trial is designed to investigate the efficacy and safety using durvalumab with chemoradiotherapy for LS-SCLC. METHODS: In this single-arm phase 2 study, patients with LS-SCLC received three (1-4) cycles of etoposide, cisplatin, or carboplatin, and durvalumab every 3 weeks, following by thoracic radiotherapy of 60.0 Gy to the gross tumor volume and 54.0 Gy to the planning target volume in 30 once-daily fractions and chemoimmunotherapy. After cCRT plus durvalumab, patients received durvalumab consolidation therapy every 3 weeks for a minimum of 1 year. PCI was recommended to patients with partial or complete response when chemoradiotherapy completed. Efficacy and adverse events were assessed. RESULTS: Overall, 51 patients were enrolled from March 1, 2021, to April 30, 2024, with a median follow-up of 32.0 months. The 1-, 2-, and 3-year progression-free survival (PFS) rates were 56.9%, 35.9%, and 28.2%, respectively, and the median PFS was 17.0 months. The 1-, 2-, and 3-year overall survival (OS) rates were 88.1%, 68.6%, and 49.6%, respectively, and the median OS was 32.0 months. There were 17 (33.4%) patients with grade 3 or 4 adverse events, 7 of which were immune‑related. CONCLUSIONS: These results suggest that the addition of durvalumab to chemoradiotherapy was well tolerated and showed encouraging efficacy, supporting further investigation in patients with LS-SCLC eligible for radical chemoradiotherapy.",
+      "journal": "Cancer",
+      "pub_date": "2026 Mar",
+      "type": "phase2",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41832629/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 60.0,
+      "rank": 243
+    },
+    {
+      "uid": "pmid_41823504",
+      "pmid": "41823504",
+      "title": "A phase 1 study of berzosertib (M6620, VX-970) in combination with cisplatin and radiation in patients with locally advanced head and neck squamous cell carcinoma (ETCTN 9950).",
+      "abstract": "BACKGROUND: Ataxia telangiectasia Rad3-related (ATR) protein kinase regulates DNA damage response and is essential for tumor cell survival. Preclinically, ATR inhibition can sensitize tumor cells to radiation and chemotherapy. The authors conducted a phase 1 trial of berzosertib, a selective ATR inhibitor, in combination with definitive radiation and cisplatin in locally advanced head and neck squamous cell cancers (LA-HNSCC). METHODS: LA-HNSCC patients received daily radiation (2 Gy per fraction to 70 Gy) and weekly intravenous (iv) cisplatin 40 mg/m RESULTS: Forty-one of 43 enrolled patients were evaluable for safety and preliminary efficacy assessments. Four patients experienced dose-limiting toxicities (DLTs) in dose-escalation: grade 4 thrombocytopenia (1), grade 4 respiratory failure (1), grade 3 renal injury and hypoxia (1), and inability to receive 90% of the planned radiation dose (1). DL3 was the recommended phase 2 dose, and 15 patients were enrolled at this DL as an expansion cohort. Objective response rates (ORR) in patient cohorts treated with any amount of berzosertib; treated with at least 50% of planned treatment; and in the expansion cohort were 78.8% (26 of 33), 78.8% (26 of 33), and 63.6% (7 of 11), respectively, after excluding eight inevaluable patients without post-treatment imaging assessment. CONCLUSIONS: Berzosertib (200 mg/m",
+      "journal": "Cancer",
+      "pub_date": "2026 Mar",
+      "type": "phase2",
+      "disease": "neuroendocrine",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41823504/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 60.0,
+      "rank": 244
+    },
+    {
+      "uid": "pmid_41818249",
+      "pmid": "41818249",
+      "title": "Preoperative expiratory muscle training for swallowing function in patients with esophageal cancer undergoing esophagectomy: A randomized controlled phase II trial protocol.",
+      "abstract": "Esophagectomy is a highly invasive and curative procedure for esophageal cancer. Although minimally invasive techniques reduce the incidence of pulmonary complications, postoperative dysphagia remains a common and clinically significant issue. Preoperative expiratory muscle training (EMT) may improve swallowing function by strengthening the relevant muscles; however, its effectiveness in patients with esophageal cancer has not been widely studied. This phase II randomized, controlled, double-blind trial has been designed to evaluate the effects of preoperative EMT on postoperative swallowing function in patients undergoing esophagectomy for thoracic esophageal squamous cell carcinoma. Forty patients will be randomly assigned (1:1) to either the EMT or sham-EMT group. EMT will be performed using the EX-1 Medic® device at 50-70% maximal expiratory pressure, whereas the control group will receive minimal resistance (10 cmH₂O). The primary outcome is the Penetration-Aspiration Scale score on the postoperative video-fluoroscopic swallowing study, targeted at postoperative days 10 (allowable window: postoperative days 6-14). The secondary outcomes will be assessed perioperatively (preoperative and/or postoperative, depending on the measure) and include tongue pressure, the Repetitive Saliva Swallowing Test, T he eating assessment test-10, respiratory muscle strength, appendicular skeletal muscle index, and exercise tolerance. This study has been registered at University Hospital Medical Information Network (UMINID:000057795). Recruitment began on June 10, 2025, is expected to continue until September 30, 2028. This trial will clarify whether preoperative EMT can improve swallowing function and reduce postoperative dysphagia in patients with esophageal cancer, potentially establishing a novel prehabilitation strategy in surgical care. Trial registration: UMIN Clinical Trials Registry (UMIN-CTR), UMIN000057795. Registered on May 8, 2025. https://center6.umin.ac.jp/cgi-open-bin/ctr/ctr_view.cgi?recptno=R000065994.",
+      "journal": "PloS one",
+      "pub_date": "2026",
+      "type": "phase2",
+      "disease": "esophageal",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41818249/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 60.0,
+      "rank": 245
     },
     {
       "uid": "pmid_41380113",
@@ -4456,7 +4684,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 234
+      "rank": 246
     },
     {
       "uid": "pmid_41633120",
@@ -4475,7 +4703,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 235
+      "rank": 247
     },
     {
       "uid": "pmid_41099583",
@@ -4494,7 +4722,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 236
+      "rank": 248
     },
     {
       "uid": "pmid_41653501",
@@ -4513,7 +4741,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 237
+      "rank": 249
     },
     {
       "uid": "pmid_41826541",
@@ -4532,7 +4760,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 238
+      "rank": 250
     },
     {
       "uid": "pmid_39365168",
@@ -4551,7 +4779,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 239
+      "rank": 251
     },
     {
       "uid": "pmid_41808362",
@@ -4570,7 +4798,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 240
+      "rank": 252
     },
     {
       "uid": "pmid_41653927",
@@ -4589,7 +4817,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 241
+      "rank": 253
     },
     {
       "uid": "pmid_41820200",
@@ -4608,7 +4836,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 242
+      "rank": 254
     },
     {
       "uid": "pmid_41801573",
@@ -4627,7 +4855,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 243
+      "rank": 255
     },
     {
       "uid": "pmid_41360362",
@@ -4646,102 +4874,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 244
-    },
-    {
-      "uid": "pmid_41805738",
-      "pmid": "41805738",
-      "title": "Prevalence of medication-related problems and its predictors among cancer patients in Ethiopia: A systematic review and meta-analysis.",
-      "abstract": "BACKGROUND: Preventable medication-related problems intensify the risk associated with cancer care and no data was available to represent the burden of medication-related problems among cancer patients in Ethiopia. Hence, this study was aimed to estimate the pooled prevalence of medication-related problems and identify its predictors among cancer patients treated in Ethiopia. METHODS: A systematic review and meta-analysis of studies retrieved from databases (Medline, EMBASE, Scopus, Cumulative Index to the Nursing and Allied Literature (CINAHL), Cochrane Library and Google Scholar) for relevant literature published before April, 2024 was made. We included observational studies conducted in Ethiopia that reported on the types, frequency, or risk factors of medication-related problems in cancer patients. Reviews, case reports, qualitative studies, and studies lacking relevant outcomes were excluded. The Newcastle-Ottawa quality assessment scale was used for quality assessment and the Egger's regression test and the Galbraith plot were used to evaluate publication bias. The national prevalence of medication-related problems was estimated using a random-effects model meta-analysis. Moreover, subgroup analysis and meta-regression analyses were done to explore the reasons of statistical heterogeneity. The study protocol has been registered with PROSPERO under number CRD42024505218. RESULTS: A total of 15 studies comprising of 3084 cancer patients were included in this study. The adjusted pooled prevalence of medication-related problems of cancer patients who experienced at least one medication-related problem was 48% [0.48 (95% CI: 0.39-0.57; I2 = 96%; p < 0.01)]. The study also revealed the pooled prevalence of non-adherence among the included studies to be 42% [0.42 (95% CI: 0.27-0.57; I2 = 97%; p < 0.01)]. The presence of comorbidities (AOR = 4.47, 95% CI: 3.26-5.69), complications (AOR = 5.78, 95% CI: 3.26-8.30) and polypharmacy (AOR = 3.75, 95% CI: 2.16-5.34) were found to be predictors of developing medication-related problems. CONCLUSION: This review found a high pooled prevalence of medication-related problems among cancer patients in Ethiopia, with predictors including comorbidities, complications and polypharmacy. About two-fifths of patients were not fully adherent to their prescribed cancer treatments. These findings highlight the need for targeted interventions to improve medication safety and adherence, and underscore the importance of future research to identify effective strategies for reducing MRPs in oncology settings.",
-      "journal": "PloS one",
-      "pub_date": "2026",
-      "type": "review",
-      "disease": "gist",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41805738/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 245
-    },
-    {
-      "uid": "pmid_41805927",
-      "pmid": "41805927",
-      "title": "Stereotactic radiosurgery (SRS) for primary intradural spinal tumors: A systematic review and meta-analysis.",
-      "abstract": "While primary intradural spinal tumors (PIST) are commonly treated by surgery, the use of stereotactic radiosurgery (SRS) is typically considered when patients are either poor surgical candidates or have recurrent or unresectable tumors. However, the optimal use of SRS in the treatment of PISTs and its efficacy remains relatively unclear. Our aim with this study was to investigate the therapeutic response among PISTs treated with SRS. We performed a systematic literature search in five databases: Medline, Embase (Ovid), Scopus, Web of Science Advance and Cochrane Central from inception to July 8th 2024. We included studies that reported on outcomes among PISTs treated with SRS and meta-analyzed the proportions of recurrence and local control (LC) among them. The quality of included studies was assessed using the MINORS tool for non-randomized studies. We identified 14 studies and classified them by follow-up duration. 4 studies had mean or median follow-up times of less than 3 years (short-term follow-up) and 10 studies had greater than 3 years follow-up (long-term follow-up). The mean and median follow up times ranged from 33 to 54.3 months, and 18 to 60 months, respectively. The overall pooled proportion of short-term LC was 0.98 [95% CI: 0.90-1.00], while long-term LC was 0.94 [95% CI: 0.89; 0.97]. The overall pooled proportion of recurrence was 0.01 [95% CI: 0.00; 0.05] for short-term follow-up and 0.05 [95% CI: 0.03; 0.09] for long-term. Subgroup analyses included long-term LC for hemangioblastomas, meningiomas, schwannomas, and neurofibromas, as well as short-term recurrence for meningiomas and schwannomas. Among subgroups, meningiomas showed the best long-term LC and short-term recurrence, with pooled proportions of 0.99 [95% CI: 0.37; 1.00] and 0.02 [95% CI: 0.00; 0.14], respectively. Our results suggest that treating PISTs with SRS achieves favorable outcomes in terms of LC and recurrence. Meningiomas appear to have the best treatment response in terms of LC, which may be a result of their tumor characteristics. However, our findings should be interpreted with caution, as heterogeneity in how studies defined LC may introduce bias into the pooled estimates.",
-      "journal": "Neurosurgical review",
-      "pub_date": "2026 Mar",
-      "type": "review",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41805927/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 246
-    },
-    {
-      "uid": "pmid_41108326",
-      "pmid": "41108326",
-      "title": "Prognostic factors of mortality in patients with cancer infected with COVID-19: A systematic review and meta-analysis using the GRADE approach.",
-      "abstract": "This study aimed to systematically synthesize the available evidence on prognostic factors affecting mortality in these patients. This review included cohort studies of adult patients with cancer diagnosed with Coronavirus disease 2019 (COVID-19). We searched MEDLINE and Embase for data from December 2019 to June 2025, and Cochrane Central Libraries and other databases for data to July 2023. Two independent reviewers screened references, extracted data, and assessed bias risk. The Grading of Recommendations Assessment, Development, and Evaluation (GRADE) approach was used to evaluate the certainty of the evidence and present the relative and absolute effect sizes. Fifty-two prognostic factors were identified from 92 included studies. These included sociodemographic variables, comorbidities, cancer-related characteristics, COVID-19-related clinical features, and laboratory results. We found high certainty associations between an increased risk of death and male sex (absolute risk [AR] = 3.7%, 95% confidence interval [CI] = 2.1% to 5.8%), high Charlson Comorbidity Index (AR = 8.8%, 95% CI = 7.2%-10.6%), low performance status (AR = 14.7%, 95% CI = 11.2%-18.7%), immunosuppression (AR = 14.5%, 95% CI = 7.3%-24.6%), kidney disease (AR = 9.2%, 95% CI = 4.9%-14.7%), and lung cancer (AR = 7.2%, 95% CI = 3.5%-12.0%). Hypoxia, high creatinine, high C-reactive protein, high D-dimer, low hemoglobin, low lymphocytes, high procalcitonin, and high white blood cell counts were also associated with increased mortality with high certainty. This comprehensive GRADE-based systematic review provides healthcare providers with evidence-based prognostic factors to predict outcomes, counsel patients, and guide treatment decisions for cancer patients with COVID-19. The findings offer crucial insights for managing this vulnerable population during the pandemic.",
-      "journal": "International journal of cancer",
-      "pub_date": "2026 Mar",
-      "type": "review",
-      "disease": "other",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41108326/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 247
-    },
-    {
-      "uid": "pmid_41422795",
-      "pmid": "41422795",
-      "title": "Application of Machine learning in predicting cancer complications using longitudinal Data: A systematic review and Meta-Analysis.",
-      "abstract": "Cancer prognosis of complications like metastasis, recurrence, and side effects of treatments is important to enhance patient prognosis. There is great potential in the use of ML on lifetime data for improving prediction accuracy in oncology; however, there is no systematic review of the subject. This SRMA is intended to assess the accuracy of ML models based on longitudinal studies for the estimation of cancer-related complications. The articles were identified from PubMed, Google Scholar, and IEEE Xplore databases for the years 2020 to 2024. Seven of the studies reviewed in the paper analyzed ML models that employed longitudinal data for cancer complication prognosis. The risk of bias of included studies was assessed using the Cochrane Risk of Bias tool, and for diagnostic accuracy, the QUADES 2 tool was used. Information on ML techniques, prediction accuracy, and results was obtained. The pooled area under the curve (AUC) for immune-related adverse events prediction was 0.78 (95% CI: 0.73-0.83). For cancer recurrence and mortality prediction, pooled AUCs ranged from 0.70 to 0.75. Machine learning models integrating clinical, genomic, and imaging data demonstrated superior predictive accuracy across various cancer types. Models predicting quality of life deterioration during treatment showed an AUC of 0.82. ML models applying longitudinal data effectively predict cancer complications with improved accuracy when integrating multimodal data. These models offer promising tools for clinical decision-making in oncology.",
-      "journal": "International journal of medical informatics",
-      "pub_date": "2026 Mar",
-      "type": "review",
-      "disease": "other",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41422795/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 248
-    },
-    {
-      "uid": "pmid_41819062",
-      "pmid": "41819062",
-      "title": "[Comorbidities affecting abiraterone treatment in patients with metastatic castration-resistant prostate cancer: a meta- analysis].",
-      "abstract": "AIM: Optimizing the treatment of metastatic prostate cancer is important for reducing mortality. Therefore, it is essential, among others, to know the predictive markers of abiraterone acetate (AA) treatment in metastatic castration-resistant prostate cancer (mCRPC). We aimed to clarify the predictive factors of AA treatment of mCRPC patients, and particularly the predictive role of comorbidities and co-medication based on meta-analysis of published data. METHODS: Meta-analysis of the results of multivariate analysis found in 120 publications examining at least 100 cases. RESULTS: Besides clear predictors of progression-free and overall survival, opioid use, pain, cerebrovascular diseases, dyslipidemia, statin treatment, bisphosphonate/antiresorptive treatment and metabolic syndrome significantly affect the risk of progression and survival. CONCLUSIONS: Since the analysis of comorbidities is based on relatively few observations, further studies are needed to clarify the predictive impact of comorbidities and co-medication in order to improve the effectiveness of treatment in mCRPC in an individualized manner.",
-      "journal": "Magyar onkologia",
-      "pub_date": "2026 Mar",
-      "type": "review",
-      "disease": "all",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41819062/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 249
+      "rank": 256
     },
     {
       "uid": "pmid_41810601",
@@ -4760,7 +4893,102 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 250
+      "rank": 257
+    },
+    {
+      "uid": "pmid_41805738",
+      "pmid": "41805738",
+      "title": "Prevalence of medication-related problems and its predictors among cancer patients in Ethiopia: A systematic review and meta-analysis.",
+      "abstract": "BACKGROUND: Preventable medication-related problems intensify the risk associated with cancer care and no data was available to represent the burden of medication-related problems among cancer patients in Ethiopia. Hence, this study was aimed to estimate the pooled prevalence of medication-related problems and identify its predictors among cancer patients treated in Ethiopia. METHODS: A systematic review and meta-analysis of studies retrieved from databases (Medline, EMBASE, Scopus, Cumulative Index to the Nursing and Allied Literature (CINAHL), Cochrane Library and Google Scholar) for relevant literature published before April, 2024 was made. We included observational studies conducted in Ethiopia that reported on the types, frequency, or risk factors of medication-related problems in cancer patients. Reviews, case reports, qualitative studies, and studies lacking relevant outcomes were excluded. The Newcastle-Ottawa quality assessment scale was used for quality assessment and the Egger's regression test and the Galbraith plot were used to evaluate publication bias. The national prevalence of medication-related problems was estimated using a random-effects model meta-analysis. Moreover, subgroup analysis and meta-regression analyses were done to explore the reasons of statistical heterogeneity. The study protocol has been registered with PROSPERO under number CRD42024505218. RESULTS: A total of 15 studies comprising of 3084 cancer patients were included in this study. The adjusted pooled prevalence of medication-related problems of cancer patients who experienced at least one medication-related problem was 48% [0.48 (95% CI: 0.39-0.57; I2 = 96%; p < 0.01)]. The study also revealed the pooled prevalence of non-adherence among the included studies to be 42% [0.42 (95% CI: 0.27-0.57; I2 = 97%; p < 0.01)]. The presence of comorbidities (AOR = 4.47, 95% CI: 3.26-5.69), complications (AOR = 5.78, 95% CI: 3.26-8.30) and polypharmacy (AOR = 3.75, 95% CI: 2.16-5.34) were found to be predictors of developing medication-related problems. CONCLUSION: This review found a high pooled prevalence of medication-related problems among cancer patients in Ethiopia, with predictors including comorbidities, complications and polypharmacy. About two-fifths of patients were not fully adherent to their prescribed cancer treatments. These findings highlight the need for targeted interventions to improve medication safety and adherence, and underscore the importance of future research to identify effective strategies for reducing MRPs in oncology settings.",
+      "journal": "PloS one",
+      "pub_date": "2026",
+      "type": "review",
+      "disease": "gist",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41805738/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 258
+    },
+    {
+      "uid": "pmid_41805927",
+      "pmid": "41805927",
+      "title": "Stereotactic radiosurgery (SRS) for primary intradural spinal tumors: A systematic review and meta-analysis.",
+      "abstract": "While primary intradural spinal tumors (PIST) are commonly treated by surgery, the use of stereotactic radiosurgery (SRS) is typically considered when patients are either poor surgical candidates or have recurrent or unresectable tumors. However, the optimal use of SRS in the treatment of PISTs and its efficacy remains relatively unclear. Our aim with this study was to investigate the therapeutic response among PISTs treated with SRS. We performed a systematic literature search in five databases: Medline, Embase (Ovid), Scopus, Web of Science Advance and Cochrane Central from inception to July 8th 2024. We included studies that reported on outcomes among PISTs treated with SRS and meta-analyzed the proportions of recurrence and local control (LC) among them. The quality of included studies was assessed using the MINORS tool for non-randomized studies. We identified 14 studies and classified them by follow-up duration. 4 studies had mean or median follow-up times of less than 3 years (short-term follow-up) and 10 studies had greater than 3 years follow-up (long-term follow-up). The mean and median follow up times ranged from 33 to 54.3 months, and 18 to 60 months, respectively. The overall pooled proportion of short-term LC was 0.98 [95% CI: 0.90-1.00], while long-term LC was 0.94 [95% CI: 0.89; 0.97]. The overall pooled proportion of recurrence was 0.01 [95% CI: 0.00; 0.05] for short-term follow-up and 0.05 [95% CI: 0.03; 0.09] for long-term. Subgroup analyses included long-term LC for hemangioblastomas, meningiomas, schwannomas, and neurofibromas, as well as short-term recurrence for meningiomas and schwannomas. Among subgroups, meningiomas showed the best long-term LC and short-term recurrence, with pooled proportions of 0.99 [95% CI: 0.37; 1.00] and 0.02 [95% CI: 0.00; 0.14], respectively. Our results suggest that treating PISTs with SRS achieves favorable outcomes in terms of LC and recurrence. Meningiomas appear to have the best treatment response in terms of LC, which may be a result of their tumor characteristics. However, our findings should be interpreted with caution, as heterogeneity in how studies defined LC may introduce bias into the pooled estimates.",
+      "journal": "Neurosurgical review",
+      "pub_date": "2026 Mar",
+      "type": "review",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41805927/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 259
+    },
+    {
+      "uid": "pmid_41108326",
+      "pmid": "41108326",
+      "title": "Prognostic factors of mortality in patients with cancer infected with COVID-19: A systematic review and meta-analysis using the GRADE approach.",
+      "abstract": "This study aimed to systematically synthesize the available evidence on prognostic factors affecting mortality in these patients. This review included cohort studies of adult patients with cancer diagnosed with Coronavirus disease 2019 (COVID-19). We searched MEDLINE and Embase for data from December 2019 to June 2025, and Cochrane Central Libraries and other databases for data to July 2023. Two independent reviewers screened references, extracted data, and assessed bias risk. The Grading of Recommendations Assessment, Development, and Evaluation (GRADE) approach was used to evaluate the certainty of the evidence and present the relative and absolute effect sizes. Fifty-two prognostic factors were identified from 92 included studies. These included sociodemographic variables, comorbidities, cancer-related characteristics, COVID-19-related clinical features, and laboratory results. We found high certainty associations between an increased risk of death and male sex (absolute risk [AR] = 3.7%, 95% confidence interval [CI] = 2.1% to 5.8%), high Charlson Comorbidity Index (AR = 8.8%, 95% CI = 7.2%-10.6%), low performance status (AR = 14.7%, 95% CI = 11.2%-18.7%), immunosuppression (AR = 14.5%, 95% CI = 7.3%-24.6%), kidney disease (AR = 9.2%, 95% CI = 4.9%-14.7%), and lung cancer (AR = 7.2%, 95% CI = 3.5%-12.0%). Hypoxia, high creatinine, high C-reactive protein, high D-dimer, low hemoglobin, low lymphocytes, high procalcitonin, and high white blood cell counts were also associated with increased mortality with high certainty. This comprehensive GRADE-based systematic review provides healthcare providers with evidence-based prognostic factors to predict outcomes, counsel patients, and guide treatment decisions for cancer patients with COVID-19. The findings offer crucial insights for managing this vulnerable population during the pandemic.",
+      "journal": "International journal of cancer",
+      "pub_date": "2026 Mar",
+      "type": "review",
+      "disease": "other",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41108326/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 260
+    },
+    {
+      "uid": "pmid_41422795",
+      "pmid": "41422795",
+      "title": "Application of Machine learning in predicting cancer complications using longitudinal Data: A systematic review and Meta-Analysis.",
+      "abstract": "Cancer prognosis of complications like metastasis, recurrence, and side effects of treatments is important to enhance patient prognosis. There is great potential in the use of ML on lifetime data for improving prediction accuracy in oncology; however, there is no systematic review of the subject. This SRMA is intended to assess the accuracy of ML models based on longitudinal studies for the estimation of cancer-related complications. The articles were identified from PubMed, Google Scholar, and IEEE Xplore databases for the years 2020 to 2024. Seven of the studies reviewed in the paper analyzed ML models that employed longitudinal data for cancer complication prognosis. The risk of bias of included studies was assessed using the Cochrane Risk of Bias tool, and for diagnostic accuracy, the QUADES 2 tool was used. Information on ML techniques, prediction accuracy, and results was obtained. The pooled area under the curve (AUC) for immune-related adverse events prediction was 0.78 (95% CI: 0.73-0.83). For cancer recurrence and mortality prediction, pooled AUCs ranged from 0.70 to 0.75. Machine learning models integrating clinical, genomic, and imaging data demonstrated superior predictive accuracy across various cancer types. Models predicting quality of life deterioration during treatment showed an AUC of 0.82. ML models applying longitudinal data effectively predict cancer complications with improved accuracy when integrating multimodal data. These models offer promising tools for clinical decision-making in oncology.",
+      "journal": "International journal of medical informatics",
+      "pub_date": "2026 Mar",
+      "type": "review",
+      "disease": "other",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41422795/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 261
+    },
+    {
+      "uid": "pmid_41819062",
+      "pmid": "41819062",
+      "title": "[Comorbidities affecting abiraterone treatment in patients with metastatic castration-resistant prostate cancer: a meta- analysis].",
+      "abstract": "AIM: Optimizing the treatment of metastatic prostate cancer is important for reducing mortality. Therefore, it is essential, among others, to know the predictive markers of abiraterone acetate (AA) treatment in metastatic castration-resistant prostate cancer (mCRPC). We aimed to clarify the predictive factors of AA treatment of mCRPC patients, and particularly the predictive role of comorbidities and co-medication based on meta-analysis of published data. METHODS: Meta-analysis of the results of multivariate analysis found in 120 publications examining at least 100 cases. RESULTS: Besides clear predictors of progression-free and overall survival, opioid use, pain, cerebrovascular diseases, dyslipidemia, statin treatment, bisphosphonate/antiresorptive treatment and metabolic syndrome significantly affect the risk of progression and survival. CONCLUSIONS: Since the analysis of comorbidities is based on relatively few observations, further studies are needed to clarify the predictive impact of comorbidities and co-medication in order to improve the effectiveness of treatment in mCRPC in an individualized manner.",
+      "journal": "Magyar onkologia",
+      "pub_date": "2026 Mar",
+      "type": "review",
+      "disease": "all",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/41819062/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 262
     }
   ]
 }
