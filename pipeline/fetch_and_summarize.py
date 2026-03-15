@@ -616,7 +616,21 @@ def run_pipeline(args):
     log.info("After dedup: %d", len(all_articles))
 
     # Remove already-seen articles
-    new_articles = all_articles
+    # Filter out correspondence, letters, comments, editorials
+    EXCLUDE_KEYWORDS = [
+        "correspondence", "letter to the editor", "letter:", "in reply",
+        "reply to", "comment on", "commentary on", "author's reply",
+        "authors' reply", "to the editor", "erratum", "correction to",
+        "retraction", "expression of concern",
+    ]
+    def is_excluded(a):
+        t = (a.get("title","") + " " + a.get("abstract","")).lower()
+        return any(kw in t for kw in EXCLUDE_KEYWORDS)
+
+    new_articles = [a for a in all_articles if not is_excluded(a)]
+    excluded = len(all_articles) - len(new_articles)
+    if excluded:
+        log.info("Excluded %d correspondence/letters/corrections", excluded)
     log.info("Articles to process: %d", len(new_articles))
 
     # ── Altmetric scoring ──
