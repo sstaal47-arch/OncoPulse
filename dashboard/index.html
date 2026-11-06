@@ -590,6 +590,21 @@
 
   .settings-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 
+  .chip-count { opacity: 0.6; margin-left: 4px; }
+  .chip-remove {
+    margin-left: 6px; padding: 0 2px; border-radius: 50%;
+    color: var(--text-dim); font-size: 11px; line-height: 1;
+  }
+  .chip-remove:hover { color: var(--accent3); }
+  .journal-add-row { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; align-items: center; }
+  .journal-add-input {
+    flex: 1 1 260px; min-width: 0; max-width: 460px;
+    background: var(--surface2); border: 1px solid var(--border); border-radius: 7px;
+    color: var(--text); font-family: 'DM Mono', monospace; font-size: 11px; padding: 6px 10px;
+  }
+  .journal-add-input:focus { outline: none; border-color: var(--accent); }
+  .journal-add-hint { font-size: 10px; color: var(--text-dim); margin-top: 6px; }
+
   .settings-number {
     width: 80px;
     background: var(--surface2);
@@ -1404,7 +1419,7 @@ function applyFilters() {
     const md = currentDiseaseFilter==='all' || a.disease===currentDiseaseFilter;
     const ms = !q || a.title.toLowerCase().includes(q) || (a.abstract||'').toLowerCase().includes(q) || (a.journal||'').toLowerCase().includes(q);
     const sd = s.diseases.includes(a.disease) || s.diseases.includes('other');
-    const sj = s.journals.length === 0 || s.journals.includes(a.journal);
+    const sj = journalVisible(a, s);
     return mt && md && ms && sd && sj;
   });
   let cmp;
@@ -1687,32 +1702,133 @@ const ALL_JOURNALS = {
   ],
 };
 const ALL_JOURNAL_IDS = [...ALL_JOURNALS.general, ...ALL_JOURNALS.specialist].map(j => j.id);
+const OTHER_JOURNALS_ID = '__other__';   // chip for journals the viewer hasn't listed
+
+// ─── Journal name matching ────────────────────────────────────────────────────
+// RSS items use short names ("JCO"); PubMed uses full titles
+// ("Journal of clinical oncology : official journal of ..."). Both map to one ID.
+function normJournal(name) {
+  return (name || '').toLowerCase()
+    .replace(/\([^)]*\)/g, ' ')     // "(London, England)"
+    .replace(/\s*:.*$/, '')          // " : official journal of ..."
+    .replace(/^the\s+/, '')
+    .replace(/&/g, ' and ')
+    .replace(/[.,]/g, ' ')
+    .replace(/\s+/g, ' ').trim();
+}
+const JOURNAL_ALIASES = {
+  'new england journal of medicine': 'NEJM',
+  'lancet': 'Lancet',
+  'jama': 'JAMA',
+  'bmj': 'BMJ',
+  'nejm evidence': 'NEJM Evidence',
+  'lancet oncology': 'Lancet Oncol',
+  'journal of clinical oncology': 'JCO',
+  'blood': 'Blood',
+  'cancer cell': 'Cancer Cell',
+  'nature cancer': 'Nature Cancer',
+  'jama oncology': 'JAMA Oncol',
+  'annals of oncology': 'Ann Oncol',
+  'cancer discovery': 'Cancer Discov',
+  'clinical cancer research': 'Clin Cancer Res',
+  'journal of hematology and oncology': 'J Hematol Oncol',
+  'leukemia': 'Leukemia',
+  'british journal of haematology': 'BJH',
+  'european journal of cancer': 'Eur J Cancer',
+  'blood cancer journal': 'Blood Cancer J',
+};
+ALL_JOURNAL_IDS.forEach(id => { JOURNAL_ALIASES[normJournal(id)] = id; });
+
+// Built-in short ID if known, otherwise the normalized full title.
+function journalId(name) {
+  const key = normJournal(name);
+  return JOURNAL_ALIASES[key] || key;
+}
+// Readable label for a journal not in the built-in lists.
+function journalLabel(name) {
+  return (name || '').replace(/\([^)]*\)/g, ' ').replace(/\s*:.*$/, '')
+    .replace(/^the\s+/i, '').replace(/\s+/g, ' ').trim();
+}
+function escHtml(str) {
+  return String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// Viewer's specialist list = built-ins they haven't removed + journals they added.
+function specialistList(s) {
+  return [
+    ...ALL_JOURNALS.specialist.filter(j => !s.specialistRemoved.includes(j.id)),
+    ...s.specialistAdded,
+  ];
+}
+function listedJournalIds(s) {
+  return [...ALL_JOURNALS.general, ...specialistList(s)].map(j => j.id);
+}
+function defaultJournalSelection() { return [...ALL_JOURNAL_IDS, OTHER_JOURNALS_ID]; }
+
+// Is this article from a journal the viewer has turned on?
+function journalVisible(a, s) {
+  const id = journalId(a.journal);
+  if (s.specialistRemoved.includes(id)) return false;          // viewer removed this journal
+  if (listedJournalIds(s).includes(id)) return s.journals.includes(id);
+  return s.journals.includes(OTHER_JOURNALS_ID);               // any unlisted journal
+}
+
+// Journals present in this week's data, with article counts.
+function journalsInData() {
+  const counts = {};
+  ARTICLES.forEach(a => {
+    if (!a.journal) return;
+    const id = journalId(a.journal);
+    if (!counts[id]) counts[id] = { id, label: ALL_JOURNAL_IDS.includes(id) ? id : journalLabel(a.journal), n: 0 };
+    counts[id].n++;
+  });
+  return counts;
+}
 
 const DEFAULT_SETTINGS = {
   granularity: 'broad',   // 'broad' | 'mid' | 'full'
   diseases: ALL_LEAF_IDS,
-  journals: ALL_JOURNAL_IDS,
+  journals: [...ALL_JOURNAL_IDS, OTHER_JOURNALS_ID],
+  specialistAdded: [],     // [{id, label}] journals this viewer added
+  specialistRemoved: [],   // built-in specialist IDs this viewer removed
   maxDisplay: 300,
 };
+
+function defaultSettings() {
+  return { ...DEFAULT_SETTINGS, diseases: [...ALL_LEAF_IDS], journals: defaultJournalSelection(),
+           specialistAdded: [], specialistRemoved: [] };
+}
 
 function loadSettings() {
   try {
     const s = JSON.parse(localStorage.getItem(SETTINGS_KEY) || 'null');
-    if (!s) return { ...DEFAULT_SETTINGS, diseases: [...ALL_LEAF_IDS], journals: [...ALL_JOURNAL_IDS] };
+    if (!s) return defaultSettings();
+    let journals = s.journals || defaultJournalSelection();
+    // Settings saved before the "Other journals" chip existed: keep unlisted journals visible
+    if (!s.v) journals = [...journals, OTHER_JOURNALS_ID];
     return {
-      granularity: s.granularity || 'broad',
-      diseases:    s.diseases    || [...ALL_LEAF_IDS],
-      journals:    s.journals    || [...ALL_JOURNAL_IDS],
-      maxDisplay:  s.maxDisplay  || 300,
+      granularity:       s.granularity || 'broad',
+      diseases:          s.diseases    || [...ALL_LEAF_IDS],
+      journals,
+      specialistAdded:   Array.isArray(s.specialistAdded)   ? s.specialistAdded   : [],
+      specialistRemoved: Array.isArray(s.specialistRemoved) ? s.specialistRemoved : [],
+      maxDisplay:        s.maxDisplay  || 300,
     };
-  } catch { return { ...DEFAULT_SETTINGS, diseases: [...ALL_LEAF_IDS], journals: [...ALL_JOURNAL_IDS] }; }
+  } catch { return defaultSettings(); }
 }
 
-function saveSettings(s) { localStorage.setItem(SETTINGS_KEY, JSON.stringify(s)); }
+function saveSettings(s) {
+  try { localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...s, v: 2 })); } catch {}
+}
+
+function journalsHidden(s) {
+  return [...listedJournalIds(s), OTHER_JOURNALS_ID].filter(id => !s.journals.includes(id)).length;
+}
 
 function isCustomSettings(s) {
   return s.diseases.length !== ALL_LEAF_IDS.length ||
-         s.journals.length !== ALL_JOURNAL_IDS.length ||
+         journalsHidden(s) > 0 ||
+         s.specialistAdded.length > 0 || s.specialistRemoved.length > 0 ||
          s.maxDisplay !== 300;
 }
 
@@ -1753,14 +1869,15 @@ function renderSettingsPanel() {
   }
 
   // Journal chips
+  const inData = journalsInData();
   const generalChips = ALL_JOURNALS.general.map(j =>
     `<button class="settings-chip general-chip ${s.journals.includes(j.id) ? 'selected' : ''}"
-      data-jid="${j.id}" onclick="toggleJournalChip(this,'${j.id}')">${j.label}</button>`
+      data-jid="${escHtml(j.id)}" onclick="toggleJournalChip(this)">${escHtml(j.label)}${chipCount(inData, j.id)}</button>`
   ).join('');
-  const specialistChips = ALL_JOURNALS.specialist.map(j =>
-    `<button class="settings-chip ${s.journals.includes(j.id) ? 'selected' : ''}"
-      data-jid="${j.id}" onclick="toggleJournalChip(this,'${j.id}')">${j.label}</button>`
-  ).join('');
+  pendingSpecialist = {
+    added:   s.specialistAdded.map(j => ({ ...j })),
+    removed: [...s.specialistRemoved],
+  };
 
   panel.innerHTML = `
     <div class="settings-panel-header">
@@ -1797,7 +1914,15 @@ function renderSettingsPanel() {
           <button class="settings-chip selected" onclick="selectAllJournals('specialist')" style="font-size:9px">All</button>
           <button class="settings-chip" onclick="clearAllJournals('specialist')" style="font-size:9px">Clear</button>
         </div>
-        <div class="settings-chip-group" id="specialistJournalGroup">${specialistChips}</div>
+        <div class="settings-chip-group" id="specialistJournalGroup">${renderSpecialistChips(new Set(s.journals))}</div>
+        <div class="journal-add-row">
+          <input type="text" class="journal-add-input" id="journalAddInput" list="journalAddOptions"
+            placeholder="Add a journal — start typing (e.g. radiation oncology)"
+            onkeydown="if(event.key==='Enter'){event.preventDefault();addSpecialistJournal();}">
+          <datalist id="journalAddOptions"></datalist>
+          <button class="settings-chip selected" onclick="addSpecialistJournal()">+ Add</button>
+        </div>
+        <div class="journal-add-hint" id="journalAddHint">Suggestions are journals with articles in this week's data. Click × on a journal to remove it from your list. “Other journals” covers everything not listed.</div>
       </div>
       <div>
         <div class="settings-section-title">📊 Article Display Limit</div>
@@ -1932,7 +2057,108 @@ function toggleParentGroup(btn) {
   });
 }
 
-function toggleJournalChip(btn, id) { btn.classList.toggle('selected'); }
+function toggleJournalChip(btn) { btn.classList.toggle('selected'); }
+
+// ─── Add / remove specialist journals (per viewer) ────────────────────────────
+// Edits are held here until "Save & Apply", like the other settings.
+let pendingSpecialist = { added: [], removed: [] };
+
+function chipCount(inData, id) {
+  const n = inData[id] ? inData[id].n : 0;
+  return n ? `<span class="chip-count">${n}</span>` : '';
+}
+
+function pendingSpecialistList() {
+  return [
+    ...ALL_JOURNALS.specialist.filter(j => !pendingSpecialist.removed.includes(j.id)),
+    ...pendingSpecialist.added,
+  ];
+}
+
+// selected: Set of journal IDs that should render as selected
+function renderSpecialistChips(selected) {
+  const inData = journalsInData();
+  const chips = pendingSpecialistList().map(j =>
+    `<button class="settings-chip ${selected.has(j.id) ? 'selected' : ''}"
+      data-jid="${escHtml(j.id)}" onclick="toggleJournalChip(this)">${escHtml(j.label)}${chipCount(inData, j.id)}<span
+      class="chip-remove" title="Remove from my list" onclick="event.stopPropagation();removeSpecialistJournal(this)">×</span></button>`
+  );
+  const listed = new Set([...ALL_JOURNALS.general, ...pendingSpecialistList()].map(j => j.id));
+  const otherN = Object.values(inData)
+    .filter(j => !listed.has(j.id) && !pendingSpecialist.removed.includes(j.id))
+    .reduce((t, j) => t + j.n, 0);
+  chips.push(`<button class="settings-chip ${selected.has(OTHER_JOURNALS_ID) ? 'selected' : ''}"
+      data-jid="${OTHER_JOURNALS_ID}" onclick="toggleJournalChip(this)"
+      title="Articles from journals not in your lists">Other journals${otherN ? `<span class="chip-count">${otherN}</span>` : ''}</button>`);
+  setTimeout(refreshJournalAddOptions, 0);
+  return chips.join('');
+}
+
+function currentSelectedJournals() {
+  return new Set([...document.querySelectorAll('[data-jid].selected')].map(b => b.dataset.jid));
+}
+
+function rerenderSpecialistChips(extraSelected) {
+  const sel = currentSelectedJournals();
+  if (extraSelected) sel.add(extraSelected);
+  document.getElementById('specialistJournalGroup').innerHTML = renderSpecialistChips(sel);
+}
+
+function journalAddCandidates() {
+  const listed = new Set([...ALL_JOURNALS.general, ...pendingSpecialistList()].map(j => j.id));
+  const inData = journalsInData();
+  const removedBuiltins = ALL_JOURNALS.specialist
+    .filter(j => pendingSpecialist.removed.includes(j.id))
+    .map(j => ({ id: j.id, label: j.label, n: inData[j.id] ? inData[j.id].n : 0 }));
+  const fromData = Object.values(inData).filter(j => !listed.has(j.id) && !ALL_JOURNAL_IDS.includes(j.id));
+  return [...removedBuiltins, ...fromData].sort((a, b) => b.n - a.n || a.label.localeCompare(b.label));
+}
+
+function refreshJournalAddOptions() {
+  const dl = document.getElementById('journalAddOptions');
+  if (!dl) return;
+  dl.innerHTML = journalAddCandidates().map(j =>
+    `<option value="${escHtml(j.label)}">${j.n} article${j.n === 1 ? '' : 's'} this week</option>`).join('');
+}
+
+function setJournalHint(msg) {
+  const h = document.getElementById('journalAddHint');
+  if (h) h.textContent = msg;
+}
+
+function addSpecialistJournal() {
+  const input = document.getElementById('journalAddInput');
+  const raw = (input?.value || '').trim();
+  if (!raw) return;
+  const id = journalId(raw);
+  if (ALL_JOURNALS.general.some(j => j.id === id) || pendingSpecialistList().some(j => j.id === id)) {
+    setJournalHint(`“${raw}” is already in your lists.`);
+    return;
+  }
+  if (ALL_JOURNALS.specialist.some(j => j.id === id)) {
+    pendingSpecialist.removed = pendingSpecialist.removed.filter(r => r !== id);   // restore a built-in
+  } else {
+    const match = journalsInData()[id];
+    pendingSpecialist.added.push({ id, label: match ? match.label : journalLabel(raw) });
+  }
+  input.value = '';
+  rerenderSpecialistChips(id);
+  const n = journalsInData()[id]?.n || 0;
+  setJournalHint(n
+    ? `Added. ${n} article${n === 1 ? '' : 's'} this week — click Save & Apply.`
+    : `Added, but no articles from this journal are in this week's data yet. Click Save & Apply.`);
+}
+
+function removeSpecialistJournal(el) {
+  const id = el.closest('[data-jid]').dataset.jid;
+  if (ALL_JOURNALS.specialist.some(j => j.id === id)) {
+    if (!pendingSpecialist.removed.includes(id)) pendingSpecialist.removed.push(id);
+  } else {
+    pendingSpecialist.added = pendingSpecialist.added.filter(j => j.id !== id);
+  }
+  rerenderSpecialistChips();
+  setJournalHint('Removed — click Save & Apply. You can add it back from the box above.');
+}
 
 function selectAllDiseases() {
   document.querySelectorAll('[data-did],[data-broad],[data-group-ids]').forEach(b => b.classList.add('selected'));
@@ -1971,7 +2197,8 @@ function applyAndSaveSettings() {
 
   const maxDisplay = parseInt(document.getElementById('maxDisplayInput')?.value || '300', 10);
 
-  const newS = { granularity: s.granularity, diseases, journals, maxDisplay };
+  const newS = { granularity: s.granularity, diseases, journals, maxDisplay,
+                 specialistAdded: pendingSpecialist.added, specialistRemoved: pendingSpecialist.removed };
   saveSettings(newS);
   applyFilters();
   updateSettingsBanner();
@@ -1981,7 +2208,7 @@ function applyAndSaveSettings() {
 }
 
 function resetSettings() {
-  saveSettings({ granularity: 'broad', diseases: [...ALL_LEAF_IDS], journals: [...ALL_JOURNAL_IDS], maxDisplay: 300 });
+  saveSettings(defaultSettings());
   renderSettingsPanel();
   applyFilters();
   updateSettingsBanner();
@@ -1994,7 +2221,10 @@ function updateSettingsBanner() {
   if (isCustomSettings(s)) {
     const parts = [];
     if (s.diseases.length < ALL_LEAF_IDS.length) parts.push(`${s.diseases.length} diseases`);
-    if (s.journals.length < ALL_JOURNAL_IDS.length) parts.push(`${s.journals.length} journals`);
+    const hidden = journalsHidden(s);
+    if (hidden) parts.push(`${hidden} journal${hidden === 1 ? "" : "s"} hidden`);
+    if (s.specialistAdded.length) parts.push(`${s.specialistAdded.length} journal${s.specialistAdded.length === 1 ? '' : 's'} added`);
+    if (s.specialistRemoved.length) parts.push(`${s.specialistRemoved.length} removed`);
     if (s.maxDisplay !== 300) parts.push(`max ${s.maxDisplay} articles`);
     banner.textContent = `⚙ Custom filter active: ${parts.join(' · ')} — click Settings to change`;
     banner.classList.add('visible');
