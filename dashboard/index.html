@@ -96,8 +96,8 @@
 
   /* Stats */
   .stats-bar {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 1px;
     background: var(--border);
     border: 1px solid var(--border);
@@ -105,7 +105,8 @@
     overflow: hidden;
     margin-bottom: 32px;
   }
-  .stat-cell { background: var(--surface); padding: 16px 18px; cursor: pointer; transition: background 0.15s; }
+  .stat-cell { flex: 1 1 110px; background: var(--surface); padding: 16px 18px; cursor: pointer; transition: background 0.15s; }
+  .stat-cell.active { background: var(--surface2); box-shadow: inset 0 -2px 0 var(--accent); }
   .stat-cell:hover { background: var(--surface2); }
   .stat-value { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 26px; line-height: 1; margin-bottom: 4px; }
   .stat-label { font-size: 9px; color: var(--text-muted); letter-spacing: 0.1em; text-transform: uppercase; }
@@ -217,6 +218,10 @@
   .badge-phase3 { background: rgba(77,159,255,0.12);   color: var(--phase3);   border: 1px solid rgba(77,159,255,0.2); }
   .badge-phase2 { background: rgba(251,146,60,0.12);  color: var(--phase2);   border: 1px solid rgba(251,146,60,0.2); }
   .badge-review { background: rgba(107,122,148,0.1);  color: var(--text-muted); border: 1px solid rgba(107,122,148,0.15); }
+  .badge-phase1     { background: rgba(250,204,21,0.10); color: #facc15; border: 1px solid rgba(250,204,21,0.2); }
+  .badge-randomized { background: rgba(167,139,250,0.12); color: #a78bfa; border: 1px solid rgba(167,139,250,0.2); }
+  .badge-other      { background: rgba(107,122,148,0.06); color: var(--text-dim); border: 1px solid rgba(107,122,148,0.12); }
+  .badge-commentary { background: transparent; color: var(--text-dim); border: 1px dashed rgba(107,122,148,0.25); }
 
   .card-main { flex: 1; min-width: 0; }
 
@@ -343,7 +348,7 @@
     main { padding: 20px 16px; }
 
     .stats-bar { margin-bottom: 20px; }
-    .stat-cell { padding: 10px 6px; min-width: 0; }
+    .stat-cell { flex-basis: 30%; padding: 10px 8px; min-width: 0; }
     .stat-value { font-size: 19px; }
     .stat-label { font-size: 8px; letter-spacing: 0.04em; overflow-wrap: anywhere; }
 
@@ -895,6 +900,27 @@
 <script>
 let ARTICLES = [];
 let currentTypeFilter = 'all';
+
+// ─── Study types ──────────────────────────────────────────────────────────────
+// Phase 1/2/3 only when the article states a phase. Older data.json files used
+// 'phase3' as a catch-all; those still show as Phase 3 until the next update.
+const STUDY_TYPES = [
+  { id: 'phase3',     label: 'Phase 3',      badge: 'Ph3', color: 'var(--phase3)' },
+  { id: 'phase2',     label: 'Phase 2',      badge: 'Ph2', color: 'var(--phase2)' },
+  { id: 'phase1',     label: 'Phase 1',      badge: 'Ph1', color: '#facc15' },
+  { id: 'randomized', label: 'Randomized',   badge: 'RCT', color: '#a78bfa', title: 'Randomized trial, phase not stated' },
+  { id: 'fda',        label: 'FDA',          badge: 'FDA', color: 'var(--fda)', stat: 'FDA Actions' },
+  { id: 'review',     label: 'Review',       badge: 'Rev', color: 'var(--text-muted)', stat: 'Reviews' },
+  { id: 'other',      label: 'Other research', badge: 'Res', color: 'var(--text-dim)', title: 'Observational, diagnostic, translational, methods and other studies' },
+  { id: 'commentary', label: 'Commentary',   badge: 'Com', color: 'var(--text-dim)', title: 'Editorials, comments, news, letters and corrections' },
+];
+const TYPE_BY_ID = Object.fromEntries(STUDY_TYPES.map(t => [t.id, t]));
+function studyType(a) {
+  if (a.type === 'fda') return 'fda';
+  if (articleKind(a) !== 'article') return 'commentary';
+  return TYPE_BY_ID[a.type] ? a.type : 'other';
+}
+function typeLabel(a) { return TYPE_BY_ID[studyType(a)].label; }
 let currentDiseaseFilter = 'all';
 let showingSaved = false;
 
@@ -986,12 +1012,11 @@ function renderSavedPanel() {
           ? `<a class="saved-item-link" href="${a.source_link}" target="_blank" rel="noopener">↗ Source</a>` : '';
         const pubmedLink = a.pubmed_link
           ? `<a class="saved-item-link" href="${a.pubmed_link}" target="_blank" rel="noopener">PubMed</a>` : '';
-        const typeLabel = a.type === 'fda' ? 'FDA' : a.type === 'phase3' ? 'Phase 3' : a.type === 'phase2' ? 'Phase 2' : 'Review';
         const catLabel  = a.category === 'heme' ? 'Hematology' : 'Solid Tumor';
         return `
         <div class="saved-item">
           <div class="saved-item-main">
-            <div class="saved-item-meta">${catLabel} · ${typeLabel} · ${a.journal || ''} · ${a.pub_date || ''}</div>
+            <div class="saved-item-meta">${catLabel} · ${typeLabel(a)} · ${a.journal || ''} · ${a.pub_date || ''}</div>
             <div class="saved-item-title">${a.title}</div>
             <div class="saved-item-links">${sourceLink}${pubmedLink}</div>
           </div>
@@ -1156,11 +1181,10 @@ function renderDeletedPanel() {
   const listHtml = items.length === 0
     ? `<div class="deleted-empty">No deleted articles.</div>`
     : `<div class="deleted-list">${items.map(a => {
-        const typeLabel = a.type === 'fda' ? 'FDA' : a.type === 'phase3' ? 'Phase 3' : a.type === 'phase2' ? 'Phase 2' : 'Review';
         return `
         <div class="deleted-item">
           <div class="deleted-item-main">
-            <div class="deleted-item-meta">${a.journal || ''} · ${typeLabel} · ${a.pub_date || ''}</div>
+            <div class="deleted-item-meta">${a.journal || ''} · ${typeLabel(a)} · ${a.pub_date || ''}</div>
             <div class="deleted-item-title">${a.title}</div>
           </div>
           <button class="restore-btn" onclick="restoreArticle('${a.uid}')">↩ Restore</button>
@@ -1315,29 +1339,15 @@ async function loadData() {
 }
 
 // ─── Build UI ─────────────────────────────────────────────────────────────────
-function buildStats(stats) {
-  document.getElementById('statsBar').innerHTML = `
-    <div class="stat-cell" onclick="filterByType('all')">
-      <div class="stat-value" style="color:var(--text)">${stats.total}</div>
-      <div class="stat-label">Total Articles</div>
-    </div>
-    <div class="stat-cell" onclick="filterByType('phase3')">
-      <div class="stat-value" style="color:var(--phase3)">${stats.phase3}</div>
-      <div class="stat-label">Phase 3</div>
-    </div>
-    <div class="stat-cell" onclick="filterByType('phase2')">
-      <div class="stat-value" style="color:var(--phase2)">${stats.phase2}</div>
-      <div class="stat-label">Phase 2</div>
-    </div>
-    <div class="stat-cell" onclick="filterByType('fda')">
-      <div class="stat-value" style="color:var(--fda)">${stats.fda}</div>
-      <div class="stat-label">FDA Actions</div>
-    </div>
-    <div class="stat-cell" onclick="filterByType('review')">
-      <div class="stat-value" style="color:var(--text-muted)">${stats.review}</div>
-      <div class="stat-label">Reviews</div>
-    </div>
-  `;
+function buildStats(counts) {
+  const cell = (id, value, label, color, title) =>
+    `<div class="stat-cell${currentTypeFilter === id ? ' active' : ''}" onclick="filterByType('${id}')"${title ? ` title="${title}"` : ''}>
+      <div class="stat-value" style="color:${color}">${value}</div>
+      <div class="stat-label">${label}</div>
+    </div>`;
+  document.getElementById('statsBar').innerHTML =
+    cell('all', counts.total, 'Total Articles', 'var(--text)') +
+    STUDY_TYPES.map(t => cell(t.id, counts[t.id] || 0, t.stat || t.label, t.color, t.title)).join('');
 }
 
 // Broad group ('lymphoma', 'gi', ...) for an article's specific NCCN disease ID
@@ -1382,11 +1392,8 @@ function renderLayout(data) {
         <input type="text" id="searchInput" placeholder="Search titles, journals, disease…" oninput="applyFilters()">
       </div>
       <div class="filter-group" id="typeFilters">
-        <button class="filter-btn active" onclick="setTypeFilter('all',this)">All</button>
-        <button class="filter-btn" onclick="setTypeFilter('fda',this)">FDA</button>
-        <button class="filter-btn" onclick="setTypeFilter('phase3',this)">Phase 3</button>
-        <button class="filter-btn" onclick="setTypeFilter('phase2',this)">Phase 2</button>
-        <button class="filter-btn" onclick="setTypeFilter('review',this)">Review</button>
+        <button class="filter-btn active" data-type="all" onclick="setTypeFilter('all',this)">All</button>
+        ${STUDY_TYPES.map(t => `<button class="filter-btn" data-type="${t.id}"${t.title ? ` title="${t.title}"` : ''} onclick="setTypeFilter('${t.id}',this)">${t.label}</button>`).join('')}
       </div>
       <select class="sort-select" id="sortSelect" onchange="applyFilters()">
         <option value="importance">⬆ Importance</option>
@@ -1396,7 +1403,7 @@ function renderLayout(data) {
       </select>
     </div>
     <div class="disease-tabs" id="diseaseTabs"></div>
-    <div class="result-count"><span id="countNum">0</span> articles</div>
+    <div class="result-count"><span id="countPrefix"></span><span id="countNum">0</span><span id="countOf"></span> articles</div>
     <div class="article-list" id="articleList"></div>
   `;
   buildStats(data.stats);
@@ -1415,7 +1422,7 @@ function setTypeFilter(type, btn) {
 function filterByType(type) {
   currentTypeFilter = type;
   document.querySelectorAll('#typeFilters .filter-btn').forEach(b => {
-    b.classList.toggle('active', type==='all' ? b.textContent.trim()==='All' : b.textContent.toLowerCase().includes(type));
+    b.classList.toggle('active', b.dataset.type === type);
   });
   applyFilters();
 }
@@ -1448,18 +1455,23 @@ function articleKind(a) {
   return 'article';
 }
 
+// Disease tab, search box and personal settings (everything except the study-type filter)
+function passesNonTypeFilters(a, s, q) {
+  const md = currentDiseaseFilter==='all' || broadDisease(a.disease)===currentDiseaseFilter;
+  const ms = !q || a.title.toLowerCase().includes(q) || (a.abstract||'').toLowerCase().includes(q) || (a.journal||'').toLowerCase().includes(q);
+  // Unknown/unlisted disease IDs fall under "Other"
+  const sd = s.diseases.includes(ALL_LEAF_IDS.includes(a.disease) ? a.disease : 'other');
+  const sj = journalVisible(a, s);
+  return md && ms && sd && sj;
+}
+
 function applyFilters() {
   const s = loadSettings();
   const q = (document.getElementById('searchInput')?.value||'').toLowerCase();
   const sort = document.getElementById('sortSelect')?.value||'date';
   let filtered = ARTICLES.filter(a => {
-    const mt = currentTypeFilter==='all' || a.type===currentTypeFilter;
-    const md = currentDiseaseFilter==='all' || broadDisease(a.disease)===currentDiseaseFilter;
-    const ms = !q || a.title.toLowerCase().includes(q) || (a.abstract||'').toLowerCase().includes(q) || (a.journal||'').toLowerCase().includes(q);
-    // Unknown/unlisted disease IDs fall under "Other"
-    const sd = s.diseases.includes(ALL_LEAF_IDS.includes(a.disease) ? a.disease : 'other');
-    const sj = journalVisible(a, s);
-    return mt && md && ms && sd && sj;
+    const mt = currentTypeFilter==='all' || studyType(a)===currentTypeFilter;
+    return mt && passesNonTypeFilters(a, s, q);
   });
   let cmp;
   if (sort==='importance') cmp = (a,b)=>(b.importance_score||0)-(a.importance_score||0);
@@ -1468,17 +1480,20 @@ function applyFilters() {
   else cmp = (a,b)=>(a.title||'').localeCompare(b.title||'');
   // Full articles, then editorials/commentary, then letters, then corrections; chosen sort within each group
   filtered.sort((a,b)=>(KIND_ORDER[articleKind(a)]-KIND_ORDER[articleKind(b)]) || cmp(a,b));
+  // Stats count every article matching the filters (type filter aside), before the display limit
+  const counts = { total: 0 };
+  ARTICLES.forEach(a => {
+    if (!passesNonTypeFilters(a, s, q)) return;
+    counts.total++;
+    const t = studyType(a); counts[t] = (counts[t] || 0) + 1;
+  });
+  const matching = filtered.length;
   filtered = filtered.slice(0, s.maxDisplay);
   renderArticles(filtered);
   document.getElementById('countNum').textContent = filtered.length;
-  // Update stats bar to reflect filtered counts
-  buildStats({
-    total:  filtered.length,
-    phase3: filtered.filter(a=>a.type==='phase3').length,
-    phase2: filtered.filter(a=>a.type==='phase2').length,
-    fda:    filtered.filter(a=>a.type==='fda').length,
-    review: filtered.filter(a=>a.type==='review').length,
-  });
+  document.getElementById('countPrefix').textContent = matching > filtered.length ? 'Showing ' : '';
+  document.getElementById('countOf').textContent = matching > filtered.length ? ` of ${matching}` : '';
+  buildStats(counts);
   updateSavedBadge();
   updateDeletedBadge();
   updateSettingsBanner();
@@ -1503,10 +1518,8 @@ function renderArticles(articles) {
     const catBadge = a.category==='heme'
       ? `<span class="badge badge-heme">Heme</span>`
       : `<span class="badge badge-solid">Solid</span>`;
-    const typeBadge = a.type==='fda'    ? `<span class="badge badge-fda">FDA</span>`
-                    : a.type==='phase3' ? `<span class="badge badge-phase3">Ph3</span>`
-                    : a.type==='phase2' ? `<span class="badge badge-phase2">Ph2</span>`
-                    :                    `<span class="badge badge-review">Rev</span>`;
+    const st = TYPE_BY_ID[studyType(a)];
+    const typeBadge = `<span class="badge badge-${st.id}" title="${st.title || st.label}">${st.badge}</span>`;
 
     const borderColor = a.category==='heme' ? 'var(--heme)' : 'var(--solid)';
 

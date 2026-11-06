@@ -276,17 +276,66 @@ def classify_disease(text: str) -> str:
 def classify_category(disease: str) -> str:
     return "heme" if disease in HEME_DISEASES else "solid"
 
-def classify_type(text: str, source: str) -> str:
+# Study types, in evidence order:
+#   fda · phase3 · randomized (phase not stated) · phase2 · review · phase1 · other · commentary
+_PHASE_NUM = {"1": 1, "i": 1, "2": 2, "ii": 2, "3": 3, "iii": 3}
+# "phase 3", "phase III", "phase 2b", "phase I/II", "phase 1b-2", "phase II and III"
+PHASE_RE = re.compile(
+    r"\bphase[\s-]*(iii|ii|i|[123])([ab])?"
+    r"(?:\s*(?:/|-|\u2013|and|or)\s*(iii|ii|i|[123])([ab])?)?(?![a-z0-9])",
+    re.IGNORECASE)
+REVIEW_TITLE_RE = re.compile(
+    r"meta-?analys|systematic review|scoping review|umbrella review|\breview\b|"
+    r"\bguidelines?\b(?!-)|consensus|\brecommendations?\b|"
+    # narrative-review titles that don't say "review"
+    r"\brecent advances\b|^advances in\b|\badvancing therapies\b|\bemerging (?:role|therapies)\b|"
+    r"\bevolving (?:role|strategies|landscape)\b|\bcurrent evidence\b|\btherapeutic landscape\b|"
+    r"^(?:an )?update on\b|\[update on\b|\bnavigating\b|\boverview\b", re.IGNORECASE)
+# Narrative reviews identified from the abstract wording
+REVIEW_ABSTRACT_RE = re.compile(
+    r"\b(?:this|the present|our|narrative|comprehensive|current) review\b|"
+    r"\bwe (?:review|summari[sz]e|discuss|highlight|outline)\b|"
+    r"\bhere,? we (?:review|summari[sz]e|discuss|provide an overview)\b|"
+    r"\bthis (?:article|perspective) (?:reviews|summari[sz]es|discusses)\b", re.IGNORECASE)
+RANDOMIZED_RE = re.compile(r"\brandomi[sz]ed\b|\brandomly (?:assigned|allocated)\b", re.IGNORECASE)
+
+def _phase(text: str):
+    """Highest phase in the first phase mention (phase 1/2 -> 2), or None."""
+    m = PHASE_RE.search(text or "")
+    if not m:
+        return None
+    nums = [_PHASE_NUM[g.lower()] for g in (m.group(1), m.group(3)) if g]
+    return max(nums)
+
+def classify_type(title: str, abstract: str, source: str, kind: str = "article",
+                  pub_types=()) -> str:
+    """Study type from the title first, then the abstract and PubMed publication types.
+
+    Only articles that state a phase are Phase 1/2/3. Editorials, news,
+    letters and corrections are 'commentary'.
+    """
     if source == "fda":
         return "fda"
-    t = text.lower()
-    if any(x in t for x in ["phase 3", "phase iii", "phase3"]):
-        return "phase3"
-    if any(x in t for x in ["phase 2", "phase ii", "phase2"]):
-        return "phase2"
-    if any(x in t for x in ["meta-analysis", "systematic review", "review"]):
+    if kind in ("editorial", "letter", "correction"):
+        return "commentary"
+    pts = {p.strip().lower() for p in pub_types if p}
+    # A review or guideline about phase 3 trials is still a review
+    if REVIEW_TITLE_RE.search(title or "") or pts & {"meta-analysis", "systematic review",
+                                                       "review", "practice guideline", "guideline"}:
         return "review"
-    return "phase3"  # default for clinical trials
+    phase = _phase(title)
+    if phase is None and "clinical trial, phase iii" in pts: phase = 3
+    if phase is None and "clinical trial, phase ii" in pts: phase = 2
+    if phase is None and "clinical trial, phase i" in pts: phase = 1
+    if phase is None:
+        if REVIEW_ABSTRACT_RE.search(abstract or ""):
+            return "review"
+        phase = _phase(abstract)
+    if phase:
+        return {3: "phase3", 2: "phase2", 1: "phase1"}[phase]
+    if "randomized controlled trial" in pts or RANDOMIZED_RE.search(f"{title} {abstract}"):
+        return "randomized"
+    return "other"
 
 # Article kind — used by the dashboard to list full articles first,
 # then editorials/commentary, then letters/correspondence, then corrections.
@@ -483,8 +532,8 @@ def fetch_pubmed(days_back: int, max_ids: int = 1000) -> list:
                     "abstract":    abstract,
                     "journal":     journal,
                     "pub_date":    pub_date,
-                    "type":        classify_type(full_text, "pubmed"),
-                    "kind":        classify_kind(title, pub_types),
+                    "kind":        (kind := classify_kind(title, pub_types)),
+                    "type":        classify_type(title, abstract, "pubmed", kind, pub_types),
                     "disease":     disease,
                     "category":    classify_category(disease),
                     "source":      "pubmed",
@@ -616,8 +665,8 @@ def fetch_rss(days_back: int) -> list:
                     "abstract":    summary,
                     "journal":     journal_name,
                     "pub_date":    published.strftime("%Y %b"),
-                    "type":        classify_type(title + " " + summary, "rss"),
-                    "kind":        classify_kind(title, [tg.get("term", "") for tg in entry.get("tags", [])]),
+                    "kind":        (kind := classify_kind(title, [tg.get("term", "") for tg in entry.get("tags", [])])),
+                    "type":        classify_type(title, summary, "rss", kind),
                     "disease":     disease,
                     "category":    classify_category(disease),
                     "source":      "rss",
@@ -682,10 +731,14 @@ def normalize_journal(name: str) -> str:
     return JOURNAL_ALIASES.get(key, name)
 
 STUDY_TYPE_SCORE = {
-    "fda":    100,
-    "phase3": 80,
-    "phase2": 50,
-    "review": 30,
+    "fda":        100,
+    "phase3":     80,
+    "randomized": 65,   # randomized trial, phase not stated
+    "phase2":     50,
+    "review":     30,
+    "phase1":     25,
+    "other":      20,   # observational, diagnostic, translational, methods, ...
+    "commentary": 10,   # editorials, comments, news, letters, corrections
 }
 
 NO_ALTMETRIC = {"altmetric_score": 0, "altmetric_id": None, "altmetric_url": None}
@@ -889,7 +942,7 @@ def compute_composite_score(a: dict) -> float:
     alt_norm = min(math.log1p(alt) * 15, 150)  # caps at ~150 for score of ~20000
 
     # Study type
-    type_score = STUDY_TYPE_SCORE.get(a.get("type", "review"), 30)
+    type_score = STUDY_TYPE_SCORE.get(a.get("type", "other"), 20)
 
     # Journal tier (1=best)
     tier = JOURNAL_TIER.get(normalize_journal(a.get("journal", "")), 3)
@@ -998,6 +1051,10 @@ def run_pipeline(args):
         "phase2":         sum(1 for a in new_articles if a["type"] == "phase2"),
         "fda":            sum(1 for a in new_articles if a["type"] == "fda"),
         "review":         sum(1 for a in new_articles if a["type"] == "review"),
+        "phase1":         sum(1 for a in new_articles if a["type"] == "phase1"),
+        "randomized":     sum(1 for a in new_articles if a["type"] == "randomized"),
+        "other":          sum(1 for a in new_articles if a["type"] == "other"),
+        "commentary":     sum(1 for a in new_articles if a["type"] == "commentary"),
         "with_altmetric": sum(1 for a in new_articles if (a.get("altmetric_score") or 0) > 0),
         "top_altmetric":  round(max((a.get("altmetric_score") or 0) for a in new_articles), 1) if new_articles else 0,
     }
