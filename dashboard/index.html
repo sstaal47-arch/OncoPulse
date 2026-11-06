@@ -325,6 +325,35 @@
   }
   #ttsBar.visible { bottom: 24px; }
 
+  /* ── Phones and narrow windows ── */
+  @media (max-width: 720px) {
+    header {
+      position: relative;            /* a two-row header shouldn't stay pinned on a small screen */
+      height: auto;
+      flex-wrap: wrap;
+      padding: 10px 16px;
+      gap: 8px 12px;
+    }
+    .logo-sub { display: none; }
+    .header-right { flex-wrap: wrap; gap: 6px; width: 100%; }
+    .week-badge { order: -1; flex-basis: 100%; }
+    .live-dot { margin-left: auto; }
+    .header-right button { padding: 6px 9px; }
+
+    main { padding: 20px 16px; }
+
+    .stats-bar { margin-bottom: 20px; }
+    .stat-cell { padding: 10px 6px; min-width: 0; }
+    .stat-value { font-size: 19px; }
+    .stat-label { font-size: 8px; letter-spacing: 0.04em; overflow-wrap: anywhere; }
+
+    .search-box { min-width: 0; flex-basis: 100%; }
+    .controls { gap: 8px; }
+
+    #ttsBar { min-width: 0; width: calc(100vw - 32px); padding: 10px 12px; gap: 10px; }
+    #ttsBar.visible { bottom: 16px; }
+  }
+
   .tts-info { flex: 1; min-width: 0; }
   .tts-now-label { font-size: 8px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 3px; }
   .tts-title { font-family: 'Instrument Serif', serif; font-size: 12px; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
