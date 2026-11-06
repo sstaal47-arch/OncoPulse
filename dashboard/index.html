@@ -1551,6 +1551,7 @@ const NCCN_TAXONOMY = [
       { id: 'ctcl',  label: 'CTCL / Mycosis Fungoides / Sézary' },
     ]},
     { id: 'hodgkin',  label: 'Hodgkin Lymphoma' },
+    { id: 'lymphoma_general', label: 'Lymphoma (unspecified)' },
     { id: 'cll',      label: 'CLL / SLL' },
     { id: 'acute_leukemias', label: 'Acute Leukemias', children: [
       { id: 'aml',  label: 'AML' },
@@ -1580,6 +1581,7 @@ const NCCN_TAXONOMY = [
     { id: 'cns_lymphoma',    label: 'Primary CNS Lymphoma' },
     { id: 'meningioma',      label: 'Meningioma' },
     { id: 'medulloblastoma', label: 'Medulloblastoma' },
+    { id: 'cns_general',     label: 'Brain / CNS Tumor (unspecified)' },
   ]},
   { section: 'Breast Cancer', category: 'solid', children: [
     { id: 'breast_her2',    label: 'HER2-Positive' },
@@ -1619,6 +1621,7 @@ const NCCN_TAXONOMY = [
     { id: 'sclc',         label: 'SCLC' },
     { id: 'mesothelioma', label: 'Mesothelioma' },
     { id: 'thymoma',      label: 'Thymoma / Thymic Carcinoma' },
+    { id: 'lung_general', label: 'Lung Cancer (unspecified)' },
   ]},
   { section: 'Head & Neck Cancers', category: 'solid', children: [
     { id: 'hnscc',          label: 'HNSCC (Oral / Oropharyngeal / Laryngeal)' },
@@ -1655,16 +1658,16 @@ const NCCN_TAXONOMY = [
 const BROAD_GROUPS = [
   { id: 'lymphoma',   label: 'Lymphoma',    cls: 'heme-chip',
     ids: ['dlbcl','follicular_lymphoma','mantle_cell','marginal_zone','burkitt',
-          'primary_mediastinal','transformed_fl','waldenstrom','ptcl','ctcl','hodgkin','b_cell_lymphomas','t_cell_lymphomas'] },
+          'primary_mediastinal','transformed_fl','waldenstrom','ptcl','ctcl','hodgkin','lymphoma_general','b_cell_lymphomas','t_cell_lymphomas'] },
   { id: 'leukemia',   label: 'Leukemia',    cls: 'heme-chip',
     ids: ['cll','aml','all','apl','cml','cmml','hcl','mds','mpn','mds_mpn','acute_leukemias','chronic_leukemias'] },
   { id: 'myeloma',    label: 'Myeloma / Plasma Cell', cls: 'heme-chip',
     ids: ['multiple_myeloma','smoldering_myeloma','amyloidosis','mgus','mastocytosis','plasma_cell'] },
-  { id: 'lung',       label: 'Lung',        cls: 'solid-chip', ids: ['nsclc','sclc','mesothelioma','thymoma'] },
+  { id: 'lung',       label: 'Lung',        cls: 'solid-chip', ids: ['nsclc','sclc','mesothelioma','thymoma','lung_general'] },
   { id: 'breast',     label: 'Breast',      cls: 'solid-chip', ids: ['breast_her2','breast_tnbc','breast_hr','breast_general'] },
   { id: 'gi',         label: 'GI',          cls: 'solid-chip', ids: ['colorectal','gastric','esophageal','pancreatic','hcc','biliary','appendix','anal','neuroendocrine'] },
   { id: 'gu',         label: 'GU',          cls: 'solid-chip', ids: ['prostate','rcc','bladder','testicular','penile','adrenal'] },
-  { id: 'cns',        label: 'CNS',         cls: 'solid-chip', ids: ['glioblastoma','glioma','brain_mets','cns_lymphoma','meningioma','medulloblastoma'] },
+  { id: 'cns',        label: 'CNS',         cls: 'solid-chip', ids: ['glioblastoma','glioma','brain_mets','cns_lymphoma','meningioma','medulloblastoma','cns_general'] },
   { id: 'gynecologic',label: 'Gynecologic', cls: 'solid-chip', ids: ['ovarian','endometrial','cervical','uterine_sarcoma','vulvar','gestational'] },
   { id: 'skin',       label: 'Skin',        cls: 'solid-chip', ids: ['melanoma','cscc','merkel','bcc','uveal_melanoma'] },
   { id: 'head_neck',  label: 'Head & Neck', cls: 'solid-chip', ids: ['hnscc','nasopharyngeal','salivary','thyroid'] },
@@ -1818,9 +1821,17 @@ function loadSettings() {
     if (!s.v) journals = [...journals, OTHER_JOURNALS_ID];
     // Before v3 the disease filter had no effect (and Broad mode saved lists without
     // the blood cancers), so older saved disease lists start again with everything on.
-    const diseases = (s.v >= 3 && Array.isArray(s.diseases))
+    let diseases = (s.v >= 3 && Array.isArray(s.diseases))
       ? s.diseases.filter(id => ALL_LEAF_IDS.includes(id))
       : [...ALL_LEAF_IDS];
+    // v4 added catch-all entries; turn each on if the viewer kept any disease in its group
+    if (s.v === 3) {
+      const added = { lymphoma_general: 'lymphoma', lung_general: 'lung', cns_general: 'cns' };
+      for (const [id, grp] of Object.entries(added)) {
+        const g = BROAD_GROUPS.find(b => b.id === grp);
+        if (!diseases.includes(id) && g && g.ids.some(x => diseases.includes(x))) diseases.push(id);
+      }
+    }
     return {
       granularity:       s.granularity || 'broad',
       diseases:          diseases.length ? diseases : [...ALL_LEAF_IDS],
@@ -1833,7 +1844,7 @@ function loadSettings() {
 }
 
 function saveSettings(s) {
-  try { localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...s, v: 3 })); } catch {}
+  try { localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...s, v: 4 })); } catch {}
 }
 
 function journalsHidden(s) {

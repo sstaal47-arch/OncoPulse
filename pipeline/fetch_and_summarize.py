@@ -51,7 +51,7 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 # Order matters — more specific entries should come before broader ones.
 NCCN_DISEASE_KEYWORDS = [
     # ── Hematologic: B-Cell Lymphomas ──
-    ("dlbcl",           ["diffuse large b-cell", "dlbcl", "large b-cell lymphoma"]),
+    ("dlbcl",           ["diffuse large b-cell", "dlbcl", "large b-cell lymphoma", "high-grade b-cell lymphoma", "double hit", "triple hit", "double-hit", "triple-hit"]),
     ("follicular_lymphoma", ["follicular lymphoma", "follicular grade"]),
     ("mantle_cell",     ["mantle cell lymphoma", "mcl"]),
     ("marginal_zone",   ["marginal zone lymphoma", "malt lymphoma", "mzl", "splenic marginal"]),
@@ -61,7 +61,7 @@ NCCN_DISEASE_KEYWORDS = [
     ("waldenstrom",     ["waldenstrom", "lymphoplasmacytic lymphoma", "waldenström"]),
     # ── Hematologic: T-Cell Lymphomas ──
     ("ptcl",            ["peripheral t-cell lymphoma", "ptcl", "angioimmunoblastic", "aitl",
-                         "anaplastic large cell", "alcl"]),
+                         "anaplastic large cell", "alcl", "nk/t-cell lymphoma", "nk/t cell lymphoma", "extranodal nk"]),
     ("ctcl",            ["cutaneous t-cell lymphoma", "ctcl", "mycosis fungoides", "sezary",
                          "sézary"]),
     # ── Hematologic: Hodgkin ──
@@ -78,11 +78,11 @@ NCCN_DISEASE_KEYWORDS = [
     # ── Hematologic: Chronic/Other Leukemias ──
     ("cml",             ["chronic myeloid leukemia", "cml", "chronic myelogenous leukemia",
                          "bcr-abl", "bcr::abl"]),
-    ("cmml",            ["chronic myelomonocytic leukemia", "cmml"]),
+    ("cmml",            ["chronic myelomonocytic leukemia", "cmml", "myelomonocytic"]),
     ("hcl",             ["hairy cell leukemia", "hcl"]),
     # ── Hematologic: MDS ──
     ("mds",             ["myelodysplastic syndrome", "mds", "myelodysplasia",
-                         "refractory anemia", "excess blasts"]),
+                         "refractory anemia", "excess blasts", "myelodysplastic", "ring sideroblast", "sf3b1"]),
     # ── Hematologic: MPN ──
     ("mpn",             ["myeloproliferative neoplasm", "mpn", "polycythemia vera",
                          "essential thrombocythemia", "primary myelofibrosis", "myelofibrosis",
@@ -109,17 +109,17 @@ NCCN_DISEASE_KEYWORDS = [
     ("breast_tnbc",     ["triple negative breast", "tnbc", "triple-negative breast"]),
     ("breast_hr",       ["hormone receptor-positive breast", "er-positive breast", "luminal",
                          "aromatase inhibitor", "fulvestrant", "cdk4/6"]),
-    ("breast_general",  ["breast cancer", "breast carcinoma", "breast tumor", "mammary"]),
+    ("breast_general",  ["breast cancer", "breast carcinoma", "breast tumor", "mammary", "ductal carcinoma in situ", "dcis", "mastectomy", "postmastectomy", "lumpectomy", "breast reconstruction"]),
     # ── GI Tumors ──
     ("colorectal",      ["colorectal cancer", "colon cancer", "rectal cancer", "colorectal carcinoma",
                          "crc", "mismatch repair", "microsatellite instability", "msi-h colorectal",
                          "colorectal"]),
     ("gastric",         ["gastric cancer", "stomach cancer", "gastric adenocarcinoma",
-                         "gastroesophageal junction", "gej"]),
+                         "gastroesophageal junction", "gej", "gastroesophageal cancer", "gastroesophageal adenocarcinoma", "esophagogastric", "upper gastrointestinal cancer"]),
     ("esophageal",      ["esophageal cancer", "esophageal carcinoma", "esophageal adenocarcinoma",
-                         "esophageal squamous"]),
+                         "esophageal squamous", "barrett's adenocarcinoma", "barrett adenocarcinoma", "esophageal and esophagogastric"]),
     ("pancreatic",      ["pancreatic cancer", "pancreatic ductal adenocarcinoma", "pdac",
-                         "pancreatic adenocarcinoma"]),
+                         "pancreatic adenocarcinoma", "pancreatoduodenectomy", "pancreaticoduodenectomy"]),
     ("hcc",             ["hepatocellular carcinoma", "hcc", "liver cancer", "hepatoma"]),
     ("biliary",         ["cholangiocarcinoma", "biliary tract cancer", "gallbladder cancer",
                          "intrahepatic cholangiocarcinoma", "extrahepatic cholangiocarcinoma",
@@ -131,9 +131,9 @@ NCCN_DISEASE_KEYWORDS = [
     # ── GU Tumors ──
     ("prostate",        ["prostate cancer", "castration-resistant prostate", "crpc",
                          "metastatic prostate", "psa", "enzalutamide", "abiraterone",
-                         "darolutamide", "androgen deprivation"]),
+                         "darolutamide", "androgen deprivation", "prostatectomy", "prostate biopsy"]),
     ("rcc",             ["renal cell carcinoma", "rcc", "kidney cancer", "clear cell renal",
-                         "papillary renal"]),
+                         "papillary renal", "nephrectomy"]),
     ("bladder",         ["bladder cancer", "urothelial carcinoma", "transitional cell",
                          "muscle-invasive bladder"]),
     ("penile",          ["penile cancer", "penile carcinoma"]),
@@ -143,7 +143,7 @@ NCCN_DISEASE_KEYWORDS = [
                          "paraganglioma"]),
     # ── Gynecologic ──
     ("ovarian",         ["ovarian cancer", "ovarian carcinoma", "fallopian tube cancer",
-                         "peritoneal cancer", "brca ovarian", "parp inhibitor ovarian"]),
+                         "peritoneal cancer", "brca ovarian", "parp inhibitor ovarian", "ovarian tumor", "ovarian neoplasm", "ovarian mass"]),
     ("endometrial",     ["endometrial cancer", "endometrial carcinoma", "uterine cancer",
                          "endometrioid"]),
     ("cervical",        ["cervical cancer", "cervical carcinoma", "squamous cervical"]),
@@ -153,21 +153,21 @@ NCCN_DISEASE_KEYWORDS = [
     # ── Thoracic ──
     ("nsclc",           ["non-small cell lung", "nsclc", "lung adenocarcinoma",
                          "lung squamous cell", "egfr-mutant", "alk-positive", "ros1",
-                         "kras g12c", "met exon 14", "ret fusion lung"]),
+                         "kras g12c", "met exon 14", "ret fusion lung", "non-small-cell lung"]),
     ("sclc",            ["small cell lung", "sclc", "extensive-stage small cell"]),
     ("mesothelioma",    ["mesothelioma", "malignant pleural mesothelioma", "mpm"]),
     ("thymoma",         ["thymoma", "thymic carcinoma", "thymic epithelial"]),
     # ── Head & Neck ──
     ("hnscc",           ["head and neck squamous", "hnscc", "oropharyngeal cancer",
                          "oral cavity cancer", "laryngeal cancer", "hypopharyngeal",
-                         "oropharyngeal", "head and neck cancer", "head and neck carcinoma"]),
+                         "oropharyngeal", "head and neck cancer", "head and neck carcinoma", "oral squamous cell carcinoma", "oral cancer", "sinonasal"]),
     ("nasopharyngeal",  ["nasopharyngeal carcinoma", "npc", "nasopharyngeal cancer"]),
     ("salivary",        ["salivary gland cancer", "parotid cancer", "adenoid cystic"]),
     ("thyroid",         ["thyroid cancer", "papillary thyroid", "follicular thyroid",
                          "medullary thyroid", "anaplastic thyroid", "differentiated thyroid"]),
     # ── Skin ──
     ("melanoma",        ["melanoma", "cutaneous melanoma", "uveal melanoma", "acral melanoma",
-                         "braf-mutant melanoma"]),
+                         "braf-mutant melanoma", "melanocytic"]),
     ("cscc",            ["cutaneous squamous cell carcinoma", "cscc", "cutaneous scc",
                          "skin squamous", "cemiplimab"]),
     ("merkel",          ["merkel cell carcinoma", "merkel cell cancer", "mcc"]),
@@ -181,13 +181,20 @@ NCCN_DISEASE_KEYWORDS = [
     ("leiomyosarcoma",  ["leiomyosarcoma", "lms"]),
     ("liposarcoma",     ["liposarcoma", "well-differentiated liposarcoma", "dedifferentiated liposarcoma"]),
     ("sarcoma_general", ["sarcoma", "soft tissue sarcoma", "undifferentiated pleomorphic sarcoma",
-                         "angiosarcoma", "synovial sarcoma", "solitary fibrous tumor"]),
+                         "angiosarcoma", "synovial sarcoma", "solitary fibrous tumor", "desmoid"]),
     # ── Endocrine ──
     ("thyroid",         ["thyroid"]),  # catch-all after specific thyroid subtypes above
     # ── Eye ──
     ("uveal_melanoma",  ["uveal melanoma", "choroidal melanoma", "ocular melanoma"]),
     ("retinoblastoma",  ["retinoblastoma"]),
     # ── Other / Unknown Primary ──
+    # ── Catch-alls (after every specific entry above) ──
+    ("lung_general",    ["lung cancer", "lung carcinoma", "lung tumor", "lung neoplasm",
+                         "pulmonary nodule", "lung nodule"]),
+    ("lymphoma_general",["lymphoma", "b-cell lymphoma", "t-cell lymphoma"]),
+    ("hnscc",           ["head and neck"]),  # generic head & neck, after salivary/thyroid
+    ("cns_general",     ["brain tumor", "brain neoplasm", "neuro-oncology", "supratentorial tumor",
+                         "cns tumor", "central nervous system tumor"]),
     ("cup",             ["cancer of unknown primary", "cup", "unknown primary"]),
     ("other",           []),
 ]
@@ -203,7 +210,8 @@ BROAD_PARENT = {
     "mds": "leukemia", "mpn": "leukemia", "mds_mpn": "leukemia",
     "multiple_myeloma": "myeloma", "smoldering_myeloma": "myeloma",
     "amyloidosis": "myeloma", "mgus": "myeloma", "mastocytosis": "myeloma",
-    "glioblastoma": "cns", "glioma": "cns", "brain_mets": "cns",
+    "glioblastoma": "cns", "glioma": "cns", "brain_mets": "cns", "cns_general": "cns",
+    "lung_general": "lung", "lymphoma_general": "lymphoma",
     "cns_lymphoma": "cns", "meningioma": "cns", "medulloblastoma": "cns",
     "breast_her2": "breast", "breast_tnbc": "breast", "breast_hr": "breast",
     "breast_general": "breast",
@@ -228,7 +236,7 @@ BROAD_PARENT = {
 HEME_DISEASES = {
     "dlbcl", "follicular_lymphoma", "mantle_cell", "marginal_zone", "burkitt",
     "primary_mediastinal", "transformed_fl", "waldenstrom", "ptcl", "ctcl",
-    "hodgkin", "cll", "aml", "all", "apl", "cml", "cmml", "hcl",
+    "hodgkin", "lymphoma_general", "cll", "aml", "all", "apl", "cml", "cmml", "hcl",
     "mds", "mpn", "mds_mpn", "multiple_myeloma", "smoldering_myeloma",
     "amyloidosis", "mgus", "mastocytosis",
 }
@@ -241,10 +249,16 @@ def _keyword_pattern(kw: str) -> "re.Pattern":
     "the gist" don't count. Everything else is case-insensitive.
     """
     kw = kw.strip()
-    body = r"(?<![A-Za-z0-9])" + re.escape(kw) + r"(?:s|es)?(?![A-Za-z0-9])"
     if kw.isalpha() and len(kw) <= 5:
-        return re.compile(body.replace(re.escape(kw), re.escape(kw.upper()), 1))
-    return re.compile(body, re.IGNORECASE)
+        return re.compile(r"(?<![A-Za-z0-9])" + re.escape(kw.upper()) + r"(?:s|es)?(?![A-Za-z0-9])")
+    pat = re.escape(kw)
+    # spaces and hyphens (incl. en/em dashes) are interchangeable: "non-small-cell" = "non-small cell"
+    pat = pat.replace(r"\ ", "[-\u2010-\u2014\\s]").replace(r"\-", "[-\u2010-\u2014\\s]")
+    # British spellings: leukaemia, tumour, oesophageal, haematological, anaemia
+    for us, uk in (("leukemi", "leuka?emi"), ("tumor", "tumou?r"), ("esophag", "o?esophag"),
+                   ("hemato", "ha?emato"), ("anemia", "ana?emia")):
+        pat = pat.replace(us, uk)
+    return re.compile(r"(?<![A-Za-z0-9])" + pat + r"(?:s|es)?(?![A-Za-z0-9])", re.IGNORECASE)
 
 DISEASE_PATTERNS = [
     (disease_id, [_keyword_pattern(kw) for kw in keywords])
@@ -350,7 +364,7 @@ ONCOLOGY_TITLE_TERMS = [
     "chemotherapy", "chemoradiotherapy", "chemoradiation", "radiotherapy",
     "immunotherapy", "oncology",
     # cancer operations and supportive care
-    "prostatectomy", "mastectomy", "cystectomy", "gastrectomy", "esophagectomy",
+    "prostatectomy", "mastectomy", "cystectomy", "esophagectomy",
     "oesophagectomy", "pancreatoduodenectomy", "pancreaticoduodenectomy",
     "hepatectomy", "bcg", "neutropenia",
 ]
