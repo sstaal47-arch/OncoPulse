@@ -10,6 +10,7 @@ No Claude API required.
 
 import os
 import json
+import re
 import math
 import time
 import hashlib
@@ -251,6 +252,61 @@ def classify_type(text: str, source: str) -> str:
         return "review"
     return "phase3"  # default for clinical trials
 
+# Article kind — used by the dashboard to list full articles first,
+# then editorials/commentary, then letters/correspondence, then corrections.
+EDITORIAL_LABELS = {
+    "editorial", "editorials", "comment", "comments", "commentary",
+    "perspective", "perspectives", "viewpoint", "opinion", "invited commentary",
+    "editor's note", "editors' note", "news", "obituary",
+}
+LETTER_LABELS = {
+    "correspondence", "letter to the editor", "letters to the editor",
+    "reply", "in reply", "comment & response",
+}
+# "Letter" alone is ambiguous: Blood, Leukemia, BJH etc. publish peer-reviewed
+# research as letters, so a bare "Letter" tag only counts for non-research items.
+GENERIC_LETTER_LABELS = {"letter", "letters"}
+RESEARCH_PUB_TYPES = (
+    "clinical trial", "randomized controlled trial", "meta-analysis",
+    "systematic review", "multicenter study", "observational study",
+)
+CORRECTION_LABELS = {
+    "correction", "corrections", "erratum", "errata", "corrigendum",
+    "published erratum",
+}
+
+def _section_label(title: str) -> str:
+    """Section label from a leading '[Label]' in the title (Lancet-style feeds)."""
+    m = re.match(r"\s*\[([^\]]+)\]", title)
+    return m.group(1).strip().lower() if m else ""
+
+def classify_kind(title: str, labels=()) -> str:
+    """Returns 'correction', 'letter', 'editorial' or 'article' (a full research/review article).
+
+    `labels` are publication types / feed tags. Items tagged as research
+    (trial, meta-analysis, ...) are always 'article' unless the title itself
+    marks them as a correction, letter or editorial.
+    """
+    t = title.lower().strip()
+    section = _section_label(title)
+    tags = {l.strip().lower() for l in labels if l}
+    if any(rt in tag for tag in tags for rt in RESEARCH_PUB_TYPES):
+        tags = {tag for tag in tags if tag in CORRECTION_LABELS}
+        generic_letter = set()
+    else:
+        generic_letter = tags & GENERIC_LETTER_LABELS
+    found = tags | {section}
+    if found & CORRECTION_LABELS or t.startswith(
+            ("correction to", "correction:", "erratum", "corrigendum")):
+        return "correction"
+    if found & LETTER_LABELS or generic_letter or section in GENERIC_LETTER_LABELS \
+            or re.search(r"(—|–|-|:)\s*reply\s*$", t) \
+            or t.startswith(("in reply", "reply to", "letter:", "re: ")):
+        return "letter"
+    if found & EDITORIAL_LABELS or t.startswith("editorial:"):
+        return "editorial"
+    return "article"
+
 # ─── PubMed ───────────────────────────────────────────────────────────────────
 import xml.etree.ElementTree as ET
 
@@ -348,6 +404,8 @@ def fetch_pubmed(days_back: int, max_ids: int = 500) -> list:
                 month    = _xml_text(art, ".//PubDate/Month")
                 pub_date = f"{year} {month}".strip()
 
+                pub_types = [(pt.text or "") for pt in art.findall(".//PublicationType")]
+
                 uid = f"pmid_{pmid}"
                 full_text = title + " " + abstract
                 disease   = classify_disease(full_text)
@@ -360,6 +418,7 @@ def fetch_pubmed(days_back: int, max_ids: int = 500) -> list:
                     "journal":     journal,
                     "pub_date":    pub_date,
                     "type":        classify_type(full_text, "pubmed"),
+                    "kind":        classify_kind(title, pub_types),
                     "disease":     disease,
                     "category":    classify_category(disease),
                     "source":      "pubmed",
@@ -404,6 +463,7 @@ def fetch_fda(days_back: int) -> list:
                 "journal":     "FDA",
                 "pub_date":    published.strftime("%Y %b"),
                 "type":        "fda",
+                "kind":        "article",
                 "disease":     disease,
                 "category":    classify_category(disease),
                 "source":      "fda",
@@ -491,6 +551,7 @@ def fetch_rss(days_back: int) -> list:
                     "journal":     journal_name,
                     "pub_date":    published.strftime("%Y %b"),
                     "type":        classify_type(title + " " + summary, "rss"),
+                    "kind":        classify_kind(title, [tg.get("term", "") for tg in entry.get("tags", [])]),
                     "disease":     disease,
                     "category":    classify_category(disease),
                     "source":      "rss",
@@ -634,15 +695,23 @@ def run_pipeline(args):
     EXCLUDE_TITLE_EXACT = [
         "correspondence", "letter to the editor", "letters to the editor",
         "in reply", "reply to", "author's reply", "authors' reply",
-        "to the editor", "erratum", "correction to", "retraction notice",
+        "to the editor", "retraction notice",
         "expression of concern",
     ]
     # These must appear in the title only (not abstract) to avoid false positives
     EXCLUDE_TITLE_STARTS = [
         "re: ", "reply: ", "letter: ",
     ]
+    # Corrections/errata are kept (listed last on the dashboard); retractions are not
+    EXCLUDE_SECTION_LABELS = {"retraction", "retractions"}
     def is_excluded(a):
         title = a.get("title", "").lower().strip()
+        # Letters, correspondence and replies (see classify_kind)
+        if a.get("kind") == "letter":
+            return True
+        # Lancet-style "[Retraction] ..." titles
+        if _section_label(title) in EXCLUDE_SECTION_LABELS:
+            return True
         # Exact title matches
         if any(title == kw or title.startswith(kw + ":") for kw in EXCLUDE_TITLE_EXACT):
             return True
@@ -658,7 +727,7 @@ def run_pipeline(args):
     new_articles = [a for a in all_articles if not is_excluded(a)]
     excluded = len(all_articles) - len(new_articles)
     if excluded:
-        log.info("Excluded %d correspondence/letters/corrections", excluded)
+        log.info("Excluded %d correspondence/letters/retractions", excluded)
     log.info("Articles to process: %d", len(new_articles))
 
     # ── Altmetric scoring ──
