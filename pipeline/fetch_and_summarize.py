@@ -14,6 +14,7 @@ import re
 import math
 import time
 import hashlib
+import hmac
 import logging
 import argparse
 from datetime import datetime, timedelta, date
@@ -36,7 +37,9 @@ OUTPUT_DIR     = Path(os.environ.get("OUTPUT_DIR", "../dashboard"))
 CACHE_DIR      = Path(os.environ.get("CACHE_DIR", ".cache"))
 LOOKBACK_DAYS  = int(os.environ.get("LOOKBACK_DAYS", "7"))
 MAX_ARTICLES   = int(os.environ.get("MAX_ARTICLES", "1000"))
-ALTMETRIC_API_KEY = os.environ.get("ALTMETRIC_API_KEY", "")
+ALTMETRIC_API_KEY = os.environ.get("ALTMETRIC_API_KEY", "").strip()
+# Explorer API accounts get a key AND a secret; Details Page API accounts get a key only.
+ALTMETRIC_API_SECRET = os.environ.get("ALTMETRIC_API_SECRET", "").strip()
 
 CACHE_DIR.mkdir(exist_ok=True)
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -690,8 +693,117 @@ def fetch_altmetric_score(pmid: str, status: dict = None) -> dict:
             log.warning("Altmetric request failed for PMID %s: %s", pmid, e)
         return dict(NO_ALTMETRIC)
 
+# ─── Altmetric Explorer API (key + secret) ────────────────────────────────────
+# Docs: https://docs.altmetric.com/explorer-api/getting-started/
+EXPLORER_BASE = "https://www.altmetric.com/explorer/api"
+
+def _hmac_sha1(secret: str, message: str) -> str:
+    return hmac.new(secret.encode("utf-8"), message.encode("utf-8"), "sha1").hexdigest()
+
+def _explorer_error(resp) -> str:
+    try:
+        errs = resp.json().get("errors") or []
+        if errs:
+            return "; ".join(f"{e.get('code')}: {e.get('detail') or e.get('title')}" for e in errs)
+    except ValueError:
+        pass
+    return f"HTTP {resp.status_code}: {resp.text[:200]}"
+
+def fetch_altmetric_explorer(articles: list) -> list:
+    """Altmetric scores via the Explorer API: one identifier list of all PMIDs,
+    then the research outputs for that list, 100 per page."""
+    for a in articles:
+        a.update(NO_ALTMETRIC)
+    pmids = sorted({a["pmid"] for a in articles if a.get("pmid")})
+    if not pmids:
+        return articles
+    log.info("Fetching Altmetric scores (Explorer API) for %d PMIDs…", len(pmids))
+    ua = {"User-Agent": "OncoPulse/1.0 (oncology literature dashboard)"}
+
+    # 1. Identifier list (digest = HMAC-SHA1 of the raw body, secret without hyphens)
+    identifiers = "\n".join(pmids[:25000])
+    try:
+        r = requests.post(f"{EXPLORER_BASE}/identifier_lists", headers=ua, timeout=60, data={
+            "key": ALTMETRIC_API_KEY,
+            "digest": _hmac_sha1(ALTMETRIC_API_SECRET.replace("-", ""), identifiers),
+            "identifiers": identifiers,
+        })
+    except Exception as e:
+        log.warning("  Altmetric identifier list request failed: %s", e)
+        return articles
+    if r.status_code >= 300:
+        log.warning("  Altmetric identifier list rejected: %s", _explorer_error(r))
+        return articles
+    data = r.json().get("data") or {}
+    list_id = data.get("id")
+    log.info("  Identifier list %s (recognised: %s)", list_id, data.get("counts"))
+    if not list_id:
+        return articles
+
+    # 2. Research outputs for the list (digest = filters sorted, joined by "|")
+    filters = {"identifier_list_id": list_id, "scope": "all"}
+    message = "|".join(f"{k}|{v}" for k, v in sorted(filters.items()))
+    params = {"key": ALTMETRIC_API_KEY, "digest": _hmac_sha1(ALTMETRIC_API_SECRET, message),
+              "page[size]": 100, "page[number]": 1}
+    params.update({f"filter[{k}]": v for k, v in filters.items()})
+
+    by_pmid = {}
+    for a in articles:
+        if a.get("pmid"):
+            by_pmid.setdefault(a["pmid"], []).append(a)
+    pmid_set = set(by_pmid)
+    matched, outputs, page = 0, 0, 1
+    while True:
+        try:
+            r = requests.get(f"{EXPLORER_BASE}/research_outputs", params=params, headers=ua, timeout=60)
+        except Exception as e:
+            log.warning("  Altmetric research outputs request failed (page %d): %s", page, e)
+            break
+        if r.status_code >= 300:
+            log.warning("  Altmetric research outputs rejected (page %d): %s", page, _explorer_error(r))
+            break
+        body = r.json()
+        for item in body.get("data") or []:
+            outputs += 1
+            attrs = item.get("attributes") or {}
+            # Identifiers come as lists per type ("pubmed-ids", "dois", ...): match any value
+            ids = set()
+            for v in (attrs.get("identifiers") or {}).values():
+                ids.update(str(x) for x in (v if isinstance(v, list) else [v]))
+            hits = ids & pmid_set
+            if not hits:
+                continue
+            score = attrs.get("altmetric-score") or 0
+            mentions = attrs.get("mentions") or {}
+            for pmid in hits:
+                for a in by_pmid[pmid]:
+                    matched += 1
+                    a.update({
+                        "altmetric_score": score,
+                        "altmetric_id":    item.get("id"),
+                        "altmetric_url":   f"https://www.altmetric.com/details/{item.get('id')}",
+                        "cited_by_news":   mentions.get("msm", 0),
+                        "cited_by_twitter": mentions.get("tweet", 0),
+                    })
+        total_pages = ((body.get("meta") or {}).get("response") or {}).get("total-pages") or 1
+        if page >= total_pages or not body.get("data"):
+            break
+        page += 1
+        params["page[number]"] = page
+        time.sleep(0.6)  # Altmetric asks for no more than 2 requests per second
+
+    log.info("  Altmetric (Explorer): %d research outputs returned, %d of %d articles matched",
+             outputs, matched, sum(len(v) for v in by_pmid.values()))
+    return articles
+
 def fetch_altmetric_batch(articles: list) -> list:
-    """Fetch Altmetric scores for all articles with PMIDs. Rate-limited to 1 req/sec."""
+    """Fetch Altmetric scores for all articles with PMIDs.
+
+    Uses the Explorer API when ALTMETRIC_API_SECRET is set (key + secret),
+    otherwise the Details Page API (key only), rate-limited to 1 req/sec.
+    """
+    if ALTMETRIC_API_KEY and ALTMETRIC_API_SECRET:
+        return fetch_altmetric_explorer(articles)
     pmid_articles = [a for a in articles if a.get("pmid")]
     log.info("Fetching Altmetric scores for %d articles with PMIDs%s…", len(pmid_articles),
              "" if ALTMETRIC_API_KEY else " (no ALTMETRIC_API_KEY set)")
