@@ -253,7 +253,7 @@ def classify_type(text: str, source: str) -> str:
     return "phase3"  # default for clinical trials
 
 # Article kind — used by the dashboard to list full articles first,
-# then editorials/commentary, then letters/correspondence.
+# then editorials/commentary, then letters/correspondence, then corrections.
 EDITORIAL_LABELS = {
     "editorial", "editorials", "comment", "comments", "commentary",
     "perspective", "perspectives", "viewpoint", "opinion", "invited commentary",
@@ -263,6 +263,10 @@ LETTER_LABELS = {
     "correspondence", "letter", "letters", "letter to the editor",
     "letters to the editor", "reply", "in reply", "comment & response",
 }
+CORRECTION_LABELS = {
+    "correction", "corrections", "erratum", "errata", "corrigendum",
+    "published erratum",
+}
 
 def _section_label(title: str) -> str:
     """Section label from a leading '[Label]' in the title (Lancet-style feeds)."""
@@ -270,9 +274,12 @@ def _section_label(title: str) -> str:
     return m.group(1).strip().lower() if m else ""
 
 def classify_kind(title: str, labels=()) -> str:
-    """Returns 'letter', 'editorial' or 'article' (a full research/review article)."""
+    """Returns 'correction', 'letter', 'editorial' or 'article' (a full research/review article)."""
     t = title.lower().strip()
     found = {l.strip().lower() for l in labels if l} | {_section_label(title)}
+    if found & CORRECTION_LABELS or t.startswith(
+            ("correction to", "correction:", "erratum", "corrigendum")):
+        return "correction"
     if found & LETTER_LABELS or re.search(r"(—|–|-|:)\s*reply\s*$", t) \
             or t.startswith(("in reply", "reply to", "letter:", "re: ")):
         return "letter"
@@ -668,20 +675,21 @@ def run_pipeline(args):
     EXCLUDE_TITLE_EXACT = [
         "correspondence", "letter to the editor", "letters to the editor",
         "in reply", "reply to", "author's reply", "authors' reply",
-        "to the editor", "erratum", "correction to", "retraction notice",
+        "to the editor", "retraction notice",
         "expression of concern",
     ]
     # These must appear in the title only (not abstract) to avoid false positives
     EXCLUDE_TITLE_STARTS = [
         "re: ", "reply: ", "letter: ",
     ]
-    EXCLUDE_SECTION_LABELS = {"corrections", "correction", "erratum", "retraction"}
+    # Corrections/errata are kept (listed last on the dashboard); retractions are not
+    EXCLUDE_SECTION_LABELS = {"retraction", "retractions"}
     def is_excluded(a):
         title = a.get("title", "").lower().strip()
         # Letters, correspondence and replies (see classify_kind)
         if a.get("kind") == "letter":
             return True
-        # Lancet-style "[Corrections] ..." titles
+        # Lancet-style "[Retraction] ..." titles
         if _section_label(title) in EXCLUDE_SECTION_LABELS:
             return True
         # Exact title matches
@@ -699,7 +707,7 @@ def run_pipeline(args):
     new_articles = [a for a in all_articles if not is_excluded(a)]
     excluded = len(all_articles) - len(new_articles)
     if excluded:
-        log.info("Excluded %d correspondence/letters/corrections", excluded)
+        log.info("Excluded %d correspondence/letters/retractions", excluded)
     log.info("Articles to process: %d", len(new_articles))
 
     # ── Altmetric scoring ──
