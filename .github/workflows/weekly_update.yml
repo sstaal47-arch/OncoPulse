@@ -46,6 +46,7 @@ jobs:
           LOOKBACK_DAYS:  ${{ github.event.inputs.days || '7' }}
           MAX_ARTICLES:   ${{ github.event.inputs.max_articles || '1000' }}
           ALTMETRIC_API_KEY: ${{ secrets.ALTMETRIC_API_KEY }}
+          ALTMETRIC_API_SECRET: ${{ secrets.ALTMETRIC_API_SECRET }}
         run: |
           SKIP_ALT=""
           if [ "${{ github.event.inputs.skip_altmetric }}" = "true" ]; then
