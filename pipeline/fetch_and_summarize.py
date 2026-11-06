@@ -68,7 +68,7 @@ NCCN_DISEASE_KEYWORDS = [
                          "sll", "cll/sll"]),
     # ── Hematologic: Acute Leukemias ──
     ("aml",             ["acute myeloid leukemia", "aml", "acute myelogenous"]),
-    ("all",             ["acute lymphoblastic leukemia", "acute lymphocytic leukemia", "all ",
+    ("all",             ["acute lymphoblastic leukemia", "acute lymphocytic leukemia", "all",
                          "b-all", "t-all", "philadelphia chromosome-positive all"]),
     ("apl",             ["acute promyelocytic leukemia", "apl", "pml-rara"]),
     # ── Hematologic: Chronic/Other Leukemias ──
@@ -108,7 +108,8 @@ NCCN_DISEASE_KEYWORDS = [
     ("breast_general",  ["breast cancer", "breast carcinoma", "breast tumor", "mammary"]),
     # ── GI Tumors ──
     ("colorectal",      ["colorectal cancer", "colon cancer", "rectal cancer", "colorectal carcinoma",
-                         "crc", "mismatch repair", "microsatellite instability", "msi-h colorectal"]),
+                         "crc", "mismatch repair", "microsatellite instability", "msi-h colorectal",
+                         "colorectal"]),
     ("gastric",         ["gastric cancer", "stomach cancer", "gastric adenocarcinoma",
                          "gastroesophageal junction", "gej"]),
     ("esophageal",      ["esophageal cancer", "esophageal carcinoma", "esophageal adenocarcinoma",
@@ -154,7 +155,8 @@ NCCN_DISEASE_KEYWORDS = [
     ("thymoma",         ["thymoma", "thymic carcinoma", "thymic epithelial"]),
     # ── Head & Neck ──
     ("hnscc",           ["head and neck squamous", "hnscc", "oropharyngeal cancer",
-                         "oral cavity cancer", "laryngeal cancer", "hypopharyngeal"]),
+                         "oral cavity cancer", "laryngeal cancer", "hypopharyngeal",
+                         "oropharyngeal", "head and neck cancer", "head and neck carcinoma"]),
     ("nasopharyngeal",  ["nasopharyngeal carcinoma", "npc", "nasopharyngeal cancer"]),
     ("salivary",        ["salivary gland cancer", "parotid cancer", "adenoid cystic"]),
     ("thyroid",         ["thyroid cancer", "papillary thyroid", "follicular thyroid",
@@ -177,7 +179,7 @@ NCCN_DISEASE_KEYWORDS = [
     ("sarcoma_general", ["sarcoma", "soft tissue sarcoma", "undifferentiated pleomorphic sarcoma",
                          "angiosarcoma", "synovial sarcoma", "solitary fibrous tumor"]),
     # ── Endocrine ──
-    ("thyroid_general", ["thyroid"]),  # catch-all after specific thyroid subtypes above
+    ("thyroid",         ["thyroid"]),  # catch-all after specific thyroid subtypes above
     # ── Eye ──
     ("uveal_melanoma",  ["uveal melanoma", "choroidal melanoma", "ocular melanoma"]),
     ("retinoblastoma",  ["retinoblastoma"]),
@@ -210,7 +212,7 @@ BROAD_PARENT = {
     "uterine_sarcoma": "gynecologic", "vulvar": "gynecologic", "gestational": "gynecologic",
     "nsclc": "lung", "sclc": "lung", "mesothelioma": "lung", "thymoma": "lung",
     "hnscc": "head_neck", "nasopharyngeal": "head_neck", "salivary": "head_neck",
-    "thyroid": "head_neck", "thyroid_general": "head_neck",
+    "thyroid": "head_neck",
     "melanoma": "skin", "cscc": "skin", "merkel": "skin", "bcc": "skin",
     "osteosarcoma": "sarcoma", "ewing": "sarcoma", "gist": "sarcoma",
     "rhabdomyosarcoma": "sarcoma", "leiomyosarcoma": "sarcoma",
@@ -227,13 +229,29 @@ HEME_DISEASES = {
     "amyloidosis", "mgus", "mastocytosis",
 }
 
+def _keyword_pattern(kw: str) -> "re.Pattern":
+    """Whole-word pattern for a disease keyword (plural 's'/'es' allowed).
+
+    Short all-letter abbreviations (ALL, NET, CUP, GIST, PSA, ...) are matched
+    case-sensitively in capitals, so ordinary words such as "all", "net" or
+    "the gist" don't count. Everything else is case-insensitive.
+    """
+    kw = kw.strip()
+    body = r"(?<![A-Za-z0-9])" + re.escape(kw) + r"(?:s|es)?(?![A-Za-z0-9])"
+    if kw.isalpha() and len(kw) <= 5:
+        return re.compile(body.replace(re.escape(kw), re.escape(kw.upper()), 1))
+    return re.compile(body, re.IGNORECASE)
+
+DISEASE_PATTERNS = [
+    (disease_id, [_keyword_pattern(kw) for kw in keywords])
+    for disease_id, keywords in NCCN_DISEASE_KEYWORDS
+    if disease_id != "other"
+]
+
 def classify_disease(text: str) -> str:
     """Returns the most specific NCCN disease ID matching the text."""
-    t = text.lower()
-    for disease_id, keywords in NCCN_DISEASE_KEYWORDS:
-        if disease_id == "other":
-            continue
-        if any(kw in t for kw in keywords):
+    for disease_id, patterns in DISEASE_PATTERNS:
+        if any(p.search(text) for p in patterns):
             return disease_id
     return "other"
 
@@ -589,6 +607,32 @@ JOURNAL_TIER = {
     "Eur J Cancer": 3, "Blood Cancer J": 3, "FDA": 1,
 }
 
+# PubMed gives full journal titles; map them to the short names used above.
+JOURNAL_ALIASES = {
+    "new england journal of medicine": "NEJM", "lancet": "Lancet", "jama": "JAMA",
+    "bmj": "BMJ", "nejm evidence": "NEJM Evidence", "lancet oncology": "Lancet Oncol",
+    "journal of clinical oncology": "JCO", "blood": "Blood", "cancer cell": "Cancer Cell",
+    "nature cancer": "Nature Cancer", "jama oncology": "JAMA Oncol",
+    "annals of oncology": "Ann Oncol", "cancer discovery": "Cancer Discov",
+    "clinical cancer research": "Clin Cancer Res",
+    "journal of hematology and oncology": "J Hematol Oncol", "leukemia": "Leukemia",
+    "british journal of haematology": "BJH", "european journal of cancer": "Eur J Cancer",
+    "blood cancer journal": "Blood Cancer J",
+}
+
+def normalize_journal(name: str) -> str:
+    """Short journal name for a PubMed/RSS journal title (unchanged if unknown)."""
+    if name in JOURNAL_TIER:
+        return name
+    key = name.lower()
+    key = re.sub(r"\([^)]*\)", " ", key)      # "(London, England)"
+    key = re.sub(r"\s*:.*$", "", key)          # " : official journal of ..."
+    key = re.sub(r"^the\s+", "", key)
+    key = key.replace("&", " and ")
+    key = re.sub(r"[.,]", " ", key)
+    key = re.sub(r"\s+", " ", key).strip()
+    return JOURNAL_ALIASES.get(key, name)
+
 STUDY_TYPE_SCORE = {
     "fda":    100,
     "phase3": 80,
@@ -661,7 +705,7 @@ def compute_composite_score(a: dict) -> float:
     type_score = STUDY_TYPE_SCORE.get(a.get("type", "review"), 30)
 
     # Journal tier (1=best)
-    tier = JOURNAL_TIER.get(a.get("journal", ""), 3)
+    tier = JOURNAL_TIER.get(normalize_journal(a.get("journal", "")), 3)
     journal_score = {1: 40, 2: 25, 3: 10}.get(tier, 10)
 
     return round(alt_norm + type_score + journal_score, 2)

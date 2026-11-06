@@ -1311,9 +1311,15 @@ function buildStats(stats) {
   `;
 }
 
+// Broad group ('lymphoma', 'gi', ...) for an article's specific NCCN disease ID
+function broadDisease(d) {
+  const g = BROAD_GROUPS.find(g => g.ids.includes(d));
+  return g ? g.id : 'other';
+}
+
 function buildDiseaseTabs(articles) {
   const counts = {};
-  articles.forEach(a => { counts[a.disease] = (counts[a.disease]||0)+1; });
+  articles.forEach(a => { const g = broadDisease(a.disease); counts[g] = (counts[g]||0)+1; });
   const LABELS = {
     lymphoma:'Lymphoma', leukemia:'Leukemia', myeloma:'Myeloma',
     lung:'Lung', breast:'Breast', gi:'GI', gu:'GU', cns:'CNS',
@@ -1419,9 +1425,10 @@ function applyFilters() {
   const sort = document.getElementById('sortSelect')?.value||'date';
   let filtered = ARTICLES.filter(a => {
     const mt = currentTypeFilter==='all' || a.type===currentTypeFilter;
-    const md = currentDiseaseFilter==='all' || a.disease===currentDiseaseFilter;
+    const md = currentDiseaseFilter==='all' || broadDisease(a.disease)===currentDiseaseFilter;
     const ms = !q || a.title.toLowerCase().includes(q) || (a.abstract||'').toLowerCase().includes(q) || (a.journal||'').toLowerCase().includes(q);
-    const sd = s.diseases.includes(a.disease) || s.diseases.includes('other');
+    // Unknown/unlisted disease IDs fall under "Other"
+    const sd = s.diseases.includes(ALL_LEAF_IDS.includes(a.disease) ? a.disease : 'other');
     const sj = journalVisible(a, s);
     return mt && md && ms && sd && sj;
   });
@@ -1809,9 +1816,14 @@ function loadSettings() {
     let journals = s.journals || defaultJournalSelection();
     // Settings saved before the "Other journals" chip existed: keep unlisted journals visible
     if (!s.v) journals = [...journals, OTHER_JOURNALS_ID];
+    // Before v3 the disease filter had no effect (and Broad mode saved lists without
+    // the blood cancers), so older saved disease lists start again with everything on.
+    const diseases = (s.v >= 3 && Array.isArray(s.diseases))
+      ? s.diseases.filter(id => ALL_LEAF_IDS.includes(id))
+      : [...ALL_LEAF_IDS];
     return {
       granularity:       s.granularity || 'broad',
-      diseases:          s.diseases    || [...ALL_LEAF_IDS],
+      diseases:          diseases.length ? diseases : [...ALL_LEAF_IDS],
       journals,
       specialistAdded:   Array.isArray(s.specialistAdded)   ? s.specialistAdded   : [],
       specialistRemoved: Array.isArray(s.specialistRemoved) ? s.specialistRemoved : [],
@@ -1821,7 +1833,7 @@ function loadSettings() {
 }
 
 function saveSettings(s) {
-  try { localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...s, v: 2 })); } catch {}
+  try { localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...s, v: 3 })); } catch {}
 }
 
 function journalsHidden(s) {
@@ -1949,7 +1961,8 @@ function renderSettingsPanel() {
 function renderBroadDiseaseChips(s) {
   return `<div class="settings-chip-group" id="diseaseChipGroup">${
     BROAD_GROUPS.map(g => {
-      const allSelected = g.ids.every(id => s.diseases.includes(id));
+      // Only real (leaf) disease IDs count; group IDs like 'b_cell_lymphomas' are never saved
+      const allSelected = g.ids.filter(id => ALL_LEAF_IDS.includes(id)).every(id => s.diseases.includes(id));
       return `<button class="settings-chip ${g.cls} ${allSelected ? 'selected' : ''}"
         data-broad="${g.id}" data-ids="${g.ids.join(',')}"
         onclick="toggleBroadGroup(this)">${g.label}</button>`;
@@ -2192,6 +2205,7 @@ function applyAndSaveSettings() {
       diseases.push(btn.dataset.did);
     });
   }
+  diseases = diseases.filter(id => ALL_LEAF_IDS.includes(id));
   if (!diseases.length) diseases = [...ALL_LEAF_IDS];
 
   // Collect journals
