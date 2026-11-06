@@ -299,13 +299,56 @@ REVIEW_ABSTRACT_RE = re.compile(
     r"\bthis (?:article|perspective) (?:reviews|summari[sz]es|discusses)\b", re.IGNORECASE)
 RANDOMIZED_RE = re.compile(r"\brandomi[sz]ed\b|\brandomly (?:assigned|allocated)\b", re.IGNORECASE)
 
-def _phase(text: str):
-    """Highest phase in the first phase mention (phase 1/2 -> 2), or None."""
-    m = PHASE_RE.search(text or "")
-    if not m:
-        return None
-    nums = [_PHASE_NUM[g.lower()] for g in (m.group(1), m.group(3)) if g]
-    return max(nums)
+# Up to 10 words of trial name, "open-label", "randomized", NCT numbers before the noun
+# (never across a full stop)
+_UP_TO_10_WORDS = r"^[\s,:;\-–(]*(?:[\w\-–/()'’]+[\s,]+){0,10}?"
+_SINGULAR_STUDY_RE = re.compile(
+    _UP_TO_10_WORDS + r"(?:(?:trial|study|cohort|portion|part|expansion)\b|"
+    r"(?:was|were) (?:conducted|performed|initiated|carried out)\b)", re.IGNORECASE)
+_PLURAL_STUDY_RE = re.compile(_UP_TO_10_WORDS + r"(?:trials|studies|cohorts)\b", re.IGNORECASE)
+# "a multicentric pilot trial (phase II)"
+_STUDY_THEN_PHASE_RE = re.compile(r"\b(?:trial|study)\s*[(,]\s*$", re.IGNORECASE)
+# "prior phase 2 data", "a recent phase II trial", "compared with data from the phase 3 trial"
+_NOT_THIS_STUDY_BEFORE_RE = re.compile(
+    r"\b(?:prior|previous|previously|recent|earlier|larger|future|subsequent|ongoing|planned|"
+    r"other|several|multiple|compared (?:with|to)|data from|versus|vs\.?)\b[^.;]{0,30}$", re.IGNORECASE)
+# "a phase 3 trial has shown…", "a phase II study is warranted", "… trial as an example"
+_NOT_THIS_STUDY_AFTER_RE = re.compile(
+    r"^[\s,)]*(?:\([^)]*\)\s*)?(?:has|have|had)?\s*(?:shown|showed|demonstrated|reported|found|"
+    r"established|led to|is warranted|are warranted|is needed|as an example)\b", re.IGNORECASE)
+
+def _phase_of(m):
+    return max(_PHASE_NUM[g.lower()] for g in (m.group(1), m.group(3)) if g)
+
+def _phase(text: str, strict: bool = False):
+    """Phase of the study described, or None ("phase 1/2" -> 2).
+
+    Title (strict=False): any phase mention counts unless it names several
+    trials ("Phase III Trials Test…").
+    Abstract (strict=True): only a mention of one study — "the phase III
+    CheckMate 648 trial", "this phase II study" — counts; background ("a phase 3
+    trial has shown"), plural ("in phase III trials"), comparisons ("compared
+    with the phase 3 trial", "prior phase 2 data") and project stages
+    ("in phase 1, observers…") do not.
+    """
+    text = text or ""
+    for m in PHASE_RE.finditer(text):
+        after = text[m.end():m.end() + 120]
+        if _PLURAL_STUDY_RE.match(after) and not _SINGULAR_STUDY_RE.match(after):
+            continue
+        if not strict:
+            return _phase_of(m)
+        if _STUDY_THEN_PHASE_RE.search(text[max(0, m.start() - 12):m.start()]):
+            return _phase_of(m)
+        noun = _SINGULAR_STUDY_RE.match(after)
+        if not noun:
+            continue
+        if _NOT_THIS_STUDY_BEFORE_RE.search(text[max(0, m.start() - 45):m.start()]):
+            continue
+        if _NOT_THIS_STUDY_AFTER_RE.match(after[noun.end():]):
+            continue
+        return _phase_of(m)
+    return None
 
 def classify_type(title: str, abstract: str, source: str, kind: str = "article",
                   pub_types=()) -> str:
@@ -330,7 +373,7 @@ def classify_type(title: str, abstract: str, source: str, kind: str = "article",
     if phase is None:
         if REVIEW_ABSTRACT_RE.search(abstract or ""):
             return "review"
-        phase = _phase(abstract)
+        phase = _phase(abstract, strict=True)
     if phase:
         return {3: "phase3", 2: "phase2", 1: "phase1"}[phase]
     if "randomized controlled trial" in pts or RANDOMIZED_RE.search(f"{title} {abstract}"):
