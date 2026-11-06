@@ -260,9 +260,16 @@ EDITORIAL_LABELS = {
     "editor's note", "editors' note", "news", "obituary",
 }
 LETTER_LABELS = {
-    "correspondence", "letter", "letters", "letter to the editor",
-    "letters to the editor", "reply", "in reply", "comment & response",
+    "correspondence", "letter to the editor", "letters to the editor",
+    "reply", "in reply", "comment & response",
 }
+# "Letter" alone is ambiguous: Blood, Leukemia, BJH etc. publish peer-reviewed
+# research as letters, so a bare "Letter" tag only counts for non-research items.
+GENERIC_LETTER_LABELS = {"letter", "letters"}
+RESEARCH_PUB_TYPES = (
+    "clinical trial", "randomized controlled trial", "meta-analysis",
+    "systematic review", "multicenter study", "observational study",
+)
 CORRECTION_LABELS = {
     "correction", "corrections", "erratum", "errata", "corrigendum",
     "published erratum",
@@ -274,13 +281,26 @@ def _section_label(title: str) -> str:
     return m.group(1).strip().lower() if m else ""
 
 def classify_kind(title: str, labels=()) -> str:
-    """Returns 'correction', 'letter', 'editorial' or 'article' (a full research/review article)."""
+    """Returns 'correction', 'letter', 'editorial' or 'article' (a full research/review article).
+
+    `labels` are publication types / feed tags. Items tagged as research
+    (trial, meta-analysis, ...) are always 'article' unless the title itself
+    marks them as a correction, letter or editorial.
+    """
     t = title.lower().strip()
-    found = {l.strip().lower() for l in labels if l} | {_section_label(title)}
+    section = _section_label(title)
+    tags = {l.strip().lower() for l in labels if l}
+    if any(rt in tag for tag in tags for rt in RESEARCH_PUB_TYPES):
+        tags = {tag for tag in tags if tag in CORRECTION_LABELS}
+        generic_letter = set()
+    else:
+        generic_letter = tags & GENERIC_LETTER_LABELS
+    found = tags | {section}
     if found & CORRECTION_LABELS or t.startswith(
             ("correction to", "correction:", "erratum", "corrigendum")):
         return "correction"
-    if found & LETTER_LABELS or re.search(r"(—|–|-|:)\s*reply\s*$", t) \
+    if found & LETTER_LABELS or generic_letter or section in GENERIC_LETTER_LABELS \
+            or re.search(r"(—|–|-|:)\s*reply\s*$", t) \
             or t.startswith(("in reply", "reply to", "letter:", "re: ")):
         return "letter"
     if found & EDITORIAL_LABELS or t.startswith("editorial:"):
