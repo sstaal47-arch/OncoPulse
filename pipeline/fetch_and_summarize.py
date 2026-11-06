@@ -334,10 +334,36 @@ import xml.etree.ElementTree as ET
 
 PUBMED_BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 
+# An article counts as oncology if its TITLE names a cancer, a cancer treatment or a
+# cancer operation, or if Neoplasms is a major MeSH topic AND the abstract uses a
+# cancer word (the abstract check keeps out benign "neoplasms" such as PCOS cysts,
+# fibroids or Dupuytren's). A cancer word only in the abstract is not enough: that
+# let in e.g. diabetes or psoriasis trials that mention cancer in passing.
+ONCOLOGY_TITLE_TERMS = [
+    "cancer*", "oncolog*", "tumor*", "tumour*", "carcinoma*", "adenocarcinoma*",
+    "neoplas*", "malignan*", "metasta*", "lymphoma*", "leukemi*", "leukaemi*",
+    "myeloma*", "sarcoma*", "melanoma*", "glioblastoma*", "glioma*", "mesothelioma*",
+    "neuroblastoma*", "medulloblastoma*", "hepatoblastoma*", "retinoblastoma*",
+    "nephroblastoma*", "myelodysplastic", "myeloproliferative", "myelofibrosis",
+    "hodgkin*", "waldenstrom*", "macroglobulinemia", "mycosis fungoides",
+    "nsclc", "sclc", "hcc", "aml", "cll", "cml", "mds", "dlbcl", "gist",
+    "chemotherapy", "chemoradiotherapy", "chemoradiation", "radiotherapy",
+    "immunotherapy", "oncology",
+    # cancer operations and supportive care
+    "prostatectomy", "mastectomy", "cystectomy", "gastrectomy", "esophagectomy",
+    "oesophagectomy", "pancreatoduodenectomy", "pancreaticoduodenectomy",
+    "hepatectomy", "bcg", "neutropenia",
+]
+ONCOLOGY_ABSTRACT_TERMS = [
+    "cancer", "oncol*", "tumor*", "tumour*", "carcinoma*", "malignan*", "lymphoma*",
+    "leukemi*", "myeloma*", "sarcoma*", "melanoma*", "glioma*", "metasta*",
+]
+def _or(terms, field):
+    return " OR ".join(f'"{t}"[{field}]' if " " in t else f"{t}[{field}]" for t in terms)
+
 ONCOLOGY_QUERY = (
-    "(cancer[tiab] OR oncol*[tiab] OR tumor[tiab] OR carcinoma[tiab]"
-    " OR lymphoma[tiab] OR leukemia[tiab] OR myeloma[tiab] OR sarcoma[tiab]"
-    " OR melanoma[tiab] OR glioblastoma[tiab])"
+    f"(({_or(ONCOLOGY_TITLE_TERMS, 'ti')})"
+    f" OR (neoplasms[majr] AND ({_or(ONCOLOGY_ABSTRACT_TERMS, 'tiab')})))"
     " AND"
     " (randomized controlled trial[pt] OR clinical trial[pt] OR meta-analysis[pt]"
     " OR phase 2[tiab] OR phase 3[tiab] OR phase II[tiab] OR phase III[tiab])"
