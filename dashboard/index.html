@@ -1377,6 +1377,24 @@ function setDiseaseFilter(d, btn) {
   applyFilters();
 }
 
+// ─── Article kind (full article → editorial → letter) ─────────────────────────
+// Uses the pipeline's `kind` field; infers from the title for older data.json files.
+const KIND_ORDER = { article: 0, editorial: 1, letter: 2 };
+const EDITORIAL_LABELS = ['editorial','editorials','comment','comments','commentary','perspective','perspectives',
+  'viewpoint','opinion','invited commentary',"editor's note","editors' note",'news','obituary'];
+const LETTER_LABELS = ['correspondence','letter','letters','letter to the editor','letters to the editor',
+  'reply','in reply','comment & response'];
+function articleKind(a) {
+  if (a.kind && a.kind in KIND_ORDER) return a.kind;
+  const t = (a.title||'').toLowerCase().trim();
+  const m = t.match(/^\s*\[([^\]]+)\]/);
+  const label = m ? m[1].trim() : '';
+  if (LETTER_LABELS.includes(label) || /(—|–|-|:)\s*reply\s*$/.test(t) ||
+      /^(in reply|reply to|letter:|re: )/.test(t)) return 'letter';
+  if (EDITORIAL_LABELS.includes(label) || t.startsWith('editorial:')) return 'editorial';
+  return 'article';
+}
+
 function applyFilters() {
   const s = loadSettings();
   const q = (document.getElementById('searchInput')?.value||'').toLowerCase();
@@ -1389,10 +1407,13 @@ function applyFilters() {
     const sj = s.journals.length === 0 || s.journals.includes(a.journal);
     return mt && md && ms && sd && sj;
   });
-  if (sort==='importance') filtered.sort((a,b)=>(b.importance_score||0)-(a.importance_score||0));
-  else if (sort==='altmetric') filtered.sort((a,b)=>(b.altmetric_score||0)-(a.altmetric_score||0));
-  else if (sort==='date') filtered.sort((a,b)=>(b.pub_date||'').localeCompare(a.pub_date||''));
-  else filtered.sort((a,b)=>(a.title||'').localeCompare(b.title||''));
+  let cmp;
+  if (sort==='importance') cmp = (a,b)=>(b.importance_score||0)-(a.importance_score||0);
+  else if (sort==='altmetric') cmp = (a,b)=>(b.altmetric_score||0)-(a.altmetric_score||0);
+  else if (sort==='date') cmp = (a,b)=>(b.pub_date||'').localeCompare(a.pub_date||'');
+  else cmp = (a,b)=>(a.title||'').localeCompare(b.title||'');
+  // Full articles first, then editorials/commentary, then letters; chosen sort within each group
+  filtered.sort((a,b)=>(KIND_ORDER[articleKind(a)]-KIND_ORDER[articleKind(b)]) || cmp(a,b));
   filtered = filtered.slice(0, s.maxDisplay);
   renderArticles(filtered);
   document.getElementById('countNum').textContent = filtered.length;
