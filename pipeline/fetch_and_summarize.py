@@ -804,6 +804,9 @@ def fetch_altmetric_batch(articles: list) -> list:
     """
     if ALTMETRIC_API_KEY and ALTMETRIC_API_SECRET:
         return fetch_altmetric_explorer(articles)
+    if ALTMETRIC_API_KEY:
+        log.info("ALTMETRIC_API_SECRET not set — using the Details Page API (key only). "
+                 "Explorer API accounts need both ALTMETRIC_API_KEY and ALTMETRIC_API_SECRET.")
     pmid_articles = [a for a in articles if a.get("pmid")]
     log.info("Fetching Altmetric scores for %d articles with PMIDs%s…", len(pmid_articles),
              "" if ALTMETRIC_API_KEY else " (no ALTMETRIC_API_KEY set)")
