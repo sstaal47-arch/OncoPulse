@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T16:50:47.364740Z",
+  "generated_at": "2026-11-08T16:57:35.889383Z",
   "week_label": "Nov 1–Nov 8, 2026",
   "lookback_days": 7,
   "stats": {
@@ -2271,6 +2271,28 @@
       "rank": 106
     },
     {
+      "uid": "pmid_42502080",
+      "pmid": "42502080",
+      "title": "Romiplostim for chemotherapy induced thrombocytopenia in pediatric cancers.",
+      "abstract": "BACKGROUND: Chemotherapy-induced-thrombocytopenia (CIT) compromises cancer care, but data on its management in children is scarce. Romiplostim, a thrombopoietin-receptor-agonist, has shown efficacy in adults with CIT, though its role in paediatric patients remains undefined. METHODS: We conducted an investigator-initiated, open-label, randomized-controlled-trial at a tertiary center in India to evaluate prophylactic romiplostim for prevention of CIT in children aged 1-14 years with acute myeloid leukemia (AML), non-Hodgkin's lymphoma (NHL), and solid-tumors receiving myelosuppressive chemotherapy. Patients were randomly assigned (1:1) to receive romiplostim (3 μg/kg-subcutaneously) or standard-care. The primary outcome was platelet recovery (≥100 × 10⁹/L and transfusion-free for 72 hours) within 3-weeks. Secondary outcomes included bleeding, transfusion requirements, chemotherapy delays, and immature platelet fraction percentagecIPF%) trends. RESULTS: From March 2023 to October 2024, 93 patients (median age, 3 years; interquartile range [IQR], 2-5) were randomized (47 intervention, 46 control). Platelet recovery occurred in 91.3% and 88.1%, respectively (risk difference, 3.2 percentage points; 95% confidence interval [CI], -9.5 to 15.9; P = 0.73). Clinically significant bleeding (≥WHO grade 2) occurred in none of 46 patients in romiplostim group and 6 of 43 (14%) in control group (absolute risk difference,-14 percentage points; 95% CI, -27 to -2; P = 0.01). Median platelet transfusion volume was lower with romiplostim (19.3 vs. 29.6 mL/kg; median difference, -10.3 mL/kg; 95% CI, -21.5 to 0.9; P = 0.06, rank-biserial correlation= 0.35). Romiplostim significantly increased IPF% on day-16 from baseline (258% vs. 47.7%, p = 0.016, Cohen's h = 2.41). No thrombotic events occurred. CONCLUSIONS: Prophylactic romiplostim didn't hasten platelet recovery in pediatric patients receiving myelosuppressive chemotherapy but was associated with reduced bleeding and had lower transfusion requirements. There was a significant relative immature platelet fraction percentage (IPF)% increment on day 16 in the romiplostim arm in comparison to the control arm, reinforcing the biological plausibility of romiplostim's effect on megakaryocyte stimulation. TRIAL REGISTRATION: Clinical Trials Registry of India: CTRI/2023/02/049906.",
+      "journal": "British journal of cancer",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "randomized",
+      "disease": "hodgkin",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42502080/",
+      "altmetric_score": 1,
+      "altmetric_id": 202586619,
+      "altmetric_url": "https://www.altmetric.com/details/202586619",
+      "cited_by_news": 0,
+      "cited_by_twitter": 1,
+      "importance_score": 85.4,
+      "rank": 107
+    },
+    {
       "uid": "pmid_42801445",
       "pmid": "42801445",
       "title": "Mindful eating as a supportive intervention for breast cancer survivors: a pilot randomized controlled trial.",
@@ -2290,7 +2312,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 1,
       "importance_score": 85.4,
-      "rank": 107
+      "rank": 108
     },
     {
       "uid": "pmid_40266659",
@@ -2312,7 +2334,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 1,
       "importance_score": 85.4,
-      "rank": 108
+      "rank": 109
     },
     {
       "uid": "pmid_42691846",
@@ -2334,7 +2356,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 1,
       "importance_score": 85.4,
-      "rank": 109
+      "rank": 110
     },
     {
       "uid": "pmid_42784848",
@@ -2355,28 +2377,6 @@
       "altmetric_url": "https://www.altmetric.com/details/205489457",
       "cited_by_news": 0,
       "cited_by_twitter": 2,
-      "importance_score": 85.4,
-      "rank": 110
-    },
-    {
-      "uid": "pmid_42502080",
-      "pmid": "42502080",
-      "title": "Romiplostim for chemotherapy induced thrombocytopenia in pediatric cancers.",
-      "abstract": "BACKGROUND: Chemotherapy-induced-thrombocytopenia (CIT) compromises cancer care, but data on its management in children is scarce. Romiplostim, a thrombopoietin-receptor-agonist, has shown efficacy in adults with CIT, though its role in paediatric patients remains undefined. METHODS: We conducted an investigator-initiated, open-label, randomized-controlled-trial at a tertiary center in India to evaluate prophylactic romiplostim for prevention of CIT in children aged 1-14 years with acute myeloid leukemia (AML), non-Hodgkin's lymphoma (NHL), and solid-tumors receiving myelosuppressive chemotherapy. Patients were randomly assigned (1:1) to receive romiplostim (3 μg/kg-subcutaneously) or standard-care. The primary outcome was platelet recovery (≥100 × 10⁹/L and transfusion-free for 72 hours) within 3-weeks. Secondary outcomes included bleeding, transfusion requirements, chemotherapy delays, and immature platelet fraction percentagecIPF%) trends. RESULTS: From March 2023 to October 2024, 93 patients (median age, 3 years; interquartile range [IQR], 2-5) were randomized (47 intervention, 46 control). Platelet recovery occurred in 91.3% and 88.1%, respectively (risk difference, 3.2 percentage points; 95% confidence interval [CI], -9.5 to 15.9; P = 0.73). Clinically significant bleeding (≥WHO grade 2) occurred in none of 46 patients in romiplostim group and 6 of 43 (14%) in control group (absolute risk difference,-14 percentage points; 95% CI, -27 to -2; P = 0.01). Median platelet transfusion volume was lower with romiplostim (19.3 vs. 29.6 mL/kg; median difference, -10.3 mL/kg; 95% CI, -21.5 to 0.9; P = 0.06, rank-biserial correlation= 0.35). Romiplostim significantly increased IPF% on day-16 from baseline (258% vs. 47.7%, p = 0.016, Cohen's h = 2.41). No thrombotic events occurred. CONCLUSIONS: Prophylactic romiplostim didn't hasten platelet recovery in pediatric patients receiving myelosuppressive chemotherapy but was associated with reduced bleeding and had lower transfusion requirements. There was a significant relative immature platelet fraction percentage (IPF)% increment on day 16 in the romiplostim arm in comparison to the control arm, reinforcing the biological plausibility of romiplostim's effect on megakaryocyte stimulation. TRIAL REGISTRATION: Clinical Trials Registry of India: CTRI/2023/02/049906.",
-      "journal": "British journal of cancer",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "randomized",
-      "disease": "hodgkin",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42502080/",
-      "altmetric_score": 1,
-      "altmetric_id": 202586619,
-      "altmetric_url": "https://www.altmetric.com/details/202586619",
-      "cited_by_news": 0,
-      "cited_by_twitter": 1,
       "importance_score": 85.4,
       "rank": 111
     },
@@ -2447,28 +2447,6 @@
       "rank": 114
     },
     {
-      "uid": "pmid_42805452",
-      "pmid": "42805452",
-      "title": "Design of the Comprehensive Outcomes for After Cancer Health (COACH) Trial: a randomized, wait-list control digital health coaching intervention for cancer survivors.",
-      "abstract": "BACKGROUND: There are an estimated 18.6 million cancer survivors representing approximately 5.4% of the United States (U.S.) population, projected to exceed 26 million by 2040. Due to advances in therapy, individuals with cancer are experiencing increased overall survival that is often accompanied by maintenance therapy and the management of treatment-related sequelae that can diminish overall quality-of-life (QOL) and well-being. An interprofessional team in partnership with Pack Health (now operating under Quest Diagnostics), designed a 6-month digital health coaching (DHC) intervention to improve health outcomes for cancer survivors, defined in this study as within one year of completion of primary therapy, including those with metastatic disease. METHODS: Up to 625 survivors with diverse tumor types across eight U.S. sites are enrolling in a randomized wait-list control trial. The DHC intervention combines 1:1 calls with digital outreach delivered by certified health coaches. Primary aims are to assess feasibility and acceptability of the intervention and its effect on health self-efficacy. Secondary and exploratory aims assess associations among clinical, patient-reported, wearable, and microbiome data. Comorbidities, psychosocial status, and lifestyle behaviors are included to identify interindividual variability in survivors' experiences and needs. CONCLUSION: The development and implementation of this multi-site DHC intervention demonstrates leveraging an academic-industry partnership to deliver continued supportive care to cancer survivors. Outcomes will evaluate the feasibility of the DHC model to extend supportive care beyond clinical settings and address survivors' QOL and well-being. The COACH intervention is a potentially scalable model designed to meet the holistic needs of survivors.",
-      "journal": "Contemporary clinical trials",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "randomized",
-      "disease": "other",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42805452/",
-      "altmetric_score": 1,
-      "altmetric_id": 205378871,
-      "altmetric_url": "https://www.altmetric.com/details/205378871",
-      "cited_by_news": 0,
-      "cited_by_twitter": 1,
-      "importance_score": 85.4,
-      "rank": 115
-    },
-    {
       "uid": "pmid_40266664",
       "pmid": "40266664",
       "title": "Effect of Psychosomatic Symptom Intervention on Psychosomatic Symptoms During Initial Treatment in Patients With Differentiated Thyroid Cancer: A Single-blind Randomized Controlled Trial.",
@@ -2488,7 +2466,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 1,
       "importance_score": 85.4,
-      "rank": 116
+      "rank": 115
     },
     {
       "uid": "pmid_40773759",
@@ -2507,6 +2485,28 @@
       "altmetric_score": 1,
       "altmetric_id": 180760142,
       "altmetric_url": "https://www.altmetric.com/details/180760142",
+      "cited_by_news": 0,
+      "cited_by_twitter": 1,
+      "importance_score": 85.4,
+      "rank": 116
+    },
+    {
+      "uid": "pmid_42805452",
+      "pmid": "42805452",
+      "title": "Design of the Comprehensive Outcomes for After Cancer Health (COACH) Trial: a randomized, wait-list control digital health coaching intervention for cancer survivors.",
+      "abstract": "BACKGROUND: There are an estimated 18.6 million cancer survivors representing approximately 5.4% of the United States (U.S.) population, projected to exceed 26 million by 2040. Due to advances in therapy, individuals with cancer are experiencing increased overall survival that is often accompanied by maintenance therapy and the management of treatment-related sequelae that can diminish overall quality-of-life (QOL) and well-being. An interprofessional team in partnership with Pack Health (now operating under Quest Diagnostics), designed a 6-month digital health coaching (DHC) intervention to improve health outcomes for cancer survivors, defined in this study as within one year of completion of primary therapy, including those with metastatic disease. METHODS: Up to 625 survivors with diverse tumor types across eight U.S. sites are enrolling in a randomized wait-list control trial. The DHC intervention combines 1:1 calls with digital outreach delivered by certified health coaches. Primary aims are to assess feasibility and acceptability of the intervention and its effect on health self-efficacy. Secondary and exploratory aims assess associations among clinical, patient-reported, wearable, and microbiome data. Comorbidities, psychosocial status, and lifestyle behaviors are included to identify interindividual variability in survivors' experiences and needs. CONCLUSION: The development and implementation of this multi-site DHC intervention demonstrates leveraging an academic-industry partnership to deliver continued supportive care to cancer survivors. Outcomes will evaluate the feasibility of the DHC model to extend supportive care beyond clinical settings and address survivors' QOL and well-being. The COACH intervention is a potentially scalable model designed to meet the holistic needs of survivors.",
+      "journal": "Contemporary clinical trials",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "randomized",
+      "disease": "other",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42805452/",
+      "altmetric_score": 1,
+      "altmetric_id": 205378871,
+      "altmetric_url": "https://www.altmetric.com/details/205378871",
       "cited_by_news": 0,
       "cited_by_twitter": 1,
       "importance_score": 85.4,
@@ -2971,6 +2971,26 @@
       "rank": 138
     },
     {
+      "uid": "pmid_42433120",
+      "pmid": "42433120",
+      "title": "Pembrolizumab-Chemotherapy Versus Pembrolizumab in Head and Neck Squamous Cell Carcinoma: A PD-L1 CPS-Stratified Analysis of Updated KEYNOTE-048 Data.",
+      "abstract": "Based on KEYNOTE-048, pembrolizumab monotherapy and pembrolizumab-chemotherapy are established category 1 first-line treatments for recurrent/metastatic head and neck squamous cell carcinoma (HNSCC) with programmed death ligand-1 (PD-L1) combined positive score (CPS) ≥ 1. We compared their efficacy using updated trial data. We analyzed 4-year progression-free survival on next-line therapy (PFS2) and 5-year overall survival (OS) data from KEYNOTE-048 by reconstructing time-to-event data using KMSubtraction. Efficacy was compared in CPS 1-19 and CPS ≥ 20 subgroups using Kaplan-Meier estimates, Cox models, restricted mean survival time (RMST), and landmark analyses. Among 499 patients with CPS ≥ 1, 240 (48.1%) had CPS 1-19 and 259 (51.9%) had CPS ≥ 20. In the CPS 1-19 subgroup, pembrolizumab-chemotherapy showed numerically longer median PFS2 (10.1 vs. 8.0 months; hazard ratio [HR]: 0.81; 95% confidence interval [CI]: 0.62-1.06) and OS (12.8 vs. 10.8 months; HR: 0.87; 95% CI: 0.67-1.15) versus monotherapy, without statistical significance. For CPS ≥ 20 patients, efficacy was comparable between regimens, with similar median PFS2 (11.3 vs. 11.7 months; HR: 0.95) and OS (14.7 vs. 14.9 months; HR: 0.96). RMST and landmark analyses showed an early PFS2 benefit and a trend toward OS benefit with pembrolizumab-chemotherapy in CPS 1-19, with comparable outcomes in CPS ≥ 20. Pembrolizumab-chemotherapy showed a trend toward improved outcomes in the CPS 1-19 subgroup, with comparable efficacy in the CPS ≥ 20 subgroup, supporting a refined first-line strategy: monotherapy for CPS ≥ 20 to minimize toxicity, and combination therapy for CPS 1-19 to potentially enhance disease control.",
+      "journal": "International journal of cancer",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "randomized",
+      "disease": "hnscc",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42433120/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 75.0,
+      "rank": 139
+    },
+    {
       "uid": "pmid_42952229",
       "pmid": "42952229",
       "title": "Virtual Social Interaction and Psychological Capital in Chemotherapy Patients: A Randomized Controlled Trial.",
@@ -2988,7 +3008,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 139
+      "rank": 140
     },
     {
       "uid": "pmid_42556756",
@@ -3008,7 +3028,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 140
+      "rank": 141
     },
     {
       "uid": "pmid_42538302",
@@ -3030,7 +3050,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 0,
       "importance_score": 75.0,
-      "rank": 141
+      "rank": 142
     },
     {
       "uid": "pmid_42982936",
@@ -3050,7 +3070,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 142
+      "rank": 143
     },
     {
       "uid": "pmid_42986489",
@@ -3070,7 +3090,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 143
+      "rank": 144
     },
     {
       "uid": "pmid_42268725",
@@ -3090,7 +3110,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 144
+      "rank": 145
     },
     {
       "uid": "pmid_42984152",
@@ -3110,7 +3130,27 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 145
+      "rank": 146
+    },
+    {
+      "uid": "pmid_42975224",
+      "pmid": "42975224",
+      "title": "Comparison of Traumatic Complications following Prostate Biopsy in Men with Lower Urinary Tract Symptoms Due to Prostate Disease Using Biopty Gun versus Semiautomatic Needle.",
+      "abstract": "BACKGROUND: Prostate biopsy has evolved to improve yield and reduce complications. The development of biopty guns added to this trend. It is an improvement on the semiautomatic needle. OBJECTIVE: This study aimed to compare semi-automatic and fully-automatic biopsy devices used for digitally guided transrectal prostate biopsy for the rate and extent of post-biopsy pain and bleeding complications. METHODOLOGY: Sixty-four patients were randomised into two groups, each with 32 patients. Group 1 patients were biopsied with 16G Medplus ® semi-automatic biopsy needles, whereas Bard-Magnum ® biopty gun with 16G needles was used for Group 2. Twelve systematic cores were taken from both groups. Post-biopsy pain was assessed using the Numeric Rating Scale and Wong-Baker Faces Pain Rating Scale. The rate and extent of post-biopsy haematuria/urethral bleeding and rectal bleeding were evaluated. Data were collected using a structured pro forma and analysed using IBM-SPSS. RESULTS: Sixty-four men participated in the study. Haematuria/urethral bleeding occurred in 37.5% (12) and 31.25% (10) patients in Groups 1 and 2, respectively. Bladder irrigation was done for 8.3% (1) and 20% (2) of those who bled from Groups 1 and 2, respectively. Significant rectal bleeding occurred in 31.25% (10) and 28.13% (9) patients from Groups 1 and 2, respectively. More pain was noted in Group 1. These differences in bleeding complications and pain were not statistically significant. CONCLUSION: The two devices did not exhibit significant differences in terms of pain or bleeding complications when used for prostate biopsy.",
+      "journal": "The Nigerian postgraduate medical journal",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "randomized",
+      "disease": "prostate",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42975224/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 75.0,
+      "rank": 147
     },
     {
       "uid": "pmid_42837126",
@@ -3132,27 +3172,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 0,
       "importance_score": 75.0,
-      "rank": 146
-    },
-    {
-      "uid": "pmid_42433120",
-      "pmid": "42433120",
-      "title": "Pembrolizumab-Chemotherapy Versus Pembrolizumab in Head and Neck Squamous Cell Carcinoma: A PD-L1 CPS-Stratified Analysis of Updated KEYNOTE-048 Data.",
-      "abstract": "Based on KEYNOTE-048, pembrolizumab monotherapy and pembrolizumab-chemotherapy are established category 1 first-line treatments for recurrent/metastatic head and neck squamous cell carcinoma (HNSCC) with programmed death ligand-1 (PD-L1) combined positive score (CPS) ≥ 1. We compared their efficacy using updated trial data. We analyzed 4-year progression-free survival on next-line therapy (PFS2) and 5-year overall survival (OS) data from KEYNOTE-048 by reconstructing time-to-event data using KMSubtraction. Efficacy was compared in CPS 1-19 and CPS ≥ 20 subgroups using Kaplan-Meier estimates, Cox models, restricted mean survival time (RMST), and landmark analyses. Among 499 patients with CPS ≥ 1, 240 (48.1%) had CPS 1-19 and 259 (51.9%) had CPS ≥ 20. In the CPS 1-19 subgroup, pembrolizumab-chemotherapy showed numerically longer median PFS2 (10.1 vs. 8.0 months; hazard ratio [HR]: 0.81; 95% confidence interval [CI]: 0.62-1.06) and OS (12.8 vs. 10.8 months; HR: 0.87; 95% CI: 0.67-1.15) versus monotherapy, without statistical significance. For CPS ≥ 20 patients, efficacy was comparable between regimens, with similar median PFS2 (11.3 vs. 11.7 months; HR: 0.95) and OS (14.7 vs. 14.9 months; HR: 0.96). RMST and landmark analyses showed an early PFS2 benefit and a trend toward OS benefit with pembrolizumab-chemotherapy in CPS 1-19, with comparable outcomes in CPS ≥ 20. Pembrolizumab-chemotherapy showed a trend toward improved outcomes in the CPS 1-19 subgroup, with comparable efficacy in the CPS ≥ 20 subgroup, supporting a refined first-line strategy: monotherapy for CPS ≥ 20 to minimize toxicity, and combination therapy for CPS 1-19 to potentially enhance disease control.",
-      "journal": "International journal of cancer",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "randomized",
-      "disease": "hnscc",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42433120/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 75.0,
-      "rank": 147
+      "rank": 148
     },
     {
       "uid": "pmid_42722513",
@@ -3172,7 +3192,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 148
+      "rank": 149
     },
     {
       "uid": "pmid_42928572",
@@ -3192,7 +3212,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 149
+      "rank": 150
     },
     {
       "uid": "pmid_42745213",
@@ -3212,7 +3232,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 150
+      "rank": 151
     },
     {
       "uid": "pmid_42632761",
@@ -3232,7 +3252,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 151
+      "rank": 152
     },
     {
       "uid": "pmid_42992999",
@@ -3252,7 +3272,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 152
+      "rank": 153
     },
     {
       "uid": "pmid_42850801",
@@ -3272,7 +3292,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 153
+      "rank": 154
     },
     {
       "uid": "pmid_42969995",
@@ -3292,7 +3312,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 154
+      "rank": 155
     },
     {
       "uid": "pmid_42980875",
@@ -3308,26 +3328,6 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42980875/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 75.0,
-      "rank": 155
-    },
-    {
-      "uid": "pmid_42975224",
-      "pmid": "42975224",
-      "title": "Comparison of Traumatic Complications following Prostate Biopsy in Men with Lower Urinary Tract Symptoms Due to Prostate Disease Using Biopty Gun versus Semiautomatic Needle.",
-      "abstract": "BACKGROUND: Prostate biopsy has evolved to improve yield and reduce complications. The development of biopty guns added to this trend. It is an improvement on the semiautomatic needle. OBJECTIVE: This study aimed to compare semi-automatic and fully-automatic biopsy devices used for digitally guided transrectal prostate biopsy for the rate and extent of post-biopsy pain and bleeding complications. METHODOLOGY: Sixty-four patients were randomised into two groups, each with 32 patients. Group 1 patients were biopsied with 16G Medplus ® semi-automatic biopsy needles, whereas Bard-Magnum ® biopty gun with 16G needles was used for Group 2. Twelve systematic cores were taken from both groups. Post-biopsy pain was assessed using the Numeric Rating Scale and Wong-Baker Faces Pain Rating Scale. The rate and extent of post-biopsy haematuria/urethral bleeding and rectal bleeding were evaluated. Data were collected using a structured pro forma and analysed using IBM-SPSS. RESULTS: Sixty-four men participated in the study. Haematuria/urethral bleeding occurred in 37.5% (12) and 31.25% (10) patients in Groups 1 and 2, respectively. Bladder irrigation was done for 8.3% (1) and 20% (2) of those who bled from Groups 1 and 2, respectively. Significant rectal bleeding occurred in 31.25% (10) and 28.13% (9) patients from Groups 1 and 2, respectively. More pain was noted in Group 1. These differences in bleeding complications and pain were not statistically significant. CONCLUSION: The two devices did not exhibit significant differences in terms of pain or bleeding complications when used for prostate biopsy.",
-      "journal": "The Nigerian postgraduate medical journal",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "randomized",
-      "disease": "prostate",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42975224/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -3375,6 +3375,26 @@
       "rank": 158
     },
     {
+      "uid": "pmid_42828640",
+      "pmid": "42828640",
+      "title": "Effects of exercise and educational programs on long-term quality of life, anxiety, and depression in breast cancer survivors: an exploratory secondary analysis of the Setouchi breast project-10 randomized controlled trial.",
+      "abstract": "BACKGROUND: Advances in early detection and multimodal therapy have increased the population of long-term breast cancer survivors, underscoring the importance of survivorship care focused on health-related quality of life (HRQoL). Although exercise and educational interventions show short-term benefits, their long-term sustainability remains unclear. This study evaluated the longitudinal effects of these interventions on HRQoL and psychological outcomes after initial treatment. METHODS: This secondary analysis of the Setouchi Breast Project-10 randomized controlled trial included 342 patients with stage 0-III breast cancer within one year of treatment completion, assigned to usual care (n = 114), education (n = 120), or exercise (n = 108). HRQoL was assessed using FACT-B and its subscales, and psychological outcomes using HADS at baseline and 2, 4, 6, and 12 months. Responder analyses based on minimally important differences and mixed-effects models for repeated measures were conducted. RESULTS: The education group showed greater early improvement in the FACT-B Trial Outcome Index at 2 months versus control (51% vs. 32%, p = 0.003). Although MID analyses suggested deterioration in some global domains at 12 months in the exercise group, longitudinal analyses demonstrated sustained improvement in the breast cancer subscale in both intervention groups. No consistent between-group differences were observed in global HRQoL or HADS scores. CONCLUSIONS: This exploratory secondary analysis suggests that physician-led educational interventions and structured exercise may contribute to maintaining breast cancer-specific HRQoL, particularly in disease-specific domains. However, global HRQoL and psychological outcomes did not show consistent improvements, and a tendency toward deterioration was observed in some indicators for the exercise group at 12 months. These findings should be interpreted with caution, but they suggest that low-cost educational approaches could be a resource-efficient option in survivorship care.",
+      "journal": "Breast cancer (Tokyo, Japan)",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "randomized",
+      "disease": "breast_general",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42828640/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 75.0,
+      "rank": 159
+    },
+    {
       "uid": "pmid_42537382",
       "pmid": "42537382",
       "title": "AI Health message intervention: The role of message customization and message source in breast cancer screening among women of color.",
@@ -3394,7 +3414,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 0,
       "importance_score": 75.0,
-      "rank": 159
+      "rank": 160
     },
     {
       "uid": "pmid_42975655",
@@ -3414,7 +3434,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 160
+      "rank": 161
     },
     {
       "uid": "pmid_42969421",
@@ -3434,7 +3454,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 75.0,
-      "rank": 161
+      "rank": 162
     },
     {
       "uid": "pmid_42968527",
@@ -3450,26 +3470,6 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42968527/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 75.0,
-      "rank": 162
-    },
-    {
-      "uid": "pmid_42828640",
-      "pmid": "42828640",
-      "title": "Effects of exercise and educational programs on long-term quality of life, anxiety, and depression in breast cancer survivors: an exploratory secondary analysis of the Setouchi breast project-10 randomized controlled trial.",
-      "abstract": "BACKGROUND: Advances in early detection and multimodal therapy have increased the population of long-term breast cancer survivors, underscoring the importance of survivorship care focused on health-related quality of life (HRQoL). Although exercise and educational interventions show short-term benefits, their long-term sustainability remains unclear. This study evaluated the longitudinal effects of these interventions on HRQoL and psychological outcomes after initial treatment. METHODS: This secondary analysis of the Setouchi Breast Project-10 randomized controlled trial included 342 patients with stage 0-III breast cancer within one year of treatment completion, assigned to usual care (n = 114), education (n = 120), or exercise (n = 108). HRQoL was assessed using FACT-B and its subscales, and psychological outcomes using HADS at baseline and 2, 4, 6, and 12 months. Responder analyses based on minimally important differences and mixed-effects models for repeated measures were conducted. RESULTS: The education group showed greater early improvement in the FACT-B Trial Outcome Index at 2 months versus control (51% vs. 32%, p = 0.003). Although MID analyses suggested deterioration in some global domains at 12 months in the exercise group, longitudinal analyses demonstrated sustained improvement in the breast cancer subscale in both intervention groups. No consistent between-group differences were observed in global HRQoL or HADS scores. CONCLUSIONS: This exploratory secondary analysis suggests that physician-led educational interventions and structured exercise may contribute to maintaining breast cancer-specific HRQoL, particularly in disease-specific domains. However, global HRQoL and psychological outcomes did not show consistent improvements, and a tendency toward deterioration was observed in some indicators for the exercise group at 12 months. These findings should be interpreted with caution, but they suggest that low-cost educational approaches could be a resource-efficient option in survivorship care.",
-      "journal": "Breast cancer (Tokyo, Japan)",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "randomized",
-      "disease": "breast_general",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42828640/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -3653,28 +3653,6 @@
       "rank": 171
     },
     {
-      "uid": "pmid_42341878",
-      "pmid": "42341878",
-      "title": "Brief Report: Aumolertinib as a Switch Therapy in Osimertinib-Intolerant NSCLC-The ACTIVE Trial.",
-      "abstract": "INTRODUCTION: Third-generation EGFR- tyrosine kinase inhibitors (TKIs) are the standard first-line therapy for EGFR-mutant advanced NSCLC. Prospective data on toxicity-driven switching to alternative third-generation TKIs for intolerant patients remain limited. METHODS: In this prospective, multicenter, single-arm phase II trial (NCT04882345), patients with EGFR-mutant advanced NSCLC who developed grade 2 or higher hematologic toxicities or increase in alanine transaminase (ALT) or aspartate transaminase (AST), or grade 3 or higher nonhematologic adverse events (AEs) (excluding ALT or AST increase) on osimertinib received aumolertinib 110 mg once daily after AEs recovered to grade 1 or lower. The primary end point was the 3-month conversion success rate (absence of disease progression, grade ≥2 hematologic AEs or increase in ALT or AST, and grade ≥3 nonhematologic AEs). RESULTS: Of the 40 enrolled patients, 39 received aumolertinib, and 34 were evaluable for the primary end point. The 3-month conversion success rate was 70.6% (95% confidence interval: 52.5-84.9) in the evaluable population, with 78.9% in nonhematologic toxicity and 60.0% in hematologic toxicity subgroups. Median postswitch progression-free survival was 11.6 months, and the 3-year postswitch overall survival rate was 52.4%. Treatment-related AEs occurred in 69.2% of patients (grade ≥3: 15.4%), with no aumolertinib discontinuation or death. CONCLUSIONS: This prospective trial suggests that switching to aumolertinib achieves sustained efficacy and manageable safety in osimertinib-intolerant EGFR-mutant advanced NSCLC, supporting toxicity-driven EGFR-TKI switching as a feasible clinical strategy.",
-      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "phase2",
-      "disease": "nsclc",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42341878/",
-      "altmetric_score": 1,
-      "altmetric_id": 198691257,
-      "altmetric_url": "https://www.altmetric.com/details/198691257",
-      "cited_by_news": 0,
-      "cited_by_twitter": 1,
-      "importance_score": 70.4,
-      "rank": 172
-    },
-    {
       "uid": "pmid_42981165",
       "pmid": "42981165",
       "title": "Adjuvant mFOLFOXIRI after curative-intent resection of oligometastatic colorectal cancer: phase II FANTASTIC trial.",
@@ -3694,7 +3672,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 3,
       "importance_score": 70.4,
-      "rank": 173
+      "rank": 172
     },
     {
       "uid": "pmid_42767923",
@@ -3716,7 +3694,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 1,
       "importance_score": 70.4,
-      "rank": 174
+      "rank": 173
     },
     {
       "uid": "pmid_42744076",
@@ -3738,7 +3716,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 1,
       "importance_score": 70.4,
-      "rank": 175
+      "rank": 174
     },
     {
       "uid": "pmid_42970785",
@@ -3760,29 +3738,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 0,
       "importance_score": 70.4,
-      "rank": 176
-    },
-    {
-      "uid": "pmid_42648399",
-      "pmid": "42648399",
-      "title": "Protocol of a randomized trial of \"pathways,\" a hope intervention for people undergoing treatment for advanced lung cancer.",
-      "abstract": "OBJECTIVE: Advanced cancer and its treatment can disrupt personal goal pursuits and attainment, which can imperil patient quality of life and increase risk for depression. Hope interventions foster the goal-pursuit skills exemplified by high-hope individuals and, based on a pilot trial, are a promising approach to support these patients. The current Phase II trial (NCT06047301) aims to determine the efficacy of a brief, hope intervention, \"Pathways,\" in improving depression symptoms for people undergoing treatment advanced stage lung cancer with elevated distress. METHODS: In this two-arm randomized controlled trial, 234 people undergoing treatment for advanced stage lung cancer are randomized to Pathways or enhanced usual care. The Pathways intervention consists of a cancer resource guide and five sessions (150-180 min total) delivered primarily during infusion or by phone by nurse practitioners or social workers. Sessions focus on identifying values, setting goals, building pathways, and agency thinking. Enhanced usual care consists of receiving and reviewing the cancer resource guide with staff. Outcomes are assessed at baseline, mid-intervention, and at 2-, 6-, and 12-weeks post-intervention. The primary outcome is depression symptoms at 2 weeks. Secondary outcomes include measures of anxiety, demoralization, positive affect, meaning and peace, social and role function, and quality of life. RESULTS: Recruitment began in November 2023; 94 patients have enrolled as of November 5, 2025. CONCLUSION: If efficacious, Pathways may be a pragmatic point-of-care intervention to address cancer-related goal disruption and ultimately support the mental health and quality of life of patients receiving treatment for advanced lung cancer.",
-      "journal": "Contemporary clinical trials",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "phase2",
-      "disease": "lung_general",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42648399/",
-      "altmetric_score": 1,
-      "altmetric_id": 204750971,
-      "altmetric_url": "https://www.altmetric.com/details/204750971",
-      "cited_by_news": 0,
-      "cited_by_twitter": 0,
-      "importance_score": 70.4,
-      "rank": 177
+      "rank": 175
     },
     {
       "uid": "pmid_42762384",
@@ -3803,6 +3759,50 @@
       "altmetric_url": "https://www.altmetric.com/details/206087527",
       "cited_by_news": 0,
       "cited_by_twitter": 1,
+      "importance_score": 70.4,
+      "rank": 176
+    },
+    {
+      "uid": "pmid_42341878",
+      "pmid": "42341878",
+      "title": "Brief Report: Aumolertinib as a Switch Therapy in Osimertinib-Intolerant NSCLC-The ACTIVE Trial.",
+      "abstract": "INTRODUCTION: Third-generation EGFR- tyrosine kinase inhibitors (TKIs) are the standard first-line therapy for EGFR-mutant advanced NSCLC. Prospective data on toxicity-driven switching to alternative third-generation TKIs for intolerant patients remain limited. METHODS: In this prospective, multicenter, single-arm phase II trial (NCT04882345), patients with EGFR-mutant advanced NSCLC who developed grade 2 or higher hematologic toxicities or increase in alanine transaminase (ALT) or aspartate transaminase (AST), or grade 3 or higher nonhematologic adverse events (AEs) (excluding ALT or AST increase) on osimertinib received aumolertinib 110 mg once daily after AEs recovered to grade 1 or lower. The primary end point was the 3-month conversion success rate (absence of disease progression, grade ≥2 hematologic AEs or increase in ALT or AST, and grade ≥3 nonhematologic AEs). RESULTS: Of the 40 enrolled patients, 39 received aumolertinib, and 34 were evaluable for the primary end point. The 3-month conversion success rate was 70.6% (95% confidence interval: 52.5-84.9) in the evaluable population, with 78.9% in nonhematologic toxicity and 60.0% in hematologic toxicity subgroups. Median postswitch progression-free survival was 11.6 months, and the 3-year postswitch overall survival rate was 52.4%. Treatment-related AEs occurred in 69.2% of patients (grade ≥3: 15.4%), with no aumolertinib discontinuation or death. CONCLUSIONS: This prospective trial suggests that switching to aumolertinib achieves sustained efficacy and manageable safety in osimertinib-intolerant EGFR-mutant advanced NSCLC, supporting toxicity-driven EGFR-TKI switching as a feasible clinical strategy.",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "phase2",
+      "disease": "nsclc",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42341878/",
+      "altmetric_score": 1,
+      "altmetric_id": 198691257,
+      "altmetric_url": "https://www.altmetric.com/details/198691257",
+      "cited_by_news": 0,
+      "cited_by_twitter": 1,
+      "importance_score": 70.4,
+      "rank": 177
+    },
+    {
+      "uid": "pmid_42648399",
+      "pmid": "42648399",
+      "title": "Protocol of a randomized trial of \"pathways,\" a hope intervention for people undergoing treatment for advanced lung cancer.",
+      "abstract": "OBJECTIVE: Advanced cancer and its treatment can disrupt personal goal pursuits and attainment, which can imperil patient quality of life and increase risk for depression. Hope interventions foster the goal-pursuit skills exemplified by high-hope individuals and, based on a pilot trial, are a promising approach to support these patients. The current Phase II trial (NCT06047301) aims to determine the efficacy of a brief, hope intervention, \"Pathways,\" in improving depression symptoms for people undergoing treatment advanced stage lung cancer with elevated distress. METHODS: In this two-arm randomized controlled trial, 234 people undergoing treatment for advanced stage lung cancer are randomized to Pathways or enhanced usual care. The Pathways intervention consists of a cancer resource guide and five sessions (150-180 min total) delivered primarily during infusion or by phone by nurse practitioners or social workers. Sessions focus on identifying values, setting goals, building pathways, and agency thinking. Enhanced usual care consists of receiving and reviewing the cancer resource guide with staff. Outcomes are assessed at baseline, mid-intervention, and at 2-, 6-, and 12-weeks post-intervention. The primary outcome is depression symptoms at 2 weeks. Secondary outcomes include measures of anxiety, demoralization, positive affect, meaning and peace, social and role function, and quality of life. RESULTS: Recruitment began in November 2023; 94 patients have enrolled as of November 5, 2025. CONCLUSION: If efficacious, Pathways may be a pragmatic point-of-care intervention to address cancer-related goal disruption and ultimately support the mental health and quality of life of patients receiving treatment for advanced lung cancer.",
+      "journal": "Contemporary clinical trials",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "phase2",
+      "disease": "lung_general",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42648399/",
+      "altmetric_score": 1,
+      "altmetric_id": 204750971,
+      "altmetric_url": "https://www.altmetric.com/details/204750971",
+      "cited_by_news": 0,
+      "cited_by_twitter": 0,
       "importance_score": 70.4,
       "rank": 178
     },
@@ -4371,28 +4371,6 @@
       "rank": 205
     },
     {
-      "uid": "pmid_42667881",
-      "pmid": "42667881",
-      "title": "The effects of mindfulness-based cognitive therapy in the psychological and physical health of cancer patients: A systematic review and meta-analysis.",
-      "abstract": "PURPOSE: No prior systematic review has specifically evaluated the efficacy of mindfulness-based cognitive therapy (MBCT) in improving both psychological and physical outcomes among cancer populations. This study aims to assess MBCT's effects on cancer patients' mental and physical health. METHOD: Following PRISMA guidelines and with PROSPERO registration (CRD42023453581), we systematically searched PubMed, Cochrane CENTRAL, Embase, and Web of Science for randomized controlled trials (RCTs) were searched up to June 2026. Eligible trials enrolled adults (≥ 18 years) with any cancer type/stage, compared MBCT delivered per standard manual against non-MBCT controls, and reported at least one validated measure of distress, depression, or anxiety; secondary outcomes included fatigue, quality of life, and mindfulness skills. Two reviewers independently selected studies, extracted data, and assessed risk of bias using the Cochrane tool; random-effects meta-analyses were performed in Stata 16. RESULTS: 11 RCTs comprising 1122 participants (mean age 54.8 years; 91% female) were included. MBCT produced large, significant reductions in psychological distress (SMD = -0.81, 95% CI-1.27 to-0.40), depression (SMD = -0.95, 95% CI -1.40 to-0.49), and anxiety (SMD = -0.86, 95% CI -1.22 to-0.51). It also markedly decreased fatigue (SMD = -0.83, 95% CI-1.10 to-0.56), improved quality of life (SMD = 0.56, 95% CI 0.22-0.88), and enhanced mindfulness skills (SMD = 0.76, 95% CI 0.59-0.92). CONCLUSIONS: This meta-analysis is the first to exclusively synthesize RCT evidence of standardized MBCT in cancer care, demonstrating significant dual benefits for emotional and physical well-being while providing strong support for integrating MBCT into comprehensive oncology rehabilitation.",
-      "journal": "Journal of psychosomatic research",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "other",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42667881/",
-      "altmetric_score": 3,
-      "altmetric_id": 203764383,
-      "altmetric_url": "https://www.altmetric.com/details/203764383",
-      "cited_by_news": 0,
-      "cited_by_twitter": 0,
-      "importance_score": 60.79,
-      "rank": 206
-    },
-    {
       "uid": "pmid_42426479",
       "pmid": "42426479",
       "title": "A Systematic Review and Meta-Analysis of Surgical Feasibility and Outcomes Following Neoadjuvant Immune Checkpoint Inhibition in Resectable Stage III and IV Melanoma.",
@@ -4411,6 +4389,28 @@
       "altmetric_url": "https://www.altmetric.com/details/199552090",
       "cited_by_news": 0,
       "cited_by_twitter": 8,
+      "importance_score": 60.79,
+      "rank": 206
+    },
+    {
+      "uid": "pmid_42667881",
+      "pmid": "42667881",
+      "title": "The effects of mindfulness-based cognitive therapy in the psychological and physical health of cancer patients: A systematic review and meta-analysis.",
+      "abstract": "PURPOSE: No prior systematic review has specifically evaluated the efficacy of mindfulness-based cognitive therapy (MBCT) in improving both psychological and physical outcomes among cancer populations. This study aims to assess MBCT's effects on cancer patients' mental and physical health. METHOD: Following PRISMA guidelines and with PROSPERO registration (CRD42023453581), we systematically searched PubMed, Cochrane CENTRAL, Embase, and Web of Science for randomized controlled trials (RCTs) were searched up to June 2026. Eligible trials enrolled adults (≥ 18 years) with any cancer type/stage, compared MBCT delivered per standard manual against non-MBCT controls, and reported at least one validated measure of distress, depression, or anxiety; secondary outcomes included fatigue, quality of life, and mindfulness skills. Two reviewers independently selected studies, extracted data, and assessed risk of bias using the Cochrane tool; random-effects meta-analyses were performed in Stata 16. RESULTS: 11 RCTs comprising 1122 participants (mean age 54.8 years; 91% female) were included. MBCT produced large, significant reductions in psychological distress (SMD = -0.81, 95% CI-1.27 to-0.40), depression (SMD = -0.95, 95% CI -1.40 to-0.49), and anxiety (SMD = -0.86, 95% CI -1.22 to-0.51). It also markedly decreased fatigue (SMD = -0.83, 95% CI-1.10 to-0.56), improved quality of life (SMD = 0.56, 95% CI 0.22-0.88), and enhanced mindfulness skills (SMD = 0.76, 95% CI 0.59-0.92). CONCLUSIONS: This meta-analysis is the first to exclusively synthesize RCT evidence of standardized MBCT in cancer care, demonstrating significant dual benefits for emotional and physical well-being while providing strong support for integrating MBCT into comprehensive oncology rehabilitation.",
+      "journal": "Journal of psychosomatic research",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "other",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42667881/",
+      "altmetric_score": 3,
+      "altmetric_id": 203764383,
+      "altmetric_url": "https://www.altmetric.com/details/203764383",
+      "cited_by_news": 0,
+      "cited_by_twitter": 0,
       "importance_score": 60.79,
       "rank": 207
     },
@@ -6579,26 +6579,6 @@
       "rank": 315
     },
     {
-      "uid": "pmid_42644221",
-      "pmid": "42644221",
-      "title": "SHR-2004, a Humanized Monoclonal Antibody Targeting Factor XI, for Preventing Venous Thromboembolism After Ovarian Cancer Surgery: A Randomized, Active-Controlled Phase 2 Study.",
-      "abstract": "This multicenter, randomized, open-label, exploratory Phase 2 trial assessed SHR-2004, an anti-FXI antibody, for venous thromboembolism (VTE) prevention in patients undergoing ovarian cancer surgery-a population at particularly high thrombotic risk conducted at 25 sites in China. Patients with newly diagnosed Stage III-IV or recurrent ovarian cancer scheduled for surgery were randomly assigned (1:1) to receive subcutaneous SHR-2004 (180 mg on Day 1 and 120 mg on Day 15) or enoxaparin-rivaroxaban (subcutaneous enoxaparin 40 mg once daily during hospitalization, followed by oral rivaroxaban 10 mg once daily after discharge until Day 28). The primary efficacy outcome was the composite of VTE events within 28 days. The primary safety outcome was major bleeding (MB) or clinically relevant nonmajor bleeding (CRNMB) from first dose to 28 days. Between February 19, 2024 and September 17, 2024, 198 patients received assigned treatment (90 with SHR-2004, 108 with enoxaparin-rivaroxaban) and were included in the safety analysis. Among 181 patients who completed protocol-mandated ultrasonography, VTE occurred in 11 (12.6%) patients in the SHR-2004 group and 19 (20.2%) in the enoxaparin-rivaroxaban group (difference -8.4%, 95% CI -19.9 to 3.1) by Day 28. MB/CRNMB rates were similar between groups (SHR-2004: 2/90 [2.2%]; enoxaparin-rivaroxaban: 2/108 [1.9%]). In this study, SHR-2004 showed comparable efficacy to enoxaparin-rivaroxaban for preventing postoperative VTE in patients undergoing ovarian cancer surgery, with a similar low risk of MB or CRNMB. The twice-monthly dosing schedule offers a potential advantage over daily anticoagulation, supporting further investigation in adequately powered Phase 3 trials. Trial Registration: ClinicalTrials.gov identifier: NCT06220123.",
-      "journal": "American journal of hematology",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "phase2",
-      "disease": "ovarian",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42644221/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 60.0,
-      "rank": 316
-    },
-    {
       "uid": "pmid_42142103",
       "pmid": "42142103",
       "title": "Does Radiation Boost Dose Affect Organ Preservation Rates? A Secondary Analysis of the Organ Preservation in Patients With Rectal Adenocarcinoma Trial.",
@@ -6616,27 +6596,27 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 317
+      "rank": 316
     },
     {
-      "uid": "pmid_42981428",
-      "pmid": "42981428",
-      "title": "Longitudinal remodeling of the tumor-immune microenvironment during regorafenib, nivolumab, and chemotherapy in advanced gastric cancer.",
-      "abstract": "Previous studies combining the multikinase inhibitor regorafenib with a PD-1 inhibitor showed promising activity in gastric cancer. We conducted a phase 1b/2 trial (NCT05394740) of first-line regorafenib, nivolumab, and chemotherapy in 30 patients with mismatch repair-proficient gastric cancer and investigated its impact on the tumor microenvironment. The primary end point was met; 22 of 30 patients showed objective tumor response (73%; 80% confidence interval, 60.3 to 83.8). Single-cell RNA and T cell receptor sequencing were performed on biopsy samples at baseline, during treatment, and at disease progression. The combination treatment increased tumor antigen-reactive CD8",
-      "journal": "Science translational medicine",
+      "uid": "pmid_42644221",
+      "pmid": "42644221",
+      "title": "SHR-2004, a Humanized Monoclonal Antibody Targeting Factor XI, for Preventing Venous Thromboembolism After Ovarian Cancer Surgery: A Randomized, Active-Controlled Phase 2 Study.",
+      "abstract": "This multicenter, randomized, open-label, exploratory Phase 2 trial assessed SHR-2004, an anti-FXI antibody, for venous thromboembolism (VTE) prevention in patients undergoing ovarian cancer surgery-a population at particularly high thrombotic risk conducted at 25 sites in China. Patients with newly diagnosed Stage III-IV or recurrent ovarian cancer scheduled for surgery were randomly assigned (1:1) to receive subcutaneous SHR-2004 (180 mg on Day 1 and 120 mg on Day 15) or enoxaparin-rivaroxaban (subcutaneous enoxaparin 40 mg once daily during hospitalization, followed by oral rivaroxaban 10 mg once daily after discharge until Day 28). The primary efficacy outcome was the composite of VTE events within 28 days. The primary safety outcome was major bleeding (MB) or clinically relevant nonmajor bleeding (CRNMB) from first dose to 28 days. Between February 19, 2024 and September 17, 2024, 198 patients received assigned treatment (90 with SHR-2004, 108 with enoxaparin-rivaroxaban) and were included in the safety analysis. Among 181 patients who completed protocol-mandated ultrasonography, VTE occurred in 11 (12.6%) patients in the SHR-2004 group and 19 (20.2%) in the enoxaparin-rivaroxaban group (difference -8.4%, 95% CI -19.9 to 3.1) by Day 28. MB/CRNMB rates were similar between groups (SHR-2004: 2/90 [2.2%]; enoxaparin-rivaroxaban: 2/108 [1.9%]). In this study, SHR-2004 showed comparable efficacy to enoxaparin-rivaroxaban for preventing postoperative VTE in patients undergoing ovarian cancer surgery, with a similar low risk of MB or CRNMB. The twice-monthly dosing schedule offers a potential advantage over daily anticoagulation, supporting further investigation in adequately powered Phase 3 trials. Trial Registration: ClinicalTrials.gov identifier: NCT06220123.",
+      "journal": "American journal of hematology",
       "pub_date": "2026 Nov",
       "kind": "article",
       "type": "phase2",
-      "disease": "colorectal",
+      "disease": "ovarian",
       "category": "solid",
       "source": "pubmed",
       "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42981428/",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42644221/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 318
+      "rank": 317
     },
     {
       "uid": "pmid_42853672",
@@ -6656,7 +6636,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 319
+      "rank": 318
     },
     {
       "uid": "pmid_42671172",
@@ -6676,7 +6656,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 60.0,
-      "rank": 320
+      "rank": 319
     },
     {
       "uid": "pmid_42976301",
@@ -6692,6 +6672,26 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42976301/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 60.0,
+      "rank": 320
+    },
+    {
+      "uid": "pmid_42981428",
+      "pmid": "42981428",
+      "title": "Longitudinal remodeling of the tumor-immune microenvironment during regorafenib, nivolumab, and chemotherapy in advanced gastric cancer.",
+      "abstract": "Previous studies combining the multikinase inhibitor regorafenib with a PD-1 inhibitor showed promising activity in gastric cancer. We conducted a phase 1b/2 trial (NCT05394740) of first-line regorafenib, nivolumab, and chemotherapy in 30 patients with mismatch repair-proficient gastric cancer and investigated its impact on the tumor microenvironment. The primary end point was met; 22 of 30 patients showed objective tumor response (73%; 80% confidence interval, 60.3 to 83.8). Single-cell RNA and T cell receptor sequencing were performed on biopsy samples at baseline, during treatment, and at disease progression. The combination treatment increased tumor antigen-reactive CD8",
+      "journal": "Science translational medicine",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "phase2",
+      "disease": "colorectal",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42981428/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -7273,92 +7273,26 @@
       "rank": 348
     },
     {
-      "uid": "pmid_40293271",
-      "pmid": "40293271",
-      "title": "Effect of Home-Based Palliative Care on Quality of Life in Patients With Cancer: A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
-      "abstract": "BACKGROUND: The implementation of home-based palliative care for patients with cancer aims to relieve suffering and improve quality of life, regardless of disease stage. However, outcomes of such interventions have been inconclusive. OBJECTIVE: This study investigated the effect of home-based palliative care on the quality of life in patients with cancer. INTERVENTIONS/METHODS: Six databases (CINAHL, Cochrane Library, EMBASE, MEDLINE, PubMed, Web of Science) were searched for relevant studies up to June 9, 2024. Randomized trials involving patients with cancer receiving home-based palliative care were included. A forest plot was generated using the DerSimonian and Laird random-effects model. RESULTS: A total of 8 studies were included in the final analysis. Home-based palliative care appeared to enhance the quality of life of patients with cancer (pooled standard mean difference, 0.45 [95% confidence interval, 0.04-0.86]; P  = .03). CONCLUSION: Home-based palliative care improves the quality of life for patients with cancer. Further research with larger sample sizes and more rigorous methodologies is needed. IMPLICATION FOR PRACTICE: The findings highlight the value of home-based palliative care as a model to address the needs of patients with cancer at home, improving their quality of life, similar to hospital-based care.",
-      "journal": "Cancer nursing",
-      "pub_date": "2026",
+      "uid": "pmid_42815252",
+      "pmid": "42815252",
+      "title": "Systemic and intracranial activity of antibody-drug conjugates in patients with non-small cell lung cancer and brain metastases: A systematic review and meta-analysis.",
+      "abstract": "INTRODUCTION: Brain metastases (BM) remain a major clinical challenge in patients with non-small cell lung cancer (NSCLC). Although antibody-drug conjugates (ADCs) have emerged as important treatment options for advanced NSCLC, their efficacy in patients with BM remains uncertain because of concerns regarding blood-brain barrier penetration and the underrepresentation of patients with BM in clinical trials. METHODS: A systematic literature search was conducted to identify studies evaluating ADCs in patients with NSCLC and BM. PubMed, Embase, the Cochrane Library, Web of Science, and major conference proceedings were searched. Outcomes included systemic and intracranial (IC) objective response rates (ORR), disease control rate (DCR), and grade ≥3 adverse events (AEs). RESULTS: A total of 13 studies comprising 3,191 patients were included, of whom 905 had BM. The pooled systemic ORR was 40% (95% confidence interval [CI]: 30-52%), with a systemic DCR of 77%. ADCs achieved an IC-ORR of 33% (95% CI: 25-43%) and an IC-DCR of 78%. HER2-targeted ADCs showed substantial activity (systemic ORR: 54%; IC-ORR: 44%), while TROP-2- and HER3-targeted ADCs also showed promising activity. No significant difference in systemic ORR was observed between patients with and without BM (pooled odds ratio, 1.00; 95% CI, 0.67-1.49; p = 1.00). CONCLUSIONS: ADCs demonstrated clinically meaningful systemic and intracranial activity in patients with NSCLC and BM, with no significant difference in systemic ORR by BM status. These findings support ADCs as a promising therapeutic option for this underserved population.",
+      "journal": "Lung cancer (Amsterdam, Netherlands)",
+      "pub_date": "2026 Nov",
       "kind": "article",
       "type": "review",
-      "disease": "other",
+      "disease": "brain_mets",
       "category": "solid",
       "source": "pubmed",
       "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40293271/",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42815252/",
       "altmetric_score": 1,
-      "altmetric_id": 176608910,
-      "altmetric_url": "https://www.altmetric.com/details/176608910",
+      "altmetric_id": 205379299,
+      "altmetric_url": "https://www.altmetric.com/details/205379299",
       "cited_by_news": 0,
       "cited_by_twitter": 1,
       "importance_score": 50.4,
       "rank": 349
-    },
-    {
-      "uid": "pmid_42748584",
-      "pmid": "42748584",
-      "title": "Comparative oncological efficacy of chemotherapy, cytoreductive surgery with or without HIPEC in recurrent ovarian cancer: A network meta-analysis.",
-      "abstract": "BACKGROUND: The role of secondary cytoreductive surgery (SCS) and hyperthermic intraperitoneal chemotherapy (HIPEC) in platinum-sensitive recurrent ovarian cancer remains challenging. While chemotherapy (CHT) remains the standard approach, interest has grown in SCS, either with or without HIPEC. Despite promising results, the comparative effectiveness of SCS, SCS + HIPEC, and chemotherapy alone remains controversial, with no trials directly comparing SCS + HIPEC with CHT alone. METHODS: This systematic review and network meta-analysis included five randomized controlled trials (GOG-0213, DESKTOP III, SOC-1, CHIPOR, and HORSE) identified through PubMed, Embase, Scopus, and Cochrane. The analysis encompassed 1831 patients. A frequentist random-effects network meta-analysis was performed, with CHT as the reference. Heterogeneity was quantified using I RESULTS: Neither SCS (HR 0.97, 95% CI 0.80-1.19) nor SCS + HIPEC (HR 0.76, 95% CI 0.54-1.08) significantly improved 5-year OS compared to CHT alone (I CONCLUSIONS: SCS with or without HIPEC is associated with increased PFS and may also increase OS in certain scenarios. The comparison of SCS + HIPEC versus CHT rests on indirect evidence and possible bias given that CHIPOR trial used neoadjuvant chemotherapy. The apparent benefit of SCS + HIPEC in CC-1 patients remain exploratory.",
-      "journal": "European journal of surgical oncology : the journal of the European Society of Surgical Oncology and the British Association of Surgical Oncology",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "ovarian",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42748584/",
-      "altmetric_score": 1,
-      "altmetric_id": 204726625,
-      "altmetric_url": "https://www.altmetric.com/details/204726625",
-      "cited_by_news": 1,
-      "cited_by_twitter": 0,
-      "importance_score": 50.4,
-      "rank": 350
-    },
-    {
-      "uid": "pmid_42167964",
-      "pmid": "42167964",
-      "title": "Is oral squamous cell carcinoma arising in the background of oral submucous fibrosis a distinct entity? A systematic review and meta-analysis of clinicopathological and prognostic outcomes.",
-      "abstract": "This systematic review and meta-analysis was performed to assess and compare clinicopathological and survival outcomes in oral squamous cell carcinoma (OSCC) arising in the background of oral submucous fibrosis (OSCC-OSMF) and OSCC without any background of OSMF (non-OSMF-OSCC). A literature search in PubMed, Scopus, and Web of Science was performed up to August 2025. Studies comparing clinicopathological features between OSCC-OSMF and non-OSMF-OSCC were considered. Demographics, tumour site, stage, histopathology, nodal and other histological features, and survival data were extracted. Random-effects meta-analysis was performed to determine clinicopathological risk factors and survival in OSCC-OSMF compared to non-OSMF-OSCC. Risk of bias was assessed using the Newcastle-Ottawa Scale. Twelve observational studies were included. Patients with OSCC-OSMF were younger and predominantly male, and the buccal mucosa was the most common site. OSCC-OSMF presented more often at earlier stages (odds ratio (OR) 2.19, 95% confidence interval (CI) 1.29-3.73) and was histologically well-differentiated (OR 1.81, 95% CI 1.32-2.48). Nodal metastasis (OR 0.53, 95% CI 0.38-0.73) and extracapsular spread (OR 0.33, 95% CI 0.21-0.51) were significantly less common in OSCC-OSMF. The 5-year overall survival rate was better for OSCC-OSMF (OR 2.35, 95% CI 1.56-3.54). OSCC-OSMF has a unique set of clinicopathological characteristics and two-fold lower metastatic potential compared to non-OSMF-OSCC, and may be associated with improved long-term survival. The study data indicate that OSCC-OSMF is a unique subset within the OSCC category that requires consideration for surveillance and treatment.",
-      "journal": "International journal of oral and maxillofacial surgery",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "hnscc",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42167964/",
-      "altmetric_score": 1,
-      "altmetric_id": 207636516,
-      "altmetric_url": "https://www.altmetric.com/details/207636516",
-      "cited_by_news": 0,
-      "cited_by_twitter": 1,
-      "importance_score": 50.4,
-      "rank": 351
-    },
-    {
-      "uid": "pmid_42778079",
-      "pmid": "42778079",
-      "title": "Recent advances and future challenges of bispecific antibodies in lung cancer.",
-      "abstract": "Bispecific antibodies (BsAbs) integrate two binding specificities to coordinate antitumor mechanisms that cannot be readily achieved with conventional monospecific antibodies. In lung cancer, these agents encompass four principal strategies: dual targeting of tumor-associated receptors, immune-cell redirection, simultaneous modulation of immune-regulatory pathways, and combined blockade of immune checkpoints and angiogenesis. This review synthesizes the molecular architectures, pharmacologic mechanisms, clinical development, safety profiles, and translational challenges of BsAbs in non-small-cell lung cancer (NSCLC) and small-cell lung cancer (SCLC). Clinical progress has been uneven. Randomized trials have established meaningful benefits for selected agents, exemplified by amivantamab-based therapy in EGFR-mutated NSCLC, ivonescimab-based therapy across several NSCLC settings, and DLL3-directed T-cell engagement with tarlatamab in previously treated SCLC. However, the failure of other biologically compelling constructs in phase III trials underscores that target pairing alone does not guarantee therapeutic synergy. Clinical outcomes are shaped by target density and co-expression, tumor dependence on the paired pathways, molecular format, tissue distribution, treatment setting, and patient selection. Toxicity is similarly mechanism specific and may include cytokine-release syndrome, neurotoxicity, epithelial and infusion-related events, immune-mediated injury, and vascular complications. Future development should move beyond empirical target combinations toward biomarker-guided patient selection, globally representative randomized validation, rational treatment sequencing, and molecular designs that increase tumor selectivity while preserving efficacy. Clinical value varies substantially among constructs and must be established in each disease setting.",
-      "journal": "Critical reviews in oncology/hematology",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "nsclc",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42778079/",
-      "altmetric_score": 1,
-      "altmetric_id": 205182864,
-      "altmetric_url": "https://www.altmetric.com/details/205182864",
-      "cited_by_news": 0,
-      "cited_by_twitter": 0,
-      "importance_score": 50.4,
-      "rank": 352
     },
     {
       "uid": "pmid_42118277",
@@ -7380,7 +7314,95 @@
       "cited_by_news": 0,
       "cited_by_twitter": 0,
       "importance_score": 50.4,
+      "rank": 350
+    },
+    {
+      "uid": "pmid_40293271",
+      "pmid": "40293271",
+      "title": "Effect of Home-Based Palliative Care on Quality of Life in Patients With Cancer: A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
+      "abstract": "BACKGROUND: The implementation of home-based palliative care for patients with cancer aims to relieve suffering and improve quality of life, regardless of disease stage. However, outcomes of such interventions have been inconclusive. OBJECTIVE: This study investigated the effect of home-based palliative care on the quality of life in patients with cancer. INTERVENTIONS/METHODS: Six databases (CINAHL, Cochrane Library, EMBASE, MEDLINE, PubMed, Web of Science) were searched for relevant studies up to June 9, 2024. Randomized trials involving patients with cancer receiving home-based palliative care were included. A forest plot was generated using the DerSimonian and Laird random-effects model. RESULTS: A total of 8 studies were included in the final analysis. Home-based palliative care appeared to enhance the quality of life of patients with cancer (pooled standard mean difference, 0.45 [95% confidence interval, 0.04-0.86]; P  = .03). CONCLUSION: Home-based palliative care improves the quality of life for patients with cancer. Further research with larger sample sizes and more rigorous methodologies is needed. IMPLICATION FOR PRACTICE: The findings highlight the value of home-based palliative care as a model to address the needs of patients with cancer at home, improving their quality of life, similar to hospital-based care.",
+      "journal": "Cancer nursing",
+      "pub_date": "2026",
+      "kind": "article",
+      "type": "review",
+      "disease": "other",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40293271/",
+      "altmetric_score": 1,
+      "altmetric_id": 176608910,
+      "altmetric_url": "https://www.altmetric.com/details/176608910",
+      "cited_by_news": 0,
+      "cited_by_twitter": 1,
+      "importance_score": 50.4,
+      "rank": 351
+    },
+    {
+      "uid": "pmid_42748584",
+      "pmid": "42748584",
+      "title": "Comparative oncological efficacy of chemotherapy, cytoreductive surgery with or without HIPEC in recurrent ovarian cancer: A network meta-analysis.",
+      "abstract": "BACKGROUND: The role of secondary cytoreductive surgery (SCS) and hyperthermic intraperitoneal chemotherapy (HIPEC) in platinum-sensitive recurrent ovarian cancer remains challenging. While chemotherapy (CHT) remains the standard approach, interest has grown in SCS, either with or without HIPEC. Despite promising results, the comparative effectiveness of SCS, SCS + HIPEC, and chemotherapy alone remains controversial, with no trials directly comparing SCS + HIPEC with CHT alone. METHODS: This systematic review and network meta-analysis included five randomized controlled trials (GOG-0213, DESKTOP III, SOC-1, CHIPOR, and HORSE) identified through PubMed, Embase, Scopus, and Cochrane. The analysis encompassed 1831 patients. A frequentist random-effects network meta-analysis was performed, with CHT as the reference. Heterogeneity was quantified using I RESULTS: Neither SCS (HR 0.97, 95% CI 0.80-1.19) nor SCS + HIPEC (HR 0.76, 95% CI 0.54-1.08) significantly improved 5-year OS compared to CHT alone (I CONCLUSIONS: SCS with or without HIPEC is associated with increased PFS and may also increase OS in certain scenarios. The comparison of SCS + HIPEC versus CHT rests on indirect evidence and possible bias given that CHIPOR trial used neoadjuvant chemotherapy. The apparent benefit of SCS + HIPEC in CC-1 patients remain exploratory.",
+      "journal": "European journal of surgical oncology : the journal of the European Society of Surgical Oncology and the British Association of Surgical Oncology",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "ovarian",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42748584/",
+      "altmetric_score": 1,
+      "altmetric_id": 204726625,
+      "altmetric_url": "https://www.altmetric.com/details/204726625",
+      "cited_by_news": 1,
+      "cited_by_twitter": 0,
+      "importance_score": 50.4,
+      "rank": 352
+    },
+    {
+      "uid": "pmid_42778079",
+      "pmid": "42778079",
+      "title": "Recent advances and future challenges of bispecific antibodies in lung cancer.",
+      "abstract": "Bispecific antibodies (BsAbs) integrate two binding specificities to coordinate antitumor mechanisms that cannot be readily achieved with conventional monospecific antibodies. In lung cancer, these agents encompass four principal strategies: dual targeting of tumor-associated receptors, immune-cell redirection, simultaneous modulation of immune-regulatory pathways, and combined blockade of immune checkpoints and angiogenesis. This review synthesizes the molecular architectures, pharmacologic mechanisms, clinical development, safety profiles, and translational challenges of BsAbs in non-small-cell lung cancer (NSCLC) and small-cell lung cancer (SCLC). Clinical progress has been uneven. Randomized trials have established meaningful benefits for selected agents, exemplified by amivantamab-based therapy in EGFR-mutated NSCLC, ivonescimab-based therapy across several NSCLC settings, and DLL3-directed T-cell engagement with tarlatamab in previously treated SCLC. However, the failure of other biologically compelling constructs in phase III trials underscores that target pairing alone does not guarantee therapeutic synergy. Clinical outcomes are shaped by target density and co-expression, tumor dependence on the paired pathways, molecular format, tissue distribution, treatment setting, and patient selection. Toxicity is similarly mechanism specific and may include cytokine-release syndrome, neurotoxicity, epithelial and infusion-related events, immune-mediated injury, and vascular complications. Future development should move beyond empirical target combinations toward biomarker-guided patient selection, globally representative randomized validation, rational treatment sequencing, and molecular designs that increase tumor selectivity while preserving efficacy. Clinical value varies substantially among constructs and must be established in each disease setting.",
+      "journal": "Critical reviews in oncology/hematology",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "nsclc",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42778079/",
+      "altmetric_score": 1,
+      "altmetric_id": 205182864,
+      "altmetric_url": "https://www.altmetric.com/details/205182864",
+      "cited_by_news": 0,
+      "cited_by_twitter": 0,
+      "importance_score": 50.4,
       "rank": 353
+    },
+    {
+      "uid": "pmid_42167964",
+      "pmid": "42167964",
+      "title": "Is oral squamous cell carcinoma arising in the background of oral submucous fibrosis a distinct entity? A systematic review and meta-analysis of clinicopathological and prognostic outcomes.",
+      "abstract": "This systematic review and meta-analysis was performed to assess and compare clinicopathological and survival outcomes in oral squamous cell carcinoma (OSCC) arising in the background of oral submucous fibrosis (OSCC-OSMF) and OSCC without any background of OSMF (non-OSMF-OSCC). A literature search in PubMed, Scopus, and Web of Science was performed up to August 2025. Studies comparing clinicopathological features between OSCC-OSMF and non-OSMF-OSCC were considered. Demographics, tumour site, stage, histopathology, nodal and other histological features, and survival data were extracted. Random-effects meta-analysis was performed to determine clinicopathological risk factors and survival in OSCC-OSMF compared to non-OSMF-OSCC. Risk of bias was assessed using the Newcastle-Ottawa Scale. Twelve observational studies were included. Patients with OSCC-OSMF were younger and predominantly male, and the buccal mucosa was the most common site. OSCC-OSMF presented more often at earlier stages (odds ratio (OR) 2.19, 95% confidence interval (CI) 1.29-3.73) and was histologically well-differentiated (OR 1.81, 95% CI 1.32-2.48). Nodal metastasis (OR 0.53, 95% CI 0.38-0.73) and extracapsular spread (OR 0.33, 95% CI 0.21-0.51) were significantly less common in OSCC-OSMF. The 5-year overall survival rate was better for OSCC-OSMF (OR 2.35, 95% CI 1.56-3.54). OSCC-OSMF has a unique set of clinicopathological characteristics and two-fold lower metastatic potential compared to non-OSMF-OSCC, and may be associated with improved long-term survival. The study data indicate that OSCC-OSMF is a unique subset within the OSCC category that requires consideration for surveillance and treatment.",
+      "journal": "International journal of oral and maxillofacial surgery",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "hnscc",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42167964/",
+      "altmetric_score": 1,
+      "altmetric_id": 207636516,
+      "altmetric_url": "https://www.altmetric.com/details/207636516",
+      "cited_by_news": 0,
+      "cited_by_twitter": 1,
+      "importance_score": 50.4,
+      "rank": 354
     },
     {
       "uid": "pmid_42742496",
@@ -7402,7 +7424,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 0,
       "importance_score": 50.4,
-      "rank": 354
+      "rank": 355
     },
     {
       "uid": "pmid_42854349",
@@ -7424,7 +7446,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 1,
       "importance_score": 50.4,
-      "rank": 355
+      "rank": 356
     },
     {
       "uid": "pmid_42128185",
@@ -7446,7 +7468,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 2,
       "importance_score": 50.4,
-      "rank": 356
+      "rank": 357
     },
     {
       "uid": "pmid_42251230",
@@ -7468,7 +7490,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 0,
       "importance_score": 50.4,
-      "rank": 357
+      "rank": 358
     },
     {
       "uid": "pmid_42624981",
@@ -7489,28 +7511,6 @@
       "altmetric_url": "https://www.altmetric.com/details/203080892",
       "cited_by_news": 0,
       "cited_by_twitter": 2,
-      "importance_score": 50.4,
-      "rank": 358
-    },
-    {
-      "uid": "pmid_42815252",
-      "pmid": "42815252",
-      "title": "Systemic and intracranial activity of antibody-drug conjugates in patients with non-small cell lung cancer and brain metastases: A systematic review and meta-analysis.",
-      "abstract": "INTRODUCTION: Brain metastases (BM) remain a major clinical challenge in patients with non-small cell lung cancer (NSCLC). Although antibody-drug conjugates (ADCs) have emerged as important treatment options for advanced NSCLC, their efficacy in patients with BM remains uncertain because of concerns regarding blood-brain barrier penetration and the underrepresentation of patients with BM in clinical trials. METHODS: A systematic literature search was conducted to identify studies evaluating ADCs in patients with NSCLC and BM. PubMed, Embase, the Cochrane Library, Web of Science, and major conference proceedings were searched. Outcomes included systemic and intracranial (IC) objective response rates (ORR), disease control rate (DCR), and grade ≥3 adverse events (AEs). RESULTS: A total of 13 studies comprising 3,191 patients were included, of whom 905 had BM. The pooled systemic ORR was 40% (95% confidence interval [CI]: 30-52%), with a systemic DCR of 77%. ADCs achieved an IC-ORR of 33% (95% CI: 25-43%) and an IC-DCR of 78%. HER2-targeted ADCs showed substantial activity (systemic ORR: 54%; IC-ORR: 44%), while TROP-2- and HER3-targeted ADCs also showed promising activity. No significant difference in systemic ORR was observed between patients with and without BM (pooled odds ratio, 1.00; 95% CI, 0.67-1.49; p = 1.00). CONCLUSIONS: ADCs demonstrated clinically meaningful systemic and intracranial activity in patients with NSCLC and BM, with no significant difference in systemic ORR by BM status. These findings support ADCs as a promising therapeutic option for this underserved population.",
-      "journal": "Lung cancer (Amsterdam, Netherlands)",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "brain_mets",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42815252/",
-      "altmetric_score": 1,
-      "altmetric_id": 205379299,
-      "altmetric_url": "https://www.altmetric.com/details/205379299",
-      "cited_by_news": 0,
-      "cited_by_twitter": 1,
       "importance_score": 50.4,
       "rank": 359
     },
@@ -8365,44 +8365,24 @@
       "rank": 401
     },
     {
-      "uid": "pmid_42800596",
-      "pmid": "42800596",
-      "title": "Reassessing the clinical value of momelotinib in myelofibrosis: An ESMO-MCBS:H-based appraisal of SIMPLIFY-1 and MOMENTUM.",
-      "abstract": "Myelofibrosis (MF) is a chronic myeloproliferative neoplasm characterized by splenomegaly, systemic symptoms, and anemia, the latter being strongly associated with poor survival and reduced quality of life. Current Janus kinase (JAK) inhibitors improve symptoms and spleen size but often exacerbate anemia, leaving a significant unmet clinical need. Momelotinib, a JAK1/JAK2 and activin A receptor type 1 (ACVR1) inhibitor, has been proposed to address both splenomegaly and anemia through hepcidin suppression. This study critically evaluates the clinical benefit of momelotinib using the European Society for Medical Oncology Magnitude of Clinical Benefit Scale for Hematological Malignancies (ESMO-MCBS:H), focusing on the phase 3 trials SIMPLIFY-1 and MOMENTUM. In SIMPLIFY-1, momelotinib demonstrated non-inferiority to ruxolitinib in terms of spleen volume reduction (SVR35 26.5% vs 29.0%) and did not evaluated quality of life as a prespecified outcome, resulting in an ESMO-MCBS:H score indicating no evaluable benefit (NEB). In contrast, in MOMENTUM, conducted in symptomatic, anemic patients previously treated with JAK inhibitors, momelotinib was superior to danazol for MFSAF total symptom score response (≥50% reduction from baseline 25% vs 9%). As no improvement in global health status was observed, MOMENTUM was scored as Grade 1. Interpretation of hematologic benefits remains limited by trial design, as the anemia related outcomes were not primary endpoints and studies were not powered to robustly assess them. Furthermore, the negative SIMPLIFY-2 trial underscores uncertainty in pretreated populations. In conclusion, momelotinib demonstrates a differentiated clinical profile with consistent spleen control and potential hematologic benefits, particularly in anemic patients. However, superiority over other improved JAK inhibitors has not been demonstrated in the pivotal phase 3 trials evaluated. Future trials incorporating anemia-focused primary endpoints and biomarker stratification are warranted to better define its role in myelofibrosis management.",
-      "journal": "Critical reviews in oncology/hematology",
+      "uid": "pmid_42946411",
+      "pmid": "42946411",
+      "title": "Regulated Tumor-cell Death in Chemoimmunotherapy: Mechanisms, Biomarkers, and Clinical Translation.",
+      "abstract": "BACKGROUND/AIM: Immune-checkpoint blockade is most effective when tumor antigens are visible, innate sensing is intact, and effector lymphocytes can enter the tumor microenvironment. This narrative review evaluates regulated tumor-cell death as the mechanistic interface between chemotherapy and checkpoint inhibition. MATERIALS AND METHODS: PubMed/MEDLINE and ClinicalTrials.gov were searched for English language records published from January 2005 through August 2026. Consensus definitions, mechanistic studies with functional immune endpoints, randomized phase III trials and mature updates, and longitudinal human translational studies were prioritized. RESULTS: Immunogenic cell death is best considered a functional immunologic outcome of a dying-cell context rather than a death pathway equivalent to ferroptosis, necroptosis, or pyroptosis. Chemotherapy may promote antigen release, innate sensing, dendritic-cell activation, and T-cell priming, but it may also deplete immune effectors or provoke suppressive inflammation. Pivotal chemoimmunotherapy trials demonstrate clinical benefit in several cancers; however, efficacy does not establish that cell death was immunogenic or identify a specific death program. Ferroptosis, necroptosis, and pyroptosis remain predominantly preclinical in this setting. A dynamic biomarker framework should integrate proximal danger signals with antigen presentation, tumor-reactive T-cell expansion, and spatial immune remodeling. CONCLUSION: Regimen design should define the intended immune-conditioning window and verify adaptive priming with longitudinal tissue, blood, and imaging measurements. This approach may guide sequencing, de-escalation, and mechanism-based treatment changes when tumor shrinkage occurs without immune priming.",
+      "journal": "Anticancer research",
       "pub_date": "2026 Nov",
       "kind": "article",
       "type": "review",
-      "disease": "mpn",
-      "category": "heme",
+      "disease": "other",
+      "category": "solid",
       "source": "pubmed",
       "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42800596/",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42946411/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
       "rank": 402
-    },
-    {
-      "uid": "pmid_42599665",
-      "pmid": "42599665",
-      "title": "Comparison of lesion detection rates between FAPI PET/CT and",
-      "abstract": "OBJECTIVES: To compare the lesion detection rates of fibroblast activation protein inhibitor (FAPI) PET/CT and METHODS: Databases including PubMed, Embase, Cochrane Library, Scopus, and Web of Science were searched for head-to-head studies comparing FAPI and FDG for HCC lesion detection up to March 2026. Two researchers independently performed literature screening and data extraction, and assessed the risk of bias using the QUADAS-2 tool. Meta-analysis was conducted using R 4.5.3 software. The primary outcome was lesion detection-rate difference, expressed as risk difference (RD) with 95% confidence intervals (CIs). Random-effects models were used for pooled analyses. Subgroup analyses were performed according to lesion size and treatment status when data were available. Anatomical-site findings were summarized descriptively because pooled analysis was not considered appropriate. RESULTS: Eight reports were included in the qualitative synthesis, and 5 studies/outcomes providing HCC-specific paired comparative data were included in the main quantitative synthesis. Overall, FAPI PET/CT showed a significantly higher lesion detection rate than CONCLUSION: In the available HCC-specific head-to-head studies, FAPI PET/CT was associated with a higher lesion detection rate than",
-      "journal": "Japanese journal of radiology",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "hcc",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42599665/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 403
     },
     {
       "uid": "pmid_42924873",
@@ -8422,27 +8402,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 404
-    },
-    {
-      "uid": "pmid_42858529",
-      "pmid": "42858529",
-      "title": "Beyond the binding site: PROTAC-mediated protein degradation assists the therapeutic paradigm of hematological malignancies.",
-      "abstract": "Hematological malignancies represent a growing global health burden, with conventional therapies limited by systemic toxicity and resistance mechanisms. Proteolysis-targeting chimeras (PROTACs) are heterobifunctional molecules that hijack cellular degradation machinery to eliminate, rather than merely inhibit, target proteins, enabling engagement of previously undruggable oncogenic drivers. This review synthesizes PROTAC applications across acute myeloid leukemia, lymphoid malignancies, and multiple myeloma, addressing targets including BRD4, FLT3, BCL-XL, BTK, and epigenetic regulators. Clinical advancement has been notable, with Bruton tyrosine kinase (BTK) degraders achieving response rates exceeding 75% in heavily pretreated patients and progressing to Phase 3 trials, while cereblon-targeting degraders in multiple myeloma represent the most clinically mature application. Mechanistically, PROTACs offer catalytic, substoichiometric activity, elimination of non-catalytic protein functions, and retention of efficacy against certain resistance mutations. Significant challenges persist, however, including poor drug-like properties, limited oral bioavailability, complex ternary-complex optimization, and degrader-specific resistance mechanisms such as E3 ligase loss or impaired proteasomal capacity, necessitating expanded biomarker surveillance frameworks. Emerging innovations, including degrader-antibody conjugates, novel E3 ligase recruiters, and artificial intelligence-driven design, aim to address these limitations. Integration with precision medicine and rational combination strategies positions targeted protein degradation as a potentially transformative approach for addressing longstanding unmet needs in blood cancer therapy, although substantial translational hurdles remain.",
-      "journal": "Leukemia research",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "aml",
-      "category": "heme",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42858529/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 405
+      "rank": 403
     },
     {
       "uid": "pmid_42277929",
@@ -8462,7 +8422,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 406
+      "rank": 404
     },
     {
       "uid": "pmid_42994867",
@@ -8482,7 +8442,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 407
+      "rank": 405
     },
     {
       "uid": "pmid_42998187",
@@ -8502,7 +8462,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 408
+      "rank": 406
     },
     {
       "uid": "pmid_42743900",
@@ -8522,7 +8482,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 409
+      "rank": 407
     },
     {
       "uid": "pmid_42993545",
@@ -8542,7 +8502,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 410
+      "rank": 408
     },
     {
       "uid": "pmid_42721718",
@@ -8562,7 +8522,27 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 411
+      "rank": 409
+    },
+    {
+      "uid": "pmid_42599665",
+      "pmid": "42599665",
+      "title": "Comparison of lesion detection rates between FAPI PET/CT and",
+      "abstract": "OBJECTIVES: To compare the lesion detection rates of fibroblast activation protein inhibitor (FAPI) PET/CT and METHODS: Databases including PubMed, Embase, Cochrane Library, Scopus, and Web of Science were searched for head-to-head studies comparing FAPI and FDG for HCC lesion detection up to March 2026. Two researchers independently performed literature screening and data extraction, and assessed the risk of bias using the QUADAS-2 tool. Meta-analysis was conducted using R 4.5.3 software. The primary outcome was lesion detection-rate difference, expressed as risk difference (RD) with 95% confidence intervals (CIs). Random-effects models were used for pooled analyses. Subgroup analyses were performed according to lesion size and treatment status when data were available. Anatomical-site findings were summarized descriptively because pooled analysis was not considered appropriate. RESULTS: Eight reports were included in the qualitative synthesis, and 5 studies/outcomes providing HCC-specific paired comparative data were included in the main quantitative synthesis. Overall, FAPI PET/CT showed a significantly higher lesion detection rate than CONCLUSION: In the available HCC-specific head-to-head studies, FAPI PET/CT was associated with a higher lesion detection rate than",
+      "journal": "Japanese journal of radiology",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "hcc",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42599665/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 410
     },
     {
       "uid": "pmid_42610477",
@@ -8582,7 +8562,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 412
+      "rank": 411
     },
     {
       "uid": "pmid_41922296",
@@ -8602,7 +8582,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 413
+      "rank": 412
     },
     {
       "uid": "pmid_42986544",
@@ -8622,7 +8602,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 414
+      "rank": 413
     },
     {
       "uid": "pmid_42008824",
@@ -8644,7 +8624,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 0,
       "importance_score": 40.0,
-      "rank": 415
+      "rank": 414
     },
     {
       "uid": "pmid_42060255",
@@ -8664,7 +8644,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 416
+      "rank": 415
     },
     {
       "uid": "pmid_42140502",
@@ -8684,7 +8664,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 417
+      "rank": 416
     },
     {
       "uid": "pmid_42685663",
@@ -8704,7 +8684,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 418
+      "rank": 417
     },
     {
       "uid": "pmid_42274100",
@@ -8724,7 +8704,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 419
+      "rank": 418
     },
     {
       "uid": "pmid_42685664",
@@ -8744,7 +8724,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 420
+      "rank": 419
     },
     {
       "uid": "pmid_42659898",
@@ -8764,7 +8744,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 421
+      "rank": 420
     },
     {
       "uid": "pmid_42850867",
@@ -8784,7 +8764,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 422
+      "rank": 421
     },
     {
       "uid": "pmid_42743819",
@@ -8804,7 +8784,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 423
+      "rank": 422
     },
     {
       "uid": "pmid_42423516",
@@ -8824,7 +8804,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 424
+      "rank": 423
     },
     {
       "uid": "pmid_42435259",
@@ -8844,7 +8824,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 425
+      "rank": 424
     },
     {
       "uid": "pmid_42562243",
@@ -8860,6 +8840,26 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42562243/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 425
+    },
+    {
+      "uid": "pmid_42252358",
+      "pmid": "42252358",
+      "title": "A Decade Later: An Updated Systematic Review and Meta-analysis of Overall Survival, Disease-Free Survival, Local Recurrence, and Nipple-Areolar Recurrence Following Nipple-Sparing Mastectomy.",
+      "abstract": "BACKGROUND: Since our 2015 manuscript, nipple-sparing mastectomy (NSM) has been increasingly adopted in breast cancer management, though concerns regarding long-term oncologic safety persist. We provide a 10-year update on oncologic outcomes following NSM, including overall survival (OS), disease-free survival (DFS), local recurrence (LR), and nipple-areolar complex recurrence (NACR). PATIENTS AND METHODS: A Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)-compliant systematic review identified studies reporting oncologic outcomes after NSM. Studies with internal comparison arms evaluating therapeutic NSM versus skin-sparing mastectomy (SSM) and/or modified radical mastectomy (MRM) were included in the meta-analysis. Studies lacking comparison arms were included in pooled analyses for NSM outcomes using a random-effects model. Weighted averages and 95% confidence intervals (CI) were calculated, and studies were stratified by duration of follow-up. RESULTS: A total of 60 studies comprising 7752 NSM patients were included: 11 studies had comparison arms; 9 studies reporting OS demonstrated a significant pooled risk difference of 2.1% favoring NSM over MRM/SSM (95% CI 0.0-4.3%, p = 0.047); 7 studies reporting DFS showed a nonsignificant pooled risk difference of 4.8% favoring NSM (95% CI -0.8 to 10.3%, p = 0.093); 11 studies reporting LR demonstrated a nonsignificant pooled risk difference of -0.7% (95% CI -2.1 to 0.8%, p = 0.35). The systematic review included all 60 studies. Weighted average follow-up ranged from 25.6 to 133.4 months across groups. Among patients with 10 years of follow-up (n = 391), OS was 82.0% (80.9-93.2%), DFS 60.7% (58.8-62.7%), LR 15.1% (13.9-16.2%), and NACR 1.1% (1.0-1.1%). CONCLUSIONS: NSM is associated with excellent long-term survival and low recurrence rates comparable to SSM/MRM, with minimal NAC recurrence in appropriately selected patients, supporting its long-term oncologic safety.",
+      "journal": "Annals of surgical oncology",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "breast_general",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42252358/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -8887,26 +8887,6 @@
       "rank": 427
     },
     {
-      "uid": "pmid_42252358",
-      "pmid": "42252358",
-      "title": "A Decade Later: An Updated Systematic Review and Meta-analysis of Overall Survival, Disease-Free Survival, Local Recurrence, and Nipple-Areolar Recurrence Following Nipple-Sparing Mastectomy.",
-      "abstract": "BACKGROUND: Since our 2015 manuscript, nipple-sparing mastectomy (NSM) has been increasingly adopted in breast cancer management, though concerns regarding long-term oncologic safety persist. We provide a 10-year update on oncologic outcomes following NSM, including overall survival (OS), disease-free survival (DFS), local recurrence (LR), and nipple-areolar complex recurrence (NACR). PATIENTS AND METHODS: A Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)-compliant systematic review identified studies reporting oncologic outcomes after NSM. Studies with internal comparison arms evaluating therapeutic NSM versus skin-sparing mastectomy (SSM) and/or modified radical mastectomy (MRM) were included in the meta-analysis. Studies lacking comparison arms were included in pooled analyses for NSM outcomes using a random-effects model. Weighted averages and 95% confidence intervals (CI) were calculated, and studies were stratified by duration of follow-up. RESULTS: A total of 60 studies comprising 7752 NSM patients were included: 11 studies had comparison arms; 9 studies reporting OS demonstrated a significant pooled risk difference of 2.1% favoring NSM over MRM/SSM (95% CI 0.0-4.3%, p = 0.047); 7 studies reporting DFS showed a nonsignificant pooled risk difference of 4.8% favoring NSM (95% CI -0.8 to 10.3%, p = 0.093); 11 studies reporting LR demonstrated a nonsignificant pooled risk difference of -0.7% (95% CI -2.1 to 0.8%, p = 0.35). The systematic review included all 60 studies. Weighted average follow-up ranged from 25.6 to 133.4 months across groups. Among patients with 10 years of follow-up (n = 391), OS was 82.0% (80.9-93.2%), DFS 60.7% (58.8-62.7%), LR 15.1% (13.9-16.2%), and NACR 1.1% (1.0-1.1%). CONCLUSIONS: NSM is associated with excellent long-term survival and low recurrence rates comparable to SSM/MRM, with minimal NAC recurrence in appropriately selected patients, supporting its long-term oncologic safety.",
-      "journal": "Annals of surgical oncology",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "breast_general",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42252358/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 428
-    },
-    {
       "uid": "pmid_42135603",
       "pmid": "42135603",
       "title": "The Addition of Concurrent Immune Checkpoint Inhibitors for Chemoradiotherapy With Consolidative Immune Checkpoint Inhibitors in Unresectable Cancers: A Systematic Review and Meta-Analysis.",
@@ -8924,7 +8904,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 429
+      "rank": 428
     },
     {
       "uid": "pmid_42580601",
@@ -8944,7 +8924,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 430
+      "rank": 429
     },
     {
       "uid": "pmid_42844116",
@@ -8964,7 +8944,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 431
+      "rank": 430
     },
     {
       "uid": "pmid_42648416",
@@ -8984,7 +8964,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 432
+      "rank": 431
     },
     {
       "uid": "pmid_42876044",
@@ -9004,7 +8984,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 433
+      "rank": 432
     },
     {
       "uid": "pmid_42240809",
@@ -9020,6 +9000,26 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42240809/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 433
+    },
+    {
+      "uid": "pmid_42831963",
+      "pmid": "42831963",
+      "title": "Preoperative CA15-3 as a predictor of axillary lymph node metastasis and prognosis in women with breast cancer: a GRADE-assessed systematic review and meta-analysis.",
+      "abstract": "BACKGROUND: Breast cancer (BC) is the leading cause of cancer-related death among women. Axillary lymph node metastasis (ALNM) is a key prognostic factor, yet its assessment relies on invasive procedures. The prognostic value of preoperative CA15-3 remains controversial. We aimed to evaluate the association between preoperative CA15-3 levels and overall survival (OS), disease-free survival (DFS), and ALNM in breast cancer patients. METHODS: We systematically searched PubMed, Scopus, Web of Science, Embase, and Cochrane Library up to January 2026. Cohort studies assessing preoperative CA15-3 and OS, DFS, or ALNM were included. Pooled hazard ratios (HRs) for OS and DFS, as well as pooled odds ratios (ORs) with 95% confidence intervals (CIs) for metastasis outcomes (Any metastasis or ALNM), were calculated using random-effects models. RESULTS: Thirty-one cohort studies comprising 178,047 patients were included. Elevated CA15-3 was significantly associated with worse OS (HR: 1.91; 95% CI: 1.67-2.15), poorer DFS (HR: 2.04; 95% CI: 1.78-2.31), and increased metastasis risk (OR: 2.73; 95% CI: 2.04-3.42). The strongest association was observed for ALNM (OR: 3.08; 95% CI: 2.09-4.08). Subgroup and meta-regression analyses confirmed consistent findings across regions and identified age, tumor stage, and CA15-3 cutoff as heterogeneity sources. CONCLUSIONS: Elevated preoperative CA15-3 is significantly associated with reduced survival and increased ALNM risk. This association remained significant after adjustment for tumor characteristics in most primary studies, suggesting CA15-3 may reflect more aggressive tumor biology. These findings support CA15-3's potential as an adjunctive biomarker; however, prospective validation is warranted.",
+      "journal": "Breast cancer (Tokyo, Japan)",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "breast_general",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42831963/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -9069,6 +9069,46 @@
       "rank": 436
     },
     {
+      "uid": "pmid_42980186",
+      "pmid": "42980186",
+      "title": "Immunologic Timing and Therapeutic Sequencing of Locoregional Therapy and Immunotherapy in Hepatocellular Carcinoma.",
+      "abstract": "Immune checkpoint inhibitor combinations have improved outcomes in hepatocellular carcinoma, but durable benefit remains uneven and the optimal integration of locoregional therapy is unresolved. Local interventions can release tumor antigens, alter vascular and stromal barriers, and recruit innate and adaptive immune cells. These effects can coexist with tissue repair, angiogenic signaling, myeloid recruitment, and renewed checkpoint expression. This narrative review examines therapeutic timing for clinicians and translational researchers. A targeted PubMed search, publisher reports, and reference checking informed the revision; studies were selected for relevance to human immune kinetics, clinical schedules, safety, and biomarker validation. This review compares thermal ablation, transarterial chemoembolization, yttrium-90 radioembolization, irreversible electroporation, and stereotactic body radiotherapy; evaluates checkpoint inhibition before, after, or overlapping local treatment; and assesses candidate scheduling biomarkers. Human studies document selected immune changes, while phase 3 trials show that some treatment combinations extend progression-free survival. However, these trials do not isolate timing, and observational schedule comparisons cannot establish a causal advantage or a universal interval. A modality- and patient-specific hypothesis is therefore discussed in which measured immune state and hepatic reserve could inform future scheduling trials. No biomarker-triggered schedule has demonstrated clinical utility. Serial tissue and blood sampling, pharmacokinetic assessment, and schedule-specific randomization are needed before an immunogenic window can guide routine care.",
+      "journal": "Journal of visualized experiments : JoVE",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "hcc",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42980186/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 437
+    },
+    {
+      "uid": "pmid_42970537",
+      "pmid": "42970537",
+      "title": "Prognostic value of the systemic inflammation response index (SIRI) in glioma: A meta-analysis.",
+      "abstract": "OBJECTIVE: To systematically evaluate the predictive value of systemic inflammation response index (SIRI) for the prognosis of glioma patients. METHODS: PubMed, Cochrane Library, EMBASE, and Web of Science databases were searched to collect literature on the relationship between SIRI and glioma prognosis from database inception to July 2026. The primary outcome measures were overall survival (OS) and progression-free survival (PFS). STATA 15.0 and Review Manager 5.4 software were used, and random-effects models were employed with pooled hazard ratios (HR) and their 95% confidence intervals (CI) to assess the prognostic value of SIRI. Subgroup analyses, sensitivity analyses, and publication bias assessments were performed. RESULTS: Eight retrospective cohort studies involving 1778 glioma patients were included, forming 12 comparison groups for OS analysis and 4 comparison groups for PFS analysis. Meta-analysis results showed that a higher SIRI was significantly associated with poorer OS (pooled HR = 1.79, 95% CI: 1.34-2.38, P < 0.0001) and PFS (pooled HR = 1.46, 95% CI: 1.18-1.81, P = 0.0005) in glioma patients. Subgroup analysis showed that the prognostic value of SIRI for OS was not significant in the European population subgroup, suggesting that the association may be modulated by geographic region. Sensitivity analysis confirmed the robustness of the results. Egger's test indicated publication bias in the OS analysis (P = 0.0001), but no significant bias was found in the PFS analysis. CONCLUSION: This meta-analysis suggests that elevated SIRI is associated with poorer OS and PFS in glioma patients, although this association was not consistently observed across all subgroups, particularly in European populations. These findings highlight the need for further validation with standardized cut-off values in diverse populations.",
+      "journal": "PloS one",
+      "pub_date": "2026",
+      "kind": "article",
+      "type": "review",
+      "disease": "glioma",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42970537/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 438
+    },
+    {
       "uid": "pmid_42744133",
       "pmid": "42744133",
       "title": "Biomarker-guided treatment selection in metastatic colorectal cancer: A critical review of established and emerging therapies.",
@@ -9086,7 +9126,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 437
+      "rank": 439
     },
     {
       "uid": "pmid_42731927",
@@ -9108,7 +9148,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 0,
       "importance_score": 40.0,
-      "rank": 438
+      "rank": 440
     },
     {
       "uid": "pmid_42455495",
@@ -9128,7 +9168,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 439
+      "rank": 441
     },
     {
       "uid": "pmid_42257336",
@@ -9148,7 +9188,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 440
+      "rank": 442
     },
     {
       "uid": "pmid_40548838",
@@ -9168,7 +9208,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 441
+      "rank": 443
     },
     {
       "uid": "pmid_42632879",
@@ -9184,46 +9224,6 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42632879/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 442
-    },
-    {
-      "uid": "pmid_42679916",
-      "pmid": "42679916",
-      "title": "Time-varying prognostic value of circulating tumor DNA in urothelial carcinoma: A systematic review and reconstructed patient-data meta-analysis.",
-      "abstract": "Circulating tumor DNA (ctDNA) increasingly guides adjuvant therapy and surveillance in urothelial carcinoma (UC), yet whether its prognostic effect is adequately summarized by a single pooled hazard ratio (HR), which assumes proportional hazards (PH), has not been formally evaluated. We searched five sources for studies reporting ctDNA prognostic associations across non-muscle-invasive, muscle-invasive (MIBC), upper-tract and metastatic UC. HRs for unfavorable versus favorable ctDNA were pooled by Bayesian random-effects meta-analysis, with subgroups by stage and assay strategy. Where individual patient data could be reconstructed, PH was tested under four decision rules and restricted mean survival time (RMST), a PH-independent estimand, estimated at 12, 24 and 36 months. Twenty-five studies were synthesized qualitatively and 17 quantitatively. The pooled HR was 3.85 (95% credible interval 2.92-5.26; I² = 50.7%; prediction interval 1.67-9.38), and was higher in MIBC (4.89) than metastatic UC (2.52; p = 0.034) and for tumor-informed (5.46) than tumor-agnostic (2.68) assays (p = 0.009); neither survived multiplicity adjustment, and the latter is confounded with setting and sponsorship. PH was not supported in 5 of 11 cohorts under the pre-specified rule (2-5 across rules); pooled RMST loss in the unfavorable stratum was 2.2, 6.6 and 12.2 months at 12, 24 and 36 months (11, 8 and 5 cohorts), with certainty falling as the horizon lengthened. Unfavorable ctDNA was consistently associated with worse survival, particularly in perioperative MIBC, but non-proportional hazards in many cohorts indicate that its prognostic value should be reported with time-axis estimands alongside HRs.",
-      "journal": "Critical reviews in oncology/hematology",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "bladder",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42679916/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 443
-    },
-    {
-      "uid": "pmid_42561891",
-      "pmid": "42561891",
-      "title": "Diagnostic performance of FDA-cleared and CE-marked AI systems for mammography screening: a systematic review and meta-analysis.",
-      "abstract": "OBJECTIVE: To evaluate the diagnostic performance of FDA/CE-cleared AI systems for mammography screening and assess their roles across clinical workflows. METHODS: A systematic search was conducted in Scopus, Embase, and PubMed for full-text articles published from January 2018 to July 2024 evaluating commercially available FDA/CE-cleared AI for breast cancer detection using digital mammography (DM) and/or digital breast tomosynthesis (DBT). Included studies specified the AI system and reported diagnostic performance metrics (e.g. sensitivity, specificity, AUC) and/or clinical impact (e.g. cancer detection rate [CDR], recall rate, workload). Study quality was assessed using a modified QUADAS-2 tool. A random-effects meta-analysis pooled standalone AI performance (sensitivity, specificity, and AUC); other workflow roles were synthesised narratively. RESULTS: In total, 42 studies were included (39 retrospective; 3 prospective): 33 evaluated DM, 6 DBT, and 3 both DM and DBT. Risk of bias was frequently high, particularly for flow and timing. In DM, pooled standalone AI AUC was 0.89 (95% CI: 0.85-0.92), with sensitivity of 76.3% (95% CI: 66.2-84.2%) and specificity of 89.6% (95% CI: 84.5-93.2%). Prospective evaluations of AI-integrated workflows, including triage and second-reader replacement, showed non-inferior cancer detection with significant workload reduction compared with standard double reading. A single prospective study of AI as an additional reviewer reported additional cancer detection with minimal increase in recalls. CONCLUSIONS: FDA/CE-cleared AI systems demonstrate promising diagnostic performance in breast screening. The strongest evidence supports workflow configurations that reduce radiologist workload, particularly triage and independent/supporting reader models, while prospective evidence supporting complete replacement of radiologists remains lacking.",
-      "journal": "European journal of radiology",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "breast_general",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42561891/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -9251,6 +9251,46 @@
       "rank": 445
     },
     {
+      "uid": "pmid_42679916",
+      "pmid": "42679916",
+      "title": "Time-varying prognostic value of circulating tumor DNA in urothelial carcinoma: A systematic review and reconstructed patient-data meta-analysis.",
+      "abstract": "Circulating tumor DNA (ctDNA) increasingly guides adjuvant therapy and surveillance in urothelial carcinoma (UC), yet whether its prognostic effect is adequately summarized by a single pooled hazard ratio (HR), which assumes proportional hazards (PH), has not been formally evaluated. We searched five sources for studies reporting ctDNA prognostic associations across non-muscle-invasive, muscle-invasive (MIBC), upper-tract and metastatic UC. HRs for unfavorable versus favorable ctDNA were pooled by Bayesian random-effects meta-analysis, with subgroups by stage and assay strategy. Where individual patient data could be reconstructed, PH was tested under four decision rules and restricted mean survival time (RMST), a PH-independent estimand, estimated at 12, 24 and 36 months. Twenty-five studies were synthesized qualitatively and 17 quantitatively. The pooled HR was 3.85 (95% credible interval 2.92-5.26; I² = 50.7%; prediction interval 1.67-9.38), and was higher in MIBC (4.89) than metastatic UC (2.52; p = 0.034) and for tumor-informed (5.46) than tumor-agnostic (2.68) assays (p = 0.009); neither survived multiplicity adjustment, and the latter is confounded with setting and sponsorship. PH was not supported in 5 of 11 cohorts under the pre-specified rule (2-5 across rules); pooled RMST loss in the unfavorable stratum was 2.2, 6.6 and 12.2 months at 12, 24 and 36 months (11, 8 and 5 cohorts), with certainty falling as the horizon lengthened. Unfavorable ctDNA was consistently associated with worse survival, particularly in perioperative MIBC, but non-proportional hazards in many cohorts indicate that its prognostic value should be reported with time-axis estimands alongside HRs.",
+      "journal": "Critical reviews in oncology/hematology",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "bladder",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42679916/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 446
+    },
+    {
+      "uid": "pmid_42561891",
+      "pmid": "42561891",
+      "title": "Diagnostic performance of FDA-cleared and CE-marked AI systems for mammography screening: a systematic review and meta-analysis.",
+      "abstract": "OBJECTIVE: To evaluate the diagnostic performance of FDA/CE-cleared AI systems for mammography screening and assess their roles across clinical workflows. METHODS: A systematic search was conducted in Scopus, Embase, and PubMed for full-text articles published from January 2018 to July 2024 evaluating commercially available FDA/CE-cleared AI for breast cancer detection using digital mammography (DM) and/or digital breast tomosynthesis (DBT). Included studies specified the AI system and reported diagnostic performance metrics (e.g. sensitivity, specificity, AUC) and/or clinical impact (e.g. cancer detection rate [CDR], recall rate, workload). Study quality was assessed using a modified QUADAS-2 tool. A random-effects meta-analysis pooled standalone AI performance (sensitivity, specificity, and AUC); other workflow roles were synthesised narratively. RESULTS: In total, 42 studies were included (39 retrospective; 3 prospective): 33 evaluated DM, 6 DBT, and 3 both DM and DBT. Risk of bias was frequently high, particularly for flow and timing. In DM, pooled standalone AI AUC was 0.89 (95% CI: 0.85-0.92), with sensitivity of 76.3% (95% CI: 66.2-84.2%) and specificity of 89.6% (95% CI: 84.5-93.2%). Prospective evaluations of AI-integrated workflows, including triage and second-reader replacement, showed non-inferior cancer detection with significant workload reduction compared with standard double reading. A single prospective study of AI as an additional reviewer reported additional cancer detection with minimal increase in recalls. CONCLUSIONS: FDA/CE-cleared AI systems demonstrate promising diagnostic performance in breast screening. The strongest evidence supports workflow configurations that reduce radiologist workload, particularly triage and independent/supporting reader models, while prospective evidence supporting complete replacement of radiologists remains lacking.",
+      "journal": "European journal of radiology",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "breast_general",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42561891/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 447
+    },
+    {
       "uid": "pmid_42497321",
       "pmid": "42497321",
       "title": "Assessing the reproductive lifespan of female cancer survivors using AMH: a meta-synthesis of longitudinal studies.",
@@ -9270,27 +9310,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 0,
       "importance_score": 40.0,
-      "rank": 446
-    },
-    {
-      "uid": "pmid_42595866",
-      "pmid": "42595866",
-      "title": "Bile Cell-Free DNA as a Tumor-Proximal Source for Molecular Profiling of Biliary Tract Cancer: A Systematic Review and Meta-Analysis.",
-      "abstract": "BACKGROUND: Molecular profiling is increasingly required for treatment selection in advanced biliary tract cancer, yet tumor tissue is often insufficient and plasma circulating tumor DNA has limited yield. Because bile directly contacts the biliary epithelium and is obtainable during routine biliary interventions, bile cell-free DNA (cfDNA) may provide a tumor-proximal molecular profiling source. OBJECTIVE: We systematically reviewed and quantitatively synthesized bile cfDNA detection and profiling in biliary tract cancer. METHODS: PubMed, EMBASE, and the Cochrane Library were searched from inception to 13 October, 2025 for studies that included at least ten patients with suspected or confirmed biliary tract cancer and extractable bile cfDNA outcomes. Pooled proportions were estimated using random-effects models with Freeman-Tukey double-arcsine transformation. Bile-versus-plasma detection was compared using pooled log risk ratios. Heterogeneity was quantified by I RESULTS: Eight studies including 271 patients with biliary tract cancer were included. After excluding two cohorts with 100% detection, the conservative pooled bile cfDNA molecular detection rate was 59.1% (95% confidence interval [CI] 49.0-68.7; I CONCLUSIONS: Bile cfDNA showed higher molecular detection than plasma cfDNA and supported molecular profiling when tumor tissue was insufficient, but detection and endpoint heterogeneity limit its use as a stand-alone diagnostic test. Its role is best defined as opportunistic molecular profiling during indicated biliary procedures, pending prospective multicenter validation with standardized protocols. PROTOCOL REGISTRATION: PROSPERO CRD420251250742 (registered prospectively prior to study conduct).",
-      "journal": "Molecular diagnosis & therapy",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "biliary",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42595866/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 447
+      "rank": 448
     },
     {
       "uid": "pmid_42922244",
@@ -9310,7 +9330,27 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 448
+      "rank": 449
+    },
+    {
+      "uid": "pmid_42595866",
+      "pmid": "42595866",
+      "title": "Bile Cell-Free DNA as a Tumor-Proximal Source for Molecular Profiling of Biliary Tract Cancer: A Systematic Review and Meta-Analysis.",
+      "abstract": "BACKGROUND: Molecular profiling is increasingly required for treatment selection in advanced biliary tract cancer, yet tumor tissue is often insufficient and plasma circulating tumor DNA has limited yield. Because bile directly contacts the biliary epithelium and is obtainable during routine biliary interventions, bile cell-free DNA (cfDNA) may provide a tumor-proximal molecular profiling source. OBJECTIVE: We systematically reviewed and quantitatively synthesized bile cfDNA detection and profiling in biliary tract cancer. METHODS: PubMed, EMBASE, and the Cochrane Library were searched from inception to 13 October, 2025 for studies that included at least ten patients with suspected or confirmed biliary tract cancer and extractable bile cfDNA outcomes. Pooled proportions were estimated using random-effects models with Freeman-Tukey double-arcsine transformation. Bile-versus-plasma detection was compared using pooled log risk ratios. Heterogeneity was quantified by I RESULTS: Eight studies including 271 patients with biliary tract cancer were included. After excluding two cohorts with 100% detection, the conservative pooled bile cfDNA molecular detection rate was 59.1% (95% confidence interval [CI] 49.0-68.7; I CONCLUSIONS: Bile cfDNA showed higher molecular detection than plasma cfDNA and supported molecular profiling when tumor tissue was insufficient, but detection and endpoint heterogeneity limit its use as a stand-alone diagnostic test. Its role is best defined as opportunistic molecular profiling during indicated biliary procedures, pending prospective multicenter validation with standardized protocols. PROTOCOL REGISTRATION: PROSPERO CRD420251250742 (registered prospectively prior to study conduct).",
+      "journal": "Molecular diagnosis & therapy",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "biliary",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42595866/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 450
     },
     {
       "uid": "pmid_42645788",
@@ -9330,7 +9370,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 449
+      "rank": 451
     },
     {
       "uid": "pmid_42578281",
@@ -9346,46 +9386,6 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42578281/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 450
-    },
-    {
-      "uid": "pmid_42976160",
-      "pmid": "42976160",
-      "title": "Sex difference in survival benefits of immune checkpoint inhibitors in advanced non-small cell lung cancer: A meta-analysis.",
-      "abstract": "BACKGROUND: Whether sex influences the survival benefit of immune checkpoint inhibitors (ICIs) in advanced non-small cell lung cancer (NSCLC) remains uncertain. METHODS: We systematically searched PubMed, Embase, Cochrane Library, Web of Science, and Scopus up to April 1, 2026, for randomized controlled trials (RCTs) comparing ICIs with chemotherapy and reporting overall survival (OS) or progression-free survival (PFS) stratified by sex. A random-effects model was used for meta-analysis. RESULTS: Sixty-three publications (reporting 42 phase 3 RCTs) involving 25,827 patients (18,772 male; 7,055 female) were included. Compared with chemotherapy, ICIs significantly improved both OS and PFS in males (OS: HR 0.74 [95% CI 0.71-0.78]; PFS: HR 0.59 [95% CI 0.54-0.64]) and females (OS: HR 0.83 [95% CI 0.77-0.90]; PFS: HR 0.76 [95% CI 0.66-0.86]). Pooled treatment-by-sex interaction analyses demonstrated significantly greater OS (interaction HR = 0.90 [95% CI 0.84-0.97]; P = 0.01) and PFS (interaction HR = 0.82 [95% CI 0.73-0.92]; P = 0.0006) benefits in males than in females. In subgroup analyses, sex‑based differences in OS reached statistical significance in patients receiving ICI monotherapy (P = 0.02), including those treated with anti‑PD‑1 monotherapy (P = 0.04) and those with PD‑L1 expression ≥50% (P = 0.02). However, these differences did not persist after the False Discovery Rate (FDR) correction (adjusted P = 0.07, 0.10, and 0.07, respectively). In contrast, sex‑based differences in PFS remained statistically significant after FDR correction in the ICI monotherapy (adjusted P = 0.001), anti‑PD‑1 monotherapy (adjusted P = 0.001), and PD‑L1 ≥ 50% (adjusted P = 0.004) subgroups. No significant sex‑based differences in either OS or PFS were observed among patients treated with ICI plus chemotherapy. CONCLUSIONS: Although ICIs are superior to chemotherapy in both sexes, the PFS benefit of ICI monotherapy appears to be attenuated in females relative to males. Given the imbalances in baseline confounders coupled with the underrepresentation of females in the included trials, these findings should be interpreted with caution and warrant confirmation in future RCTs designed specifically to investigate sex‑based differences.",
-      "journal": "PloS one",
-      "pub_date": "2026",
-      "kind": "article",
-      "type": "review",
-      "disease": "nsclc",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42976160/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 451
-    },
-    {
-      "uid": "pmid_42685390",
-      "pmid": "42685390",
-      "title": "The associations between household food insecurity and cancer: A comprehensive systematic review and meta-analysis of observational studies among adults.",
-      "abstract": "BACKGROUND: Household food insecurity (HFI) is a critical social determinant of health that can adversely influence cancer prevention, treatment, and survivorship, while a cancer diagnosis with its financial and functional consequences may also increase the risk of HFI. This study aimed to examine the associations between HFI and cancer-related outcomes. METHODS: A systematic search was done in PubMed, Embase, Scopus, Web of Science, and Cochrane Library until July 29, 2025. Eligible studies were observational in adults (≥18 years) evaluating the associations between HFI and cancer outcomes, with effects operating in both directions. The quality assessment was done using the Newcastle-Ottawa Scale. Pooled relative effect estimate with 95% confidence intervals (CIs) were calculated using random-effects models. Subgroup, sensitivity, and publication bias analyses were performed, and the certainty of evidence was assessed using GRADE tool. RESULTS: Forty-four studies (n = 1,135,888 adults) from high- (United States) and middle-income (Iran and Brazil) countries met inclusion criteria. Meta-analysis of six studies (509,291 participants; nine effect sizes) showed that HFI was significantly associated with lower cancer screening uptake (pooled relative effect estimate = 0.91; 95% CI: 0.87, 0.96; I CONCLUSIONS: HFI can act as a barrier to cancer screening, treatment adherence, and survivorship, thereby contributing to inequities in cancer outcomes. Integrating HFI screening and nutrition support into the continuum of oncological care, alongside the implementation of equity-driven policies, will be important to addressing survival rates and enhance the quality of life for vulnerable populations.",
-      "journal": "Social science & medicine (1982)",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "other",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42685390/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -9413,6 +9413,26 @@
       "rank": 453
     },
     {
+      "uid": "pmid_42685390",
+      "pmid": "42685390",
+      "title": "The associations between household food insecurity and cancer: A comprehensive systematic review and meta-analysis of observational studies among adults.",
+      "abstract": "BACKGROUND: Household food insecurity (HFI) is a critical social determinant of health that can adversely influence cancer prevention, treatment, and survivorship, while a cancer diagnosis with its financial and functional consequences may also increase the risk of HFI. This study aimed to examine the associations between HFI and cancer-related outcomes. METHODS: A systematic search was done in PubMed, Embase, Scopus, Web of Science, and Cochrane Library until July 29, 2025. Eligible studies were observational in adults (≥18 years) evaluating the associations between HFI and cancer outcomes, with effects operating in both directions. The quality assessment was done using the Newcastle-Ottawa Scale. Pooled relative effect estimate with 95% confidence intervals (CIs) were calculated using random-effects models. Subgroup, sensitivity, and publication bias analyses were performed, and the certainty of evidence was assessed using GRADE tool. RESULTS: Forty-four studies (n = 1,135,888 adults) from high- (United States) and middle-income (Iran and Brazil) countries met inclusion criteria. Meta-analysis of six studies (509,291 participants; nine effect sizes) showed that HFI was significantly associated with lower cancer screening uptake (pooled relative effect estimate = 0.91; 95% CI: 0.87, 0.96; I CONCLUSIONS: HFI can act as a barrier to cancer screening, treatment adherence, and survivorship, thereby contributing to inequities in cancer outcomes. Integrating HFI screening and nutrition support into the continuum of oncological care, alongside the implementation of equity-driven policies, will be important to addressing survival rates and enhance the quality of life for vulnerable populations.",
+      "journal": "Social science & medicine (1982)",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "other",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42685390/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 454
+    },
+    {
       "uid": "pmid_42421337",
       "pmid": "42421337",
       "title": "Effectiveness of Enhanced Recovery After Surgery Protocols for Robot Assisted Radical Prostatectomy: A Systematic Review and Meta-Analysis.",
@@ -9430,7 +9450,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 454
+      "rank": 455
     },
     {
       "uid": "pmid_42811432",
@@ -9450,7 +9470,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 455
+      "rank": 456
     },
     {
       "uid": "pmid_42975733",
@@ -9470,7 +9490,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 456
+      "rank": 457
     },
     {
       "uid": "pmid_42556596",
@@ -9490,7 +9510,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 457
+      "rank": 458
     },
     {
       "uid": "pmid_42603643",
@@ -9510,7 +9530,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 458
+      "rank": 459
     },
     {
       "uid": "pmid_42319409",
@@ -9530,7 +9550,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 459
+      "rank": 460
     },
     {
       "uid": "pmid_42509408",
@@ -9550,7 +9570,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 460
+      "rank": 461
     },
     {
       "uid": "pmid_42622736",
@@ -9572,7 +9592,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 0,
       "importance_score": 40.0,
-      "rank": 461
+      "rank": 462
     },
     {
       "uid": "pmid_42171981",
@@ -9592,7 +9612,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 462
+      "rank": 463
     },
     {
       "uid": "pmid_42213311",
@@ -9612,7 +9632,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 463
+      "rank": 464
     },
     {
       "uid": "pmid_42697026",
@@ -9632,7 +9652,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 464
+      "rank": 465
     },
     {
       "uid": "pmid_42957251",
@@ -9652,7 +9672,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 465
+      "rank": 466
     },
     {
       "uid": "pmid_42660414",
@@ -9672,7 +9692,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 466
+      "rank": 467
     },
     {
       "uid": "pmid_42574771",
@@ -9688,26 +9708,6 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42574771/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 467
-    },
-    {
-      "uid": "pmid_42287517",
-      "pmid": "42287517",
-      "title": "Single‑port versus multi‑port robotic-assisted partial nephrectomy: a systematic review and meta-analysis of propensity score-matched cohort studies.",
-      "abstract": "PURPOSE: The effectiveness of single-port (SP) versus multi-port (MP) robotic-assisted partial nephrectomy (RAPN) has been compared in many studies, but the comparative superiority remains unclear. The purpose of this article is to comprehensively review the existing literature and conduct a more precise comparison of the two surgical methods. METHODS: We performed a thorough literature search in PubMed, Web of Science, Embase, and Cochrane CENTRAL databases to identify relevant studies published before April 2026. Eligible studies were strictly screened for inclusion in the subsequent meta-analysis, and their methodological quality was evaluated using the Newcastle-Ottawa Scale. For continuous outcomes, we computed the mean difference (MD) with 95% confidence intervals (CI). For dichotomous variables, the risk ratio (RR) with 95% CI was applied. RESULTS: A total of six high-quality retrospective investigations were enrolled, involving 1223 patients in total. Of these, 591 (48%) patients underwent single-port surgery, while 632 (52%) patients underwent multi-port surgery. In terms of the surgical outcomes, primary analyses indicated that SP operation was similar to MP operation. SP and MP exhibited no statistically significant differences regarding positive surgical margins, postoperative complications, major postoperative complications, and ΔeGFR at 6 months. Compared with MP, SP has less-estimated blood loss and better pain control in the early postoperative period. Exploratory sensitivity analyses suggested potential advantages of SP in operative time and hospital stay. Subgroup analysis revealed a trend toward shorter warm ischemia time in the MP group compared with the SP group. CONCLUSIONS: SP is safe and comparable to MP in oncological, safety, and short-term renal function outcomes. Primary analyses showed no significant differences in operative time, hospital stay, or warm ischemia time. SP was associated with slightly lower estimated blood loss and early postoperative pain, but these differences were small and clinically minimal. Exploratory post hoc findings suggesting advantages in operative time and hospital stay require confirmation.",
-      "journal": "International urology and nephrology",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "rcc",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42287517/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -9859,6 +9859,26 @@
       "rank": 475
     },
     {
+      "uid": "pmid_42858529",
+      "pmid": "42858529",
+      "title": "Beyond the binding site: PROTAC-mediated protein degradation assists the therapeutic paradigm of hematological malignancies.",
+      "abstract": "Hematological malignancies represent a growing global health burden, with conventional therapies limited by systemic toxicity and resistance mechanisms. Proteolysis-targeting chimeras (PROTACs) are heterobifunctional molecules that hijack cellular degradation machinery to eliminate, rather than merely inhibit, target proteins, enabling engagement of previously undruggable oncogenic drivers. This review synthesizes PROTAC applications across acute myeloid leukemia, lymphoid malignancies, and multiple myeloma, addressing targets including BRD4, FLT3, BCL-XL, BTK, and epigenetic regulators. Clinical advancement has been notable, with Bruton tyrosine kinase (BTK) degraders achieving response rates exceeding 75% in heavily pretreated patients and progressing to Phase 3 trials, while cereblon-targeting degraders in multiple myeloma represent the most clinically mature application. Mechanistically, PROTACs offer catalytic, substoichiometric activity, elimination of non-catalytic protein functions, and retention of efficacy against certain resistance mutations. Significant challenges persist, however, including poor drug-like properties, limited oral bioavailability, complex ternary-complex optimization, and degrader-specific resistance mechanisms such as E3 ligase loss or impaired proteasomal capacity, necessitating expanded biomarker surveillance frameworks. Emerging innovations, including degrader-antibody conjugates, novel E3 ligase recruiters, and artificial intelligence-driven design, aim to address these limitations. Integration with precision medicine and rational combination strategies positions targeted protein degradation as a potentially transformative approach for addressing longstanding unmet needs in blood cancer therapy, although substantial translational hurdles remain.",
+      "journal": "Leukemia research",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "aml",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42858529/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 476
+    },
+    {
       "uid": "pmid_42612851",
       "pmid": "42612851",
       "title": "Immune checkpoint inhibitors in cancer patients with pre-existing autoimmune disease: Comparative safety and efficacy in a registered systematic review.",
@@ -9876,7 +9896,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 476
+      "rank": 477
     },
     {
       "uid": "pmid_42551308",
@@ -9896,7 +9916,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 477
+      "rank": 478
     },
     {
       "uid": "pmid_42219433",
@@ -9916,7 +9936,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 478
+      "rank": 479
     },
     {
       "uid": "pmid_42475970",
@@ -9936,7 +9956,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 479
+      "rank": 480
     },
     {
       "uid": "pmid_42800594",
@@ -9956,7 +9976,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 480
+      "rank": 481
     },
     {
       "uid": "pmid_42697805",
@@ -9978,7 +9998,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 0,
       "importance_score": 40.0,
-      "rank": 481
+      "rank": 482
     },
     {
       "uid": "pmid_41518610",
@@ -9998,7 +10018,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 482
+      "rank": 483
     },
     {
       "uid": "pmid_42641831",
@@ -10018,47 +10038,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 483
-    },
-    {
-      "uid": "pmid_42946411",
-      "pmid": "42946411",
-      "title": "Regulated Tumor-cell Death in Chemoimmunotherapy: Mechanisms, Biomarkers, and Clinical Translation.",
-      "abstract": "BACKGROUND/AIM: Immune-checkpoint blockade is most effective when tumor antigens are visible, innate sensing is intact, and effector lymphocytes can enter the tumor microenvironment. This narrative review evaluates regulated tumor-cell death as the mechanistic interface between chemotherapy and checkpoint inhibition. MATERIALS AND METHODS: PubMed/MEDLINE and ClinicalTrials.gov were searched for English language records published from January 2005 through August 2026. Consensus definitions, mechanistic studies with functional immune endpoints, randomized phase III trials and mature updates, and longitudinal human translational studies were prioritized. RESULTS: Immunogenic cell death is best considered a functional immunologic outcome of a dying-cell context rather than a death pathway equivalent to ferroptosis, necroptosis, or pyroptosis. Chemotherapy may promote antigen release, innate sensing, dendritic-cell activation, and T-cell priming, but it may also deplete immune effectors or provoke suppressive inflammation. Pivotal chemoimmunotherapy trials demonstrate clinical benefit in several cancers; however, efficacy does not establish that cell death was immunogenic or identify a specific death program. Ferroptosis, necroptosis, and pyroptosis remain predominantly preclinical in this setting. A dynamic biomarker framework should integrate proximal danger signals with antigen presentation, tumor-reactive T-cell expansion, and spatial immune remodeling. CONCLUSION: Regimen design should define the intended immune-conditioning window and verify adaptive priming with longitudinal tissue, blood, and imaging measurements. This approach may guide sequencing, de-escalation, and mechanism-based treatment changes when tumor shrinkage occurs without immune priming.",
-      "journal": "Anticancer research",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "other",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42946411/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
       "rank": 484
-    },
-    {
-      "uid": "pmid_42831963",
-      "pmid": "42831963",
-      "title": "Preoperative CA15-3 as a predictor of axillary lymph node metastasis and prognosis in women with breast cancer: a GRADE-assessed systematic review and meta-analysis.",
-      "abstract": "BACKGROUND: Breast cancer (BC) is the leading cause of cancer-related death among women. Axillary lymph node metastasis (ALNM) is a key prognostic factor, yet its assessment relies on invasive procedures. The prognostic value of preoperative CA15-3 remains controversial. We aimed to evaluate the association between preoperative CA15-3 levels and overall survival (OS), disease-free survival (DFS), and ALNM in breast cancer patients. METHODS: We systematically searched PubMed, Scopus, Web of Science, Embase, and Cochrane Library up to January 2026. Cohort studies assessing preoperative CA15-3 and OS, DFS, or ALNM were included. Pooled hazard ratios (HRs) for OS and DFS, as well as pooled odds ratios (ORs) with 95% confidence intervals (CIs) for metastasis outcomes (Any metastasis or ALNM), were calculated using random-effects models. RESULTS: Thirty-one cohort studies comprising 178,047 patients were included. Elevated CA15-3 was significantly associated with worse OS (HR: 1.91; 95% CI: 1.67-2.15), poorer DFS (HR: 2.04; 95% CI: 1.78-2.31), and increased metastasis risk (OR: 2.73; 95% CI: 2.04-3.42). The strongest association was observed for ALNM (OR: 3.08; 95% CI: 2.09-4.08). Subgroup and meta-regression analyses confirmed consistent findings across regions and identified age, tumor stage, and CA15-3 cutoff as heterogeneity sources. CONCLUSIONS: Elevated preoperative CA15-3 is significantly associated with reduced survival and increased ALNM risk. This association remained significant after adjustment for tumor characteristics in most primary studies, suggesting CA15-3 may reflect more aggressive tumor biology. These findings support CA15-3's potential as an adjunctive biomarker; however, prospective validation is warranted.",
-      "journal": "Breast cancer (Tokyo, Japan)",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "breast_general",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42831963/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 485
     },
     {
       "uid": "pmid_41345476",
@@ -10078,7 +10058,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 486
+      "rank": 485
     },
     {
       "uid": "pmid_42402363",
@@ -10098,7 +10078,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 487
+      "rank": 486
     },
     {
       "uid": "pmid_42823043",
@@ -10118,27 +10098,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 488
-    },
-    {
-      "uid": "pmid_42669322",
-      "pmid": "42669322",
-      "title": "Prognostic models and predictors of recurrence in resectable colorectal liver metastases: A systematic review and meta-analysis.",
-      "abstract": "We systematically reviewed prognostic models for recurrence after curative-intent locoregional treatment of colorectal liver metastases (CRLM) and quantitatively synthesized prognostic factors associated with recurrence-free survival (RFS). From 2208 records across 26 years of literature, 293 studies were included, encompassing 85,150 patients in development cohorts and 5549 patients in validation cohorts. Most models targeted risk stratification rather than clinically actionable prediction, and Cox proportional hazards regression remained the dominant modelling approach despite increasing use of artificial intelligence and machine learning terminology. External validation was uncommon (33/293 studies), performance reporting was heterogeneous, and overall methodological quality was limited, restricting cross-study comparability and clinical translation. Imaging-based modelling represented a small subset (19 studies; 23 RFS models), generally characterized by small cohorts and predominantly conventional regression-based pipelines. Meta-analysis identified several clinicopathological, molecular, and treatment-related predictors consistently associated with recurrence, including primary lymph node positivity (HR 1.58), multiple liver metastases (HR 1.49), positive resection margins (HR 1.73), postoperative carcinoembryonic antigen > 5 ng/mL (HR 2.79), poor response to neoadjuvant therapy according to RECIST criteria (HR 2.76), and postoperative circulating tumor DNA positivity (HR 4.78), the strongest prognostic factor identified. Adjuvant and peri-operative systemic therapies were associated with lower recurrence risk. The study showed that current prognostic models incompletely capture the biological heterogeneity underlying CRLM recurrence. Dynamic biomarkers and treatment-response indicators may support future multimodal prognostic frameworks and improve risk stratification following curative-intent treatment.",
-      "journal": "Critical reviews in oncology/hematology",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "review",
-      "disease": "colorectal",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42669322/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 489
+      "rank": 487
     },
     {
       "uid": "pmid_42681563",
@@ -10158,7 +10118,27 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 490
+      "rank": 488
+    },
+    {
+      "uid": "pmid_42800596",
+      "pmid": "42800596",
+      "title": "Reassessing the clinical value of momelotinib in myelofibrosis: An ESMO-MCBS:H-based appraisal of SIMPLIFY-1 and MOMENTUM.",
+      "abstract": "Myelofibrosis (MF) is a chronic myeloproliferative neoplasm characterized by splenomegaly, systemic symptoms, and anemia, the latter being strongly associated with poor survival and reduced quality of life. Current Janus kinase (JAK) inhibitors improve symptoms and spleen size but often exacerbate anemia, leaving a significant unmet clinical need. Momelotinib, a JAK1/JAK2 and activin A receptor type 1 (ACVR1) inhibitor, has been proposed to address both splenomegaly and anemia through hepcidin suppression. This study critically evaluates the clinical benefit of momelotinib using the European Society for Medical Oncology Magnitude of Clinical Benefit Scale for Hematological Malignancies (ESMO-MCBS:H), focusing on the phase 3 trials SIMPLIFY-1 and MOMENTUM. In SIMPLIFY-1, momelotinib demonstrated non-inferiority to ruxolitinib in terms of spleen volume reduction (SVR35 26.5% vs 29.0%) and did not evaluated quality of life as a prespecified outcome, resulting in an ESMO-MCBS:H score indicating no evaluable benefit (NEB). In contrast, in MOMENTUM, conducted in symptomatic, anemic patients previously treated with JAK inhibitors, momelotinib was superior to danazol for MFSAF total symptom score response (≥50% reduction from baseline 25% vs 9%). As no improvement in global health status was observed, MOMENTUM was scored as Grade 1. Interpretation of hematologic benefits remains limited by trial design, as the anemia related outcomes were not primary endpoints and studies were not powered to robustly assess them. Furthermore, the negative SIMPLIFY-2 trial underscores uncertainty in pretreated populations. In conclusion, momelotinib demonstrates a differentiated clinical profile with consistent spleen control and potential hematologic benefits, particularly in anemic patients. However, superiority over other improved JAK inhibitors has not been demonstrated in the pivotal phase 3 trials evaluated. Future trials incorporating anemia-focused primary endpoints and biomarker stratification are warranted to better define its role in myelofibrosis management.",
+      "journal": "Critical reviews in oncology/hematology",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "mpn",
+      "category": "heme",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42800596/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 489
     },
     {
       "uid": "pmid_42716908",
@@ -10178,7 +10158,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 491
+      "rank": 490
     },
     {
       "uid": "pmid_42606812",
@@ -10198,7 +10178,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 492
+      "rank": 491
     },
     {
       "uid": "pmid_42114823",
@@ -10218,7 +10198,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 493
+      "rank": 492
     },
     {
       "uid": "pmid_42483956",
@@ -10240,7 +10220,7 @@
       "cited_by_news": 0,
       "cited_by_twitter": 0,
       "importance_score": 40.0,
-      "rank": 494
+      "rank": 493
     },
     {
       "uid": "pmid_42954085",
@@ -10260,7 +10240,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 495
+      "rank": 494
     },
     {
       "uid": "pmid_42610766",
@@ -10280,27 +10260,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 496
-    },
-    {
-      "uid": "pmid_42970537",
-      "pmid": "42970537",
-      "title": "Prognostic value of the systemic inflammation response index (SIRI) in glioma: A meta-analysis.",
-      "abstract": "OBJECTIVE: To systematically evaluate the predictive value of systemic inflammation response index (SIRI) for the prognosis of glioma patients. METHODS: PubMed, Cochrane Library, EMBASE, and Web of Science databases were searched to collect literature on the relationship between SIRI and glioma prognosis from database inception to July 2026. The primary outcome measures were overall survival (OS) and progression-free survival (PFS). STATA 15.0 and Review Manager 5.4 software were used, and random-effects models were employed with pooled hazard ratios (HR) and their 95% confidence intervals (CI) to assess the prognostic value of SIRI. Subgroup analyses, sensitivity analyses, and publication bias assessments were performed. RESULTS: Eight retrospective cohort studies involving 1778 glioma patients were included, forming 12 comparison groups for OS analysis and 4 comparison groups for PFS analysis. Meta-analysis results showed that a higher SIRI was significantly associated with poorer OS (pooled HR = 1.79, 95% CI: 1.34-2.38, P < 0.0001) and PFS (pooled HR = 1.46, 95% CI: 1.18-1.81, P = 0.0005) in glioma patients. Subgroup analysis showed that the prognostic value of SIRI for OS was not significant in the European population subgroup, suggesting that the association may be modulated by geographic region. Sensitivity analysis confirmed the robustness of the results. Egger's test indicated publication bias in the OS analysis (P = 0.0001), but no significant bias was found in the PFS analysis. CONCLUSION: This meta-analysis suggests that elevated SIRI is associated with poorer OS and PFS in glioma patients, although this association was not consistently observed across all subgroups, particularly in European populations. These findings highlight the need for further validation with standardized cut-off values in diverse populations.",
-      "journal": "PloS one",
-      "pub_date": "2026",
-      "kind": "article",
-      "type": "review",
-      "disease": "glioma",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42970537/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 40.0,
-      "rank": 497
+      "rank": 495
     },
     {
       "uid": "pmid_42988985",
@@ -10320,7 +10280,27 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 40.0,
-      "rank": 498
+      "rank": 496
+    },
+    {
+      "uid": "pmid_42669322",
+      "pmid": "42669322",
+      "title": "Prognostic models and predictors of recurrence in resectable colorectal liver metastases: A systematic review and meta-analysis.",
+      "abstract": "We systematically reviewed prognostic models for recurrence after curative-intent locoregional treatment of colorectal liver metastases (CRLM) and quantitatively synthesized prognostic factors associated with recurrence-free survival (RFS). From 2208 records across 26 years of literature, 293 studies were included, encompassing 85,150 patients in development cohorts and 5549 patients in validation cohorts. Most models targeted risk stratification rather than clinically actionable prediction, and Cox proportional hazards regression remained the dominant modelling approach despite increasing use of artificial intelligence and machine learning terminology. External validation was uncommon (33/293 studies), performance reporting was heterogeneous, and overall methodological quality was limited, restricting cross-study comparability and clinical translation. Imaging-based modelling represented a small subset (19 studies; 23 RFS models), generally characterized by small cohorts and predominantly conventional regression-based pipelines. Meta-analysis identified several clinicopathological, molecular, and treatment-related predictors consistently associated with recurrence, including primary lymph node positivity (HR 1.58), multiple liver metastases (HR 1.49), positive resection margins (HR 1.73), postoperative carcinoembryonic antigen > 5 ng/mL (HR 2.79), poor response to neoadjuvant therapy according to RECIST criteria (HR 2.76), and postoperative circulating tumor DNA positivity (HR 4.78), the strongest prognostic factor identified. Adjuvant and peri-operative systemic therapies were associated with lower recurrence risk. The study showed that current prognostic models incompletely capture the biological heterogeneity underlying CRLM recurrence. Dynamic biomarkers and treatment-response indicators may support future multimodal prognostic frameworks and improve risk stratification following curative-intent treatment.",
+      "journal": "Critical reviews in oncology/hematology",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "colorectal",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42669322/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 497
     },
     {
       "uid": "pmid_42456951",
@@ -10336,6 +10316,26 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42456951/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 40.0,
+      "rank": 498
+    },
+    {
+      "uid": "pmid_42287517",
+      "pmid": "42287517",
+      "title": "Single‑port versus multi‑port robotic-assisted partial nephrectomy: a systematic review and meta-analysis of propensity score-matched cohort studies.",
+      "abstract": "PURPOSE: The effectiveness of single-port (SP) versus multi-port (MP) robotic-assisted partial nephrectomy (RAPN) has been compared in many studies, but the comparative superiority remains unclear. The purpose of this article is to comprehensively review the existing literature and conduct a more precise comparison of the two surgical methods. METHODS: We performed a thorough literature search in PubMed, Web of Science, Embase, and Cochrane CENTRAL databases to identify relevant studies published before April 2026. Eligible studies were strictly screened for inclusion in the subsequent meta-analysis, and their methodological quality was evaluated using the Newcastle-Ottawa Scale. For continuous outcomes, we computed the mean difference (MD) with 95% confidence intervals (CI). For dichotomous variables, the risk ratio (RR) with 95% CI was applied. RESULTS: A total of six high-quality retrospective investigations were enrolled, involving 1223 patients in total. Of these, 591 (48%) patients underwent single-port surgery, while 632 (52%) patients underwent multi-port surgery. In terms of the surgical outcomes, primary analyses indicated that SP operation was similar to MP operation. SP and MP exhibited no statistically significant differences regarding positive surgical margins, postoperative complications, major postoperative complications, and ΔeGFR at 6 months. Compared with MP, SP has less-estimated blood loss and better pain control in the early postoperative period. Exploratory sensitivity analyses suggested potential advantages of SP in operative time and hospital stay. Subgroup analysis revealed a trend toward shorter warm ischemia time in the MP group compared with the SP group. CONCLUSIONS: SP is safe and comparable to MP in oncological, safety, and short-term renal function outcomes. Primary analyses showed no significant differences in operative time, hospital stay, or warm ischemia time. SP was associated with slightly lower estimated blood loss and early postoperative pain, but these differences were small and clinically minimal. Exploratory post hoc findings suggesting advantages in operative time and hospital stay require confirmation.",
+      "journal": "International urology and nephrology",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "review",
+      "disease": "rcc",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42287517/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -10383,19 +10383,19 @@
       "rank": 501
     },
     {
-      "uid": "pmid_42980186",
-      "pmid": "42980186",
-      "title": "Immunologic Timing and Therapeutic Sequencing of Locoregional Therapy and Immunotherapy in Hepatocellular Carcinoma.",
-      "abstract": "Immune checkpoint inhibitor combinations have improved outcomes in hepatocellular carcinoma, but durable benefit remains uneven and the optimal integration of locoregional therapy is unresolved. Local interventions can release tumor antigens, alter vascular and stromal barriers, and recruit innate and adaptive immune cells. These effects can coexist with tissue repair, angiogenic signaling, myeloid recruitment, and renewed checkpoint expression. This narrative review examines therapeutic timing for clinicians and translational researchers. A targeted PubMed search, publisher reports, and reference checking informed the revision; studies were selected for relevance to human immune kinetics, clinical schedules, safety, and biomarker validation. This review compares thermal ablation, transarterial chemoembolization, yttrium-90 radioembolization, irreversible electroporation, and stereotactic body radiotherapy; evaluates checkpoint inhibition before, after, or overlapping local treatment; and assesses candidate scheduling biomarkers. Human studies document selected immune changes, while phase 3 trials show that some treatment combinations extend progression-free survival. However, these trials do not isolate timing, and observational schedule comparisons cannot establish a causal advantage or a universal interval. A modality- and patient-specific hypothesis is therefore discussed in which measured immune state and hepatic reserve could inform future scheduling trials. No biomarker-triggered schedule has demonstrated clinical utility. Serial tissue and blood sampling, pharmacokinetic assessment, and schedule-specific randomization are needed before an immunogenic window can guide routine care.",
-      "journal": "Journal of visualized experiments : JoVE",
-      "pub_date": "2026 Nov",
+      "uid": "pmid_42976160",
+      "pmid": "42976160",
+      "title": "Sex difference in survival benefits of immune checkpoint inhibitors in advanced non-small cell lung cancer: A meta-analysis.",
+      "abstract": "BACKGROUND: Whether sex influences the survival benefit of immune checkpoint inhibitors (ICIs) in advanced non-small cell lung cancer (NSCLC) remains uncertain. METHODS: We systematically searched PubMed, Embase, Cochrane Library, Web of Science, and Scopus up to April 1, 2026, for randomized controlled trials (RCTs) comparing ICIs with chemotherapy and reporting overall survival (OS) or progression-free survival (PFS) stratified by sex. A random-effects model was used for meta-analysis. RESULTS: Sixty-three publications (reporting 42 phase 3 RCTs) involving 25,827 patients (18,772 male; 7,055 female) were included. Compared with chemotherapy, ICIs significantly improved both OS and PFS in males (OS: HR 0.74 [95% CI 0.71-0.78]; PFS: HR 0.59 [95% CI 0.54-0.64]) and females (OS: HR 0.83 [95% CI 0.77-0.90]; PFS: HR 0.76 [95% CI 0.66-0.86]). Pooled treatment-by-sex interaction analyses demonstrated significantly greater OS (interaction HR = 0.90 [95% CI 0.84-0.97]; P = 0.01) and PFS (interaction HR = 0.82 [95% CI 0.73-0.92]; P = 0.0006) benefits in males than in females. In subgroup analyses, sex‑based differences in OS reached statistical significance in patients receiving ICI monotherapy (P = 0.02), including those treated with anti‑PD‑1 monotherapy (P = 0.04) and those with PD‑L1 expression ≥50% (P = 0.02). However, these differences did not persist after the False Discovery Rate (FDR) correction (adjusted P = 0.07, 0.10, and 0.07, respectively). In contrast, sex‑based differences in PFS remained statistically significant after FDR correction in the ICI monotherapy (adjusted P = 0.001), anti‑PD‑1 monotherapy (adjusted P = 0.001), and PD‑L1 ≥ 50% (adjusted P = 0.004) subgroups. No significant sex‑based differences in either OS or PFS were observed among patients treated with ICI plus chemotherapy. CONCLUSIONS: Although ICIs are superior to chemotherapy in both sexes, the PFS benefit of ICI monotherapy appears to be attenuated in females relative to males. Given the imbalances in baseline confounders coupled with the underrepresentation of females in the included trials, these findings should be interpreted with caution and warrant confirmation in future RCTs designed specifically to investigate sex‑based differences.",
+      "journal": "PloS one",
+      "pub_date": "2026",
       "kind": "article",
       "type": "review",
-      "disease": "hcc",
+      "disease": "nsclc",
       "category": "solid",
       "source": "pubmed",
       "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42980186/",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42976160/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -10483,26 +10483,6 @@
       "rank": 506
     },
     {
-      "uid": "pmid_42986444",
-      "pmid": "42986444",
-      "title": "A phase 1 study of 4'-thio-2'-deoxycytidine in patients with solid tumors.",
-      "abstract": "PURPOSE: The DNA methyltransferase (DNMT) inhibitor 4'-thio-2'-deoxycytidine (TdCyd), a second-generation cytidine analog, demonstrated potent preclinical antitumor activity and favorable pharmacokinetics, which led us to explore its safety, efficacy and anti-tumor activity in patients with solid tumors. METHODS: Adult patients with advanced solid tumors received TdCyd orally on days 1-5 and 8-12 in 21-day cycles. Dose escalation proceeded according to design 4 of the Simon accelerated titration design, changing to a 3 + 3 dose escalation design in the event of dose-limiting toxicities. Blood samples were collected for circulating tumor cell (CTC) evaluation of p16 re-expression as a marker of TdCyd epigenetic modulation, and for pharmacokinetic analysis. RESULTS: Twenty-seven patients were enrolled. The maximum tolerated dose was not reached. The best response was prolonged stable disease (SD), with 3 patients on treatment for ≥ 6 cycles, and there was no dose-response relationship. An increase in the proportion of p16-expressing cytokeratin-positive (CK+) CTCs was detected in 71% (15 of 21) of patients evaluable for p16 response at every dose level in which patients were assessable for pharmacodynamic response; p16 re-expression in vimentin-positive CTCs was reported in 38% (6 of 16) of evaluable patients. Plasma levels of TdCyd metabolites were largely dose proportional and higher levels were detected in patients with higher incidence and severity of study drug-related adverse events. CONCLUSION: Prolonged SD and p16 re-expression at lower TdCyd dose levels suggest that longer exposures to low concentrations is worth exploring in future trials, including studies of TdCyd in therapeutic combinations.",
-      "journal": "Cancer chemotherapy and pharmacology",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "phase1",
-      "disease": "other",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42986444/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 35.0,
-      "rank": 507
-    },
-    {
       "uid": "pmid_42554933",
       "pmid": "42554933",
       "title": "Efficacy and safety of the BEBM (bendamustine, etoposide, busulfan, and melphalan) conditioning regimen for autologous stem-cell transplantation in non-Hodgkin lymphoma.",
@@ -10520,7 +10500,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 35.0,
-      "rank": 508
+      "rank": 507
     },
     {
       "uid": "pmid_42978019",
@@ -10540,7 +10520,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 35.0,
-      "rank": 509
+      "rank": 508
     },
     {
       "uid": "pmid_42989793",
@@ -10556,6 +10536,26 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42989793/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 35.0,
+      "rank": 509
+    },
+    {
+      "uid": "pmid_42986444",
+      "pmid": "42986444",
+      "title": "A phase 1 study of 4'-thio-2'-deoxycytidine in patients with solid tumors.",
+      "abstract": "PURPOSE: The DNA methyltransferase (DNMT) inhibitor 4'-thio-2'-deoxycytidine (TdCyd), a second-generation cytidine analog, demonstrated potent preclinical antitumor activity and favorable pharmacokinetics, which led us to explore its safety, efficacy and anti-tumor activity in patients with solid tumors. METHODS: Adult patients with advanced solid tumors received TdCyd orally on days 1-5 and 8-12 in 21-day cycles. Dose escalation proceeded according to design 4 of the Simon accelerated titration design, changing to a 3 + 3 dose escalation design in the event of dose-limiting toxicities. Blood samples were collected for circulating tumor cell (CTC) evaluation of p16 re-expression as a marker of TdCyd epigenetic modulation, and for pharmacokinetic analysis. RESULTS: Twenty-seven patients were enrolled. The maximum tolerated dose was not reached. The best response was prolonged stable disease (SD), with 3 patients on treatment for ≥ 6 cycles, and there was no dose-response relationship. An increase in the proportion of p16-expressing cytokeratin-positive (CK+) CTCs was detected in 71% (15 of 21) of patients evaluable for p16 response at every dose level in which patients were assessable for pharmacodynamic response; p16 re-expression in vimentin-positive CTCs was reported in 38% (6 of 16) of evaluable patients. Plasma levels of TdCyd metabolites were largely dose proportional and higher levels were detected in patients with higher incidence and severity of study drug-related adverse events. CONCLUSION: Prolonged SD and p16 re-expression at lower TdCyd dose levels suggest that longer exposures to low concentrations is worth exploring in future trials, including studies of TdCyd in therapeutic combinations.",
+      "journal": "Cancer chemotherapy and pharmacology",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "phase1",
+      "disease": "other",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42986444/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
@@ -11303,6 +11303,26 @@
       "rank": 547
     },
     {
+      "uid": "pmid_42993070",
+      "pmid": "42993070",
+      "title": "LEgal Guidance for Cancer Patients and CAREgivers (LEGACY CARE): A Pilot Clinical Trial.",
+      "abstract": "BACKGROUND: Medical-legal partnerships can address health-harming legal needs (HHLNs) but caregiver-inclusive models are understudied. AIMS: To evaluate the feasibility, acceptability, and preliminary efficacy in addressing HHLNs of proactive legal care for patient-caregiver dyads. METHODS: This single-arm pilot trial (NCT07153016) enrolled patients with advanced-stage colorectal cancer and their self-nominated caregiver. Cancer Legal Care (CLC) provided personalized legal checkups and 3-month follow-up at no cost. Feasibility was assessed by rates of initial checkup, 3-month engagement, and receipt of legal service. Acceptability was assessed by likelihood of recommending the intervention to others. Participant-reported outcomes, implementation measures, and interviews were summarized. RESULTS: We enrolled 9 of 10 planned dyads. Among the 9 enrolled, 8 completed baseline surveys, 7 completed initial legal checkups, and 7 completed 3-month assessments. Initial legal checkups lasted a median of 45 minutes, and CLC provided median 4 hours of legal service per dyad. At baseline, 7 of 16 participants self-identified HHLNs, while CLC identified 1.7 additional HHLNs per dyad. The study met predefined feasibility benchmarks [initial engagement (16/18, 89%), 3-month questionnaire completion (14/18, 78%), and receipt of ≥ 1 legal service (14/18, 78%)] and acceptability (12/14, 86% recommended the intervention) benchmarks. Dyads noted improvements in financial control, support-seeking, and maintaining daily activities; however, caregiver-specific needs were not consistently identified or prioritized. CONCLUSIONS: Proactive legal care for recently diagnosed patient-caregiver dyads was feasible and acceptable, and identified and addressed HHLNs. However, caregiver-inclusive medical-legal partnership models may require caregiver-specific intake, longitudinal follow-up, and clearer distinction between patient, caregiver, and shared needs.",
+      "journal": "Psycho-oncology",
+      "pub_date": "2026 Nov",
+      "kind": "article",
+      "type": "other",
+      "disease": "colorectal",
+      "category": "solid",
+      "source": "pubmed",
+      "source_link": "",
+      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42993070/",
+      "altmetric_score": 0,
+      "altmetric_id": null,
+      "altmetric_url": null,
+      "importance_score": 30.0,
+      "rank": 548
+    },
+    {
       "uid": "pmid_42809016",
       "pmid": "42809016",
       "title": "PD-L1 PET/CT imaging with",
@@ -11320,7 +11340,7 @@
       "altmetric_id": null,
       "altmetric_url": null,
       "importance_score": 30.0,
-      "rank": 548
+      "rank": 549
     },
     {
       "uid": "pmid_42742683",
@@ -11336,26 +11356,6 @@
       "source": "pubmed",
       "source_link": "",
       "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42742683/",
-      "altmetric_score": 0,
-      "altmetric_id": null,
-      "altmetric_url": null,
-      "importance_score": 30.0,
-      "rank": 549
-    },
-    {
-      "uid": "pmid_42993070",
-      "pmid": "42993070",
-      "title": "LEgal Guidance for Cancer Patients and CAREgivers (LEGACY CARE): A Pilot Clinical Trial.",
-      "abstract": "BACKGROUND: Medical-legal partnerships can address health-harming legal needs (HHLNs) but caregiver-inclusive models are understudied. AIMS: To evaluate the feasibility, acceptability, and preliminary efficacy in addressing HHLNs of proactive legal care for patient-caregiver dyads. METHODS: This single-arm pilot trial (NCT07153016) enrolled patients with advanced-stage colorectal cancer and their self-nominated caregiver. Cancer Legal Care (CLC) provided personalized legal checkups and 3-month follow-up at no cost. Feasibility was assessed by rates of initial checkup, 3-month engagement, and receipt of legal service. Acceptability was assessed by likelihood of recommending the intervention to others. Participant-reported outcomes, implementation measures, and interviews were summarized. RESULTS: We enrolled 9 of 10 planned dyads. Among the 9 enrolled, 8 completed baseline surveys, 7 completed initial legal checkups, and 7 completed 3-month assessments. Initial legal checkups lasted a median of 45 minutes, and CLC provided median 4 hours of legal service per dyad. At baseline, 7 of 16 participants self-identified HHLNs, while CLC identified 1.7 additional HHLNs per dyad. The study met predefined feasibility benchmarks [initial engagement (16/18, 89%), 3-month questionnaire completion (14/18, 78%), and receipt of ≥ 1 legal service (14/18, 78%)] and acceptability (12/14, 86% recommended the intervention) benchmarks. Dyads noted improvements in financial control, support-seeking, and maintaining daily activities; however, caregiver-specific needs were not consistently identified or prioritized. CONCLUSIONS: Proactive legal care for recently diagnosed patient-caregiver dyads was feasible and acceptable, and identified and addressed HHLNs. However, caregiver-inclusive medical-legal partnership models may require caregiver-specific intake, longitudinal follow-up, and clearer distinction between patient, caregiver, and shared needs.",
-      "journal": "Psycho-oncology",
-      "pub_date": "2026 Nov",
-      "kind": "article",
-      "type": "other",
-      "disease": "colorectal",
-      "category": "solid",
-      "source": "pubmed",
-      "source_link": "",
-      "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/42993070/",
       "altmetric_score": 0,
       "altmetric_id": null,
       "altmetric_url": null,
