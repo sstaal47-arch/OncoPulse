@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OncoPulse — Digest Preferences</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1829; --surface: #162035; --surface2: #1c2a42; --border: #2a3d5c;
+    --accent: #4d9fff; --accent3: #ff6b6b; --text: #f0f4ff; --text-muted: #8ea8cc;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Mono', monospace; min-height: 100vh; }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 48px 20px 80px; }
+  .logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 22px; color: var(--accent); margin-bottom: 4px; }
+  .subtitle { color: var(--text-muted); font-size: 13px; margin-bottom: 32px; }
+  label { display: block; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; color: var(--text-muted); margin: 24px 0 8px; }
+  input[type=email], input[type=number] {
+    width: 100%; background: var(--surface); border: 1px solid var(--border); color: var(--text);
+    border-radius: 8px; padding: 12px 14px; font-family: 'DM Mono', monospace; font-size: 14px; outline: none;
+  }
+  input[type=email]:focus, input[type=number]:focus { border-color: var(--accent); }
+  .groups { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .group-chip {
+    display: flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 10px 12px; font-size: 13px; cursor: pointer; user-select: none;
+  }
+  .group-chip:hover { border-color: var(--accent); }
+  .group-chip.checked { border-color: var(--accent); background: rgba(77,159,255,0.12); color: var(--accent); }
+  .group-chip input { accent-color: var(--accent); }
+  .actions { margin-top: 32px; display: flex; gap: 10px; flex-wrap: wrap; }
+  button {
+    font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 500; border-radius: 8px; padding: 12px 20px;
+    cursor: pointer; border: 1px solid transparent;
+  }
+  .btn-primary { background: var(--accent); color: #0f1829; border: none; }
+  .btn-primary:hover { opacity: .9; }
+  .btn-danger { background: transparent; border: 1px solid var(--accent3); color: var(--accent3); }
+  .btn-danger:hover { background: rgba(255,107,107,0.1); }
+  .status { margin-top: 20px; font-size: 13px; padding: 14px; border-radius: 8px; display: none; }
+  .status.ok { display: block; background: rgba(77,159,255,0.1); border: 1px solid var(--accent); color: var(--accent); }
+  .status.err { display: block; background: rgba(255,107,107,0.1); border: 1px solid var(--accent3); color: var(--accent3); }
+  .manage-link { word-break: break-all; font-size: 12px; color: var(--text-muted); margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">OncoPulse</div>
+  <div class="subtitle">Choose the disease sites and the number of top abstracts you want in your weekly email digest.</div>
+
+  <label for="email">Email address</label>
+  <input id="email" type="email" placeholder="you@hospital.org" autocomplete="email">
+
+  <label>Disease sites</label>
+  <div class="groups" id="groups"></div>
+
+  <label for="topn">Top abstracts per email (1–20)</label>
+  <input id="topn" type="number" min="1" max="20" value="5">
+
+  <div class="actions">
+    <button class="btn-primary" id="saveBtn">Save preferences</button>
+    <button class="btn-danger" id="unsubBtn" style="display:none;">Unsubscribe</button>
+  </div>
+
+  <div class="status" id="status"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script>
+  // ── Fill these in after creating your Supabase project ──
+  // The anon key is safe to expose client-side: every table access it can
+  // make is locked down by RLS + the RPC functions in supabase/schema.sql.
+  const SUPABASE_URL = "https://bfzsgrrtxbucfkjanpfg.supabase.co";
+  const SUPABASE_ANON_KEY = "sb_publishable_Y5K_nusKkKUArYFojlpQ3g_gdbGnOa_";
+
+  // Named `sb`, not `supabase` — the UMD build's own global is already called
+  // `window.supabase`, and redeclaring that name throws a SyntaxError that
+  // silently kills the whole script.
+  const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  // Mirrors pipeline/disease_groups.json / dashboard/index.html BROAD_GROUPS.
+  // Keep the `id`s in sync — these are what gets stored in subscribers.disease_sites.
+  const GROUPS = [
+    { id: 'lymphoma',    label: 'Lymphoma' },
+    { id: 'leukemia',    label: 'Leukemia' },
+    { id: 'myeloma',     label: 'Myeloma / Plasma Cell' },
+    { id: 'lung',        label: 'Lung' },
+    { id: 'breast',      label: 'Breast' },
+    { id: 'gi',          label: 'GI' },
+    { id: 'gu',          label: 'GU' },
+    { id: 'cns',         label: 'CNS' },
+    { id: 'gynecologic', label: 'Gynecologic' },
+    { id: 'skin',        label: 'Skin' },
+    { id: 'head_neck',   label: 'Head & Neck' },
+    { id: 'sarcoma',     label: 'Sarcoma' },
+    { id: 'other',       label: 'General / Other' },
+  ];
+
+  const groupsEl = document.getElementById('groups');
+  GROUPS.forEach(g => {
+    const label = document.createElement('label');
+    label.className = 'group-chip';
+    label.innerHTML = `<input type="checkbox" value="${g.id}"> ${g.label}`;
+    label.querySelector('input').addEventListener('change', e => {
+      label.classList.toggle('checked', e.target.checked);
+    });
+    groupsEl.appendChild(label);
+  });
+
+  function selectedGroups() {
+    return [...groupsEl.querySelectorAll('input:checked')].map(i => i.value);
+  }
+  function setSelectedGroups(ids) {
+    groupsEl.querySelectorAll('input').forEach(i => {
+      const checked = ids.includes(i.value);
+      i.checked = checked;
+      i.closest('.group-chip').classList.toggle('checked', checked);
+    });
+  }
+  function showStatus(msg, ok) {
+    const el = document.getElementById('status');
+    el.textContent = msg;
+    el.className = 'status ' + (ok ? 'ok' : 'err');
+  }
+
+  const params = new URLSearchParams(location.search);
+  const token = params.get('token');
+  const unsubBtn = document.getElementById('unsubBtn');
+  const emailInput = document.getElementById('email');
+  const topnInput = document.getElementById('topn');
+
+  async function loadExisting() {
+    if (!token) return;
+    const { data, error } = await sb.rpc('get_subscriber', { p_token: token });
+    if (error || !data || !data.length) {
+      showStatus('That preferences link is no longer valid.', false);
+      return;
+    }
+    const sub = data[0];
+    emailInput.value = sub.email;
+    emailInput.disabled = true; // email is the identity key; changing it means re-subscribing below
+    setSelectedGroups(sub.disease_sites || []);
+    topnInput.value = sub.top_n || 5;
+    unsubBtn.style.display = 'inline-block';
+
+    if (params.get('action') === 'unsubscribe') {
+      await doUnsubscribe();
+    }
+  }
+
+  async function doUnsubscribe() {
+    const { error } = await sb.rpc('unsubscribe', { p_token: token });
+    showStatus(error ? 'Could not unsubscribe — please try again.' : 'You have been unsubscribed.', !error);
+  }
+
+  document.getElementById('saveBtn').addEventListener('click', async () => {
+    const email = emailInput.value.trim();
+    const sites = selectedGroups();
+    const topN = parseInt(topnInput.value, 10) || 5;
+
+    if (!email || sites.length === 0) {
+      showStatus('Enter an email address and pick at least one disease site.', false);
+      return;
+    }
+
+    if (token) {
+      const { error } = await sb.rpc('update_preferences', {
+        p_token: token, p_disease_sites: sites, p_top_n: topN,
+      });
+      showStatus(error ? 'Could not save changes.' : 'Preferences updated.', !error);
+    } else {
+      const { data: newToken, error } = await sb.rpc('subscribe', {
+        p_email: email, p_disease_sites: sites, p_top_n: topN,
+      });
+      if (error) {
+        showStatus('Could not subscribe — please try again.', false);
+      } else {
+        const manageUrl = `${location.origin}${location.pathname}?token=${newToken}`;
+        showStatus('Subscribed! Bookmark this link to manage your preferences later — it will also be included at the bottom of every digest email.', true);
+        document.getElementById('status').insertAdjacentHTML('beforeend', `<div class="manage-link">${manageUrl}</div>`);
+      }
+    }
+  });
+
+  unsubBtn.addEventListener('click', doUnsubscribe);
+
+  loadExisting();
+</script>
+</body>
+</html>
