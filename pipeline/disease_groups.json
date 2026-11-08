@@ -1,0 +1,31 @@
+{
+  "_comment": "Mirrors BROAD_GROUPS in dashboard/index.html and BROAD_PARENT in pipeline/fetch_and_summarize.py. Keep all three in sync if the taxonomy changes.",
+  "groups": [
+    { "id": "lymphoma",    "label": "Lymphoma",
+      "ids": ["dlbcl","follicular_lymphoma","mantle_cell","marginal_zone","burkitt","primary_mediastinal","transformed_fl","waldenstrom","ptcl","ctcl","hodgkin","lymphoma_general"] },
+    { "id": "leukemia",    "label": "Leukemia",
+      "ids": ["cll","aml","all","apl","cml","cmml","hcl","mds","mpn","mds_mpn"] },
+    { "id": "myeloma",     "label": "Myeloma / Plasma Cell",
+      "ids": ["multiple_myeloma","smoldering_myeloma","amyloidosis","mgus","mastocytosis"] },
+    { "id": "lung",        "label": "Lung",
+      "ids": ["nsclc","sclc","mesothelioma","thymoma","lung_general"] },
+    { "id": "breast",      "label": "Breast",
+      "ids": ["breast_her2","breast_tnbc","breast_hr","breast_general"] },
+    { "id": "gi",          "label": "GI",
+      "ids": ["colorectal","gastric","esophageal","pancreatic","hcc","biliary","appendix","anal","neuroendocrine"] },
+    { "id": "gu",          "label": "GU",
+      "ids": ["prostate","rcc","bladder","testicular","penile","adrenal"] },
+    { "id": "cns",         "label": "CNS",
+      "ids": ["glioblastoma","glioma","brain_mets","cns_lymphoma","meningioma","medulloblastoma","cns_general"] },
+    { "id": "gynecologic", "label": "Gynecologic",
+      "ids": ["ovarian","endometrial","cervical","uterine_sarcoma","vulvar","gestational"] },
+    { "id": "skin",        "label": "Skin",
+      "ids": ["melanoma","cscc","merkel","bcc","uveal_melanoma"] },
+    { "id": "head_neck",   "label": "Head & Neck",
+      "ids": ["hnscc","nasopharyngeal","salivary","thyroid"] },
+    { "id": "sarcoma",     "label": "Sarcoma",
+      "ids": ["osteosarcoma","ewing","gist","rhabdomyosarcoma","leiomyosarcoma","liposarcoma","sarcoma_general"] },
+    { "id": "other",       "label": "General / Other",
+      "ids": ["cup","other","retinoblastoma"] }
+  ]
+}
