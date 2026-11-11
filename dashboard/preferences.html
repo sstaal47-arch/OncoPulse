@@ -33,8 +33,7 @@
   .group-chip.checked { border-color: var(--accent); background: rgba(77,159,255,0.12); color: var(--accent); }
   .group-chip .site-toggle { display: flex; align-items: center; gap: 10px; flex: 1; cursor: pointer; text-transform: none; letter-spacing: 0; margin: 0; font-size: 13px; color: inherit; }
   .group-chip input[type=checkbox] { accent-color: var(--accent); width: 16px; height: 16px; }
-  .group-chip .site-count { display: none; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); }
-  .group-chip.checked .site-count { display: flex; }
+  .group-chip .site-count { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); }
   .group-chip .site-count input { width: 64px; padding: 6px 8px; font-size: 13px; }
   .actions { margin-top: 32px; display: flex; gap: 10px; flex-wrap: wrap; }
   button {
@@ -67,7 +66,7 @@
   <div class="saved-as" id="savedAs"></div>
 
   <label>Disease sites</label>
-  <div class="hint">Nothing is sent unless you tick a site and enter how many abstracts (1–20) its email should include.</div>
+  <div class="hint">Every site starts at 0, which means no email. Enter how many abstracts (1–20) you want for a site and it is ticked for you.</div>
   <div class="groups" id="groups"></div>
 
   <div class="actions">
@@ -133,17 +132,25 @@
     row.innerHTML = `
       <label class="site-toggle"><input type="checkbox" value="${g.id}"> ${g.label}</label>
       <span class="site-count">
-        <input type="number" min="1" max="20" placeholder="1–20" aria-label="Abstracts for ${g.label}">
+        <input type="number" min="0" max="20" value="0" aria-label="Abstracts for ${g.label}">
         abstracts
       </span>`;
     const box = row.querySelector('input[type=checkbox]');
     const num = row.querySelector('input[type=number]');
     box.addEventListener('change', () => {
       row.classList.toggle('checked', box.checked);
-      if (box.checked) num.focus();
+      if (box.checked && !(parseInt(num.value, 10) > 0)) { num.focus(); num.select(); }
+      if (!box.checked) num.value = 0;
       saveDraft();
     });
-    num.addEventListener('input', () => { num.classList.remove('invalid'); saveDraft(); });
+    // Entering a number above 0 ticks the site; setting it back to 0 unticks it.
+    num.addEventListener('input', () => {
+      num.classList.remove('invalid');
+      const n = parseInt(num.value, 10);
+      if (n > 0 && !box.checked) { box.checked = true; row.classList.add('checked'); }
+      if (n === 0 && box.checked) { box.checked = false; row.classList.remove('checked'); }
+      saveDraft();
+    });
     groupsEl.appendChild(row);
   });
 
@@ -178,7 +185,7 @@
       const checked = Object.prototype.hasOwnProperty.call(counts, site);
       row.querySelector('input[type=checkbox]').checked = checked;
       const v = checked ? parseInt(counts[site], 10) : NaN;
-      row.querySelector('input[type=number]').value = Number.isFinite(v) ? clampN(v) : '';
+      row.querySelector('input[type=number]').value = Number.isFinite(v) && v > 0 ? clampN(v) : 0;
       row.classList.toggle('checked', checked);
     });
   }
