@@ -48,6 +48,11 @@
   .status { margin-top: 20px; font-size: 13px; padding: 14px; border-radius: 8px; display: none; }
   .status.ok { display: block; background: rgba(77,159,255,0.1); border: 1px solid var(--accent); color: var(--accent); }
   .status.err { display: block; background: rgba(255,107,107,0.1); border: 1px solid var(--accent3); color: var(--accent3); }
+  .btn-plain { background: transparent; border: 1px solid var(--border); color: var(--text-muted); }
+  .btn-plain:hover { border-color: var(--accent); color: var(--text); }
+  .saved-as { display: none; margin-top: 8px; font-size: 12px; color: var(--accent); }
+  input[type=email]:disabled { opacity: .75; }
+  .group-chip .site-count input.invalid { border-color: var(--accent3); }
   .manage-link { word-break: break-all; font-size: 12px; color: var(--text-muted); margin-top: 8px; }
 </style>
 </head>
@@ -59,14 +64,16 @@
 
   <label for="email">Email address</label>
   <input id="email" type="email" placeholder="you@hospital.org" autocomplete="email">
+  <div class="saved-as" id="savedAs"></div>
 
   <label>Disease sites</label>
-  <div class="hint">Tick a site, then set how many abstracts (1–20) its email should include.</div>
+  <div class="hint">Nothing is sent unless you tick a site and enter how many abstracts (1–20) its email should include.</div>
   <div class="groups" id="groups"></div>
 
   <div class="actions">
     <button class="btn-primary" id="saveBtn">Save preferences</button>
     <button class="btn-danger" id="unsubBtn" style="display:none;">Unsubscribe</button>
+    <button class="btn-plain" id="switchBtn" style="display:none;">Use a different email</button>
   </div>
 
   <div class="status" id="status"></div>
@@ -104,8 +111,20 @@
   ];
 
   const groupsEl = document.getElementById('groups');
-  const DEFAULT_N = 5;
-  const clampN = v => Math.min(20, Math.max(1, parseInt(v, 10) || DEFAULT_N));
+  const clampN = v => Math.min(20, Math.max(1, parseInt(v, 10)));
+
+  // ── Per-browser memory ──
+  // Once someone subscribes, their private token is kept in this browser so
+  // the page reopens with their saved email and sites (e.g. after going back
+  // to the dashboard). Before they subscribe, the unsaved form is kept as a
+  // draft. Storage can be unavailable (private mode), so every call is guarded.
+  const STORE_TOKEN = 'oncopulse.digest.token';
+  const STORE_DRAFT = 'oncopulse.digest.draft';
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+    del(k) { try { localStorage.removeItem(k); } catch {} },
+  };
 
   GROUPS.forEach(g => {
     const row = document.createElement('div');
@@ -114,22 +133,42 @@
     row.innerHTML = `
       <label class="site-toggle"><input type="checkbox" value="${g.id}"> ${g.label}</label>
       <span class="site-count">
-        <input type="number" min="1" max="20" value="${DEFAULT_N}" aria-label="Abstracts for ${g.label}">
+        <input type="number" min="1" max="20" placeholder="1–20" aria-label="Abstracts for ${g.label}">
         abstracts
       </span>`;
-    row.querySelector('input[type=checkbox]').addEventListener('change', e => {
-      row.classList.toggle('checked', e.target.checked);
+    const box = row.querySelector('input[type=checkbox]');
+    const num = row.querySelector('input[type=number]');
+    box.addEventListener('change', () => {
+      row.classList.toggle('checked', box.checked);
+      if (box.checked) num.focus();
+      saveDraft();
     });
+    num.addEventListener('input', () => { num.classList.remove('invalid'); saveDraft(); });
     groupsEl.appendChild(row);
   });
 
-  // { site_id: n } for every ticked site
-  function selectedSiteCounts() {
+  // Returns { counts: {site: n}, missing: [labels of ticked sites with no valid number] }
+  function readSites() {
+    const counts = {}, missing = [];
+    groupsEl.querySelectorAll('.group-chip').forEach(row => {
+      const num = row.querySelector('input[type=number]');
+      if (!row.querySelector('input[type=checkbox]').checked) { num.classList.remove('invalid'); return; }
+      const n = parseInt(num.value, 10);
+      if (!Number.isFinite(n) || n < 1 || n > 20) {
+        num.classList.add('invalid');
+        missing.push(row.querySelector('.site-toggle').textContent.trim());
+      } else {
+        num.classList.remove('invalid');
+        counts[row.dataset.site] = n;
+      }
+    });
+    return { counts, missing };
+  }
+  // Raw form values (blank numbers allowed), for the unsaved draft.
+  function rawSites() {
     const out = {};
     groupsEl.querySelectorAll('.group-chip').forEach(row => {
-      if (row.querySelector('input[type=checkbox]').checked) {
-        out[row.dataset.site] = clampN(row.querySelector('input[type=number]').value);
-      }
+      if (row.querySelector('input[type=checkbox]').checked) out[row.dataset.site] = row.querySelector('input[type=number]').value;
     });
     return out;
   }
@@ -138,7 +177,8 @@
       const site = row.dataset.site;
       const checked = Object.prototype.hasOwnProperty.call(counts, site);
       row.querySelector('input[type=checkbox]').checked = checked;
-      row.querySelector('input[type=number]').value = checked ? clampN(counts[site]) : DEFAULT_N;
+      const v = checked ? parseInt(counts[site], 10) : NaN;
+      row.querySelector('input[type=number]').value = Number.isFinite(v) ? clampN(v) : '';
       row.classList.toggle('checked', checked);
     });
   }
@@ -152,28 +192,58 @@
   }
 
   const params = new URLSearchParams(location.search);
-  const token = params.get('token');
+  let token = params.get('token') || store.get(STORE_TOKEN);
+  if (params.get('token')) store.set(STORE_TOKEN, params.get('token'));
   const unsubBtn = document.getElementById('unsubBtn');
+  const switchBtn = document.getElementById('switchBtn');
   const emailInput = document.getElementById('email');
+  const savedAs = document.getElementById('savedAs');
+
+  function saveDraft() {
+    if (token) return; // saved subscribers are reloaded from the server instead
+    store.set(STORE_DRAFT, JSON.stringify({ email: emailInput.value, sites: rawSites() }));
+  }
+  emailInput.addEventListener('input', saveDraft);
+
+  function restoreDraft() {
+    try {
+      const d = JSON.parse(store.get(STORE_DRAFT) || 'null');
+      if (!d) return;
+      emailInput.value = d.email || '';
+      setSiteCounts(d.sites || {});
+    } catch {}
+  }
+
+  function enterManageMode(email) {
+    emailInput.value = email;
+    emailInput.disabled = true; // email is the identity key
+    unsubBtn.style.display = 'inline-block';
+    switchBtn.style.display = 'inline-block';
+    savedAs.textContent = `Saved for ${email}. Changes take effect from the next weekly digest.`;
+    savedAs.style.display = 'block';
+  }
 
   async function loadExisting() {
-    if (!token) return;
+    if (!token) { restoreDraft(); return; }
     const { data, error } = await sb.rpc('get_subscriber_v2', { p_token: token });
     if (error || !data || !data.length) {
-      showStatus('That preferences link is no longer valid.', false);
+      const fromLink = !!params.get('token');
+      store.del(STORE_TOKEN);
+      token = null;
+      restoreDraft();
+      if (fromLink || error) showStatus('Could not load your saved preferences' + (fromLink ? ': that link is no longer valid.' : '.' + errText(error)), false);
       return;
     }
     const sub = data[0];
-    emailInput.value = sub.email;
-    emailInput.disabled = true; // email is the identity key; changing it means re-subscribing below
     // Older rows only have disease_sites + one top_n; spread that across each site.
     let counts = sub.site_top_n;
     if (!counts || !Object.keys(counts).length) {
       counts = {};
-      (sub.disease_sites || []).forEach(s => { counts[s] = sub.top_n || DEFAULT_N; });
+      (sub.disease_sites || []).forEach(s => { counts[s] = sub.top_n; });
     }
     setSiteCounts(counts);
-    unsubBtn.style.display = 'inline-block';
+    enterManageMode(sub.email);
+    if (!sub.is_active) showStatus('You are currently unsubscribed. Press Save preferences to start receiving digests again.', false);
 
     if (params.get('action') === 'unsubscribe') {
       await doUnsubscribe();
@@ -182,19 +252,33 @@
 
   async function doUnsubscribe() {
     const { error } = await sb.rpc('unsubscribe', { p_token: token });
-    showStatus(error ? 'Could not unsubscribe. Please try again.' + errText(error) : 'You have been unsubscribed. You will not receive any more digest emails.', !error);
+    showStatus(error ? 'Could not unsubscribe. Please try again.' + errText(error) : 'You have been unsubscribed. You will not receive any more digest emails. Press Save preferences to resubscribe.', !error);
   }
+
+  switchBtn.addEventListener('click', () => {
+    // Forget this browser's saved subscriber; does not unsubscribe them.
+    store.del(STORE_TOKEN); store.del(STORE_DRAFT);
+    location.href = location.pathname;
+  });
 
   document.getElementById('saveBtn').addEventListener('click', async () => {
     const email = emailInput.value.trim();
-    const counts = selectedSiteCounts();
+    const { counts, missing } = readSites();
     const nSites = Object.keys(counts).length;
 
-    if (!email || !emailInput.checkValidity() || nSites === 0) {
-      showStatus('Enter a valid email address and pick at least one disease site.', false);
+    if (!email || !emailInput.checkValidity()) {
+      showStatus('Enter a valid email address.', false);
       return;
     }
-    const summary = `${nSites} disease site${nSites === 1 ? '' : 's'}, so you will get ${nSites} separate email${nSites === 1 ? '' : 's'} each Monday, about 30 minutes after the weekly update. A site with no new articles that week sends no email.`;
+    if (missing.length) {
+      showStatus(`Enter how many abstracts (1–20) you want for: ${missing.join(', ')}.`, false);
+      return;
+    }
+    if (nSites === 0) {
+      showStatus('Tick at least one disease site and enter how many abstracts you want for it.', false);
+      return;
+    }
+    const summary = `${nSites} disease site${nSites === 1 ? '' : 's'}, so you will get ${nSites} separate email${nSites === 1 ? '' : 's'} each Monday, about 30 minutes after the weekly update. Only ticked sites are sent, and a site with no new articles that week sends no email.`;
 
     const saveBtn = document.getElementById('saveBtn');
     saveBtn.disabled = true; saveBtn.textContent = 'Saving…';
@@ -207,8 +291,12 @@
       if (error) {
         showStatus('Could not subscribe. Please try again.' + errText(error), false);
       } else {
+        token = newToken;
+        store.set(STORE_TOKEN, newToken);
+        store.del(STORE_DRAFT);
+        enterManageMode(email);
         const manageUrl = `${location.origin}${location.pathname}?token=${newToken}`;
-        showStatus(`Subscribed to ${summary} Bookmark this link to change your preferences later. It is also at the bottom of every digest email.`, true);
+        showStatus(`Subscribed to ${summary} This browser will remember your preferences. To change them from another device, use this link (it is also at the bottom of every digest email):`, true);
         document.getElementById('status').insertAdjacentHTML('beforeend', `<div class="manage-link">${manageUrl}</div>`);
       }
     }

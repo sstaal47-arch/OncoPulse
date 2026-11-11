@@ -40,7 +40,7 @@ Subscriber data lives in a Supabase table, locked down with row-level security �
 
 Sending is a separate workflow, `.github/workflows/send_digests.yml`. It starts when the weekly update finishes successfully, waits 30 minutes, checks out the freshly committed `data.json`, and runs `pipeline/send_digests.py`. If any email fails to send, the step fails (red in Actions) and the run summary lists the Resend error.
 
-To test: **Actions → OncoPulse Digest Emails → Run workflow**, put your own address in *test_to*. That sends every site's email to you only, with no 30-minute wait. Locally, `python pipeline/send_digests.py --dry-run` writes HTML previews to `digest_preview/` without sending anything.
+To test: **Actions → OncoPulse Digest Emails → Run workflow**, put your own (already subscribed) address in *test_to*. That sends only your e-mails, for the sites and counts you saved, with no 30-minute wait. Locally, `python pipeline/send_digests.py --dry-run` writes HTML previews to `digest_preview/` without sending anything.
 
 ### Setting up the digest feature
 

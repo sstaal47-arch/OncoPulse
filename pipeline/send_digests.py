@@ -14,8 +14,9 @@ Usage:
   python send_digests.py --dry-run             # build emails, write HTML to
                                                # ./digest_preview/, send nothing
                                                # (no secrets needed)
-  python send_digests.py --test-to me@x.org    # send every site's email to one
-                                               # address, ignoring subscribers
+  python send_digests.py --test-to me@x.org    # send only that subscriber's
+                                               # emails (their saved sites and
+                                               # counts), right now
 
 Env vars (all required except RESEND_FROM):
   SUPABASE_URL                Project URL, e.g. https://xxxx.supabase.co
@@ -107,7 +108,7 @@ def site_counts_for(subscriber: dict) -> dict[str, int]:
         try:
             out[site] = max(1, min(20, int(n)))
         except (TypeError, ValueError):
-            out[site] = DEFAULT_TOP_N
+            continue  # no valid count for this site -> nothing sent for it
     return out
 
 
@@ -240,24 +241,29 @@ def write_summary(lines: list[str]) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="write HTML previews, send nothing")
-    ap.add_argument("--test-to", help="send every site's email to this one address only")
+    ap.add_argument("--test-to", help="send only this subscriber's emails (their saved sites and counts)")
     args = ap.parse_args()
 
     articles, week_label = load_articles()
     group_leaf_ids, group_labels = load_disease_groups()
 
-    if args.test_to:
-        subscribers = [{
-            "email": args.test_to,
-            "unsubscribe_token": "test",
-            "site_top_n": {g: DEFAULT_TOP_N for g in group_leaf_ids},
-        }]
-    elif args.dry_run and not (SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY):
+    if args.dry_run and not args.test_to and not (SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY):
         subscribers = [{"email": "preview@example.org", "unsubscribe_token": "preview",
                         "site_top_n": {g: DEFAULT_TOP_N for g in group_leaf_ids}}]
     else:
         require_env("SUPABASE_URL", "SUPABASE_SERVICE_ROLE_KEY", "SITE_URL")
         subscribers = fetch_subscribers()
+        if args.test_to:
+            want = args.test_to.strip().lower()
+            subscribers = [s for s in subscribers if (s.get("email") or "").lower() == want]
+            if not subscribers:
+                log.error("%s is not an active subscriber. Subscribe on the preferences page first, then rerun the test.", args.test_to)
+                write_summary(["### Digest emails", f"- Test address is not an active subscriber; nothing sent."])
+                return 1
+            if not site_counts_for(subscribers[0]):
+                log.error("%s has no disease sites ticked; nothing to send.", args.test_to)
+                write_summary(["### Digest emails", "- Test subscriber has no disease sites ticked; nothing sent."])
+                return 1
     if not args.dry_run:
         require_env("RESEND_API_KEY")
         if not os.environ.get("RESEND_FROM"):

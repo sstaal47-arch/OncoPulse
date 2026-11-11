@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       test_to:
-        description: "Send a test of every site's email to this one address only (leave blank to send to all subscribers)"
+        description: "Send only this subscriber's emails (their saved sites and counts). Leave blank to send to all subscribers"
         required: false
         default: ""
       skip_delay:
