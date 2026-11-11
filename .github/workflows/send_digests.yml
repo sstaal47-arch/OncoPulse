@@ -1,0 +1,70 @@
+name: OncoPulse Digest Emails
+
+# Sends the per-disease-site digest emails 30 minutes after the weekly
+# literature update finishes successfully. Runs after that workflow's
+# commit, so it always uses the freshly pushed dashboard/data.json.
+
+on:
+  workflow_run:
+    workflows: ["OncoPulse Weekly Literature Update"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      test_to:
+        description: "Send a test of every site's email to this one address only (leave blank to send to all subscribers)"
+        required: false
+        default: ""
+      skip_delay:
+        description: "Skip the 30-minute wait"
+        required: false
+        default: "true"
+      dry_run:
+        description: "Build the emails but send nothing"
+        required: false
+        default: "false"
+
+concurrency:
+  group: digest-emails
+  cancel-in-progress: false
+
+jobs:
+  send-digests:
+    # Only after a successful update (or a manual run).
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+
+    steps:
+      - name: Wait 30 minutes after the weekly update
+        if: github.event_name == 'workflow_run' || github.event.inputs.skip_delay != 'true'
+        run: sleep 1800
+
+      - name: Checkout repository (latest main, including the new data.json)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Send digest emails
+        env:
+          SUPABASE_URL:              ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          RESEND_API_KEY:            ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM:               ${{ secrets.RESEND_FROM }}
+          SITE_URL:                  ${{ secrets.SITE_URL }}
+          TEST_TO:                   ${{ github.event.inputs.test_to }}
+          DRY_RUN:                   ${{ github.event.inputs.dry_run }}
+        run: |
+          DRY=""
+          if [ "$DRY_RUN" = "true" ]; then DRY="--dry-run"; fi
+          python pipeline/send_digests.py $DRY ${TEST_TO:+--test-to "$TEST_TO"}

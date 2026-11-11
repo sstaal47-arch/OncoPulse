@@ -23,7 +23,7 @@ Every Monday at 6:00 AM UTC, GitHub Actions:
 
 ## Email Digest Subscriptions
 
-Anyone can subscribe to a personalized weekly email: pick which disease sites to follow and how many top-ranked abstracts to receive per email (1–20), via the **✉ Email Digest** button in the dashboard header, which opens `dashboard/preferences.html`.
+Anyone can subscribe to personalized weekly emails: pick which disease sites to follow and, for each site, how many top-ranked abstracts (1–20) it should include. Each site arrives as its own email, about 30 minutes after the weekly update finishes. Subscribe via the **✉ Email Digest** button in the dashboard header, which opens `dashboard/preferences.html`.
 
 ```
 preferences.html ──► Supabase (subscribers table)
@@ -34,11 +34,13 @@ data.json ──► send_digests.py ◄───┘   (reads active subscribers)
               Resend API ──► subscriber's inbox
 ```
 
-Each subscriber's top-N picks are taken from `data.json`'s existing `importance_score` ranking — filtered down to their chosen disease sites, same ranking the dashboard itself uses. Each article link in the email prefers a free PMC full-text copy (resolved via NCBI's id-converter) when one exists for that article, falling back to the PubMed or publisher page when it doesn't (most subscription journals, e.g. NEJM/Lancet, don't have a free full-text copy available).
+Each site's email holds that site's top-N articles by `data.json`'s `importance_score`, the same ranking the dashboard uses. A site with no articles that week sends no email. Each article link in the email prefers a free PMC full-text copy (resolved via NCBI's id-converter) when one exists for that article, falling back to the PubMed or publisher page when it doesn't (most subscription journals, e.g. NEJM/Lancet, don't have a free full-text copy available).
 
 Subscriber data lives in a Supabase table, locked down with row-level security — the public preferences page can only reach it through four RPC functions (`subscribe`, `get_subscriber`, `update_preferences`, `unsubscribe`), each of which checks the caller's own unique token server-side. There's no way for the page's public key to read or export the subscriber list. The weekly GitHub Actions job is the only thing with full read access, via a separate, non-public service-role key.
 
-This runs as the last step of the same weekly workflow, right after `data.json` is regenerated — see `pipeline/send_digests.py`.
+Sending is a separate workflow, `.github/workflows/send_digests.yml`. It starts when the weekly update finishes successfully, waits 30 minutes, checks out the freshly committed `data.json`, and runs `pipeline/send_digests.py`. If any email fails to send, the step fails (red in Actions) and the run summary lists the Resend error.
+
+To test: **Actions → OncoPulse Digest Emails → Run workflow**, put your own address in *test_to*. That sends every site's email to you only, with no 30-minute wait. Locally, `python pipeline/send_digests.py --dry-run` writes HTML previews to `digest_preview/` without sending anything.
 
 ### Setting up the digest feature
 
@@ -109,6 +111,8 @@ This runs as the last step of the same weekly workflow, right after `data.json` 
    ```
    </details>
 
+   Then run [`supabase/002_per_site_top_n.sql`](supabase/002_per_site_top_n.sql) once as well. It adds the per-site abstract counts and the `*_v2` functions the preferences page uses.
+
    From **Settings → API**, copy the **Project URL** and **publishable (anon) key** into the two constants near the top of `dashboard/preferences.html`. Separately copy the **secret (service_role) key** — that one only ever goes into a GitHub secret, never into `preferences.html` or any client-side file.
 
 2. **Create a [Resend](https://resend.com) account** and verify a sending domain (or subdomain, e.g. `digest.yourdomain.com`) under **Domains**, following the DNS records it generates. Then create an API key under **API Keys**.
@@ -123,7 +127,7 @@ This runs as the last step of the same weekly workflow, right after `data.json` 
    | `RESEND_FROM` | e.g. `OncoPulse <digest@yourdomain.com>`, matching your verified Resend domain |
    | `SITE_URL` | Where `dashboard/` is actually served — e.g. `https://YOURUSERNAME.github.io/oncopulse/dashboard` (check your Pages setting; if Pages serves the repo root rather than `/dashboard`, include the `/dashboard` suffix here) |
 
-Run the workflow once manually (**Actions → Run workflow**) to confirm the "Send weekly digest emails" step completes — it logs how many subscribers it sent to and how many it skipped (no matching disease sites that week).
+Run **OncoPulse Digest Emails** once manually with *test_to* set to your address to confirm emails arrive.
 
 ---
 
@@ -222,7 +226,8 @@ oncopulse/
 │   └── data.json                # Generated weekly by pipeline
 ├── .github/
 │   └── workflows/
-│       └── weekly_update.yml    # GitHub Actions schedule (pipeline + digest emails)
+│       ├── weekly_update.yml    # GitHub Actions schedule (literature pipeline)
+│       └── send_digests.yml     # Digest emails, 30 min after the weekly update
 └── README.md
 ```
 

@@ -21,14 +21,21 @@
     border-radius: 8px; padding: 12px 14px; font-family: 'DM Mono', monospace; font-size: 14px; outline: none;
   }
   input[type=email]:focus, input[type=number]:focus { border-color: var(--accent); }
-  .groups { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .back-link { display: inline-block; color: var(--text-muted); font-size: 13px; text-decoration: none; margin-bottom: 24px; }
+  .back-link:hover { color: var(--accent); }
+  .hint { color: var(--text-muted); font-size: 12px; margin-bottom: 8px; line-height: 1.5; }
+  .groups { display: flex; flex-direction: column; gap: 8px; }
   .group-chip {
-    display: flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--border);
-    border-radius: 8px; padding: 10px 12px; font-size: 13px; cursor: pointer; user-select: none;
+    display: flex; align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 13px; user-select: none; min-height: 48px;
   }
   .group-chip:hover { border-color: var(--accent); }
   .group-chip.checked { border-color: var(--accent); background: rgba(77,159,255,0.12); color: var(--accent); }
-  .group-chip input { accent-color: var(--accent); }
+  .group-chip .site-toggle { display: flex; align-items: center; gap: 10px; flex: 1; cursor: pointer; text-transform: none; letter-spacing: 0; margin: 0; font-size: 13px; color: inherit; }
+  .group-chip input[type=checkbox] { accent-color: var(--accent); width: 16px; height: 16px; }
+  .group-chip .site-count { display: none; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); }
+  .group-chip.checked .site-count { display: flex; }
+  .group-chip .site-count input { width: 64px; padding: 6px 8px; font-size: 13px; }
   .actions { margin-top: 32px; display: flex; gap: 10px; flex-wrap: wrap; }
   button {
     font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 500; border-radius: 8px; padding: 12px 20px;
@@ -46,17 +53,16 @@
 </head>
 <body>
 <div class="wrap">
+  <a class="back-link" href="index.html">&larr; Back to dashboard</a>
   <div class="logo">OncoPulse</div>
-  <div class="subtitle">Choose the disease sites and the number of top abstracts you want in your weekly email digest.</div>
+  <div class="subtitle">Pick the disease sites you follow. Each site arrives as its own email, about 30 minutes after the weekly Monday update, with as many top-ranked abstracts as you choose for that site.</div>
 
   <label for="email">Email address</label>
   <input id="email" type="email" placeholder="you@hospital.org" autocomplete="email">
 
   <label>Disease sites</label>
+  <div class="hint">Tick a site, then set how many abstracts (1–20) its email should include.</div>
   <div class="groups" id="groups"></div>
-
-  <label for="topn">Top abstracts per email (1–20)</label>
-  <input id="topn" type="number" min="1" max="20" value="5">
 
   <div class="actions">
     <button class="btn-primary" id="saveBtn">Save preferences</button>
@@ -98,24 +104,42 @@
   ];
 
   const groupsEl = document.getElementById('groups');
+  const DEFAULT_N = 5;
+  const clampN = v => Math.min(20, Math.max(1, parseInt(v, 10) || DEFAULT_N));
+
   GROUPS.forEach(g => {
-    const label = document.createElement('label');
-    label.className = 'group-chip';
-    label.innerHTML = `<input type="checkbox" value="${g.id}"> ${g.label}`;
-    label.querySelector('input').addEventListener('change', e => {
-      label.classList.toggle('checked', e.target.checked);
+    const row = document.createElement('div');
+    row.className = 'group-chip';
+    row.dataset.site = g.id;
+    row.innerHTML = `
+      <label class="site-toggle"><input type="checkbox" value="${g.id}"> ${g.label}</label>
+      <span class="site-count">
+        <input type="number" min="1" max="20" value="${DEFAULT_N}" aria-label="Abstracts for ${g.label}">
+        abstracts
+      </span>`;
+    row.querySelector('input[type=checkbox]').addEventListener('change', e => {
+      row.classList.toggle('checked', e.target.checked);
     });
-    groupsEl.appendChild(label);
+    groupsEl.appendChild(row);
   });
 
-  function selectedGroups() {
-    return [...groupsEl.querySelectorAll('input:checked')].map(i => i.value);
+  // { site_id: n } for every ticked site
+  function selectedSiteCounts() {
+    const out = {};
+    groupsEl.querySelectorAll('.group-chip').forEach(row => {
+      if (row.querySelector('input[type=checkbox]').checked) {
+        out[row.dataset.site] = clampN(row.querySelector('input[type=number]').value);
+      }
+    });
+    return out;
   }
-  function setSelectedGroups(ids) {
-    groupsEl.querySelectorAll('input').forEach(i => {
-      const checked = ids.includes(i.value);
-      i.checked = checked;
-      i.closest('.group-chip').classList.toggle('checked', checked);
+  function setSiteCounts(counts) {
+    groupsEl.querySelectorAll('.group-chip').forEach(row => {
+      const site = row.dataset.site;
+      const checked = Object.prototype.hasOwnProperty.call(counts, site);
+      row.querySelector('input[type=checkbox]').checked = checked;
+      row.querySelector('input[type=number]').value = checked ? clampN(counts[site]) : DEFAULT_N;
+      row.classList.toggle('checked', checked);
     });
   }
   function showStatus(msg, ok) {
@@ -123,16 +147,18 @@
     el.textContent = msg;
     el.className = 'status ' + (ok ? 'ok' : 'err');
   }
+  function errText(error) {
+    return error && error.message ? ` (${error.message})` : '';
+  }
 
   const params = new URLSearchParams(location.search);
   const token = params.get('token');
   const unsubBtn = document.getElementById('unsubBtn');
   const emailInput = document.getElementById('email');
-  const topnInput = document.getElementById('topn');
 
   async function loadExisting() {
     if (!token) return;
-    const { data, error } = await sb.rpc('get_subscriber', { p_token: token });
+    const { data, error } = await sb.rpc('get_subscriber_v2', { p_token: token });
     if (error || !data || !data.length) {
       showStatus('That preferences link is no longer valid.', false);
       return;
@@ -140,8 +166,13 @@
     const sub = data[0];
     emailInput.value = sub.email;
     emailInput.disabled = true; // email is the identity key; changing it means re-subscribing below
-    setSelectedGroups(sub.disease_sites || []);
-    topnInput.value = sub.top_n || 5;
+    // Older rows only have disease_sites + one top_n; spread that across each site.
+    let counts = sub.site_top_n;
+    if (!counts || !Object.keys(counts).length) {
+      counts = {};
+      (sub.disease_sites || []).forEach(s => { counts[s] = sub.top_n || DEFAULT_N; });
+    }
+    setSiteCounts(counts);
     unsubBtn.style.display = 'inline-block';
 
     if (params.get('action') === 'unsubscribe') {
@@ -151,35 +182,38 @@
 
   async function doUnsubscribe() {
     const { error } = await sb.rpc('unsubscribe', { p_token: token });
-    showStatus(error ? 'Could not unsubscribe — please try again.' : 'You have been unsubscribed.', !error);
+    showStatus(error ? 'Could not unsubscribe. Please try again.' + errText(error) : 'You have been unsubscribed. You will not receive any more digest emails.', !error);
   }
 
   document.getElementById('saveBtn').addEventListener('click', async () => {
     const email = emailInput.value.trim();
-    const sites = selectedGroups();
-    const topN = parseInt(topnInput.value, 10) || 5;
+    const counts = selectedSiteCounts();
+    const nSites = Object.keys(counts).length;
 
-    if (!email || sites.length === 0) {
-      showStatus('Enter an email address and pick at least one disease site.', false);
+    if (!email || !emailInput.checkValidity() || nSites === 0) {
+      showStatus('Enter a valid email address and pick at least one disease site.', false);
       return;
     }
+    const summary = `${nSites} disease site${nSites === 1 ? '' : 's'}, so you will get ${nSites} separate email${nSites === 1 ? '' : 's'} each Monday, about 30 minutes after the weekly update. A site with no new articles that week sends no email.`;
 
+    const saveBtn = document.getElementById('saveBtn');
+    saveBtn.disabled = true; saveBtn.textContent = 'Saving…';
+    try {
     if (token) {
-      const { error } = await sb.rpc('update_preferences', {
-        p_token: token, p_disease_sites: sites, p_top_n: topN,
-      });
-      showStatus(error ? 'Could not save changes.' : 'Preferences updated.', !error);
+      const { error } = await sb.rpc('update_preferences_v2', { p_token: token, p_site_top_n: counts });
+      showStatus(error ? 'Could not save changes.' + errText(error) : `Preferences updated: ${summary}`, !error);
     } else {
-      const { data: newToken, error } = await sb.rpc('subscribe', {
-        p_email: email, p_disease_sites: sites, p_top_n: topN,
-      });
+      const { data: newToken, error } = await sb.rpc('subscribe_v2', { p_email: email, p_site_top_n: counts });
       if (error) {
-        showStatus('Could not subscribe — please try again.', false);
+        showStatus('Could not subscribe. Please try again.' + errText(error), false);
       } else {
         const manageUrl = `${location.origin}${location.pathname}?token=${newToken}`;
-        showStatus('Subscribed! Bookmark this link to manage your preferences later — it will also be included at the bottom of every digest email.', true);
+        showStatus(`Subscribed to ${summary} Bookmark this link to change your preferences later. It is also at the bottom of every digest email.`, true);
         document.getElementById('status').insertAdjacentHTML('beforeend', `<div class="manage-link">${manageUrl}</div>`);
       }
+    }
+    } finally {
+      saveBtn.disabled = false; saveBtn.textContent = 'Save preferences';
     }
   });
 
