@@ -840,7 +840,26 @@
     border: none;
     overflow: hidden;
   }
+  /* ── Account / sign-in ── */
+  .account-overlay { position: fixed; inset: 0; background: rgba(5,10,20,0.7); display: none; align-items: center; justify-content: center; z-index: 1000; padding: 16px; }
+  .account-overlay.open { display: flex; }
+  .account-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; width: 100%; max-width: 420px; position: relative; font-size: 13px; color: var(--text); line-height: 1.5; }
+  .account-box h3 { font-family: 'Syne', sans-serif; font-size: 18px; margin-bottom: 8px; color: var(--text); }
+  .account-box p { color: var(--text-muted); margin-bottom: 14px; }
+  .account-box input { width: 100%; background: var(--bg); border: 1px solid var(--border); color: var(--text); border-radius: 8px; padding: 11px 12px; font: inherit; font-size: 14px; margin-bottom: 10px; outline: none; }
+  .account-box input:focus { border-color: var(--accent); }
+  .account-box .acct-code { letter-spacing: .3em; font-size: 18px; text-align: center; }
+  .account-box .acct-primary { width: 100%; background: var(--accent); color: var(--bg); border: none; border-radius: 8px; padding: 11px; font: inherit; font-weight: 600; cursor: pointer; }
+  .account-box .acct-primary:disabled { opacity: .6; cursor: default; }
+  .account-box .acct-secondary { background: transparent; border: 1px solid var(--border); color: var(--text-muted); border-radius: 8px; padding: 9px 14px; font: inherit; cursor: pointer; margin-top: 10px; }
+  .account-box .acct-secondary:hover { border-color: var(--accent); color: var(--text); }
+  .account-close { position: absolute; top: 10px; right: 12px; background: none; border: none; color: var(--text-muted); font-size: 20px; cursor: pointer; }
+  .account-status { margin-top: 12px; font-size: 12px; color: var(--accent); min-height: 1em; }
+  .account-status.err { color: var(--accent3); }
+  .sync-banner { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--surface2); border: 1px solid var(--accent); color: var(--text); border-radius: 10px; padding: 10px 16px; font-size: 13px; z-index: 900; display: none; cursor: pointer; max-width: calc(100% - 32px); }
+  .sync-banner.visible { display: block; }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 </head>
 <body>
 
@@ -857,11 +876,41 @@
     <button class="deleted-tab-btn" id="deletedTabBtn" onclick="toggleDeletedPanel()">
       🗑 Deleted <span class="deleted-count-badge" id="deletedCountBadge">0</span>
     </button>
+    <button class="settings-btn" id="accountBtn" onclick="openAccount()">👤 Sign in</button>
     <a class="settings-btn" href="preferences.html" style="display:inline-block;text-decoration:none;">✉ Email Digest</a><button class="settings-btn" id="settingsBtn" onclick="toggleSettingsPanel()">⚙ Settings</button>
     <button class="read-all-btn" id="readAllBtn" onclick="toggleReadAll()">▶ Read All</button>
     <span class="live-dot" id="updateBadge">UPDATED</span>
   </div>
 </header>
+
+<div class="account-overlay" id="accountOverlay" onclick="if(event.target===this)closeAccount()">
+  <div class="account-box" role="dialog" aria-labelledby="acctTitle">
+    <button class="account-close" onclick="closeAccount()" aria-label="Close">×</button>
+    <div id="acctSignedOut">
+      <h3 id="acctTitle">Sign in to sync</h3>
+      <p>Sign in with your email to keep your filters, journals, ★ saved and 🗑 deleted articles the same on every device. You only need to do this once on each browser.</p>
+      <div id="acctEmailStep">
+        <input type="email" id="acctEmail" placeholder="you@hospital.org" autocomplete="email"
+          onkeydown="if(event.key==='Enter')sendSignInCode()">
+        <button class="acct-primary" id="acctSendBtn" onclick="sendSignInCode()">Email me a sign-in code</button>
+      </div>
+      <div id="acctCodeStep" style="display:none">
+        <p>We sent an email to <b id="acctSentTo"></b>. Type the code from it here (on any device), or click the link in the email on this device.</p>
+        <input type="text" id="acctCode" class="acct-code" inputmode="numeric" autocomplete="one-time-code" maxlength="10" placeholder="123456"
+          onkeydown="if(event.key==='Enter')verifySignInCode()">
+        <button class="acct-primary" id="acctVerifyBtn" onclick="verifySignInCode()">Sign in</button>
+        <button class="acct-secondary" onclick="resetSignIn()">Use a different email</button>
+      </div>
+    </div>
+    <div id="acctSignedIn" style="display:none">
+      <h3>Signed in</h3>
+      <p>Signed in as <b id="acctWho"></b>. Your filters, journals, ★ saved and 🗑 deleted articles are kept in your account and stay the same on every device you sign in on.</p>
+      <button class="acct-secondary" onclick="signOutAccount()">Sign out of this browser</button>
+    </div>
+    <div class="account-status" id="accountStatus"></div>
+  </div>
+</div>
+<div class="sync-banner" id="syncBanner" onclick="applyRemoteAndReload()">Your settings were changed on another device. Tap to update.</div>
 
 <main id="mainContent">
   <div class="loading-overlay">
@@ -934,6 +983,7 @@ function loadFavs() {
 
 function saveFavs(favs) {
   localStorage.setItem(FAVS_KEY, JSON.stringify(favs));
+  scheduleCloudPush();
 }
 
 function isFav(uid) { return !!loadFavs()[uid]; }
@@ -1095,6 +1145,7 @@ function loadDeleted() {
 
 function saveDeleted(deleted) {
   localStorage.setItem(DELETED_KEY, JSON.stringify(deleted));
+  scheduleCloudPush();
 }
 
 function isDeleted(uid) { return !!loadDeleted()[uid]; }
@@ -1887,6 +1938,7 @@ function loadSettings() {
 
 function saveSettings(s) {
   try { localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...s, v: 4 })); } catch {}
+  scheduleCloudPush();
 }
 
 function journalsHidden(s) {
@@ -2420,8 +2472,229 @@ function updateSettingsBanner() {
   }
 }
 
+// ─── Account & cross-device sync ─────────────────────────────────────────────
+// Signed-in viewers keep their dashboard settings, ★ saved and 🗑 deleted
+// articles in Supabase (user_settings, one row per user, row-level security).
+// localStorage stays the working copy; the account copy is pulled on load and
+// pushed (debounced) after every change.
+const sbClient = (window.supabase && window.supabase.createClient)
+  ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, flowType: 'implicit' },
+    })
+  : null;
+const SYNC_USER_KEY = 'oncopulse_sync_user';   // which account this browser last synced with
+let cloudUser = null, cloudPushTimer = null, applyingRemote = false;
+let lastSyncedJson = null, pendingRemote = null;
+
+function lsGet(k) { try { return localStorage.getItem(k); } catch { return null; } }
+function lsSet(k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} }
+
+function localBundle() {
+  let settings = null;
+  try { settings = JSON.parse(lsGet(SETTINGS_KEY) || 'null'); } catch {}
+  return { settings, favorites: loadFavs(), deleted: loadDeleted() };
+}
+function writeLocalBundle(b) {
+  applyingRemote = true;
+  lsSet(SETTINGS_KEY, b.settings ? JSON.stringify(b.settings) : null);
+  lsSet(FAVS_KEY, JSON.stringify(b.favorites || {}));
+  lsSet(DELETED_KEY, JSON.stringify(b.deleted || {}));
+  applyingRemote = false;
+}
+function bundleJson(b) {
+  return b ? JSON.stringify([b.settings ?? null, b.favorites || {}, b.deleted || {}]) : null;
+}
+
+async function fetchRemote() {
+  const { data, error } = await sbClient.from('user_settings')
+    .select('settings,favorites,deleted').eq('user_id', cloudUser.id).maybeSingle();
+  if (error) throw error;
+  return data;
+}
+
+async function pushNow() {
+  clearTimeout(cloudPushTimer);
+  if (!cloudUser || !sbClient) return;
+  const b = localBundle(), j = bundleJson(b);
+  if (j === lastSyncedJson) return;
+  const { error } = await sbClient.from('user_settings')
+    .upsert({ user_id: cloudUser.id, ...b, updated_at: new Date().toISOString() });
+  if (error) { console.warn('OncoPulse sync: save failed', error); return; }
+  lastSyncedJson = j;
+}
+function scheduleCloudPush() {
+  if (!cloudUser || applyingRemote) return;
+  clearTimeout(cloudPushTimer);
+  cloudPushTimer = setTimeout(pushNow, 800);
+}
+
+// Pulls the account copy into this browser. Returns true if local data changed.
+async function syncFromCloud() {
+  const remote = await fetchRemote();
+  const local = localBundle();
+  const firstOnThisBrowser = lsGet(SYNC_USER_KEY) !== cloudUser.id;
+  let next;
+  if (!remote) {
+    next = local;                                   // new account: this browser's data becomes the account's
+  } else if (firstOnThisBrowser) {                  // joining an account: keep this browser's stars/deletions too
+    next = {
+      settings:  remote.settings ?? local.settings,
+      favorites: { ...local.favorites, ...(remote.favorites || {}) },
+      deleted:   { ...local.deleted,   ...(remote.deleted   || {}) },
+    };
+  } else {
+    next = { settings: remote.settings ?? null, favorites: remote.favorites || {}, deleted: remote.deleted || {} };
+  }
+  lsSet(SYNC_USER_KEY, cloudUser.id);
+  const changed = bundleJson(next) !== bundleJson(local);
+  if (changed) writeLocalBundle(next);
+  lastSyncedJson = bundleJson(remote);
+  await pushNow();                                  // uploads a new or merged copy; no-op otherwise
+  return changed;
+}
+
+function updateAccountButton() {
+  const btn = document.getElementById('accountBtn');
+  if (!btn) return;
+  if (!sbClient) { btn.style.display = 'none'; return; }
+  btn.textContent = cloudUser ? '👤 ' + (cloudUser.email || 'Account').split('@')[0] : '👤 Sign in';
+  btn.title = cloudUser ? `Signed in as ${cloudUser.email}. Settings sync across devices.` : 'Sign in to sync settings across devices';
+  btn.classList.toggle('active', !!cloudUser);
+}
+function setAccountStatus(msg, isErr) {
+  const el = document.getElementById('accountStatus');
+  if (!el) return;
+  el.textContent = msg || '';
+  el.classList.toggle('err', !!isErr);
+}
+function showAccountView() {
+  document.getElementById('acctSignedOut').style.display = cloudUser ? 'none' : 'block';
+  document.getElementById('acctSignedIn').style.display  = cloudUser ? 'block' : 'none';
+  if (cloudUser) document.getElementById('acctWho').textContent = cloudUser.email || '';
+}
+function openAccount() {
+  showAccountView();
+  setAccountStatus('');
+  document.getElementById('accountOverlay').classList.add('open');
+  const f = cloudUser ? null : (document.getElementById('acctCodeStep').style.display === 'none'
+    ? document.getElementById('acctEmail') : document.getElementById('acctCode'));
+  if (f) setTimeout(() => f.focus(), 50);
+}
+function closeAccount() { document.getElementById('accountOverlay').classList.remove('open'); }
+function resetSignIn() {
+  document.getElementById('acctEmailStep').style.display = 'block';
+  document.getElementById('acctCodeStep').style.display = 'none';
+  document.getElementById('acctCode').value = '';
+  setAccountStatus('');
+}
+
+async function sendSignInCode() {
+  const emailEl = document.getElementById('acctEmail');
+  const email = emailEl.value.trim();
+  if (!email || !emailEl.checkValidity()) { setAccountStatus('Enter a valid email address.', true); return; }
+  const btn = document.getElementById('acctSendBtn');
+  btn.disabled = true; btn.textContent = 'Sending…';
+  try {
+    const { error } = await sbClient.auth.signInWithOtp({
+      email, options: { emailRedirectTo: location.origin + location.pathname, shouldCreateUser: true },
+    });
+    if (error) {
+      setAccountStatus(/rate|seconds/i.test(error.message)
+        ? `Too many sign-in emails just now. Please wait a minute and try again. (${error.message})`
+        : `Could not send the email: ${error.message}`, true);
+      return;
+    }
+    document.getElementById('acctSentTo').textContent = email;
+    document.getElementById('acctEmailStep').style.display = 'none';
+    document.getElementById('acctCodeStep').style.display = 'block';
+    setAccountStatus('Email sent. It can take a minute to arrive; check spam if you don\'t see it.');
+    setTimeout(() => document.getElementById('acctCode').focus(), 50);
+  } finally {
+    btn.disabled = false; btn.textContent = 'Email me a sign-in code';
+  }
+}
+
+async function verifySignInCode() {
+  const email = document.getElementById('acctEmail').value.trim();
+  const token = document.getElementById('acctCode').value.replace(/\D/g, '');
+  if (token.length < 6) { setAccountStatus('Enter the code from the email.', true); return; }
+  const btn = document.getElementById('acctVerifyBtn');
+  btn.disabled = true; btn.textContent = 'Signing in…';
+  try {
+    const { error } = await sbClient.auth.verifyOtp({ email, token, type: 'email' });
+    if (error) { setAccountStatus(`That code didn't work: ${error.message}. Codes expire after an hour; you can send a new one.`, true); return; }
+    // onAuthStateChange takes it from here (sync + reload if needed)
+  } finally {
+    btn.disabled = false; btn.textContent = 'Sign in';
+  }
+}
+
+async function signOutAccount() {
+  await pushNow();
+  await sbClient.auth.signOut();
+  lsSet(SYNC_USER_KEY, null);
+  setAccountStatus('Signed out. This browser keeps its current settings but no longer syncs.');
+}
+
+async function handleSignedIn() {
+  setAccountStatus('Signed in. Syncing your settings…');
+  try {
+    const changed = await syncFromCloud();
+    if (changed) { location.reload(); return; }
+    showAccountView();
+    setAccountStatus('Signed in. Your settings now sync across devices.');
+  } catch (e) {
+    showAccountView();
+    setAccountStatus(`Signed in, but syncing failed: ${e.message || e}`, true);
+  }
+}
+
+function applyRemoteAndReload() {
+  if (pendingRemote) {
+    writeLocalBundle({ settings: pendingRemote.settings ?? null, favorites: pendingRemote.favorites || {}, deleted: pendingRemote.deleted || {} });
+    lastSyncedJson = bundleJson(pendingRemote);
+  }
+  location.reload();
+}
+
+// Coming back to the tab: push anything unsent, then check for changes from another device.
+document.addEventListener('visibilitychange', async () => {
+  if (!cloudUser || !sbClient) return;
+  if (document.visibilityState === 'hidden') { pushNow(); return; }
+  try {
+    await pushNow();
+    const remote = await fetchRemote();
+    if (remote && bundleJson(remote) !== lastSyncedJson && bundleJson(remote) !== bundleJson(localBundle())) {
+      pendingRemote = remote;
+      document.getElementById('syncBanner').classList.add('visible');
+    }
+  } catch {}
+});
+
+async function cloudBoot() {
+  if (!sbClient) { updateAccountButton(); return; }
+  const { data } = await sbClient.auth.getSession();
+  cloudUser = data?.session?.user || null;
+  updateAccountButton();
+  if (cloudUser) {
+    try { await syncFromCloud(); } catch (e) { console.warn('OncoPulse sync: load failed', e); }
+  }
+  sbClient.auth.onAuthStateChange((event, session) => {
+    const before = cloudUser && cloudUser.id;
+    cloudUser = session?.user || null;
+    updateAccountButton();
+    if (document.getElementById('accountOverlay').classList.contains('open')) showAccountView();
+    if (event === 'SIGNED_IN' && cloudUser && cloudUser.id !== before) {
+      // Defer: Supabase recommends not awaiting other calls inside this callback.
+      setTimeout(handleSignedIn, 0);
+    }
+  });
+}
+
 // ─── Boot ─────────────────────────────────────────────────────────────────────
 (async () => {
+  // Pull the signed-in account's settings first (give up after 4 s and use this browser's copy).
+  try { await Promise.race([cloudBoot(), new Promise(r => setTimeout(r, 4000))]); } catch (e) { console.warn(e); }
   try {
     const data = await loadData();
     // Filter out previously deleted articles on load

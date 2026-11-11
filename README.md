@@ -21,6 +21,16 @@ Every Monday at 6:00 AM UTC, GitHub Actions:
 
 ---
 
+## Sign-in and Sync Across Devices
+
+The **👤 Sign in** button in the dashboard header signs a viewer in with their email (a one-time code, or the link in the same email). Once signed in on a browser, their dashboard settings, added journals, ★ saved and 🗑 deleted articles are kept in Supabase (`user_settings`, one row per user, row-level security so each user can only see their own) and stay the same on every browser they sign in on. Each browser signs in once and stays signed in.
+
+Setup (once, in Supabase):
+1. Run [`supabase/004_user_settings.sql`](supabase/004_user_settings.sql) in the SQL editor.
+2. **Authentication → URL Configuration**: set **Site URL** to your dashboard address (e.g. `https://YOURUSERNAME.github.io/oncopulse/dashboard/`) and add the same address followed by `**` under **Redirect URLs**.
+3. **Authentication → Emails → Templates → Magic Link**: include `{{ .Token }}` in the message so the email shows a typeable code as well as the link.
+4. **Authentication → Emails → SMTP Settings**: turn on custom SMTP. Supabase's built-in sender only delivers to your project's team members and only a few emails an hour. With Resend: host `smtp.resend.com`, port `465`, username `resend`, password = your Resend API key, sender = the same verified address as `RESEND_FROM`.
+
 ## Adding Journals
 
 In the dashboard's **⚙ Settings → Add a journal** box you can add any journal indexed in PubMed. Suggestions come live from the NLM Catalog as you type, and you can also type a full title or its NLM abbreviation (e.g. `Int J Radiat Oncol Biol Phys`).
