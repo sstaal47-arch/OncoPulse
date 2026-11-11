@@ -38,6 +38,9 @@ CACHE_DIR      = Path(os.environ.get("CACHE_DIR", ".cache"))
 LOOKBACK_DAYS  = int(os.environ.get("LOOKBACK_DAYS", "7"))
 MAX_ARTICLES   = int(os.environ.get("MAX_ARTICLES", "1000"))
 ALTMETRIC_API_KEY = os.environ.get("ALTMETRIC_API_KEY", "").strip()
+# Optional: journals viewers added on the dashboard live in Supabase (added_journals).
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
+SUPABASE_SERVICE_ROLE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
 # Explorer API accounts get a key AND a secret; Details Page API accounts get a key only.
 ALTMETRIC_API_SECRET = os.environ.get("ALTMETRIC_API_SECRET", "").strip()
 
@@ -467,9 +470,14 @@ ONCOLOGY_ABSTRACT_TERMS = [
 def _or(terms, field):
     return " OR ".join(f'"{t}"[{field}]' if " " in t else f"{t}[{field}]" for t in terms)
 
-ONCOLOGY_QUERY = (
+# Oncology topic only (no study-type limit) — used for journals viewers added.
+ONCOLOGY_TOPIC_QUERY = (
     f"(({_or(ONCOLOGY_TITLE_TERMS, 'ti')})"
     f" OR (neoplasms[majr] AND ({_or(ONCOLOGY_ABSTRACT_TERMS, 'tiab')})))"
+)
+
+ONCOLOGY_QUERY = (
+    f"{ONCOLOGY_TOPIC_QUERY}"
     " AND"
     " (randomized controlled trial[pt] OR clinical trial[pt] OR meta-analysis[pt]"
     " OR phase 2[tiab] OR phase 3[tiab] OR phase II[tiab] OR phase III[tiab])"
@@ -481,14 +489,15 @@ def _xml_text(el, path: str, default: str = "") -> str:
     found = el.find(path)
     return (found.text or "").strip() if found is not None else default
 
-def fetch_pubmed(days_back: int, max_ids: int = 1000) -> list:
+def fetch_pubmed(days_back: int, max_ids: int = 1000, term: str = ONCOLOGY_QUERY,
+                 what: str = "PubMed") -> list:
     mindate = (date.today() - timedelta(days=days_back)).strftime("%Y/%m/%d")
     maxdate = date.today().strftime("%Y/%m/%d")
 
     # Step 1: search for IDs
     search_params = {
         "db": "pubmed",
-        "term": ONCOLOGY_QUERY,
+        "term": term,
         "retmax": max_ids,
         "mindate": mindate,
         "maxdate": maxdate,
@@ -499,7 +508,7 @@ def fetch_pubmed(days_back: int, max_ids: int = 1000) -> list:
     if PUBMED_API_KEY:
         search_params["api_key"] = PUBMED_API_KEY
 
-    log.info("Searching PubMed (last %d days)…", days_back)
+    log.info("Searching %s (last %d days)…", what, days_back)
     try:
         r = requests.get(f"{PUBMED_BASE}/esearch.fcgi", params=search_params, timeout=30)
         r.raise_for_status()
@@ -589,6 +598,44 @@ def fetch_pubmed(days_back: int, max_ids: int = 1000) -> list:
         time.sleep(0.4)  # NCBI rate limit
 
     log.info("  Parsed %d PubMed articles", len(articles))
+    return articles
+
+# ─── Journals added by viewers ────────────────────────────────────────────────
+def fetch_added_journal_titles() -> list[str]:
+    """NLM title abbreviations (e.g. "Radiother Oncol") that viewers added on
+    the dashboard. Empty if Supabase isn't configured or the table is missing."""
+    if not (SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY):
+        log.info("Added journals: Supabase not configured, skipping")
+        return []
+    try:
+        r = requests.get(
+            f"{SUPABASE_URL}/rest/v1/added_journals",
+            params={"select": "ta"},
+            headers={"apikey": SUPABASE_SERVICE_ROLE_KEY,
+                     "Authorization": f"Bearer {SUPABASE_SERVICE_ROLE_KEY}"},
+            timeout=30,
+        )
+        if r.status_code >= 300:
+            log.warning("Added journals: Supabase returned %s %s", r.status_code, r.text[:200])
+            return []
+        tas = sorted({(row.get("ta") or "").strip() for row in r.json()} - {""})
+        log.info("Added journals: %d (%s)", len(tas), ", ".join(tas[:10]) + ("…" if len(tas) > 10 else ""))
+        return tas
+    except Exception as e:
+        log.warning("Added journals: lookup failed: %s", e)
+        return []
+
+
+def fetch_added_journals(days_back: int) -> list:
+    """Oncology articles (any study type) from the viewer-added journals."""
+    tas = fetch_added_journal_titles()
+    articles = []
+    for i in range(0, len(tas), 40):  # keep each query a sensible length
+        chunk = [t.replace('"', "") for t in tas[i:i + 40]]
+        journals = " OR ".join(f'"{t}"[ta]' for t in chunk)
+        term = f"({journals}) AND {ONCOLOGY_TOPIC_QUERY}"
+        articles.extend(fetch_pubmed(days_back, max_ids=500, term=term,
+                                     what=f"PubMed added journals {i + 1}-{i + len(chunk)}"))
     return articles
 
 # ─── FDA RSS ──────────────────────────────────────────────────────────────────
@@ -1008,6 +1055,7 @@ def run_pipeline(args):
         all_articles.extend(fetch_rss(args.days))
     if not args.skip_pubmed:
         all_articles.extend(fetch_pubmed(args.days))
+        all_articles.extend(fetch_added_journals(args.days))
 
     log.info("Total fetched: %d", len(all_articles))
 

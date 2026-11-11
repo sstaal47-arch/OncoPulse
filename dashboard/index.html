@@ -1802,7 +1802,7 @@ function journalId(name) {
 // Readable label for a journal not in the built-in lists.
 function journalLabel(name) {
   return (name || '').replace(/\([^)]*\)/g, ' ').replace(/\s*:.*$/, '')
-    .replace(/^the\s+/i, '').replace(/\s+/g, ' ').trim();
+    .replace(/^the\s+/i, '').replace(/\.\s*$/, '').replace(/\s+/g, ' ').trim();
 }
 function escHtml(str) {
   return String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -1985,12 +1985,13 @@ function renderSettingsPanel() {
         <div class="settings-chip-group" id="specialistJournalGroup">${renderSpecialistChips(new Set(s.journals))}</div>
         <div class="journal-add-row">
           <input type="text" class="journal-add-input" id="journalAddInput" list="journalAddOptions"
-            placeholder="Add a journal — start typing (e.g. radiation oncology)"
+            placeholder="Add any journal — start typing (e.g. radiation oncology)"
+            oninput="searchJournalCatalog(this.value)"
             onkeydown="if(event.key==='Enter'){event.preventDefault();addSpecialistJournal();}">
           <datalist id="journalAddOptions"></datalist>
           <button class="settings-chip selected" onclick="addSpecialistJournal()">+ Add</button>
         </div>
-        <div class="journal-add-hint" id="journalAddHint">Suggestions are journals with articles in this week's data. Click × on a journal to remove it from your list. “Other journals” covers everything not listed.</div>
+        <div class="journal-add-hint" id="journalAddHint">Suggestions come from every journal indexed in PubMed. A newly added journal's articles appear from the next weekly update. Click × on a journal to remove it from your list. “Other journals” covers everything not listed.</div>
       </div>
       <div>
         <div class="settings-section-title">📊 Article Display Limit</div>
@@ -2195,11 +2196,118 @@ function setJournalHint(msg) {
   if (h) h.textContent = msg;
 }
 
-function addSpecialistJournal() {
+// ─── Journal catalog search (every journal in PubMed / NLM Catalog) ─────────
+const SUPABASE_URL = "https://bfzsgrrtxbucfkjanpfg.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_Y5K_nusKkKUArYFojlpQ3g_gdbGnOa_";
+const EUTILS = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils';
+const catalogHits = new Map();   // option label -> { title, ta }
+let catalogTimer = null, catalogSeq = 0;
+
+function catalogTerm(q) {
+  const STOP = new Set(['and', 'of', 'the', 'for', 'in', 'on', 'de', 'la', 'und']);
+  const words = q.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(w => w.length > 1 && !STOP.has(w));
+  if (!words.length) return '';
+  return `(${words.map(w => `${w}*[title]`).join(' AND ')}) AND ncbijournals[filter]`;
+}
+// Exact journal title ([jo]) or exact NLM abbreviation ([ta]).
+function catalogExactTerm(q) {
+  const phrase = q.replace(/["\[\]()]/g, ' ').replace(/\s+/g, ' ').trim();
+  return phrase ? `("${phrase}"[jo] OR "${phrase}"[ta]) AND ncbijournals[filter]` : '';
+}
+
+// NCBI allows ~3 requests/sec without an API key and answers 429 beyond that,
+// so retry a couple of times with a short back-off.
+async function eutilsJson(url) {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      const r = await fetch(url);
+      if (r.ok) return await r.json();
+      if (attempt >= 2 || r.status !== 429) throw new Error(`NCBI ${r.status}`);
+    } catch (e) {
+      if (attempt >= 2) throw e;
+    }
+    await new Promise(res => setTimeout(res, 500 * (attempt + 1)));
+  }
+}
+
+async function catalogIds(term, max) {
+  if (!term) return [];
+  const es = await eutilsJson(`${EUTILS}/esearch.fcgi?db=nlmcatalog&retmode=json&retmax=${max}&term=${encodeURIComponent(term)}`);
+  return es.esearchresult?.idlist || [];
+}
+
+async function queryCatalog(q, max = 15) {
+  const exact = await catalogIds(catalogExactTerm(q), 3).catch(() => []);
+  const broad = await catalogIds(catalogTerm(q), max).catch(() => []);
+  const ids = [...new Set([...exact, ...broad])].slice(0, max);
+  if (!ids.length) return [];
+  const sm = await eutilsJson(`${EUTILS}/esummary.fcgi?db=nlmcatalog&retmode=json&id=${ids.join(',')}`);
+  const qn = normJournal(q);
+  const rank = j => {
+    const t = normJournal(j.title);
+    return (t === qn || j.ta.toLowerCase() === q.toLowerCase().trim() ? 0 : t.startsWith(qn) ? 1 : 2) * 1000 + t.length;
+  };
+  return ids.map(id => sm.result?.[id]).filter(Boolean).map(r => ({
+    title: (r.titlemainlist?.[0]?.title || '').trim(),
+    ta: (r.medlineta || '').trim(),
+  })).filter(j => j.title && j.ta).sort((a, b) => rank(a) - rank(b));
+}
+
+function searchJournalCatalog(q) {
+  clearTimeout(catalogTimer);
+  q = (q || '').trim();
+  if (q.length < 3 || catalogHits.has(q)) return;   // picked an option, or too short
+  catalogTimer = setTimeout(async () => {
+    const seq = ++catalogSeq;
+    try {
+      const hits = await queryCatalog(q);
+      if (seq !== catalogSeq) return;               // a newer search is running
+      const dl = document.getElementById('journalAddOptions');
+      if (!dl) return;
+      const local = journalAddCandidates();
+      const opts = [];
+      hits.forEach(j => {
+        const label = journalLabel(j.title);
+        catalogHits.set(label, j);
+        const n = journalsInData()[journalId(j.title)]?.n || 0;
+        opts.push(`<option value="${escHtml(label)}">${escHtml(j.ta)}${n ? ` · ${n} this week` : ''}</option>`);
+      });
+      local.filter(j => j.label.toLowerCase().includes(q.toLowerCase()) && !catalogHits.has(j.label))
+        .forEach(j => opts.push(`<option value="${escHtml(j.label)}">${j.n} article${j.n === 1 ? '' : 's'} this week</option>`));
+      dl.innerHTML = opts.join('');
+      if (!hits.length) setJournalHint(`No PubMed journal matches “${q}”. Try another word from its title.`);
+    } catch (e) {
+      // Catalog unreachable: fall back to this week's journals only.
+    }
+  }, 300);
+}
+
+// Tell the weekly update to start fetching this journal (shared list).
+async function registerJournal(j) {
+  try {
+    const r = await fetch(`${SUPABASE_URL}/rest/v1/rpc/add_journal`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` },
+      body: JSON.stringify({ p_ta: j.ta, p_title: j.title }),
+    });
+    return r.ok;
+  } catch { return false; }
+}
+
+async function addSpecialistJournal() {
   const input = document.getElementById('journalAddInput');
   const raw = (input?.value || '').trim();
   if (!raw) return;
-  const id = journalId(raw);
+  // Resolve to a PubMed journal: the picked suggestion, or the best catalog match.
+  let cat = catalogHits.get(raw) ||
+    [...catalogHits.values()].find(h => h.ta.toLowerCase() === raw.toLowerCase());
+  if (!cat) {
+    try {
+      const hits = await queryCatalog(raw, 5);
+      cat = hits.find(h => normJournal(h.title) === normJournal(raw) || h.ta.toLowerCase() === raw.toLowerCase()) || null;
+    } catch { cat = null; }
+  }
+  const id = journalId(cat ? cat.title : raw);
   if (ALL_JOURNALS.general.some(j => j.id === id) || pendingSpecialistList().some(j => j.id === id)) {
     setJournalHint(`“${raw}” is already in your lists.`);
     return;
@@ -2208,14 +2316,23 @@ function addSpecialistJournal() {
     pendingSpecialist.removed = pendingSpecialist.removed.filter(r => r !== id);   // restore a built-in
   } else {
     const match = journalsInData()[id];
-    pendingSpecialist.added.push({ id, label: match ? match.label : journalLabel(raw) });
+    const entry = { id, label: match ? match.label : journalLabel(cat ? cat.title : raw) };
+    if (cat) entry.ta = cat.ta;
+    pendingSpecialist.added.push(entry);
   }
   input.value = '';
   rerenderSpecialistChips(id);
   const n = journalsInData()[id]?.n || 0;
-  setJournalHint(n
-    ? `Added. ${n} article${n === 1 ? '' : 's'} this week — click Save & Apply.`
-    : `Added, but no articles from this journal are in this week's data yet. Click Save & Apply.`);
+  const nowText = n ? `${n} article${n === 1 ? '' : 's'} this week. ` : '';
+  if (!cat) {
+    setJournalHint(`Added “${raw}”, but it isn't a journal name PubMed recognises, so only articles already in OncoPulse will show. ${nowText}Click Save & Apply.`);
+    return;
+  }
+  setJournalHint(`Adding ${cat.ta}…`);
+  const ok = await registerJournal(cat);
+  setJournalHint(ok
+    ? `Added. ${nowText}Its articles will be fetched from the next weekly update. Click Save & Apply.`
+    : `Added to your list. ${nowText}Could not register it for the weekly update right now, so only articles already in OncoPulse will show. Click Save & Apply.`);
 }
 
 function removeSpecialistJournal(el) {

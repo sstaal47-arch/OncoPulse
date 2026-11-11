@@ -21,6 +21,12 @@ Every Monday at 6:00 AM UTC, GitHub Actions:
 
 ---
 
+## Adding Journals
+
+In the dashboard's **⚙ Settings → Add a journal** box you can add any journal indexed in PubMed. Suggestions come live from the NLM Catalog as you type, and you can also type a full title or its NLM abbreviation (e.g. `Int J Radiat Oncol Biol Phys`).
+
+An added journal is registered in a shared Supabase list (`added_journals`, via the `add_journal` RPC). From the next weekly update, the pipeline pulls that journal's oncology articles (any study type) from PubMed. This needs [`supabase/003_added_journals.sql`](supabase/003_added_journals.sql) run once in the Supabase SQL editor; until then, an added journal only shows articles already in OncoPulse's data.
+
 ## Email Digest Subscriptions
 
 Anyone can subscribe to personalized weekly emails: pick which disease sites to follow and, for each site, how many top-ranked abstracts (1–20) it should include. Each site arrives as its own email, about 30 minutes after the weekly update finishes. Subscribe via the **✉ Email Digest** button in the dashboard header, which opens `dashboard/preferences.html`.

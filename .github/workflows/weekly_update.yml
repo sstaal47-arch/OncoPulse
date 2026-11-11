@@ -47,6 +47,8 @@ jobs:
           MAX_ARTICLES:   ${{ github.event.inputs.max_articles || '1000' }}
           ALTMETRIC_API_KEY: ${{ secrets.ALTMETRIC_API_KEY }}
           ALTMETRIC_API_SECRET: ${{ secrets.ALTMETRIC_API_SECRET }}
+          SUPABASE_URL:              ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: |
           SKIP_ALT=""
           if [ "${{ github.event.inputs.skip_altmetric }}" = "true" ]; then
