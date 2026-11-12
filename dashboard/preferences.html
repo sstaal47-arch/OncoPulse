@@ -64,6 +64,7 @@
   <label for="email">Email address</label>
   <input id="email" type="email" placeholder="you@hospital.org" autocomplete="email">
   <div class="saved-as" id="savedAs"></div>
+  <div class="hint" id="signInTip" style="display:none;margin-top:8px;">Tip: <a href="index.html" style="color:var(--accent);">sign in on the dashboard</a> (👤 Sign in) and these choices will follow you to every device.</div>
 
   <label>Disease sites</label>
   <div class="hint">Every site starts at 0, which means no email. Enter how many abstracts (1–20) you want for a site and it is ticked for you.</div>
@@ -78,7 +79,7 @@
   <div class="status" id="status"></div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <script>
   // ── Fill these in after creating your Supabase project ──
   // The anon key is safe to expose client-side: every table access it can
@@ -230,8 +231,43 @@
     savedAs.style.display = 'block';
   }
 
+  // Signed in on the dashboard (same site, so the sign-in is shared)? Then find
+  // this account's subscription by its verified email, on any device.
+  let accountEmail = null;
+  async function useAccount() {
+    try {
+      const { data } = await sb.auth.getSession();
+      const user = data?.session?.user;
+      if (!user || !user.email) return;
+      accountEmail = user.email.toLowerCase();
+      const { data: acctToken, error } = await sb.rpc('my_digest_token');
+      if (error) { console.warn('my_digest_token failed', error); return; }
+      if (acctToken) {
+        token = acctToken;
+        store.set(STORE_TOKEN, acctToken);
+      } else if (!params.get('token')) {
+        token = null;               // signed in but never subscribed: new subscription for this account
+        store.del(STORE_TOKEN);
+      }
+    } catch (e) { console.warn(e); }
+  }
+
+  function lockToAccount() {
+    if (!accountEmail) return;
+    if (!emailInput.value) emailInput.value = accountEmail;
+    if (emailInput.value.toLowerCase() === accountEmail) {
+      emailInput.disabled = true;
+      switchBtn.style.display = 'none';   // sign out on the dashboard to use another email
+      if (!savedAs.textContent) {
+        savedAs.textContent = `Signed in as ${accountEmail}. Your digest choices follow you to any device you sign in on.`;
+        savedAs.style.display = 'block';
+      }
+    }
+  }
+
   async function loadExisting() {
-    if (!token) { restoreDraft(); return; }
+    await useAccount();
+    if (!token) { restoreDraft(); lockToAccount(); return; }
     const { data, error } = await sb.rpc('get_subscriber_v2', { p_token: token });
     if (error || !data || !data.length) {
       const fromLink = !!params.get('token');
@@ -250,6 +286,7 @@
     }
     setSiteCounts(counts);
     enterManageMode(sub.email);
+    lockToAccount();
     if (!sub.is_active) showStatus('You are currently unsubscribed. Press Save preferences to start receiving digests again.', false);
 
     if (params.get('action') === 'unsubscribe') {
@@ -314,7 +351,9 @@
 
   unsubBtn.addEventListener('click', doUnsubscribe);
 
-  loadExisting();
+  loadExisting().then(() => {
+    if (!accountEmail) document.getElementById('signInTip').style.display = 'block';
+  });
 </script>
 </body>
 </html>
