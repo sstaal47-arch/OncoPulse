@@ -13,33 +13,63 @@ Journal RSS ──┘          (Claude API)
 ```
 
 Every Monday at 6:00 AM UTC, GitHub Actions:
-1. Pulls recent articles from PubMed, FDA, and 10 major journal RSS feeds
+1. Pulls recent articles from PubMed, FDA, 10 major journal RSS feeds, and any journals viewers have added
 2. Filters for clinical relevance (Phase 2+, FDA actions, reviews)
 3. Calls Claude to generate structured summaries (design, endpoints, results, clinical takeaway)
 4. Commits updated `data.json` to the repo
 5. GitHub Pages serves the dashboard automatically
+6. 30 minutes later, a second workflow emails each subscriber their per-disease-site digests
+
+---
+
+## Features at a Glance
+
+| Feature | Where | Stored in |
+|---------|-------|-----------|
+| Weekly literature dashboard | `dashboard/index.html` | `dashboard/data.json` (regenerated weekly) |
+| Filters, journals, ★ saved and 🗑 deleted articles | ⚙ Settings, ★ Saved, 🗑 Deleted | This browser; **plus your account when signed in** |
+| Sign-in with email (code or link) | 👤 Sign in | Supabase Auth + `user_settings` |
+| Add any PubMed journal | ⚙ Settings → Add a journal | Your settings + shared `added_journals` list |
+| Weekly email digest, one email per disease site | ✉ Email Digest (`preferences.html`) | Supabase `subscribers` |
 
 ---
 
 ## Sign-in and Sync Across Devices
 
-The **👤 Sign in** button in the dashboard header signs a viewer in with their email (a one-time code, or the link in the same email). Once signed in on a browser, their dashboard settings, added journals, ★ saved and 🗑 deleted articles are kept in Supabase (`user_settings`, one row per user, row-level security so each user can only see their own) and stay the same on every browser they sign in on. Each browser signs in once and stays signed in.
+The **👤 Sign in** button in the dashboard header signs you in with your email:
 
-Setup (once, in Supabase):
-1. Run [`supabase/004_user_settings.sql`](supabase/004_user_settings.sql) in the SQL editor.
-2. **Authentication → URL Configuration**: set **Site URL** to your dashboard address (e.g. `https://YOURUSERNAME.github.io/oncopulse/dashboard/`) and add the same address followed by `**` under **Redirect URLs**.
-3. **Authentication → Emails → Templates → Magic Link**: include `{{ .Token }}` in the message so the email shows a typeable code as well as the link.
-4. **Authentication → Emails → SMTP Settings**: turn on custom SMTP. Supabase's built-in sender only delivers to your project's team members and only a few emails an hour. With Resend: host `smtp.resend.com`, port `465`, username `resend`, password = your Resend API key, sender = the same verified address as `RESEND_FROM`.
+1. Enter your email and press **Email me a sign-in code**.
+2. Type the 6-digit code from the email into OncoPulse — on any device — or click the link in the email on the device you're signing in on.
+
+Each browser signs in once and stays signed in (until you sign out, clear that browser's data, or use a private window). Every browser counts separately, e.g. Safari and Chrome on the same phone.
+
+**What follows you when signed in**
+
+- **Dashboard:** your filters, added journals, ★ saved and 🗑 deleted articles are kept in Supabase (`user_settings`, one row per user) and are the same on every browser you sign in on. Changes are saved within about a second. The first time you sign in on a browser, any stars and deletions already in it are added to your account, so nothing is lost. If you change something on another device while a tab is open, that tab shows a bar offering to update.
+- **Email digest:** the ✉ Email Digest page recognises your account and loads your digest choices (sites and abstract counts) on any device, with your email filled in and locked to your account.
+
+Each user can only ever read or change their own settings (row-level security), and the digest lookup uses the email from your verified sign-in, never one typed by the caller.
+
+Not signed in, everything still works, but is remembered only in that one browser. The digest page also remembers you in the browser you subscribed from, and the **Manage preferences** link at the bottom of every digest email opens your choices on any device.
 
 ## Adding Journals
 
-In the dashboard's **⚙ Settings → Add a journal** box you can add any journal indexed in PubMed. Suggestions come live from the NLM Catalog as you type, and you can also type a full title or its NLM abbreviation (e.g. `Int J Radiat Oncol Biol Phys`).
+In the dashboard's **⚙ Settings → Add a journal** box you can add **any journal indexed in PubMed**:
 
-An added journal is registered in a shared Supabase list (`added_journals`, via the `add_journal` RPC). From the next weekly update, the pipeline pulls that journal's oncology articles (any study type) from PubMed. This needs [`supabase/003_added_journals.sql`](supabase/003_added_journals.sql) run once in the Supabase SQL editor; until then, an added journal only shows articles already in OncoPulse's data.
+- Suggestions come live from PubMed's journal list (the NLM Catalog) as you type, e.g. "radiation onc".
+- You can also type a full title (`Gynecologic oncology`) or its NLM abbreviation (`Int J Radiat Oncol Biol Phys`).
+- A name PubMed doesn't recognise can still be added, but only filters articles OncoPulse already has.
+
+An added journal is also registered in a shared Supabase list (`added_journals`, via the `add_journal` function). From the next weekly update, the pipeline pulls that journal's oncology articles (any study type) from PubMed. The public website key can add to this list but cannot read it.
 
 ## Email Digest Subscriptions
 
-Anyone can subscribe to personalized weekly emails: pick which disease sites to follow and, for each site, how many top-ranked abstracts (1–20) it should include. Each site arrives as its own email, about 30 minutes after the weekly update finishes. Subscribe via the **✉ Email Digest** button in the dashboard header, which opens `dashboard/preferences.html`.
+Anyone can subscribe to personalized weekly emails via the **✉ Email Digest** button in the dashboard header (`dashboard/preferences.html`):
+
+- **Each disease site is its own email.** Every site starts at **0** (no email). Enter how many top-ranked abstracts (1–20) you want for a site and it is ticked; set it back to 0 to stop that site.
+- **Sent about 30 minutes after the weekly update** finishes (Mondays).
+- **Your choices are remembered** — in the browser you subscribed from, on any device you're signed in on, and via the **Manage preferences** link in every email.
+- **Unsubscribe** anytime from the same page or the link in each email.
 
 ```
 preferences.html ──► Supabase (subscribers table)
@@ -47,16 +77,59 @@ preferences.html ──► Supabase (subscribers table)
 data.json ──► send_digests.py ◄───┘   (reads active subscribers)
                      │
                      ▼
-              Resend API ──► subscriber's inbox
+              Resend API ──► subscriber's inbox (one email per site)
 ```
 
-Each site's email holds that site's top-N articles by `data.json`'s `importance_score`, the same ranking the dashboard uses. A site with no articles that week sends no email. Each article link in the email prefers a free PMC full-text copy (resolved via NCBI's id-converter) when one exists for that article, falling back to the PubMed or publisher page when it doesn't (most subscription journals, e.g. NEJM/Lancet, don't have a free full-text copy available).
+Each site's email holds that site's top-N articles by `data.json`'s `importance_score`, the same ranking the dashboard uses. A site with no articles that week sends no email. Each article link prefers a free PMC full-text copy (via NCBI's id-converter) when one exists, falling back to the PubMed or publisher page.
 
-Subscriber data lives in a Supabase table, locked down with row-level security — the public preferences page can only reach it through four RPC functions (`subscribe`, `get_subscriber`, `update_preferences`, `unsubscribe`), each of which checks the caller's own unique token server-side. There's no way for the page's public key to read or export the subscriber list. The weekly GitHub Actions job is the only thing with full read access, via a separate, non-public service-role key.
+Subscriber data lives in a Supabase table locked down with row-level security. The public preferences page can only reach it through server-side functions that check the caller's own private token or verified sign-in; there's no way for the page's public key to read or export the subscriber list. The weekly GitHub Actions jobs are the only things with full read access, via a separate, non-public service-role key.
 
 Sending is a separate workflow, `.github/workflows/send_digests.yml`. It starts when the weekly update finishes successfully, waits 30 minutes, checks out the freshly committed `data.json`, and runs `pipeline/send_digests.py`. If any email fails to send, the step fails (red in Actions) and the run summary lists the Resend error.
 
-To test: **Actions → OncoPulse Digest Emails → Run workflow**, put your own (already subscribed) address in *test_to*. That sends only your e-mails, for the sites and counts you saved, with no 30-minute wait. Locally, `python pipeline/send_digests.py --dry-run` writes HTML previews to `digest_preview/` without sending anything.
+**Testing:** **Actions → OncoPulse Digest Emails → Run workflow**, with your own (already subscribed) address in *test_to*. That sends only your emails, for the sites and counts you saved, with no 30-minute wait. Locally, `python pipeline/send_digests.py --dry-run` writes HTML previews to `digest_preview/` without sending anything.
+
+---
+
+## Supabase Setup
+
+All of these are done once, on the **Supabase** website, inside your project. The free plan is enough.
+
+### Database (SQL Editor)
+
+Run each file once, in order. Each is safe to re-run.
+
+| File | Adds |
+|------|------|
+| Schema in [Setting up the digest feature](#setting-up-the-digest-feature) below | `subscribers` table and the original digest functions |
+| [`supabase/002_per_site_top_n.sql`](supabase/002_per_site_top_n.sql) | Per-site abstract counts (`site_top_n`) and the `*_v2` digest functions |
+| [`supabase/003_added_journals.sql`](supabase/003_added_journals.sql) | Shared `added_journals` list and `add_journal()` |
+| [`supabase/004_user_settings.sql`](supabase/004_user_settings.sql) | `user_settings` table for sign-in sync |
+| [`supabase/005_digest_for_signed_in_user.sql`](supabase/005_digest_for_signed_in_user.sql) | `my_digest_token()`, so the digest page follows your sign-in |
+
+If a page reports "Could not find the function …" right after running a file, run `notify pgrst, 'reload schema';` in the SQL Editor and reload the page.
+
+### Sign-in emails (Authentication)
+
+Do these in this order — Supabase locks the email templates until custom SMTP is on.
+
+1. **Authentication → Emails → SMTP Settings**: turn on **custom SMTP**. (Supabase's built-in sender only delivers to your project's team members, a few emails an hour.) With Resend:
+
+   | Field | Value |
+   |-------|-------|
+   | Host | `smtp.resend.com` |
+   | Port | `465` |
+   | Username | `resend` |
+   | Password | a Resend API key (starts `re_`) |
+   | Sender email | any address **on your verified Resend domain**, e.g. `signin@digest.yourdomain.com` |
+   | Sender name | `OncoPulse` |
+
+   The sender must end in exactly the domain shown as **Verified** under resend.com → Domains; otherwise sending fails with "domain is not verified".
+2. **Authentication → Emails → Templates**: in both **Magic Link** and **Confirm signup**, set the subject to `Your OncoPulse sign-in code` and paste [`supabase/magic_link_email_body.html`](supabase/magic_link_email_body.html) as the body. It contains `{{ .Token }}` (the code) and `{{ .ConfirmationURL }}` (the link).
+3. **Authentication → URL Configuration**: set **Site URL** to your dashboard address (e.g. `https://YOURUSERNAME.github.io/oncopulse/dashboard/`) and add the same address followed by `**` under **Redirect URLs**.
+
+If a sign-in email doesn't arrive, **Logs → Auth** in Supabase shows the reason.
+
+---
 
 ### Setting up the digest feature
 
@@ -127,9 +200,9 @@ To test: **Actions → OncoPulse Digest Emails → Run workflow**, put your own 
    ```
    </details>
 
-   Then run [`supabase/002_per_site_top_n.sql`](supabase/002_per_site_top_n.sql) once as well. It adds the per-site abstract counts and the `*_v2` functions the preferences page uses.
+   Then run the numbered files in [`supabase/`](supabase/) as listed under [Supabase Setup](#supabase-setup).
 
-   From **Settings → API**, copy the **Project URL** and **publishable (anon) key** into the two constants near the top of `dashboard/preferences.html`. Separately copy the **secret (service_role) key** — that one only ever goes into a GitHub secret, never into `preferences.html` or any client-side file.
+   From **Settings → API**, copy the **Project URL** and **publishable (anon) key** into the two constants near the top of `dashboard/preferences.html` and `dashboard/index.html`. Separately copy the **secret (service_role) key** — that one only ever goes into a GitHub secret, never into `preferences.html` or any client-side file.
 
 2. **Create a [Resend](https://resend.com) account** and verify a sending domain (or subdomain, e.g. `digest.yourdomain.com`) under **Domains**, following the DNS records it generates. Then create an API key under **API Keys**.
 
@@ -169,10 +242,10 @@ Go to **Settings → Secrets and variables → Actions → New repository secret
 
 Go to **Settings → Pages**:
 - Source: **Deploy from a branch**
-- Branch: `main` / folder: `/dashboard`
+- Branch: `main` / folder: `/ (root)`
 - Save
 
-Your dashboard will be live at: `https://YOURUSERNAME.github.io/oncopulse/`
+Your dashboard will be live at: `https://YOURUSERNAME.github.io/oncopulse/dashboard/`
 
 ### 4. Run the first update manually
 
@@ -237,9 +310,15 @@ oncopulse/
 │   ├── requirements.txt
 │   └── .cache/                  # Auto-created, cached summaries
 ├── dashboard/
-│   ├── index.html               # The web dashboard
+│   ├── index.html               # The web dashboard (incl. sign-in, sync, add-a-journal)
 │   ├── preferences.html         # Email digest subscribe/manage page
 │   └── data.json                # Generated weekly by pipeline
+├── supabase/
+│   ├── 002_per_site_top_n.sql            # Per-site digest counts
+│   ├── 003_added_journals.sql            # Shared list of added journals
+│   ├── 004_user_settings.sql             # Signed-in users' synced settings
+│   ├── 005_digest_for_signed_in_user.sql # Digest page follows sign-in
+│   └── magic_link_email_body.html        # Sign-in email template body
 ├── .github/
 │   └── workflows/
 │       ├── weekly_update.yml    # GitHub Actions schedule (literature pipeline)
@@ -264,6 +343,7 @@ oncopulse/
 | **JAMA Oncol** | JAMA Oncology |
 | **Ann Oncol** | Annals of Oncology |
 | **Cancer Discov** | Cancer Discovery (AACR) |
+| **Journals you add** | Any PubMed journal added in ⚙ Settings: its oncology articles, any study type |
 
 ---
 
